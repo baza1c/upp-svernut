@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e8542ad-7a99-45f4-89ec-3c5f8b77e1df">
+  <producedTypes>
+    <objectType typeId="972f82b0-aa69-48ae-abb2-1112d33124dc" valueTypeId="bff25ce3-69ed-4eff-b63e-19b0aa182933"/>
+    <managerType typeId="f3f01b04-a7f3-41ad-bd60-223bc6648014" valueTypeId="68b597dd-d6f8-4916-beb0-6597f4ae3372"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетСтатистикаФормаП1</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форма П-1 &quot;Сведения о производстве и отгрузке товаров и услуг&quot;</value>
+  </synonym>
+  <defaultForm>Report.РегламентированныйОтчетСтатистикаФормаП1.Form.ОсновнаяФорма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="d12d8bd8-c3b2-4d57-873d-fe5f2c051fbf">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="648b27f5-411f-4de3-93d7-e65967767d37">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6c4f9ea0-e075-411c-ba20-c99aedcd962b">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="abbd8f8c-d91a-485c-9754-310cb6f005da">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="1b4f5dcc-dbc7-4dc3-a48a-0b3abb2713db">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статистика: Форма П-1</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0dba4cda-0416-4754-b46c-37e6e3ad9291">
+    <name>ФормаВыбораПриложения3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора Приложения 3</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7f5178f3-bd5d-4550-b5a2-dd101de96041">
+    <name>ФормаОтчета2005Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2005 кв1</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="980176e9-3aa9-47a9-bf4f-c6d4316cfe45">
+    <name>ФормаОтчета2008Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2008 кв1</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e03d9740-2ea6-4b9d-8978-3b9f6c12e0ef">
+    <name>ФормаОтчета2009Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2009 кв1</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="274658b7-7ff8-42f4-a1f2-a6cc1c46ad43">
+    <name>ФормаОтчета2010Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2010 кв1</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8433a90d-4813-4bc3-a845-26b58029de51">
+    <name>Списки2010Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки 2010 кв.1</value>
+    </synonym>
+  </templates>
+  <templates uuid="28aa3f4e-48a2-49d0-a651-9399cf218164">
+    <name>Списки2012Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки 2010 кв.1</value>
+    </synonym>
+  </templates>
+  <templates uuid="b9a89460-e50f-4cf1-81d1-fd2e130586e3">
+    <name>СхемаВыгрузкиXML2010Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки XML2010 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="8d01cd93-e351-4e83-b4ef-f2c3072c292a">
+    <name>АтрибВыгрузкиXML2010Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Атрибуты выгрузки XML 2010 кв1</value>
+    </synonym>
+    <comment>Дополнительные атрибуты для выгрузки в XML</comment>
+  </templates>
+  <templates uuid="46c67814-5640-4acc-bd69-a19768d82e3d">
+    <name>СхемаВыгрузкиXML2012Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки XML2012 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="fbda6e3f-c40d-4103-bbd9-08f9f349e7a3">
+    <name>АтрибВыгрузкиXML2012Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Атрибуты выгрузки XML 2012 кв1</value>
+    </synonym>
+    <comment>Дополнительные атрибуты для выгрузки в XML</comment>
+  </templates>
+</mdclass:Report>

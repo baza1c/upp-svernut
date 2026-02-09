@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c0da318-f559-40c3-aaaa-df12d2bc6280">
+  <producedTypes>
+    <selectionType typeId="51b03755-023c-488a-8d59-4a7b2f3e9d7d" valueTypeId="a6910d6f-39ad-4345-8c20-1b8f634847b3"/>
+    <listType typeId="3450870e-7d21-421e-8188-2bdd2c028c7d" valueTypeId="e4b3f1da-c1c1-4c0a-8ee1-63b934ac4645"/>
+    <managerType typeId="130ce110-c263-4b33-a1b6-9df94317bfd8" valueTypeId="c99b8161-57d0-4485-81af-19b02e8b5c37"/>
+    <recordSetType typeId="f24b0851-ab8d-4c49-8c92-c40fa01bd760" valueTypeId="ab5f45f1-d147-4fb9-a7e1-668380ecdcb2"/>
+    <recordKeyType typeId="c6d0dea5-4881-4904-a3ac-05798aa58725" valueTypeId="ede6b7ab-8354-4b61-8c24-4da018b97539"/>
+    <recordType typeId="5cd22034-7825-4675-9a28-86a95ec91224" valueTypeId="0203e2db-4155-4577-aa55-bc2de8ab6fe4"/>
+  </producedTypes>
+  <name>Лео_ФакТрудозатратОПЗС_Свод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет трудозат ОПЗС Свод (Лео)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="b4fbb4df-8661-4acf-b856-9f0395f24aca">
+    <name>КоличествоПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество план</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="f63176e5-0ceb-4b70-bb41-763571673e5d">
+    <name>КоличествоФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="dd194749-cf40-481b-b172-5ed0c0b3b044">
+    <name>КоличествоПланЧасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество план часов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="e913fdc6-fc86-43a7-8f38-46f79851dc00">
+    <name>КоличествоФактЧеловек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество факт человек</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="c3c618c6-e7b7-4646-9d1b-8ac00b4ec0ce">
+    <name>СуммаПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма план</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="b09d94f0-bd93-4421-8ccb-a34edae771b3">
+    <name>СуммаФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="d56cb071-37b2-4648-bb58-a9649d370b93">
+    <name>СтоимостьПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость план</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="757fb150-3a0f-4057-958f-07366b9112fb">
+    <name>СтоимостьФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="bb882eff-a58b-4a7c-949a-c15332bcfd8a">
+    <name>ОПзС_ПФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОПзС_ПФ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОтчетПроизводстваЗаСмену</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="92da3bdd-5d16-4daa-a81c-420df2da0488">
+    <name>ФактТрудозатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Факт трудозатрат</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Лео_ФактТрудозатрат</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="71b10686-a647-46dc-9ca3-71db6ac83f6c">
+    <name>ЗаписьЗамечания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запись замечания</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_ОПЗС_Замечания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="aa22355c-fd14-41cc-961d-0baed7d2d8c3">
+    <name>ЗаписьЗамечанияВыполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запись замечания выполнено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="595b48ec-afb4-4882-8768-fdb4ab5de221">
+    <name>СменаПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена план</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="9414c5d2-3d31-4c87-b849-1e0202ac8b42">
+    <name>СменаФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="eb2ad595-9f73-44a5-b4bf-dd2608c3cf4e">
+    <name>ОбъемПартииПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем партии план</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="c13bdb69-7102-4f42-a7d7-bb455c9a527c">
+    <name>ОбъемПартииФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем партии факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="dd0096af-d0e9-4903-b6fa-7cc2c12ea889">
+    <name>ОбъемВыпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем выпуска</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="d2583b07-a273-40b7-ae4b-7de5cc218964">
+    <name>Лео_СводПодсветка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лео свод подсветка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_СводПодсветкаТруд</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="4082219d-3a00-4c43-bc6c-64e580ce6a6b">
+    <name>Продукция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продукция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4c657be2-bc71-4424-8f40-933cb09026fa">
+    <name>ПродукцияСерия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продукция серия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="46be2dc0-a045-4c63-b075-27d928bd9fff">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_ДолжностиПереработчиков</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8da64ffa-2880-4419-900f-a1130ecf9fac">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9a380674-700b-4f86-bfa4-442aa2968255">
+    <name>Техоперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Техоперация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТехнологическиеОперации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c4b7bf78-a745-44a6-a15a-4b159c8fcbeb">
+    <name>ТипТехоперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип техоперации</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_ТипТехОперации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9d2f40f1-3327-4941-9962-23b6df06b62c">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7cc9f996-3363-4c5d-a54a-cbb41b87fae0">
+    <name>ВидОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оборудования</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_оборудование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="380014cd-0da6-49bf-a741-7dca671da537">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

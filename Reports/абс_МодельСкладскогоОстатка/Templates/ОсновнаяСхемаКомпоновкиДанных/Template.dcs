@@ -1,0 +1,1766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОстатка</dataPath>
+			<field>ДатаОстатка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПланПроизводства</dataPath>
+			<field>ПланПроизводства</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогноз сдачи ГП</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрогнозПродаж</dataPath>
+			<field>ПрогнозПродаж</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрогнозСкладскогоОстатка</dataPath>
+			<field>ПрогнозСкладскогоОстатка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньНеснижаемогоОстатка</dataPath>
+			<field>УровеньНеснижаемогоОстатка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страховой запас в штуках</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сценарий</dataPath>
+			<field>Сценарий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>абс_Утвержден</dataPath>
+			<field>абс_Утвержден</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВариантРаспределения</dataPath>
+			<field>ВариантРаспределения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Договор</dataPath>
+			<field>Договор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументПланирования</dataPath>
+			<field>ДокументПланирования</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ</dataPath>
+			<field>Заказ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спецификация</dataPath>
+			<field>Спецификация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаНоменклатуры</dataPath>
+			<field>ХарактеристикаНоменклатуры</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>абс_ВидПланаПроизводства</dataPath>
+			<field>абс_ВидПланаПроизводства</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Месяц</dataPath>
+			<field>Месяц</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрогнозСкладскогоОстаткаМесяц</dataPath>
+			<field>ПрогнозСкладскогоОстаткаМесяц</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Год</dataPath>
+			<field>Год</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Декада</dataPath>
+			<field>Декада</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Квартал</dataPath>
+			<field>Квартал</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Неделя</dataPath>
+			<field>Неделя</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Полугодие</dataPath>
+			<field>Полугодие</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрогнозСкладскогоОстаткаГод</dataPath>
+			<field>ПрогнозСкладскогоОстаткаГод</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогноз складского остатка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрогнозСкладскогоОстаткаДекада</dataPath>
+			<field>ПрогнозСкладскогоОстаткаДекада</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогноз складского остатка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрогнозСкладскогоОстаткаКвартал</dataPath>
+			<field>ПрогнозСкладскогоОстаткаКвартал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогноз складского остатка </v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрогнозСкладскогоОстаткаНеделя</dataPath>
+			<field>ПрогнозСкладскогоОстаткаНеделя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогноз складского остатка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрогнозСкладскогоОстаткаПолугодие</dataPath>
+			<field>ПрогнозСкладскогоОстаткаПолугодие</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогноз складского остатка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньНеснижаемогоОстаткаГод</dataPath>
+			<field>УровеньНеснижаемогоОстаткаГод</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страховой запас в штуках</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньНеснижаемогоОстаткаДекада</dataPath>
+			<field>УровеньНеснижаемогоОстаткаДекада</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страховой запас в штуках</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньНеснижаемогоОстаткаКвартал</dataPath>
+			<field>УровеньНеснижаемогоОстаткаКвартал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страховой запас в штуках</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньНеснижаемогоОстаткаМесяц</dataPath>
+			<field>УровеньНеснижаемогоОстаткаМесяц</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страховой запас в штуках</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньНеснижаемогоОстаткаНеделя</dataPath>
+			<field>УровеньНеснижаемогоОстаткаНеделя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страховой запас в штуках</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньНеснижаемогоОстаткаПолугодие</dataPath>
+			<field>УровеньНеснижаемогоОстаткаПолугодие</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страховой запас в штуках</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтраховойЗапас</dataPath>
+			<field>СтраховойЗапас</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страховой запас в днях</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ПланыПроизводстваОбороты.Период КАК Период,
+	ПланыПроизводстваОбороты.Номенклатура КАК Номенклатура,
+	ПланыПроизводстваОбороты.КоличествоОборот
+ПОМЕСТИТЬ ПланПроизводства
+{ВЫБРАТЬ
+	Номенклатура.*,
+	Период}
+ИЗ
+	РегистрНакопления.ПланыПроизводства.Обороты(ДОБАВИТЬКДАТЕ(&amp;НачалоПериода, ДЕНЬ, -1), &amp;КонецПериода, День, {(Сценарий = &amp;СценарийПроизводства)}) КАК ПланыПроизводстваОбороты
+{ГДЕ
+	ПланыПроизводстваОбороты.Номенклатура.*,
+	ПланыПроизводстваОбороты.Сценарий.*}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	абс_ПрогнозСкладскогоОстаткаСрезПоследних.Номенклатура КАК Номенклатура,
+	абс_ПрогнозСкладскогоОстаткаСрезПоследних.ДатаОстатка КАК ДатаОстатка,
+	МАКСИМУМ(абс_ПрогнозСкладскогоОстаткаСрезПоследних.ПрогнозСкладскогоОстатка) + СУММА(ЕСТЬNULL(ПланПроизводстваГруппировка.КоличествоОборот, 0)) КАК ПрогнозСкладскогоОстатка,
+	МАКСИМУМ(абс_ПрогнозСкладскогоОстаткаСрезПоследних.ПрогнозПродаж) КАК ПрогнозПродаж,
+	МАКСИМУМ(абс_ПрогнозСкладскогоОстаткаСрезПоследних.УровеньНеснижаемогоОстатка) КАК УровеньНеснижаемогоОстатка,
+	МАКСИМУМ(ЕСТЬNULL(ПланПроизводстваНаДатуОстатка.КоличествоОборот, 0)) КАК ПланПроизводства,
+	МАКСИМУМ(абс_ПрогнозСкладскогоОстаткаСрезПоследних.СтраховойЗапас) КАК СтраховойЗапас
+ПОМЕСТИТЬ МодельСкладскогоОстатка
+{ВЫБРАТЬ
+	Номенклатура.*,
+	ДатаОстатка,
+	ПрогнозСкладскогоОстатка,
+	ПрогнозПродаж,
+	УровеньНеснижаемогоОстатка}
+ИЗ
+	РегистрСведений.абс_ПрогнозСкладскогоОстатка.СрезПоследних({(&amp;ДатаПлана)}, ДатаОстатка МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода {(Сценарий = &amp;Сценарий)}) КАК абс_ПрогнозСкладскогоОстаткаСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ ПланПроизводства КАК ПланПроизводстваНаДатуОстатка
+		ПО абс_ПрогнозСкладскогоОстаткаСрезПоследних.ДатаОстатка = ПланПроизводстваНаДатуОстатка.Период
+			И абс_ПрогнозСкладскогоОстаткаСрезПоследних.Номенклатура = ПланПроизводстваНаДатуОстатка.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ПланПроизводства КАК ПланПроизводстваГруппировка
+		ПО абс_ПрогнозСкладскогоОстаткаСрезПоследних.Номенклатура = ПланПроизводстваГруппировка.Номенклатура
+			И (ПланПроизводстваГруппировка.Период &lt;= ДОБАВИТЬКДАТЕ(абс_ПрогнозСкладскогоОстаткаСрезПоследних.ДатаОстатка, ДЕНЬ, -1))
+{ГДЕ
+	абс_ПрогнозСкладскогоОстаткаСрезПоследних.Сценарий.*,
+	абс_ПрогнозСкладскогоОстаткаСрезПоследних.Номенклатура.*}
+
+СГРУППИРОВАТЬ ПО
+	абс_ПрогнозСкладскогоОстаткаСрезПоследних.Номенклатура,
+	абс_ПрогнозСкладскогоОстаткаСрезПоследних.ДатаОстатка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МодельСкладскогоОстатка.Номенклатура,
+	МодельСкладскогоОстатка.ДатаОстатка,
+	МодельСкладскогоОстатка.ПрогнозСкладскогоОстатка,
+	МодельСкладскогоОстатка.ПрогнозПродаж,
+	МодельСкладскогоОстатка.УровеньНеснижаемогоОстатка,
+	МодельСкладскогоОстатка.ПланПроизводства,
+	НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, МЕСЯЦ) КАК Месяц,
+	ВЫБОР
+		КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, МЕСЯЦ) &lt; &amp;НачалоПериода
+			ТОГДА ВЫБОР
+					КОГДА МодельСкладскогоОстатка.ДатаОстатка = &amp;НачалоПериода
+						ТОГДА МодельСкладскогоОстатка.ПрогнозСкладскогоОстатка
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, МЕСЯЦ) = МодельСкладскогоОстатка.ДатаОстатка
+					ТОГДА МодельСкладскогоОстатка.ПрогнозСкладскогоОстатка
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК ПрогнозСкладскогоОстаткаМесяц,
+	ВЫБОР
+		КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, МЕСЯЦ) &lt; &amp;НачалоПериода
+			ТОГДА ВЫБОР
+					КОГДА МодельСкладскогоОстатка.ДатаОстатка = &amp;НачалоПериода
+						ТОГДА МодельСкладскогоОстатка.УровеньНеснижаемогоОстатка
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, МЕСЯЦ) = МодельСкладскогоОстатка.ДатаОстатка
+					ТОГДА МодельСкладскогоОстатка.УровеньНеснижаемогоОстатка
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК УровеньНеснижаемогоОстаткаМесяц,
+	НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, НЕДЕЛЯ) КАК Неделя,
+	ВЫБОР
+		КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, НЕДЕЛЯ) &lt; &amp;НачалоПериода
+			ТОГДА ВЫБОР
+					КОГДА МодельСкладскогоОстатка.ДатаОстатка = &amp;НачалоПериода
+						ТОГДА МодельСкладскогоОстатка.ПрогнозСкладскогоОстатка
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, НЕДЕЛЯ) = МодельСкладскогоОстатка.ДатаОстатка
+					ТОГДА МодельСкладскогоОстатка.ПрогнозСкладскогоОстатка
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК ПрогнозСкладскогоОстаткаНеделя,
+	ВЫБОР
+		КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, НЕДЕЛЯ) &lt; &amp;НачалоПериода
+			ТОГДА ВЫБОР
+					КОГДА МодельСкладскогоОстатка.ДатаОстатка = &amp;НачалоПериода
+						ТОГДА МодельСкладскогоОстатка.УровеньНеснижаемогоОстатка
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, НЕДЕЛЯ) = МодельСкладскогоОстатка.ДатаОстатка
+					ТОГДА МодельСкладскогоОстатка.УровеньНеснижаемогоОстатка
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК УровеньНеснижаемогоОстаткаНеделя,
+	НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ДЕКАДА) КАК Декада,
+	ВЫБОР
+		КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ДЕКАДА) &lt; &amp;НачалоПериода
+			ТОГДА ВЫБОР
+					КОГДА МодельСкладскогоОстатка.ДатаОстатка = &amp;НачалоПериода
+						ТОГДА МодельСкладскогоОстатка.ПрогнозСкладскогоОстатка
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ДЕКАДА) = МодельСкладскогоОстатка.ДатаОстатка
+					ТОГДА МодельСкладскогоОстатка.ПрогнозСкладскогоОстатка
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК ПрогнозСкладскогоОстаткаДекада,
+	ВЫБОР
+		КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ДЕКАДА) &lt; &amp;НачалоПериода
+			ТОГДА ВЫБОР
+					КОГДА МодельСкладскогоОстатка.ДатаОстатка = &amp;НачалоПериода
+						ТОГДА МодельСкладскогоОстатка.УровеньНеснижаемогоОстатка
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ДЕКАДА) = МодельСкладскогоОстатка.ДатаОстатка
+					ТОГДА МодельСкладскогоОстатка.УровеньНеснижаемогоОстатка
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК УровеньНеснижаемогоОстаткаДекада,
+	НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, КВАРТАЛ) КАК Квартал,
+	ВЫБОР
+		КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, КВАРТАЛ) &lt; &amp;НачалоПериода
+			ТОГДА ВЫБОР
+					КОГДА МодельСкладскогоОстатка.ДатаОстатка = &amp;НачалоПериода
+						ТОГДА МодельСкладскогоОстатка.ПрогнозСкладскогоОстатка
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, КВАРТАЛ) = МодельСкладскогоОстатка.ДатаОстатка
+					ТОГДА МодельСкладскогоОстатка.ПрогнозСкладскогоОстатка
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК ПрогнозСкладскогоОстаткаКвартал,
+	ВЫБОР
+		КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, КВАРТАЛ) &lt; &amp;НачалоПериода
+			ТОГДА ВЫБОР
+					КОГДА МодельСкладскогоОстатка.ДатаОстатка = &amp;НачалоПериода
+						ТОГДА МодельСкладскогоОстатка.УровеньНеснижаемогоОстатка
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, КВАРТАЛ) = МодельСкладскогоОстатка.ДатаОстатка
+					ТОГДА МодельСкладскогоОстатка.УровеньНеснижаемогоОстатка
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК УровеньНеснижаемогоОстаткаКвартал,
+	НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ПОЛУГОДИЕ) КАК Полугодие,
+	ВЫБОР
+		КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ПОЛУГОДИЕ) &lt; &amp;НачалоПериода
+			ТОГДА ВЫБОР
+					КОГДА МодельСкладскогоОстатка.ДатаОстатка = &amp;НачалоПериода
+						ТОГДА МодельСкладскогоОстатка.ПрогнозСкладскогоОстатка
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ПОЛУГОДИЕ) = МодельСкладскогоОстатка.ДатаОстатка
+					ТОГДА МодельСкладскогоОстатка.ПрогнозСкладскогоОстатка
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК ПрогнозСкладскогоОстаткаПолугодие,
+	ВЫБОР
+		КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ПОЛУГОДИЕ) &lt; &amp;НачалоПериода
+			ТОГДА ВЫБОР
+					КОГДА МодельСкладскогоОстатка.ДатаОстатка = &amp;НачалоПериода
+						ТОГДА МодельСкладскогоОстатка.УровеньНеснижаемогоОстатка
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ПОЛУГОДИЕ) = МодельСкладскогоОстатка.ДатаОстатка
+					ТОГДА МодельСкладскогоОстатка.УровеньНеснижаемогоОстатка
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК УровеньНеснижаемогоОстаткаПолугодие,
+	НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ГОД) КАК Год,
+	ВЫБОР
+		КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ГОД) &lt; &amp;НачалоПериода
+			ТОГДА ВЫБОР
+					КОГДА МодельСкладскогоОстатка.ДатаОстатка = &amp;НачалоПериода
+						ТОГДА МодельСкладскогоОстатка.ПрогнозСкладскогоОстатка
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ГОД) = МодельСкладскогоОстатка.ДатаОстатка
+					ТОГДА МодельСкладскогоОстатка.ПрогнозСкладскогоОстатка
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК ПрогнозСкладскогоОстаткаГод,
+	ВЫБОР
+		КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ГОД) &lt; &amp;НачалоПериода
+			ТОГДА ВЫБОР
+					КОГДА МодельСкладскогоОстатка.ДатаОстатка = &amp;НачалоПериода
+						ТОГДА МодельСкладскогоОстатка.УровеньНеснижаемогоОстатка
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НАЧАЛОПЕРИОДА(МодельСкладскогоОстатка.ДатаОстатка, ГОД) = МодельСкладскогоОстатка.ДатаОстатка
+					ТОГДА МодельСкладскогоОстатка.УровеньНеснижаемогоОстатка
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК УровеньНеснижаемогоОстаткаГод,
+	МодельСкладскогоОстатка.СтраховойЗапас
+ИЗ
+	МодельСкладскогоОстатка КАК МодельСкладскогоОстатка</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ПрогнозПродажНеделя</dataPath>
+		<expression>ПрогнозПродаж</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Прогноз продаж</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПрогнозПродажДекада</dataPath>
+		<expression>ПрогнозПродаж</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Прогноз продаж</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПрогнозПродажМесяц</dataPath>
+		<expression>ПрогнозПродаж</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Прогноз продаж</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПрогнозПродажКвартал</dataPath>
+		<expression>ПрогнозПродаж</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Прогноз продаж</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПрогнозПродажПолугодие</dataPath>
+		<expression>ПрогнозПродаж</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Прогноз продаж</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПрогнозПродажГод</dataPath>
+		<expression>ПрогнозПродаж</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Прогноз продаж</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПланПроизводстваНеделя</dataPath>
+		<expression>ПланПроизводства</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>План производства</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПланПроизводстваДекада</dataPath>
+		<expression>ПланПроизводства</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>План производства</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПланПроизводстваМесяц</dataPath>
+		<expression>ПланПроизводства</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>План производства</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПланПроизводстваКвартал</dataPath>
+		<expression>ПланПроизводства</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>План производства</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПланПроизводстваПолугодие</dataPath>
+		<expression>ПланПроизводства</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>План производства</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПланПроизводстваГод</dataPath>
+		<expression>ПланПроизводства</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>План производства</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>ПланПроизводства</dataPath>
+		<expression>Максимум(ПланПроизводства)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозПродаж</dataPath>
+		<expression>Максимум(ПрогнозПродаж)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозСкладскогоОстатка</dataPath>
+		<expression>Максимум(ПрогнозСкладскогоОстатка)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УровеньНеснижаемогоОстатка</dataPath>
+		<expression>Максимум(УровеньНеснижаемогоОстатка)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозСкладскогоОстаткаМесяц</dataPath>
+		<expression>Сумма(ПрогнозСкладскогоОстаткаМесяц)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозСкладскогоОстаткаГод</dataPath>
+		<expression>Сумма(ПрогнозСкладскогоОстаткаГод)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозСкладскогоОстаткаДекада</dataPath>
+		<expression>Сумма(ПрогнозСкладскогоОстаткаДекада)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозСкладскогоОстаткаКвартал</dataPath>
+		<expression>Сумма(ПрогнозСкладскогоОстаткаКвартал)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозСкладскогоОстаткаНеделя</dataPath>
+		<expression>Сумма(ПрогнозСкладскогоОстаткаНеделя)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозСкладскогоОстаткаПолугодие</dataPath>
+		<expression>Сумма(ПрогнозСкладскогоОстаткаПолугодие)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УровеньНеснижаемогоОстаткаГод</dataPath>
+		<expression>Сумма(УровеньНеснижаемогоОстаткаГод)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УровеньНеснижаемогоОстаткаДекада</dataPath>
+		<expression>Сумма(УровеньНеснижаемогоОстаткаДекада)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УровеньНеснижаемогоОстаткаКвартал</dataPath>
+		<expression>Сумма(УровеньНеснижаемогоОстаткаКвартал)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УровеньНеснижаемогоОстаткаМесяц</dataPath>
+		<expression>Сумма(УровеньНеснижаемогоОстаткаМесяц)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УровеньНеснижаемогоОстаткаНеделя</dataPath>
+		<expression>Сумма(УровеньНеснижаемогоОстаткаНеделя)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УровеньНеснижаемогоОстаткаПолугодие</dataPath>
+		<expression>Сумма(УровеньНеснижаемогоОстаткаПолугодие)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозПродажГод</dataPath>
+		<expression>Сумма(ПрогнозПродажГод)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозПродажДекада</dataPath>
+		<expression>Сумма(ПрогнозПродажДекада)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозПродажКвартал</dataPath>
+		<expression>Сумма(ПрогнозПродажКвартал)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозПродажМесяц</dataPath>
+		<expression>Сумма(ПрогнозПродажМесяц)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозПродажНеделя</dataPath>
+		<expression>Сумма(ПрогнозПродажНеделя)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПрогнозПродажПолугодие</dataPath>
+		<expression>Сумма(ПрогнозПродажПолугодие)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПланПроизводстваГод</dataPath>
+		<expression>Сумма(ПланПроизводстваГод)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПланПроизводстваДекада</dataPath>
+		<expression>Сумма(ПланПроизводстваДекада)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПланПроизводстваКвартал</dataPath>
+		<expression>Сумма(ПланПроизводстваКвартал)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПланПроизводстваМесяц</dataPath>
+		<expression>Сумма(ПланПроизводстваМесяц)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПланПроизводстваНеделя</dataPath>
+		<expression>Сумма(ПланПроизводстваНеделя)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПланПроизводстваПолугодие</dataPath>
+		<expression>Сумма(ПланПроизводстваПолугодие)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>Сценарий</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сценарий</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СценарииПланирования</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаПлана</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата плана</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>СценарийПроизводства</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сценарий производства</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СценарииПланирования</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основная</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основная</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПрогнозСкладскогоОстатка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПрогнозПродаж</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>УровеньНеснижаемогоОстатка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПланПроизводства</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>518e1ce6-2feb-4a3b-a464-02e014fb06cd</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>6e6b1f3b-6b0d-4338-aab5-56963112059f</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаПлана</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+						<v8:date>0001-01-01T00:00:00</v8:date>
+					</dcscor:value>
+					<dcsset:userSettingID>24b4c536-9095-4a82-a08e-0ad9019a1b52</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата планирования</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ДатаОстатка</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ='дд МММ'</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводства</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродаж</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстатка</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстатка</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстатка</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводства</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродаж</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстатка</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстатка</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>AndGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстатка</dcsset:left>
+								<dcsset:comparisonType>Less</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">УровеньНеснижаемогоОстатка</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстатка</dcsset:left>
+								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводства</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродаж</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстатка</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстатка</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаГод</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаДекада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаКвартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаМесяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаНеделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаПолугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаГод</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаДекада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаКвартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаМесяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаНеделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаПолугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваПолугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваНеделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваМесяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваКвартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваДекада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваГод</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажМесяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажНеделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажПолугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажКвартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажДекада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажГод</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=0</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Месяц</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ='ММММ гггг'</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаМесяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаМесяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваМесяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажМесяц</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаМесяц</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаМесяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаМесяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваМесяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажМесяц</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>AndGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаМесяц</dcsset:left>
+								<dcsset:comparisonType>Less</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">УровеньНеснижаемогоОстаткаМесяц</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаМесяц</dcsset:left>
+								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Неделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Декада</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаНеделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаНеделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваНеделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажНеделя</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаНеделя</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаНеделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаНеделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваНеделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажНеделя</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>AndGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаНеделя</dcsset:left>
+								<dcsset:comparisonType>Less</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">УровеньНеснижаемогоОстаткаНеделя</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаНеделя</dcsset:left>
+								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаГод</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаГод</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваГод</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажГод</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаГод</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаГод</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаГод</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваГод</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажГод</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>AndGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаГод</dcsset:left>
+								<dcsset:comparisonType>Less</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">УровеньНеснижаемогоОстаткаГод</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаГод</dcsset:left>
+								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаДекада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаДекада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваДекада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажДекада</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаДекада</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаДекада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаДекада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваДекада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажДекада</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>AndGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаДекада</dcsset:left>
+								<dcsset:comparisonType>Less</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">УровеньНеснижаемогоОстаткаДекада</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаДекада</dcsset:left>
+								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаКвартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаКвартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваКвартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажКвартал</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаКвартал</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаКвартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаКвартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваКвартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажКвартал</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>AndGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаКвартал</dcsset:left>
+								<dcsset:comparisonType>Less</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">УровеньНеснижаемогоОстаткаКвартал</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаКвартал</dcsset:left>
+								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаПолугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаПолугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваПолугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажПолугодие</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаПолугодие</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПрогнозСкладскогоОстаткаПолугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>УровеньНеснижаемогоОстаткаПолугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПланПроизводстваПолугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПрогнозПродажПолугодие</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>AndGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаПолугодие</dcsset:left>
+								<dcsset:comparisonType>Less</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">УровеньНеснижаемогоОстаткаПолугодие</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ПрогнозСкладскогоОстаткаПолугодие</dcsset:left>
+								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Год</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=гггг</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Квартал</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ='к "квартал"  гггг'</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ТипЗаголовкаПолей</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionFieldsTitleType">Short</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ДатаОстатка</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ДатаОстатка</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозСкладскогоОстатка</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозПродаж</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>УровеньНеснижаемогоОстатка</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПланПроизводства</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Неделя</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Неделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозСкладскогоОстаткаНеделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозПродажНеделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>УровеньНеснижаемогоОстаткаНеделя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПланПроизводстваНеделя</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Декада</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Декада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозСкладскогоОстаткаДекада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозПродажДекада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>УровеньНеснижаемогоОстаткаДекада</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПланПроизводстваДекада</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Месяц</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Месяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозСкладскогоОстаткаМесяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозПродажМесяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>УровеньНеснижаемогоОстаткаМесяц</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПланПроизводстваМесяц</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Квартал</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Квартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозСкладскогоОстаткаКвартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозПродажКвартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>УровеньНеснижаемогоОстаткаКвартал</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПланПроизводстваКвартал</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Полугодие</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Полугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозСкладскогоОстаткаПолугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозПродажПолугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>УровеньНеснижаемогоОстаткаПолугодие</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПланПроизводстваПолугодие</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Год</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Год</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозСкладскогоОстаткаГод</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПрогнозПродажГод</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>УровеньНеснижаемогоОстаткаГод</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПланПроизводстваГод</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Номенклатура</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СтраховойЗапас</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a541febb-db0b-4b21-be2c-677daebda537">
+  <producedTypes>
+    <objectType typeId="e77a41c3-eca6-44aa-85cc-f188165015dd" valueTypeId="97f2b8b4-0753-47fe-a51f-37036f8c2975"/>
+    <refType typeId="67e952d8-c694-4237-98d4-948020588410" valueTypeId="b1774a9a-9207-493d-977a-5942d46975a6"/>
+    <selectionType typeId="1f3b9e98-db2a-4c19-8ba7-627ff7b72198" valueTypeId="ed9a8b9b-250d-4485-99e7-7b197e1fa92e"/>
+    <listType typeId="b6c41073-515e-4809-9dca-af2371fe66f5" valueTypeId="55c2d3d0-8bfb-4007-af92-84dfe2b24851"/>
+    <managerType typeId="11b8ad65-7812-422c-ace3-0f75a81786be" valueTypeId="f8e549dd-bb78-4e06-bf58-76cac5100804"/>
+  </producedTypes>
+  <name>УведомлениеОКонтролируемыхСделках</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уведомление о контролируемых сделках</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УведомлениеОКонтролируемыхСделках.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Уведомления о контролируемых сделках</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УведомлениеОКонтролируемыхСделках.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.УведомлениеОКонтролируемыхСделках.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.УведомлениеОКонтролируемыхСделках.Form.ФормаВыбора</defaultChoiceForm>
+  <posting>Deny</posting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <sequenceFilling>AutoFillOff</sequenceFilling>
+  <registerRecords>AccumulationRegister.КонтролируемыеСделкиОрганизаций</registerRecords>
+  <attributes uuid="46e3a0b4-3118-4a5b-9da8-ff61c91a4372">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cf97d8c2-c7b8-44b6-92ab-af0d31134cfd">
+    <name>ОтчетныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчетный год</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="763f3d2d-7737-4085-8b50-2ccbc67604a4">
+    <name>НомерКорректировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер корректировки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f89180c6-8a34-42b2-94c5-ff982c85e067">
+    <name>ДатаФормированияСпискаСделок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата формирования списка сделок</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="70969ade-9ce8-4b47-af67-38aada644825">
+    <name>ДатаЗаполненияУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата заполнения уведомления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="21bb0fe3-5059-417e-94eb-1d46bdd267e6">
+    <name>КодМестаПредставления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код места представления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4400310a-2221-4136-bb29-f0dddda5b6db">
+    <name>ГруппироватьСделкиСОдинаковойЦеной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группировать сделки с одинаковой ценой</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="33b48243-c4c7-4b7d-a03e-0415a64db2bb">
+    <name>КодФормыРеорганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код формы реорганизации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="35023e37-1715-4556-ac15-1d734fb34f2d">
+    <name>ИННРеорганизованнойОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН реорганизованной организации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6250aaef-d880-49d4-9c5a-ecd7ad0f5b4a">
+    <name>КППРеорганизованнойОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>КППРеорганизованной организации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="7d7071e3-22e3-48cc-a622-ce829eddd0d2">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fe7404c4-5f0b-4c2b-98cf-e98126ed3ca1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2b39bdce-01bf-469c-bf3a-2a1613b6b7a7">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3cc72079-017c-44cc-845c-41406a516995">
+    <name>НастройкаПараметровСохраненияРегламентированногоОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка параметров сохранения регламентированного отчета</value>
+    </synonym>
+    <comment>Выбор дисковода или каталога для сохранение результатов выгрузки</comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dd2b5937-74a7-4bfc-882e-7738eb65ac7b">
+    <name>ФормаПечатиУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма печати уведомления</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cdc855ef-3e5d-4c83-b7ca-4c075ed1adf4">
+    <name>НастройкиЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки заполнения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="873cdb43-afea-4090-932b-4e64f47031fb">
+    <name>СправкаОПодготовкеУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о подготовке уведомления</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="546710e4-6a36-4a95-bb0b-e51d744ca8da">
+    <name>СтруктураXML501</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структура XML 5.01</value>
+    </synonym>
+  </templates>
+  <templates uuid="0e0610af-f5a0-4a50-ad7a-a40eaa6ad43a">
+    <name>Страница1А</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страница1 А</value>
+    </synonym>
+  </templates>
+  <templates uuid="f7460ea8-405c-4342-83a7-1b79737bf224">
+    <name>Страница1Б</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страница1 Б</value>
+    </synonym>
+  </templates>
+  <templates uuid="63bbe4d2-5656-4739-8112-b3fd2f318353">
+    <name>Раздел2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел2</value>
+    </synonym>
+  </templates>
+  <templates uuid="48541732-c647-448a-bb37-3719c15d830b">
+    <name>Раздел3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел3</value>
+    </synonym>
+  </templates>
+  <templates uuid="1c134077-7392-4a5d-929b-7b916aca3a58">
+    <name>Лист1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лист1</value>
+    </synonym>
+  </templates>
+  <templates uuid="da2f75e9-c4a7-4eed-b024-e57faebcd3e6">
+    <name>Лист2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лист2</value>
+    </synonym>
+  </templates>
+  <commands uuid="e55657a1-f912-4c4e-bd9a-6deb527d2f06">
+    <name>ПечатьУведомленияОКонтролируемыхСделках</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать уведомления о контролируемых сделках</value>
+    </synonym>
+    <group>CommandGroup.Печать</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

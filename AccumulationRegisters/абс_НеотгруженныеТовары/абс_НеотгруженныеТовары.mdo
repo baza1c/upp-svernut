@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f166d88-ca29-4782-9f2b-2f548e79a77e">
+  <producedTypes>
+    <selectionType typeId="35bda1c3-fd81-4e71-968e-1ef783a90149" valueTypeId="85aa562a-6b2f-4d93-98e9-ef0184d3216f"/>
+    <listType typeId="5c98b377-9ddc-40b3-a733-2bee5aaf9c96" valueTypeId="c9728447-87de-4ca8-9476-eb0e6aeae113"/>
+    <managerType typeId="b7c2aa87-49ff-475c-93b8-ffc47a75b94e" valueTypeId="1c06abfc-e200-40b8-97c9-df69699e1053"/>
+    <recordSetType typeId="2e7d03e8-7cce-4210-a3e9-f4c23203fb6d" valueTypeId="325cdc95-ad3b-4882-a590-cb7f42589004"/>
+    <recordKeyType typeId="6ea86e40-ad68-4ea0-b70a-e14c1d030928" valueTypeId="e019587e-4f16-447d-a675-61bb95a24f06"/>
+    <recordType typeId="644f2ac3-5977-4de3-bfad-480558b9b893" valueTypeId="98dd5b82-545f-40f2-83b7-10eeb16eaffd"/>
+  </producedTypes>
+  <name>абс_НеотгруженныеТовары</name>
+  <synonym>
+    <key>ru</key>
+    <value>Неотгруженные товары (АБС)</value>
+  </synonym>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="923cab23-c332-4480-acd2-4708665ac2f2">
+    <name>КоличествоНеотгружено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество неотгружено</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="11c224a4-bba0-43bf-999f-f8ee7c4793fa">
+    <name>СтоимостьНеотгружено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость неотгружено</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="9191d9bc-3a04-4300-969c-d24bcd00d50b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="c8f36a20-3b74-4ccf-a038-987c169981a6">
+    <name>ЗаказПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаказПокупателя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="5fe2ec24-cb94-4a44-b4c9-e96f0e4f6e15">
+    <name>ДокументОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ отгрузки</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f4be255b-e50d-44bc-bf74-171442b1667b">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2de5c782-407a-468c-9720-7571ccf5f22e">
+    <name>ПричинаНеотгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина неотгрузки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.абс_ПричиныНеотгрузки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="fa5582bb-9614-4ade-b0df-70de15760395">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЕдиницыИзмерения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ab60e4d5-56df-4267-8090-545547db11a3">
+    <name>РасшифровкаПричиныНеотгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка причины неотгрузки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_РасшифровкаПричиныНеотгрузки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

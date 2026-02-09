@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="668d5015-9d01-4421-be69-bd70b50d94b3">
+  <producedTypes>
+    <selectionType typeId="d6b9b2aa-3d23-4aeb-af38-36b34b45e1db" valueTypeId="42921522-5150-4fbf-81c8-6c582001f3dd"/>
+    <listType typeId="0e34c5f8-dece-4f3c-a847-7d0dc6ec8bd4" valueTypeId="cc5c2d3d-050d-44b5-ac68-10c6b8c0acd6"/>
+    <managerType typeId="61da6553-f60b-4763-bcd7-b014809ebc66" valueTypeId="caaaf886-f345-4701-a36d-6aab43ae73d2"/>
+    <recordSetType typeId="4f23ad14-f7a7-42e1-b8f5-df019a569bbd" valueTypeId="34b58db3-ed76-4bb8-b6dd-1af8e312f11f"/>
+    <recordKeyType typeId="3a2ba25d-b895-42a8-8119-5435aa59b817" valueTypeId="a750c416-aa6c-43a4-a401-4ec2335aec01"/>
+    <recordType typeId="9279b5c3-4244-48c6-95d4-db0492be3f0c" valueTypeId="ffa1b55d-7dca-4394-904f-350f354618d3"/>
+    <recordManagerType typeId="4239f354-0214-4d3a-9607-2e0015257ceb" valueTypeId="f76d075c-621c-482b-97c3-e7c83cfe1b88"/>
+  </producedTypes>
+  <name>СведенияОбОрганизацииДляКонтролируемыхСделок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения об организации (для контролируемых сделок)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СведенияОбОрганизацииДляКонтролируемыхСделок.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СведенияОбОрганизацииДляКонтролируемыхСделок.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c4d2f703-7eb2-4a04-8a84-dca46af80dcc">
+    <name>ЯвляетсяПлательщикомНДПИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Является плательщиком НДПИ по процентной ставке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9f227113-7327-4775-ace1-ba662b84a42c">
+    <name>ЗарегистрированВОЭЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зарегистрирован в особой экономической зоне</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6d1a5704-d4d7-4d2e-bc58-4908eb707abd">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="40d56f96-28db-4c80-b635-2aa113570fe2">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a5ae398f-ec3f-41ff-8263-11e1a1d1494d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

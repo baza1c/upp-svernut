@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e618aca1-4985-4575-b787-b0f30ca438e6">
+  <producedTypes>
+    <selectionType typeId="e10121f5-9c4a-4f36-93a5-2072dafa6d27" valueTypeId="4d9ba753-f6f5-4e15-b933-5ac46311d12f"/>
+    <listType typeId="ace2757f-42e9-4b67-92d4-4ad695b6c8fc" valueTypeId="9bebc6c3-7020-4ee9-8964-b6dd37a72b8f"/>
+    <managerType typeId="c78b1b2b-f653-43fb-988f-2497efc1afd2" valueTypeId="18254e6f-d9b0-452f-958d-43d739bc3fc3"/>
+    <recordSetType typeId="fe1d9b1f-2f94-42cf-aca9-9428171aa81c" valueTypeId="f2864659-778c-4788-90dd-c044bf92929e"/>
+    <recordKeyType typeId="b77aee80-3884-41cd-ad6e-40cb2b7d8a59" valueTypeId="cbe5f9d1-bf58-467c-95f9-e1a7ef913d91"/>
+    <recordType typeId="efa60e9d-2362-430e-ac01-09629bea8cd2" valueTypeId="96955d7f-636e-438c-9e90-b5ba7dcb40c2"/>
+    <recordManagerType typeId="1fe80299-de48-46f5-a364-6a12729b7d1b" valueTypeId="343deb46-cedc-4dd1-8c61-9d3078642bea"/>
+  </producedTypes>
+  <name>абс_НастройкиОповещения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки оповещения</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="966eae86-7597-48f3-862e-78b6b2a1c6d7">
+    <name>Действует</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действует</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c9449fbe-5593-473e-8e9f-280727a19082">
+    <name>АдресЭлектроннойПочты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес электронной почты</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <dimensions uuid="66b9831f-3b61-48a4-a645-04fd61f52ca2">
+    <name>ТипОповещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип оповещения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_ТипыОповещений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="81401ba4-8104-4cc6-bde7-d93a99c0cd1c">
+  <producedTypes>
+    <objectType typeId="cb998279-d441-4db1-9f87-3fdb9f30f475" valueTypeId="61ef3bc0-dc11-4a6f-8829-8b83f5bfb8fe"/>
+    <refType typeId="714e1714-ee9e-402c-bab2-b38dcf7b7c95" valueTypeId="2f8c615f-6e7e-43b7-8f9c-1b3372c7a7e3"/>
+    <selectionType typeId="926d6e81-8915-45bd-b13b-9e2634e8e4f8" valueTypeId="d3a1ea9e-396e-44cb-8573-160ef8c0fc55"/>
+    <listType typeId="9667c0fc-e028-4e1c-a00b-246567341456" valueTypeId="7f75ba15-ab2b-4e03-999a-7d797ebac376"/>
+    <managerType typeId="0840024c-17fe-47d8-9817-0a298bc32084" valueTypeId="88cb1f5d-80b3-49d9-b4cc-c21d94b49b79"/>
+  </producedTypes>
+  <name>абс_УстановкаЗначенийСвойствНоменклатурыКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка значений свойств номенклатуры контрагентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.абс_УстановкаЗначенийСвойствНоменклатурыКонтрагентов.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.абс_УстановкаЗначенийСвойствНоменклатурыКонтрагентов.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.абс_УстановкаЗначенийСвойствНоменклатурыКонтрагентов.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.абс_ЗначенияСвойствНоменклатурыКонтрагентов</registerRecords>
+  <attributes uuid="326639b3-ba91-431d-bffd-0f3d3be414de">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2304d8c5-226f-43b2-a5a9-7e025982c396">
+    <name>Свойство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свойство</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.СвойстваОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6f92dec8-38d3-4619-b3a9-f2f90f4ad2e2">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9d19f025-f136-427f-9a87-022c4c268395">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="9ac18daf-129e-44aa-9bb2-8595322521fe">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cd142778-5908-4bc1-b47b-14560255dc03">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="c01aadc1-1301-4e6b-80bb-0e8f549882b4">
+    <producedTypes>
+      <objectType typeId="1acf0a89-4789-461d-a6b5-e4eddf3bb213" valueTypeId="d5273e45-3272-474b-bb49-d58a78adbcab"/>
+      <rowType typeId="b55fe3b0-7622-4702-9893-f93e57844c5d" valueTypeId="5571f80e-73ba-4ea3-89ba-0784306c819b"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <attributes uuid="5658a4a0-b9a2-40be-bc22-77cf30409247">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9e268b03-b1a2-43f9-aec4-e7546ba62816">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.СвойстваОбъектов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c3ada968-5b05-4f7b-858d-09e126ee6965">
+      <name>ЗначениеСвойства</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение свойства</value>
+      </synonym>
+      <type>
+        <types>Characteristic.СвойстваОбъектов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.абс_УстановкаЗначенийСвойствНоменклатурыКонтрагентов.TabularSection.Товары.Attribute.Свойство</field>
+      </choiceParameterLinks>
+      <linkByType>
+        <linkItem>1</linkItem>
+        <field>Document.абс_УстановкаЗначенийСвойствНоменклатурыКонтрагентов.TabularSection.Товары.Attribute.Свойство</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказПокупателя</dataPath>
+			<field>ЗаказПокупателя</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Расхождения</dataPath>
+			<field>Расхождения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СерияНоменклатуры</dataPath>
+			<field>СерияНоменклатуры</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЦен</dataPath>
+			<field>ТипЦен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаЗаказа</dataPath>
+			<field>ЦенаЗаказа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаПоТипуЦен</dataPath>
+			<field>ЦенаПоТипуЦен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаСУчетомСкидки</dataPath>
+			<field>ЦенаСУчетомСкидки</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЗаказПокупателя.Контрагент,
+	ЗаказПокупателяТовары.Ссылка КАК ЗаказПокупателя,
+	ЗаказПокупателяТовары.Номенклатура,
+	ЗаказПокупателяТовары.СерияНоменклатуры,
+	ЗаказПокупателяТовары.Количество,
+	ЗаказПокупателяТовары.Цена,
+	ЗаказПокупателяТовары.абс_СуммаАвтоматическойСкидки КАК СуммаАвтоматическойСкидки,
+	ЗаказПокупателяТовары.абс_СуммаРучнойСкидки КАК СуммаРучнойСкидки,
+	ЗаказПокупателяТовары.Лео_ЦенаСУчетомСкидки КАК ЦенаСУчетомСкидки,
+	ЗаказПокупателя.ТипЦен
+ПОМЕСТИТЬ ВТ_заказы
+ИЗ
+	Документ.ЗаказПокупателя.Товары КАК ЗаказПокупателяТовары
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЗаказПокупателя КАК ЗаказПокупателя
+		ПО ЗаказПокупателяТовары.Ссылка = ЗаказПокупателя.Ссылка
+ГДЕ
+	ЗаказПокупателя.Дата МЕЖДУ &amp;ДатаС И &amp;ДатаПо
+	И ЗаказПокупателя.Проведен = ИСТИНА
+	И ЗаказПокупателя.абс_Статус = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыОтгрузки.Отгружен)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВложенныйЗапрос.ЗаказПокупателяДата,
+	ВложенныйЗапрос.Номенклатура,
+	ВложенныйЗапрос.ТипЦен,
+	ЦеныНоменклатуры.Цена
+ПОМЕСТИТЬ ВТ_СрезЦенНаДатуЗаказа
+ИЗ
+	(ВЫБРАТЬ
+		ВложенныйЗапрос.ЗаказПокупателяДата КАК ЗаказПокупателяДата,
+		ВложенныйЗапрос.Номенклатура КАК Номенклатура,
+		ВложенныйЗапрос.ТипЦен КАК ТипЦен,
+		МИНИМУМ(ЦеныНоменклатуры.Период) КАК Период
+	ИЗ
+		(ВЫБРАТЬ
+			ВТ_заказы.ЗаказПокупателя.Дата КАК ЗаказПокупателяДата,
+			ВТ_заказы.Номенклатура КАК Номенклатура,
+			ВТ_заказы.ТипЦен КАК ТипЦен
+		ИЗ
+			ВТ_заказы КАК ВТ_заказы
+		
+		СГРУППИРОВАТЬ ПО
+			ВТ_заказы.ЗаказПокупателя.Дата,
+			ВТ_заказы.Номенклатура,
+			ВТ_заказы.ТипЦен) КАК ВложенныйЗапрос
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры КАК ЦеныНоменклатуры
+			ПО ВложенныйЗапрос.Номенклатура = ЦеныНоменклатуры.Номенклатура
+				И ВложенныйЗапрос.ТипЦен = ЦеныНоменклатуры.ТипЦен
+				И ВложенныйЗапрос.ЗаказПокупателяДата &gt;= ЦеныНоменклатуры.Период
+	
+	СГРУППИРОВАТЬ ПО
+		ВложенныйЗапрос.Номенклатура,
+		ВложенныйЗапрос.ЗаказПокупателяДата,
+		ВложенныйЗапрос.ТипЦен
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		ВложенныйЗапрос.ЗаказПокупателяДата,
+		ВложенныйЗапрос.Номенклатура,
+		ВложенныйЗапрос.ТипЦен.БазовыйТипЦен,
+		МИНИМУМ(ЦеныНоменклатуры.Период)
+	ИЗ
+		(ВЫБРАТЬ
+			ВТ_заказы.ЗаказПокупателя.Дата КАК ЗаказПокупателяДата,
+			ВТ_заказы.Номенклатура КАК Номенклатура,
+			ВТ_заказы.ТипЦен КАК ТипЦен
+		ИЗ
+			ВТ_заказы КАК ВТ_заказы
+		
+		СГРУППИРОВАТЬ ПО
+			ВТ_заказы.ЗаказПокупателя.Дата,
+			ВТ_заказы.Номенклатура,
+			ВТ_заказы.ТипЦен) КАК ВложенныйЗапрос
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры КАК ЦеныНоменклатуры
+			ПО ВложенныйЗапрос.Номенклатура = ЦеныНоменклатуры.Номенклатура
+				И ВложенныйЗапрос.ЗаказПокупателяДата &gt;= ЦеныНоменклатуры.Период
+				И ВложенныйЗапрос.ТипЦен.БазовыйТипЦен = ЦеныНоменклатуры.ТипЦен
+	ГДЕ
+		ВложенныйЗапрос.ТипЦен.Рассчитывается = ИСТИНА
+	
+	СГРУППИРОВАТЬ ПО
+		ВложенныйЗапрос.Номенклатура,
+		ВложенныйЗапрос.ЗаказПокупателяДата,
+		ВложенныйЗапрос.ТипЦен.БазовыйТипЦен) КАК ВложенныйЗапрос
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры КАК ЦеныНоменклатуры
+		ПО ВложенныйЗапрос.Номенклатура = ЦеныНоменклатуры.Номенклатура
+			И ВложенныйЗапрос.ТипЦен = ЦеныНоменклатуры.ТипЦен
+			И ВложенныйЗапрос.Период = ЦеныНоменклатуры.Период
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_СрезЦенНаДатуЗаказа.ЗаказПокупателяДата,
+	ВТ_СрезЦенНаДатуЗаказа.Номенклатура,
+	ВТ_СрезЦенНаДатуЗаказа.ТипЦен,
+	ВТ_СрезЦенНаДатуЗаказа.Цена
+ПОМЕСТИТЬ ВТ_ЦенИтог
+ИЗ
+	ВТ_СрезЦенНаДатуЗаказа КАК ВТ_СрезЦенНаДатуЗаказа
+ГДЕ
+	ВТ_СрезЦенНаДатуЗаказа.ТипЦен.Рассчитывается = ЛОЖЬ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВложенныйЗапрос.ЗаказПокупателяДата,
+	ВложенныйЗапрос.Номенклатура,
+	ВложенныйЗапрос.ТипЦен,
+	ВЫБОР
+		КОГДА ВложенныйЗапрос.ТипЦенПорядокОкругления = ЗНАЧЕНИЕ(перечисление.ПорядкиОкругления.Окр0_01)
+			ТОГДА ВЫБОР
+					КОГДА ВложенныйЗапрос.ТипЦенСпособРасчетаЦены = ЗНАЧЕНИЕ(Перечисление.СпособыРасчетаЦены.ПоПроцентнойНаценкеНаБазовыйТип)
+						ТОГДА ВЫРАЗИТЬ(ЕСТЬNULL(ВТ_СрезЦенНаДатуЗаказа.Цена, 0) * (1 + ВложенныйЗапрос.ТипЦенПроцентСкидкиНаценки / 100) КАК ЧИСЛО(15, 2))
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА ВложенныйЗапрос.ТипЦенСпособРасчетаЦены = ЗНАЧЕНИЕ(Перечисление.СпособыРасчетаЦены.ПоПроцентнойНаценкеНаБазовыйТип)
+					ТОГДА ВЫРАЗИТЬ(ЕСТЬNULL(ВТ_СрезЦенНаДатуЗаказа.Цена, 0) * (1 + ВложенныйЗапрос.ТипЦенПроцентСкидкиНаценки / 100) КАК ЧИСЛО(15, 1))
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ
+ИЗ
+	(ВЫБРАТЬ
+		ВТ_СрезЦенНаДатуЗаказа.ЗаказПокупателяДата КАК ЗаказПокупателяДата,
+		ВТ_СрезЦенНаДатуЗаказа.Номенклатура КАК Номенклатура,
+		ВТ_СрезЦенНаДатуЗаказа.ТипЦен КАК ТипЦен,
+		ВТ_СрезЦенНаДатуЗаказа.ТипЦен.БазовыйТипЦен КАК ТипЦенБазовыйТипЦен,
+		ВТ_СрезЦенНаДатуЗаказа.ТипЦен.ПроцентСкидкиНаценки КАК ТипЦенПроцентСкидкиНаценки,
+		ВТ_СрезЦенНаДатуЗаказа.ТипЦен.ПорядокОкругления КАК ТипЦенПорядокОкругления,
+		ВТ_СрезЦенНаДатуЗаказа.ТипЦен.ОкруглятьВБольшуюСторону КАК ТипЦенОкруглятьВБольшуюСторону,
+		ВТ_СрезЦенНаДатуЗаказа.ТипЦен.СпособРасчетаЦены КАК ТипЦенСпособРасчетаЦены
+	ИЗ
+		ВТ_СрезЦенНаДатуЗаказа КАК ВТ_СрезЦенНаДатуЗаказа
+	ГДЕ
+		ВТ_СрезЦенНаДатуЗаказа.ТипЦен.Рассчитывается = ИСТИНА) КАК ВложенныйЗапрос
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СрезЦенНаДатуЗаказа КАК ВТ_СрезЦенНаДатуЗаказа
+		ПО ВложенныйЗапрос.ТипЦенБазовыйТипЦен = ВТ_СрезЦенНаДатуЗаказа.ТипЦен
+			И ВложенныйЗапрос.ЗаказПокупателяДата = ВТ_СрезЦенНаДатуЗаказа.ЗаказПокупателяДата
+			И ВложенныйЗапрос.Номенклатура = ВТ_СрезЦенНаДатуЗаказа.Номенклатура
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_заказы.Контрагент,
+	ВТ_заказы.ЗаказПокупателя,
+	ВТ_заказы.Номенклатура,
+	ВТ_заказы.СерияНоменклатуры,
+	ВТ_заказы.Количество,
+	ВТ_заказы.Цена КАК ЦенаЗаказа,
+	ВТ_заказы.ЦенаСУчетомСкидки,
+	ВТ_заказы.ТипЦен,
+	ВложенныйЗапрос.Цена КАК ЦенаПоТипуЦен,
+	ВЫБОР
+		КОГДА ВТ_заказы.Цена = ЕСТЬNULL(ВложенныйЗапрос.Цена, 0)
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ КАК Расхождения
+ИЗ
+	ВТ_заказы КАК ВТ_заказы
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ВТ_ЦенИтог.ЗаказПокупателяДата КАК ЗаказПокупателяДата,
+			ВТ_ЦенИтог.Номенклатура КАК Номенклатура,
+			ВТ_ЦенИтог.ТипЦен КАК ТипЦен,
+			МАКСИМУМ(ВТ_ЦенИтог.Цена) КАК Цена
+		ИЗ
+			ВТ_ЦенИтог КАК ВТ_ЦенИтог
+		
+		СГРУППИРОВАТЬ ПО
+			ВТ_ЦенИтог.ЗаказПокупателяДата,
+			ВТ_ЦенИтог.Номенклатура,
+			ВТ_ЦенИтог.ТипЦен) КАК ВложенныйЗапрос
+		ПО ВТ_заказы.Номенклатура = ВложенныйЗапрос.Номенклатура
+			И ВТ_заказы.ТипЦен = ВложенныйЗапрос.ТипЦен
+			И ВТ_заказы.ЗаказПокупателя.Дата = ВложенныйЗапрос.ЗаказПокупателяДата</query>
+	</dataSet>
+	<parameter>
+		<name>ДатаС</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата С</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаПо</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата по</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗаказПокупателя</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Расхождения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СерияНоменклатуры</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТипЦен</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦенаЗаказа</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦенаПоТипуЦен</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦенаСУчетомСкидки</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Расхождения</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					<dcsset:userSettingID>c6d353a2-0968-43dd-932e-da6c5f917cc0</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ДатаС</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>45c56ff2-d610-4c3a-83e3-787d56a75fa8</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ДатаПо</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>91a6bdc4-b05f-4914-8735-00ab54cd826b</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ЗаказПокупателя</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Контрагент</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ЗаказПокупателя</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

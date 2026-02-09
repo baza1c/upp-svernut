@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fb55611e-4c8f-41f1-94cc-403b42e5a2f0">
+  <producedTypes>
+    <selectionType typeId="2c6c57e5-c8cb-44a0-b048-bbea1e69b334" valueTypeId="cb162950-896f-4b4f-9e09-ba2222f25808"/>
+    <listType typeId="3d3773de-0f78-4f08-a8a0-9ac41a46f75c" valueTypeId="19992ea8-beea-4135-8aeb-9772b2117ce5"/>
+    <managerType typeId="4745ea76-58a3-4d51-a28c-446af1642d52" valueTypeId="ebeadc50-22bd-4868-91a3-8f9138943ebb"/>
+    <recordSetType typeId="7ea8fe68-bbd2-4df4-a156-53c7f7b2c8dc" valueTypeId="b17ef5eb-7932-456a-ac43-61b338dc307e"/>
+    <recordKeyType typeId="cf2583c8-d56d-4495-a4b4-d4255f01ef71" valueTypeId="18d93172-c71d-4776-9019-830e10293427"/>
+    <recordType typeId="e5657639-7c9e-4e96-afe7-7b03467630f4" valueTypeId="814d6b42-f3dd-4185-8717-d7cd85314aae"/>
+    <recordManagerType typeId="b557bcdd-ca84-43e9-b2f3-c8aa4c6e0d54" valueTypeId="dfb7310e-616c-443d-a76e-a90a074809b7"/>
+  </producedTypes>
+  <name>абс_СостоянияСогласованияДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния согласования документов</value>
+  </synonym>
+  <comment>Состояния согласования документов</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.абс_СостоянияСогласованияДокументов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.абс_СостоянияСогласованияДокументов.Form.ФормаСписка</defaultListForm>
+  <auxiliaryRecordForm>InformationRegister.абс_СостоянияСогласованияДокументов.Form.ФормаЗаписиУправляемая</auxiliaryRecordForm>
+  <auxiliaryListForm>InformationRegister.абс_СостоянияСогласованияДокументов.Form.ФормаСпискаУправляемая</auxiliaryListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Состояние согласования документа</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Состояния согласования документов</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Состояния согласования документов</value>
+  </explanation>
+  <resources uuid="a009b86d-80a6-43aa-9a65-31c25a13b23c">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b9590ef3-dcc8-4b93-8cb9-487127046aa0">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="476d6279-926c-429e-afaa-e4029474f563">
+    <name>Уровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cea201d4-54f8-429b-b31f-4f743265ecd0">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.абс_МаршрутыСогласованияДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="bace5f55-b98e-4849-9cce-c84b1cc21663">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <attributes uuid="b335a104-7ec2-4e06-a811-481695ef9c63">
+    <name>ТекущийЭтап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущий этап</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="f6e06955-bbec-4387-b65c-6bd404d26e74">
+    <name>ДокументДляСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ для согласования</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Лео_ЗаявкаНаАкцию</types>
+      <types>DocumentRef.Лео_ЗаявкаНаОбразцы</types>
+      <types>DocumentRef.Лео_ЗаявкаНаЗапчасти</types>
+      <types>DocumentRef.СчетФактураПолученный</types>
+      <types>DocumentRef.абс_ВводБюджета</types>
+      <types>DocumentRef.абс_СтратегическиеЦелиПродаж</types>
+      <types>DocumentRef.ЗаявкаНаРасходованиеСредств</types>
+      <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.ПланПродаж</types>
+      <types>DocumentRef.абс_ЗаявкаНаБюджетОтделаТМ</types>
+      <types>DocumentRef.Лео_ФиксацияСкидокПоТрейдМаркетингу</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="17ec60e9-96a2-4eef-9346-32f66323e6e9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d667a8d3-8c5b-4e64-9f09-04d1e4cf24e7">
+    <name>ФормаСпискаУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка управляемая</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="82d8f5de-e704-4613-8143-74c23dbae606">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8bd4e6a6-47ac-4854-97f9-c178ba432312">
+    <name>ФормаЗаписиУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи управляемая</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed12a5e9-29e4-45c4-9e5b-1d8c08942276">
+  <producedTypes>
+    <selectionType typeId="fb08e0a5-7994-48b1-898c-5ed949426072" valueTypeId="9225ac09-e7dc-430b-a552-3b779d74e04f"/>
+    <listType typeId="0c5adcce-b545-4fee-a048-115d9ac0662f" valueTypeId="aec09ed4-e544-40af-8432-09711ab90b2a"/>
+    <managerType typeId="26fc0b35-204f-4c20-8573-afbb5cd89972" valueTypeId="0741456a-85ab-41b2-8b8f-8e7713b31a5b"/>
+    <recordSetType typeId="5de89dba-f434-4b1f-9658-c37c24f5d924" valueTypeId="1b0ec224-6c9b-424e-a2c5-201bf9490f1b"/>
+    <recordKeyType typeId="1ede0982-0cfd-40bb-95f7-58d5371b6a2e" valueTypeId="d229b8de-9962-4d72-9683-479c64e3a4ed"/>
+    <recordType typeId="6db2ec84-34e9-4fe5-91b6-e23f1449208f" valueTypeId="24f90e6d-6ed6-45f1-b593-1cbdd9f87e29"/>
+    <recordManagerType typeId="f14c931f-7f58-4f5d-8d71-dad1b6808bad" valueTypeId="1ed64fcc-f6fe-4c79-a671-318247bfe1e2"/>
+  </producedTypes>
+  <name>абс_НастройкиСогласованияДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки согласования документов</value>
+  </synonym>
+  <comment>Настройки согласования документов</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.абс_НастройкиСогласованияДокументов.Form.ФормаЗаписиУправляемая</defaultRecordForm>
+  <defaultListForm>InformationRegister.абс_НастройкиСогласованияДокументов.Form.ФормаСпискаУправляемая</defaultListForm>
+  <auxiliaryRecordForm>InformationRegister.абс_НастройкиСогласованияДокументов.Form.ФормаЗаписиУправляемая</auxiliaryRecordForm>
+  <auxiliaryListForm>InformationRegister.абс_НастройкиСогласованияДокументов.Form.ФормаСпискаУправляемая</auxiliaryListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Настройка согласования документов</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Настройка согласования документов</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Настройки согласования документов</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Настройки согласования документов</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Настройки согласования документов</value>
+  </explanation>
+  <resources uuid="cf75c9d6-b5fc-4ee7-97fc-6a1539f367e6">
+    <name>Используется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="60be2f22-b4de-4874-8c1e-5c460c215557">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0f0f7360-0713-4271-be58-28e9e899907a">
+    <name>ТипДокументаДляСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип документа для согласования</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_ТипыДокументовДляСогласования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="f01fca48-9957-4d83-99fd-d325cfd8637a">
+    <name>ФормаСпискаУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка управляемая</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9c9d4e8a-ef53-4744-8e40-d4892d7ccf2c">
+    <name>ФормаЗаписиУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи управляемая</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

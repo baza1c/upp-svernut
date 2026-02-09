@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f2fd6b85-d5b1-4733-b6e2-e874ed80e86f">
+  <producedTypes>
+    <selectionType typeId="211917b4-1994-49ef-9f61-3b396756ea0b" valueTypeId="c016b8c6-4c42-4d9c-b4b1-8a702382ebb2"/>
+    <listType typeId="06e7839c-0ff5-4c81-92bc-aa72cd04a2d3" valueTypeId="112d4c2b-106d-431e-b37d-3278c0d0d3de"/>
+    <managerType typeId="35db41c9-14d8-4538-ab4d-fba5ba418ec4" valueTypeId="3cd8a8f0-7ce0-4a68-b65f-7c4f66314bd0"/>
+    <recordSetType typeId="fc57b5f6-e28a-43dd-8291-2a0e4f95290e" valueTypeId="d4e36372-13db-49e0-806c-c34e00390b03"/>
+    <recordKeyType typeId="0e0c4ea1-2310-4964-8dc8-79c5dad00396" valueTypeId="c19130eb-dc94-4fd5-971f-e9f6adc55595"/>
+    <recordType typeId="a80ed211-122f-4c05-a8f4-071c82cec855" valueTypeId="4e07582c-8534-4498-8142-f92e79e6d334"/>
+    <recordManagerType typeId="d018449b-6c94-40f7-97f4-b95d0c8e733c" valueTypeId="40375193-96bd-474e-9425-3c259b3679a3"/>
+  </producedTypes>
+  <name>абс_ЗначенияСвойствНоменклатурыКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения свойств номенклтауры контрагентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6a970492-d8b9-4880-ab6c-94af96e2213b">
+    <name>ЗначениеСвойства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение свойства</value>
+    </synonym>
+    <type>
+      <types>Characteristic.СвойстваОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="462e09aa-8059-4943-87b1-010edb7d4636">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e00cafb9-0f71-4564-9563-ab4e0092fcf6">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a0ae204d-59d8-45f6-8e8b-4df5130f106f">
+    <name>Свойство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свойство</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.СвойстваОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

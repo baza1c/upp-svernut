@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4cb1aee7-b9c7-494c-b784-2810963c07aa">
+  <producedTypes>
+    <selectionType typeId="bce379ca-32b8-4de2-b78b-30abbc3e4355" valueTypeId="272eb9d7-46fb-471a-96b9-3990aedaba26"/>
+    <listType typeId="9910d69b-af16-4333-a304-e538186f9cd6" valueTypeId="2ea92f88-07bd-4d0c-8901-77fceab4e036"/>
+    <managerType typeId="73093a80-1ffb-462c-8bd6-bf8df29491ad" valueTypeId="384a7758-0a3f-46be-8fe1-05c930e92aa6"/>
+  </producedTypes>
+  <name>РеестрыПособийФСС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реестры пособий ФСС, заявления о возмещении</value>
+  </synonym>
+  <defaultForm>DocumentJournal.РеестрыПособийФСС.Form.ФормаСписка</defaultForm>
+  <registeredDocuments>Document.РеестрСведенийВФССОПособияхПриРожденииРебенка</registeredDocuments>
+  <registeredDocuments>Document.РеестрСведенийВФССОПособияхПоНетрудоспособности</registeredDocuments>
+  <registeredDocuments>Document.ЗаявлениеВФССОВозмещенииРасходовНаПогребение</registeredDocuments>
+  <registeredDocuments>Document.ЗаявлениеВФССНаДетейИнвалидов</registeredDocuments>
+  <registeredDocuments>Document.ОписьПособийПоСтрахованиюОтНесчастныхСлучаевИПрофзаболеваний</registeredDocuments>
+  <registeredDocuments>Document.РеестрСведенийВФССОЕжемесячныхПособияхПоУходу</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="cbc96ec9-e8bc-4ae3-be4f-95684a4fa1b5">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.РеестрСведенийВФССОПособияхПоНетрудоспособности.Attribute.Организация</references>
+    <references>Document.РеестрСведенийВФССОПособияхПриРожденииРебенка.Attribute.Организация</references>
+    <references>Document.ЗаявлениеВФССНаДетейИнвалидов.Attribute.Организация</references>
+    <references>Document.ЗаявлениеВФССОВозмещенииРасходовНаПогребение.Attribute.Организация</references>
+    <references>Document.ОписьПособийПоСтрахованиюОтНесчастныхСлучаевИПрофзаболеваний.Attribute.Организация</references>
+    <references>Document.РеестрСведенийВФССОЕжемесячныхПособияхПоУходу.Attribute.Организация</references>
+  </columns>
+  <columns uuid="2cd7fa44-85ac-4247-a480-4ea735f050e5">
+    <name>Сотрудники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники</value>
+    </synonym>
+    <references>Document.РеестрСведенийВФССОПособияхПоНетрудоспособности.Attribute.КраткийСоставДокумента</references>
+    <references>Document.РеестрСведенийВФССОПособияхПриРожденииРебенка.Attribute.КраткийСоставДокумента</references>
+    <references>Document.ЗаявлениеВФССНаДетейИнвалидов.Attribute.КраткийСоставДокумента</references>
+    <references>Document.ЗаявлениеВФССОВозмещенииРасходовНаПогребение.Attribute.КраткийСоставДокумента</references>
+    <references>Document.ОписьПособийПоСтрахованиюОтНесчастныхСлучаевИПрофзаболеваний.Attribute.КраткийСоставДокумента</references>
+    <references>Document.РеестрСведенийВФССОЕжемесячныхПособияхПоУходу.Attribute.КраткийСоставДокумента</references>
+  </columns>
+  <columns uuid="cc9bed55-d557-4923-8ff0-328f3df5c340">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.РеестрСведенийВФССОПособияхПоНетрудоспособности.Attribute.Ответственный</references>
+    <references>Document.РеестрСведенийВФССОПособияхПриРожденииРебенка.Attribute.Ответственный</references>
+    <references>Document.ЗаявлениеВФССНаДетейИнвалидов.Attribute.Ответственный</references>
+    <references>Document.ЗаявлениеВФССОВозмещенииРасходовНаПогребение.Attribute.Ответственный</references>
+    <references>Document.ОписьПособийПоСтрахованиюОтНесчастныхСлучаевИПрофзаболеваний.Attribute.Ответственный</references>
+    <references>Document.РеестрСведенийВФССОЕжемесячныхПособияхПоУходу.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="cdfe5593-b9cf-46ef-acc1-9346e0691f2b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.РеестрСведенийВФССОПособияхПоНетрудоспособности.Attribute.Комментарий</references>
+    <references>Document.РеестрСведенийВФССОПособияхПриРожденииРебенка.Attribute.Комментарий</references>
+    <references>Document.ЗаявлениеВФССНаДетейИнвалидов.Attribute.Комментарий</references>
+    <references>Document.ЗаявлениеВФССОВозмещенииРасходовНаПогребение.Attribute.Комментарий</references>
+    <references>Document.ОписьПособийПоСтрахованиюОтНесчастныхСлучаевИПрофзаболеваний.Attribute.Комментарий</references>
+    <references>Document.РеестрСведенийВФССОЕжемесячныхПособияхПоУходу.Attribute.Комментарий</references>
+  </columns>
+  <forms uuid="e58f72bb-5b3e-430a-9490-a8c08540e271">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

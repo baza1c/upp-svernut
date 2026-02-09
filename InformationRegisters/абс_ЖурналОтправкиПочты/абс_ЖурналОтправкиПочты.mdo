@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3245f8d9-3550-47ce-ba30-9e69f8f61a70">
+  <producedTypes>
+    <selectionType typeId="9f03075f-7c01-425b-8907-4718358bcc9f" valueTypeId="80943905-d078-4678-b7dd-bc878db03371"/>
+    <listType typeId="cac0d7e7-babe-48e2-9c3c-c4139d20d91c" valueTypeId="23486494-7c2f-49ae-9e0b-59bd45bd8e06"/>
+    <managerType typeId="3c892ed8-2679-420b-a2a3-d655304e4014" valueTypeId="a602c28b-9c6d-44ea-9d09-94cfc147b9aa"/>
+    <recordSetType typeId="fadd3826-d2a6-49bd-965c-bce85aede16c" valueTypeId="7bbde857-7db6-4dfc-b774-cdcf24151af3"/>
+    <recordKeyType typeId="5d37dd9a-1087-4771-8e36-d5a5721f2c2a" valueTypeId="712b0ef7-c773-4e0d-90d3-e92a2e4b20ea"/>
+    <recordType typeId="072f0681-68af-43c8-90fc-e2cc28a1ccaf" valueTypeId="06c043d4-1600-4eb1-b637-d6d420bcf555"/>
+    <recordManagerType typeId="c3c6de87-4d0b-4ab3-bc66-74226c0f440f" valueTypeId="ee4f0f32-32c3-4a08-bc03-3d3c27f9e68d"/>
+  </producedTypes>
+  <name>абс_ЖурналОтправкиПочты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал отправки почты</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="cec4fac6-42b7-4f9b-8290-aec05d153c4e">
+    <name>Отправлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="dcc94b81-1acc-4fe2-8b1d-c820e4c05ab5">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="87d7679f-806c-4a04-9076-f23136c38bab">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаказПокупателя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6d645d5f-38f7-4d1a-a962-96eea84d41c9">
+    <name>СтатусОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус отправки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_СтатусыДЗПоЗаказам</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

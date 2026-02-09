@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d410b8a8-5d01-4036-a011-7588aba2bae6">
+  <producedTypes>
+    <objectType typeId="1c644e9e-d243-4e49-aac9-b402198419c4" valueTypeId="f80a7579-6614-4b47-97b2-b077180bd783"/>
+    <managerType typeId="9367ec2a-e89e-4f81-96ea-7925bd10a95a" valueTypeId="b5bd24fb-8dfe-440f-b1f7-d51bf5704096"/>
+  </producedTypes>
+  <name>абс_МодельСкладскогоОстатка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Модель складского остатка (АБС)</value>
+  </synonym>
+  <defaultForm>Report.абс_МодельСкладскогоОстатка.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.абс_МодельСкладскогоОстатка.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="0be85e5c-fb85-4a25-97eb-f80edce2f535">
+    <name>РасширеннаяНастройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенная настройка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="aec629f3-4234-4c94-b264-a0ec28cd0964">
+    <name>ОтрицательноеКрасным</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отрицательное красным</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="08efa93c-b036-4829-bfb5-116ade29507a">
+    <name>ЗначенияНастроекПанелиПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значения настроек панели пользователя</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9a47bebb-3e62-47ab-bf7e-163ea90402ce">
+    <name>ПараметрыПанелиПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры панели пользователя</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="35be06f9-5797-4c46-bf54-c7648e26aa99">
+    <name>ПредставлениеЭлементаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление элемента отчета</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПредставленияЭлементовОтчетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="da3ac86f-85e3-47fd-b9b8-8a614a687d28">
+    <name>Расшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровки</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="7f7a2a54-0db1-4b6b-ae03-d3ce237e3825">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ed2a27e9-db8a-4cdc-8c82-72164f26615d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

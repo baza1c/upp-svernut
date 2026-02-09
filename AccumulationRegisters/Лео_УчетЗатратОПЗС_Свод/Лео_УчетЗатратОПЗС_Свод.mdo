@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4962dd5e-63d6-4d1a-8f3d-89ffbda04b18">
+  <producedTypes>
+    <selectionType typeId="a711935f-774a-46bd-846c-ab90cacab1a4" valueTypeId="cfbc7959-dcb5-4507-b2e4-bee7050dddda"/>
+    <listType typeId="90397c70-8d31-4ace-96de-b3b9cbd43fa6" valueTypeId="075a53e7-de57-45d9-859e-74da083a847f"/>
+    <managerType typeId="8cd6f164-5415-49ad-96f2-2932f1d2308c" valueTypeId="9297c219-2517-4dc5-92b9-568f6d6f23a2"/>
+    <recordSetType typeId="a094f554-56f4-446c-9237-b28d60fe018b" valueTypeId="a9568d64-c677-4ed1-9132-4d7bc7fa3612"/>
+    <recordKeyType typeId="988f507b-15e7-4197-95b5-fb68c59263ec" valueTypeId="a6fab2b5-7813-4647-8a6f-1705778efb4c"/>
+    <recordType typeId="41512907-930c-435c-9437-67dfdcc09697" valueTypeId="16bb456f-056a-4f43-8fa8-b5ab9a4743e9"/>
+  </producedTypes>
+  <name>Лео_УчетЗатратОПЗС_Свод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет затрат ОПЗС Свод (Лео)</value>
+  </synonym>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="1d0f768b-f077-4eae-8f90-8e66c81bdc36">
+    <name>КоличествоПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество план</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="65d12a60-d3dd-485d-a53f-ee3081a2fe6c">
+    <name>КоличествоФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="6986fdad-dea0-4461-9198-682e8c5f2fc2">
+    <name>ЦенаПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена план</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="e7efdec4-95f9-4ba5-8e4f-0ed8fd398e43">
+    <name>ЦенаФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="2fab2ac3-7066-425e-89b2-c38f8adc114b">
+    <name>ПФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="ce62c894-94bd-4886-8b25-da0dc610b32c">
+    <name>ПФСерия</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФСерия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="204f4d36-53ec-4e4a-8db3-deeb4ecd9c82">
+    <name>ПФОПЗС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФОПЗС</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОтчетПроизводстваЗаСмену</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="34ac0252-0e03-4fb3-b601-0c40fb344157">
+    <name>ОбъемВыпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем выпуска</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="f2fcf67a-f781-440f-b65a-93333bbcb81c">
+    <name>СпецификацияПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спецификация план</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпецификацииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="bb6306ec-ee18-4b06-8418-d5c5edffe1b9">
+    <name>СпецификацияФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спецификация факт</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпецификацииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="6a19242e-2528-4a8b-8052-856917e75c9d">
+    <name>ЗаписьЗамечания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запись замечания</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_ОПЗС_Замечания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="5c3b9e56-3b77-4178-bb75-4b1c2f846325">
+    <name>ЗаписьЗамечанияВыполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запись замечания выполнено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="d5e15543-33aa-446a-9192-cbe663c05302">
+    <name>ОПЗСКомментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОПЗСКомментарий</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_ПланФактСводКомментарий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="14f5ffe1-afe1-4cb9-8362-65ebc32ba09d">
+    <name>Лео_СводПодсветка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лео свод подсветка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_СводПодсветка</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="85d8b8ff-97f1-4b84-9b04-90e274b57b0a">
+    <name>Продукция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продукция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e2f06cdc-b7e5-4fae-87c4-59c33e10757e">
+    <name>ПродукцияСерия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продукция серия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a3e7c5c5-8567-45e6-86b4-a7f6ab694b66">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c85f4970-7d70-4c46-ba7a-507484237d09">
+    <name>СерияНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серия номенклатуры</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.СерииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

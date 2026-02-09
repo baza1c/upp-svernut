@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f49cd319-fb3c-402c-a352-330300e90eb8">
+  <producedTypes>
+    <objectType typeId="f622ffd3-d0f5-4109-8ae4-50f58fb7cbe9" valueTypeId="19c81c0c-e93f-49c5-9982-400ff228192c"/>
+    <managerType typeId="9491b890-4203-435c-a28b-0109fa199519" valueTypeId="4e8159ae-ec00-4198-abd4-79ead51ceef3"/>
+  </producedTypes>
+  <name>абс_БюджетнаяФормаБДР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бюджетная форма БДР</value>
+  </synonym>
+  <defaultForm>Report.абс_БюджетнаяФормаБДР.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="30a202a1-aa91-4138-bd85-4773050f74bc">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4011cfb5-76da-4a48-b606-a76a9c8053ad">
+    <name>ЦФО</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЦФО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2f6722dc-55d8-421d-a154-1adabac122b4">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0abe0cec-cbdc-49d1-8fc5-a36f16284da3">
+    <name>МесяцФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7715910c-1772-49e0-bde1-bb5327754e3a">
+    <name>МесяцОперФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц Опер. факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0838fe0d-5733-4b54-8b56-0b3ca0a07f95">
+    <name>ВидБюджета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид бюджета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Бюджеты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="76c5a862-2e5b-4fff-907d-5ec2e15bf485">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="923ab783-d860-43ae-9bb5-194ee09eeb96">
+    <name>МакетБДР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет БДР</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказПокупателя</dataPath>
+			<field>ЗаказПокупателя</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Грузополучатель</dataPath>
+			<field>Грузополучатель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЗаказаПокупателя</dataPath>
+			<field>НомерЗаказаПокупателя</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтправленРМТМ</dataPath>
+			<field>ОтправленРМТМ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправлен РМ/ТМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтправленЭкспрессПочтой</dataPath>
+			<field>ОтправленЭкспрессПочтой</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтправлеПоПочте</dataPath>
+			<field>ОтправлеПоПочте</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПолученыКопииДокументов</dataPath>
+			<field>ПолученыКопииДокументов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПолученыОригиналыДокументов</dataPath>
+			<field>ПолученыОригиналыДокументов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РеализацияТоваровУслуг</dataPath>
+			<field>РеализацияТоваровУслуг</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатусРеализации</dataPath>
+			<field>СтатусРеализации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатусПолученныхДокументов</dataPath>
+			<field>СтатусПолученныхДокументов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КомментарииКомОтдела</dataPath>
+			<field>КомментарииКомОтдела</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокВозврата</dataPath>
+			<field>СрокВозврата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оригиналы</dataPath>
+			<field>Оригиналы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидПолученныхДокументов</dataPath>
+			<field>ВидПолученныхДокументов</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Период, РеализацияТоваровУслуг.Дата) КАК Период,
+	РеализацияТоваровУслуг.Ссылка КАК РеализацияТоваровУслуг,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ПолученыОригиналыДокументов)
+				ИЛИ ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ПолученыОригиналыТТН)
+				ИЛИ ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ПолученыОригиналыТРН)
+				ИЛИ ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ПолученыОригиналыУПД)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ПолученыОригиналыДокументов,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ПолученыКопииДокументов)
+				ИЛИ ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ПолученыКопииТТН)
+				ИЛИ ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ПолученыКопииУПД)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ПолученыКопииДокументов,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ОтправлеПоПочте)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ОтправлеПоПочте,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ОтправленРМТМ)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ОтправленРМТМ,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ОтправленЭкспрессПочтой)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ОтправленЭкспрессПочтой,
+	ЕСТЬNULL(ВЫРАЗИТЬ(РеализацияТоваровУслуг.Сделка КАК Документ.ЗаказПокупателя), ЗНАЧЕНИЕ(Документ.ЗаказПокупателя.ПустаяСсылка)) КАК ЗаказПокупателя,
+	ЕСТЬNULL(ВЫРАЗИТЬ(РеализацияТоваровУслуг.Сделка КАК Документ.ЗаказПокупателя).НомерПоДаннымПокупателя, "") КАК НомерЗаказаПокупателя,
+	РеализацияТоваровУслуг.Контрагент КАК Контрагент,
+	ЕСТЬNULL(ВЫРАЗИТЬ(РеализацияТоваровУслуг.Сделка КАК Документ.ЗаказПокупателя).Грузополучатель, ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка)) КАК Грузополучатель,
+	РеализацияТоваровУслуг.абс_Статус КАК СтатусРеализации,
+	ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.НетДокументов)) КАК Лео_СтатусПолученныхДокументов,
+	абс_ДокументыПолученыСрезПоследних.СрокВозврата,
+	абс_ДокументыПолученыСрезПоследних.КомментарииКомОтдела,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ПолученыОригиналыДокументов)
+				ИЛИ ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ПолученыОригиналыТТН)
+				ИЛИ ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ПолученыОригиналыТРН)
+				ИЛИ ЕСТЬNULL(абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов, НЕОПРЕДЕЛЕНО) = ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ПолученыОригиналыУПД)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Оригиналы,
+	абс_ДокументыПолученыСрезПоследних.Лео_СтатусПолученныхДокументов КАК Лео_СтатусПолученныхДокументов1
+ПОМЕСТИТЬ ВТ_Вход
+ИЗ
+	Документ.РеализацияТоваровУслуг КАК РеализацияТоваровУслуг
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.абс_ДокументыПолучены.СрезПоследних(&amp;КонецПериода) КАК абс_ДокументыПолученыСрезПоследних
+		ПО (абс_ДокументыПолученыСрезПоследних.ДокументОтгрузки = РеализацияТоваровУслуг.Ссылка)
+ГДЕ
+	РеализацияТоваровУслуг.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И РеализацияТоваровУслуг.Проведен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВложенныйЗапрос.Период,
+	ВложенныйЗапрос.РеализацияТоваровУслуг,
+	ВложенныйЗапрос.ПолученыОригиналыДокументов,
+	ВложенныйЗапрос.ПолученыКопииДокументов,
+	ВложенныйЗапрос.ОтправлеПоПочте,
+	ВложенныйЗапрос.ОтправленРМТМ,
+	ВложенныйЗапрос.ОтправленЭкспрессПочтой,
+	ВложенныйЗапрос.ЗаказПокупателя,
+	ВложенныйЗапрос.НомерЗаказаПокупателя,
+	ВложенныйЗапрос.Контрагент,
+	ВложенныйЗапрос.Грузополучатель,
+	ВложенныйЗапрос.СтатусРеализации,
+	ВЫБОР
+		КОГДА ВложенныйЗапрос.ПолученыОригиналыДокументов
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ПолученыОригиналыДокументов)
+		ИНАЧЕ ВЫБОР
+				КОГДА ВложенныйЗапрос.ПолученыКопииДокументов
+					ТОГДА ЗНАЧЕНИЕ(Перечисление.абс_СтатусыПолученныхДокументов.ПолученыКопииДокументов)
+				ИНАЧЕ ВложенныйЗапрос.Лео_СтатусПолученныхДокументов
+			КОНЕЦ
+	КОНЕЦ КАК СтатусПолученныхДокументов,
+	ВложенныйЗапрос.СрокВозврата,
+	ВложенныйЗапрос.КомментарииКомОтдела,
+	ВложенныйЗапрос.Оригиналы,
+	ВложенныйЗапрос.Лео_СтатусПолученныхДокументов КАК ВидПолученныхДокументов
+ИЗ
+	(ВЫБРАТЬ
+		МАКСИМУМ(ВТ_Вход.Период) КАК Период,
+		ВТ_Вход.РеализацияТоваровУслуг КАК РеализацияТоваровУслуг,
+		МАКСИМУМ(ВТ_Вход.ПолученыОригиналыДокументов) КАК ПолученыОригиналыДокументов,
+		МАКСИМУМ(ВТ_Вход.ПолученыКопииДокументов) КАК ПолученыКопииДокументов,
+		МАКСИМУМ(ВТ_Вход.ОтправлеПоПочте) КАК ОтправлеПоПочте,
+		МАКСИМУМ(ВТ_Вход.ОтправленРМТМ) КАК ОтправленРМТМ,
+		МАКСИМУМ(ВТ_Вход.ОтправленЭкспрессПочтой) КАК ОтправленЭкспрессПочтой,
+		ВТ_Вход.ЗаказПокупателя КАК ЗаказПокупателя,
+		ВТ_Вход.НомерЗаказаПокупателя КАК НомерЗаказаПокупателя,
+		ВТ_Вход.Контрагент КАК Контрагент,
+		ВТ_Вход.Грузополучатель КАК Грузополучатель,
+		ВТ_Вход.СтатусРеализации КАК СтатусРеализации,
+		МАКСИМУМ(ВТ_Вход.СрокВозврата) КАК СрокВозврата,
+		МАКСИМУМ(ВТ_Вход.КомментарииКомОтдела) КАК КомментарииКомОтдела,
+		ВТ_Вход.Лео_СтатусПолученныхДокументов КАК Лео_СтатусПолученныхДокументов,
+		МАКСИМУМ(ВТ_Вход.Оригиналы) КАК Оригиналы
+	ИЗ
+		ВТ_Вход КАК ВТ_Вход
+	
+	СГРУППИРОВАТЬ ПО
+		ВТ_Вход.РеализацияТоваровУслуг,
+		ВТ_Вход.ЗаказПокупателя,
+		ВТ_Вход.НомерЗаказаПокупателя,
+		ВТ_Вход.Контрагент,
+		ВТ_Вход.Грузополучатель,
+		ВТ_Вход.СтатусРеализации,
+		ВТ_Вход.Лео_СтатусПолученныхДокументов) КАК ВложенныйЗапрос</query>
+	</dataSet>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основная</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основная</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Период</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:title>Статус полученных документов</dcsset:title>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВидПолученныхДокументов</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПолученыОригиналыДокументов</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПолученыКопииДокументов</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОтправлеПоПочте</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОтправленРМТМ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОтправленЭкспрессПочтой</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РеализацияТоваровУслуг.Номер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РеализацияТоваровУслуг.Дата</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РеализацияТоваровУслуг</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Грузополучатель</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РеализацияТоваровУслуг.СуммаДокумента</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗаказПокупателя</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗаказПокупателя.абс_СуммаСНДС</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерЗаказаПокупателя</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СрокВозврата</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КомментарииКомОтдела</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>e6e6c7c8-688a-4cdc-bb10-bdcdb4cc5a38</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СуммаЗаказано</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СуммаНеотгружено</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СуммаОтгружено</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

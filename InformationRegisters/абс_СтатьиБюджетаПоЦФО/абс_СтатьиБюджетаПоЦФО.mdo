@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3fad640-c826-4a15-b2cc-fcc5f3bd8d8b">
+  <producedTypes>
+    <selectionType typeId="73bde366-6817-4550-bfec-e9a6b19c3b50" valueTypeId="4664055e-e098-447a-9ee3-52397b5df9e6"/>
+    <listType typeId="0ff1db12-86ce-4bc5-81f3-1161730966b1" valueTypeId="02f47a29-78e6-488a-873c-853855ec66e3"/>
+    <managerType typeId="880a2e2b-7d03-4cd6-b6af-c8b256a4ea37" valueTypeId="025e35db-4fd7-4c01-b5b1-5d26d48dfe62"/>
+    <recordSetType typeId="03fe8571-7781-4304-b161-ae4889ab3afc" valueTypeId="b09dd9e7-f12d-4f25-8e9a-cdc4d3a8e978"/>
+    <recordKeyType typeId="6ab5eace-b4a9-44d8-b38d-842629c48793" valueTypeId="7e6fa6a5-b6be-4224-a92c-3471013fa848"/>
+    <recordType typeId="b28dd769-4180-4785-8c14-8c7090ca7b19" valueTypeId="6ddbc22d-b05c-4caa-91f3-ae6573645f3f"/>
+    <recordManagerType typeId="e9818336-3426-4f5a-8c86-bd19bb369c1f" valueTypeId="458ecae4-f8cb-4036-a5c2-ef776f4a240a"/>
+  </producedTypes>
+  <name>абс_СтатьиБюджетаПоЦФО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статьи бюджета по ЦФО</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.абс_СтатьиБюджетаПоЦФО.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.абс_СтатьиБюджетаПоЦФО.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1439e3dd-fa45-450e-91f6-2a51f95ee852">
+    <name>Индекс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Индекс</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="81699d4f-a355-4ec0-a819-580936dfaff6">
+    <name>РодительИтог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Родитель итог</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="56fed37c-f4d3-4cc7-a464-020bc616f245">
+    <name>Итоговая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Итоговая</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ff25d796-21d0-4a21-bd96-ee287f5089ef">
+    <name>Зеленая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зеленая</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2044ec48-3e63-49c0-bfe1-58bbbe6c9ea5">
+    <name>БезЦвета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Без цвета</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="28bc7ead-2c6b-4d97-a945-00436ec759f9">
+    <name>СтатьяОборотовПоБюджетамРесурс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья оборотов по бюджетам ресурс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиОборотовПоБюджетам</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="86e51237-1481-4b81-ab84-9e58d3285682">
+    <name>РазделРесурс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел ресурс</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <attributes uuid="73580864-8e64-480e-b9bf-0dde58e3feed">
+    <name>НомерПредставление</name>
+    <synonym>
+      <key>ru</key>
+      <value>№ (Представление)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="04128f16-1b8c-4dff-8ad1-9457c31b8142">
+    <name>ЦФО</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЦФО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fd67a2b3-90f2-4400-989e-adc14a93706e">
+    <name>СтатьяОборотовПоБюджетам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья оборотов по бюджетам</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиОборотовПоБюджетам</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8bb52f09-f98a-428a-870f-e5d420a21121">
+    <name>АналитикаБюджета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика бюджета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.абс_АналитикиБюджета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.абс_СтатьиБюджетаПоЦФО.Dimension.СтатьяОборотовПоБюджетам</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="15f32e74-bf12-493c-87a8-830052d5e454">
+    <name>Раздел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="0ddcff98-32ea-4832-983e-7d847cb77982">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3f37bf41-b5d3-45e9-85ef-bac1c8a93cbe">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

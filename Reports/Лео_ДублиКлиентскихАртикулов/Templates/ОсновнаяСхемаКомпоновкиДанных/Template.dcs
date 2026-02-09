@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗначениеСвойства</dataPath>
+			<field>ЗначениеСвойства</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регистратор</dataPath>
+			<field>Регистратор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Артикул</dataPath>
+			<field>Артикул</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Контрагент,
+	абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Номенклатура,
+	абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.ЗначениеСвойства,
+	абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Регистратор,
+	абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Номенклатура.Артикул КАК Артикул
+ИЗ
+	(ВЫБРАТЬ
+		ВложенныйЗапрос.ЗначениеСвойства КАК ЗначениеСвойства,
+		ВложенныйЗапрос.Контрагент КАК Контрагент,
+		ВложенныйЗапрос.Свойство КАК Свойство
+	ИЗ
+		(ВЫБРАТЬ
+			абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.ЗначениеСвойства КАК ЗначениеСвойства,
+			абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Контрагент КАК Контрагент,
+			КОЛИЧЕСТВО(РАЗЛИЧНЫЕ абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Номенклатура) КАК Количество,
+			абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Свойство КАК Свойство
+		ИЗ
+			РегистрСведений.абс_ЗначенияСвойствНоменклатурыКонтрагентов.СрезПоследних КАК абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних
+		ГДЕ
+			абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Свойство = ЗНАЧЕНИЕ(ПланВидовХарактеристик.СвойстваОбъектов.абс_АртикулПокупателя)
+			И ВЫБОР
+					КОГДА &amp;ТорлькоАктивные
+						ТОГДА абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Номенклатура.абс_СтатусНоменклатуры &lt;&gt; ЗНАЧЕНИЕ(Перечисление.абс_СтатусыНоменклатуры.Вывод)
+					ИНАЧЕ ИСТИНА
+				КОНЕЦ
+		
+		СГРУППИРОВАТЬ ПО
+			абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Контрагент,
+			абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.ЗначениеСвойства,
+			абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Свойство) КАК ВложенныйЗапрос
+	ГДЕ
+		ВложенныйЗапрос.Количество &gt; 1) КАК ВложенныйЗапрос
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.абс_ЗначенияСвойствНоменклатурыКонтрагентов.СрезПоследних КАК абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних
+		ПО ВложенныйЗапрос.Контрагент = абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Контрагент
+			И ВложенныйЗапрос.ЗначениеСвойства = абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.ЗначениеСвойства
+			И ВложенныйЗапрос.Свойство = абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Свойство
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ТорлькоАктивные
+				ТОГДА абс_ЗначенияСвойствНоменклатурыКонтрагентовСрезПоследних.Номенклатура.абс_СтатусНоменклатуры &lt;&gt; ЗНАЧЕНИЕ(Перечисление.абс_СтатусыНоменклатуры.Вывод)
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ</query>
+	</dataSet>
+	<totalField>
+		<dataPath>Регистратор</dataPath>
+		<expression>Количество(Регистратор)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ТорлькоАктивные</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Торлько активные</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗначениеСвойства</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Артикул</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Регистратор</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ТорлькоАктивные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>b9d80ba3-b0c1-4d36-9734-9df5ec24b231</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ЗначениеСвойства</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Контрагент</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ЗначениеСвойства</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3d52cb0-6ea7-4bb7-a9ef-1c4273d10688">
+  <producedTypes>
+    <selectionType typeId="c5422aad-0472-4ad5-89fa-d787c0b9f767" valueTypeId="5a53deb9-9d8e-43a5-9d4f-730505cdb6dc"/>
+    <listType typeId="a7f21925-821a-4700-b9f9-63e5c2f50ac8" valueTypeId="e1d2e2aa-0769-4ef8-af7b-d3a1b3be2d4b"/>
+    <managerType typeId="8a278d4b-49cd-4bac-b3cd-783b5febd32d" valueTypeId="f3be64aa-02be-4494-b36a-e708314d8b82"/>
+    <recordSetType typeId="5f4ef06c-da54-432d-8e5a-e4a42c202883" valueTypeId="9baedc7e-6a16-4a71-802f-6bc692883d65"/>
+    <recordKeyType typeId="ca86f2dd-a8f9-48fe-a096-63456f68cf92" valueTypeId="2770f4ea-e3c6-495a-a515-a94ef70ac0d4"/>
+    <recordType typeId="564b5cd1-a6c6-4d40-8a64-126f5f49ef1f" valueTypeId="416b27d5-0317-4ffa-93e9-1505eb882838"/>
+    <recordManagerType typeId="c5a9e009-5ff1-4d35-a236-ec78d7b5ce1a" valueTypeId="36329105-6b63-42f4-bf97-e9a85a2bb07d"/>
+  </producedTypes>
+  <name>МаксимальныйРазмерЕжемесячнойСтраховойВыплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Максимальный размер ежемесячной страховой выплаты</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <defaultListForm>InformationRegister.МаксимальныйРазмерЕжемесячнойСтраховойВыплаты.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Year</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="85d218e8-9e7a-4d2b-8ec8-fcbf4d2bfbed">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <forms uuid="267cea10-eb73-46c1-b304-7c6ac93f79cd">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e64872e-2f64-46f8-af3b-e96f963c26b7">
+  <producedTypes>
+    <selectionType typeId="a97de5a2-ffb7-4a45-9ef0-e4fad7ea0b76" valueTypeId="cb5cbf1d-f1d8-43de-95a5-033861ccccdb"/>
+    <listType typeId="2d39a2e7-6dd3-412f-b0d7-8b247c88bb66" valueTypeId="6fb60aba-afcc-4f7a-8a08-b26034b5059c"/>
+    <managerType typeId="66705991-0606-4943-82e4-8997703f7423" valueTypeId="dce421da-cc10-4386-8a9f-f81c4048624d"/>
+    <recordSetType typeId="d55774c6-fac9-4eae-b77b-02b5ef297d55" valueTypeId="46c20b4b-72d8-4692-8fdb-09b4dc361bfb"/>
+    <recordKeyType typeId="0e7b69ea-c866-429c-93b6-0dcc9931270e" valueTypeId="905994eb-2ed7-4bf1-9e0f-d67997203db8"/>
+    <recordType typeId="a62c5dbd-6f23-43b0-80f6-a9dca76dff6a" valueTypeId="90ada13f-55e4-4e55-826f-b3d3685e9f4e"/>
+  </producedTypes>
+  <name>Лео_Переработчики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переработчики (Лео)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="475b2ffb-dfad-4c8c-bbbd-c84cadbce7ce">
+    <name>Человек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Человек</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="9d4a1afa-a80e-4c9f-ba01-99d74a2e761a">
+    <name>Упаковано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Упаковано</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="1109bade-4029-43f0-825f-50743f549d5f">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

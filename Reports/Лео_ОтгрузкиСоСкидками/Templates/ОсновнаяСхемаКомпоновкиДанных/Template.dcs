@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Артикул</dataPath>
+			<field>Артикул</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаименованиеПолное</dataPath>
+			<field>НаименованиеПолное</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПродажиВсегоРублей</dataPath>
+			<field>ПродажиВсегоРублей</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПродажиВсегоШтук</dataPath>
+			<field>ПродажиВсегоШтук</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПродажиПоЦенеПрайсЛистаКлиентаРублей</dataPath>
+			<field>ПродажиПоЦенеПрайсЛистаКлиентаРублей</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПродажиПоЦенеПрайсЛистаКлиентаШтук</dataPath>
+			<field>ПродажиПоЦенеПрайсЛистаКлиентаШтук</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПродажиСоСкидкойОтПрайсЛистаКлиентаРублей</dataPath>
+			<field>ПродажиСоСкидкойОтПрайсЛистаКлиентаРублей</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПродажиСоСкидкойОтПрайсЛистаКлиентаШтук</dataPath>
+			<field>ПродажиСоСкидкойОтПрайсЛистаКлиентаШтук</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтавкаНДС</dataPath>
+			<field>СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСкидкиБезНДС</dataPath>
+			<field>СуммаСкидкиБезНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БизнесРегион</dataPath>
+			<field>БизнесРегион</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Документ</dataPath>
+			<field>Документ</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаКоличествоНаЦенуБезСкидки</dataPath>
+			<field>СуммаКоличествоНаЦенуБезСкидки</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВложенныйЗапрос.Номенклатура,
+	ВложенныйЗапрос.Артикул,
+	ВложенныйЗапрос.Наименование,
+	ВложенныйЗапрос.НаименованиеПолное,
+	ВложенныйЗапрос.СтавкаНДС,
+	ВложенныйЗапрос.ДоговорКонтрагента,
+	ВложенныйЗапрос.Контрагент,
+	ВложенныйЗапрос.Отдел,
+	ВложенныйЗапрос.Количество,
+	ВложенныйЗапрос.Стоимость,
+	ВложенныйЗапрос.НДС,
+	ВложенныйЗапрос.ЦенаПродажи,
+	ВложенныйЗапрос.ТипЦен,
+	ВложенныйЗапрос.ТипЦенБазовыйТипЦен,
+	ВложенныйЗапрос.ТипЦенПроцентСкидкиНаценки,
+	ЕСТЬNULL(ВЫБОР
+			КОГДА ВложенныйЗапрос.ТипЦенБазовыйТипЦен = ЗНАЧЕНИЕ(Справочник.ТипыЦенНоменклатуры.ПустаяСсылка)
+				ТОГДА ЦеныНоменклатурыСрезПоследнихОсновной.Цена
+			ИНАЧЕ ВЫБОР
+					КОГДА ВложенныйЗапрос.ТипЦен.ПорядокОкругления = ЗНАЧЕНИЕ(Перечисление.ПорядкиОкругления.Окр0_1)
+						ТОГДА ВЫРАЗИТЬ(ЦеныНоменклатурыСрезПоследнихДляРасчета.Цена * (1 + ВложенныйЗапрос.ТипЦенПроцентСкидкиНаценки / 100) КАК ЧИСЛО(10, 1))
+					ИНАЧЕ ВЫРАЗИТЬ(ЦеныНоменклатурыСрезПоследнихДляРасчета.Цена * (1 + ВложенныйЗапрос.ТипЦенПроцентСкидкиНаценки / 100) КАК ЧИСЛО(10, 2))
+				КОНЕЦ
+		КОНЕЦ, 0) КАК ЦенаПоПрайсу,
+	ВложенныйЗапрос.Документ,
+	ВложенныйЗапрос.БизнесРегион
+ПОМЕСТИТЬ Вт_Основа
+ИЗ
+	(ВЫБРАТЬ
+		Продажи.Номенклатура КАК Номенклатура,
+		Продажи.Номенклатура.Артикул КАК Артикул,
+		Продажи.Номенклатура.Наименование КАК Наименование,
+		ВЫРАЗИТЬ(Продажи.Номенклатура.НаименованиеПолное КАК СТРОКА(1024)) КАК НаименованиеПолное,
+		Продажи.Номенклатура.СтавкаНДС КАК СтавкаНДС,
+		Продажи.ДоговорКонтрагента КАК ДоговорКонтрагента,
+		Продажи.Контрагент КАК Контрагент,
+		Продажи.Контрагент.абс_Отдел КАК Отдел,
+		СУММА(Продажи.Количество) КАК Количество,
+		СУММА(Продажи.Стоимость - Продажи.НДС) КАК Стоимость,
+		СУММА(Продажи.НДС) КАК НДС,
+		ВЫБОР
+			КОГДА Продажи.Количество &gt; 0
+				ТОГДА ВЫРАЗИТЬ((Продажи.Стоимость - Продажи.НДС) / Продажи.Количество КАК ЧИСЛО(10, 2))
+			ИНАЧЕ 0
+		КОНЕЦ КАК ЦенаПродажи,
+		ТипыЦенПоГруппамНоменклатурыДляПокупателейСрезПоследних.ТипЦен КАК ТипЦен,
+		ТипыЦенПоГруппамНоменклатурыДляПокупателейСрезПоследних.ТипЦен.БазовыйТипЦен КАК ТипЦенБазовыйТипЦен,
+		ТипыЦенПоГруппамНоменклатурыДляПокупателейСрезПоследних.ТипЦен.ПроцентСкидкиНаценки КАК ТипЦенПроцентСкидкиНаценки,
+		Продажи.Регистратор КАК Документ,
+		Продажи.Контрагент.абс_БизнесРегион КАК БизнесРегион
+	ИЗ
+		РегистрНакопления.Продажи КАК Продажи
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ТипыЦенПоГруппамНоменклатурыДляПокупателей.СрезПоследних(&amp;ДатаПо, ) КАК ТипыЦенПоГруппамНоменклатурыДляПокупателейСрезПоследних
+			ПО Продажи.ДоговорКонтрагента = ТипыЦенПоГруппамНоменклатурыДляПокупателейСрезПоследних.абс_ДоговорКонтрагента
+	ГДЕ
+		Продажи.Контрагент.абс_Отдел = &amp;Отдел
+		И Продажи.Период МЕЖДУ &amp;ДатаС И &amp;ДатаПо
+	
+	СГРУППИРОВАТЬ ПО
+		Продажи.Номенклатура,
+		Продажи.Номенклатура.Артикул,
+		Продажи.Номенклатура.Наименование,
+		ВЫРАЗИТЬ(Продажи.Номенклатура.НаименованиеПолное КАК СТРОКА(1024)),
+		Продажи.Номенклатура.СтавкаНДС,
+		Продажи.ДоговорКонтрагента,
+		Продажи.Контрагент,
+		Продажи.Контрагент.абс_Отдел,
+		ТипыЦенПоГруппамНоменклатурыДляПокупателейСрезПоследних.ТипЦен,
+		ТипыЦенПоГруппамНоменклатурыДляПокупателейСрезПоследних.ТипЦен.БазовыйТипЦен,
+		ТипыЦенПоГруппамНоменклатурыДляПокупателейСрезПоследних.ТипЦен.ПроцентСкидкиНаценки,
+		Продажи.Регистратор,
+		Продажи.Контрагент.абс_БизнесРегион,
+		ВЫБОР
+			КОГДА Продажи.Количество &gt; 0
+				ТОГДА ВЫРАЗИТЬ((Продажи.Стоимость - Продажи.НДС) / Продажи.Количество КАК ЧИСЛО(10, 2))
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ВложенныйЗапрос
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(&amp;ДатаПо, ) КАК ЦеныНоменклатурыСрезПоследнихОсновной
+		ПО ВложенныйЗапрос.ТипЦен = ЦеныНоменклатурыСрезПоследнихОсновной.ТипЦен
+			И ВложенныйЗапрос.Номенклатура = ЦеныНоменклатурыСрезПоследнихОсновной.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(&amp;ДатаПо, ) КАК ЦеныНоменклатурыСрезПоследнихДляРасчета
+		ПО ВложенныйЗапрос.Номенклатура = ЦеныНоменклатурыСрезПоследнихДляРасчета.Номенклатура
+			И ВложенныйЗапрос.ТипЦенБазовыйТипЦен = ЦеныНоменклатурыСрезПоследнихДляРасчета.ТипЦен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВложенныйЗапрос.Артикул,
+	ВложенныйЗапрос.Номенклатура,
+	ВложенныйЗапрос.НаименованиеПолное,
+	ВложенныйЗапрос.СтавкаНДС,
+	ВложенныйЗапрос.ПродажиВсегоШтук,
+	ВложенныйЗапрос.ПродажиВсегоРублей,
+	ВложенныйЗапрос.ПродажиПоЦенеПрайсЛистаКлиентаШтук,
+	ВложенныйЗапрос.ПродажиПоЦенеПрайсЛистаКлиентаРублей,
+	ВложенныйЗапрос.ПродажиСоСкидкойОтПрайсЛистаКлиентаШтук,
+	ВложенныйЗапрос.ПродажиСоСкидкойОтПрайсЛистаКлиентаРублей,
+	ВложенныйЗапрос.СуммаСкидкиБезНДС,
+	ВложенныйЗапрос.Контрагент,
+	ВложенныйЗапрос.Документ,
+	ВложенныйЗапрос.БизнесРегион,
+	ВложенныйЗапрос.СуммаКоличествоНаЦенуБезСкидки
+ИЗ
+	(ВЫБРАТЬ
+		РасчетСкидок.Артикул КАК Артикул,
+		РасчетСкидок.Номенклатура КАК Номенклатура,
+		РасчетСкидок.НаименованиеПолное КАК НаименованиеПолное,
+		РасчетСкидок.СтавкаНДС КАК СтавкаНДС,
+		СУММА(РасчетСкидок.ПродажиВсегоШтук) КАК ПродажиВсегоШтук,
+		СУММА(РасчетСкидок.ПродажиВсегоРублей) КАК ПродажиВсегоРублей,
+		СУММА(РасчетСкидок.ПродажиПоЦенеПрайсЛистаКлиентаШтук) КАК ПродажиПоЦенеПрайсЛистаКлиентаШтук,
+		СУММА(РасчетСкидок.ПродажиПоЦенеПрайсЛистаКлиентаРублей) КАК ПродажиПоЦенеПрайсЛистаКлиентаРублей,
+		СУММА(РасчетСкидок.ПродажиСоСкидкойОтПрайсЛистаКлиентаШтук) КАК ПродажиСоСкидкойОтПрайсЛистаКлиентаШтук,
+		СУММА(РасчетСкидок.ПродажиСоСкидкойОтПрайсЛистаКлиентаРублей) КАК ПродажиСоСкидкойОтПрайсЛистаКлиентаРублей,
+		СУММА(РасчетСкидок.ЦенаПоПрайсу * РасчетСкидок.ПродажиСоСкидкойОтПрайсЛистаКлиентаШтук - РасчетСкидок.ПродажиСоСкидкойОтПрайсЛистаКлиентаРублей) КАК СуммаСкидкиБезНДС,
+		РасчетСкидок.Контрагент КАК Контрагент,
+		РасчетСкидок.Документ КАК Документ,
+		РасчетСкидок.БизнесРегион КАК БизнесРегион,
+		СУММА(РасчетСкидок.СуммаКоличествоНаЦенуБезСкидки) КАК СуммаКоличествоНаЦенуБезСкидки
+	ИЗ
+		(ВЫБРАТЬ
+			Вт_Основа.Артикул КАК Артикул,
+			Вт_Основа.Номенклатура КАК Номенклатура,
+			Вт_Основа.НаименованиеПолное КАК НаименованиеПолное,
+			Вт_Основа.СтавкаНДС КАК СтавкаНДС,
+			СУММА(Вт_Основа.Количество) КАК ПродажиВсегоШтук,
+			СУММА(Вт_Основа.Стоимость) КАК ПродажиВсегоРублей,
+			СУММА(ВЫБОР
+					КОГДА Вт_Основа.ЦенаПродажи МЕЖДУ Вт_Основа.ЦенаПоПрайсу - &amp;Дельта И Вт_Основа.ЦенаПоПрайсу + &amp;Дельта
+						ТОГДА Вт_Основа.Количество
+					ИНАЧЕ 0
+				КОНЕЦ) КАК ПродажиПоЦенеПрайсЛистаКлиентаШтук,
+			СУММА(ВЫБОР
+					КОГДА Вт_Основа.ЦенаПродажи МЕЖДУ Вт_Основа.ЦенаПоПрайсу - &amp;Дельта И Вт_Основа.ЦенаПоПрайсу + &amp;Дельта
+						ТОГДА Вт_Основа.Стоимость
+					ИНАЧЕ 0
+				КОНЕЦ) КАК ПродажиПоЦенеПрайсЛистаКлиентаРублей,
+			СУММА(ВЫБОР
+					КОГДА Вт_Основа.ЦенаПродажи МЕЖДУ Вт_Основа.ЦенаПоПрайсу - &amp;Дельта И Вт_Основа.ЦенаПоПрайсу + &amp;Дельта
+						ТОГДА 0
+					ИНАЧЕ Вт_Основа.Количество
+				КОНЕЦ) КАК ПродажиСоСкидкойОтПрайсЛистаКлиентаШтук,
+			СУММА(ВЫБОР
+					КОГДА Вт_Основа.ЦенаПродажи МЕЖДУ Вт_Основа.ЦенаПоПрайсу - &amp;Дельта И Вт_Основа.ЦенаПоПрайсу + &amp;Дельта
+						ТОГДА 0
+					ИНАЧЕ Вт_Основа.Стоимость
+				КОНЕЦ) КАК ПродажиСоСкидкойОтПрайсЛистаКлиентаРублей,
+			Вт_Основа.ЦенаПоПрайсу КАК ЦенаПоПрайсу,
+			Вт_Основа.Контрагент КАК Контрагент,
+			Вт_Основа.Документ КАК Документ,
+			Вт_Основа.БизнесРегион КАК БизнесРегион,
+			СУММА(Вт_Основа.Количество * Вт_Основа.ЦенаПоПрайсу) КАК СуммаКоличествоНаЦенуБезСкидки
+		ИЗ
+			Вт_Основа КАК Вт_Основа
+		
+		СГРУППИРОВАТЬ ПО
+			Вт_Основа.Артикул,
+			Вт_Основа.Номенклатура,
+			Вт_Основа.НаименованиеПолное,
+			Вт_Основа.СтавкаНДС,
+			Вт_Основа.ЦенаПоПрайсу,
+			Вт_Основа.Контрагент,
+			Вт_Основа.Документ,
+			Вт_Основа.БизнесРегион) КАК РасчетСкидок
+	
+	СГРУППИРОВАТЬ ПО
+		РасчетСкидок.Артикул,
+		РасчетСкидок.Номенклатура,
+		РасчетСкидок.НаименованиеПолное,
+		РасчетСкидок.СтавкаНДС,
+		РасчетСкидок.Контрагент,
+		РасчетСкидок.Документ,
+		РасчетСкидок.БизнесРегион) КАК ВложенныйЗапрос</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ПродажиВсегоРублей</dataPath>
+		<expression>Сумма(ПродажиВсегоРублей)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПродажиВсегоШтук</dataPath>
+		<expression>Сумма(ПродажиВсегоШтук)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПродажиПоЦенеПрайсЛистаКлиентаРублей</dataPath>
+		<expression>Сумма(ПродажиПоЦенеПрайсЛистаКлиентаРублей)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПродажиПоЦенеПрайсЛистаКлиентаШтук</dataPath>
+		<expression>Сумма(ПродажиПоЦенеПрайсЛистаКлиентаШтук)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПродажиСоСкидкойОтПрайсЛистаКлиентаРублей</dataPath>
+		<expression>Сумма(ПродажиСоСкидкойОтПрайсЛистаКлиентаРублей)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПродажиСоСкидкойОтПрайсЛистаКлиентаШтук</dataPath>
+		<expression>Сумма(ПродажиСоСкидкойОтПрайсЛистаКлиентаШтук)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаСкидкиБезНДС</dataPath>
+		<expression>Сумма(СуммаСкидкиБезНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаКоличествоНаЦенуБезСкидки</dataPath>
+		<expression>Сумма(СуммаКоличествоНаЦенуБезСкидки)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаС</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата с</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаПо</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата по</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Дельта</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дельта</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Отдел</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отдел</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Регионы</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:userFields>
+				<dcsset:item xsi:type="dcsset:UserFieldExpression">
+					<dcsset:dataPath>ПользовательскиеПоля.Поле1</dcsset:dataPath>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>% скидки (Сумма скидки / продажи всего)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:detailExpression>СуммаСкидкиБезНДС / ПродажиВсегоРублей * 100</dcsset:detailExpression>
+					<dcsset:detailExpressionPresentation>[Сумма скидки без НДС] / [Продажи всего рублей] * 100</dcsset:detailExpressionPresentation>
+					<dcsset:totalExpression>СуммаСкидкиБезНДС / ПродажиВсегоРублей * 100</dcsset:totalExpression>
+					<dcsset:totalExpressionPresentation>[Сумма скидки без НДС] / [Продажи всего рублей] * 100</dcsset:totalExpressionPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:UserFieldExpression">
+					<dcsset:dataPath>ПользовательскиеПоля.Поле2</dcsset:dataPath>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>% скидки (Сумма скидки/(Количество * цена без скидки)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:detailExpression>СуммаСкидкиБезНДС / СуммаКоличествоНаЦенуБезСкидки * 100</dcsset:detailExpression>
+					<dcsset:detailExpressionPresentation>[Сумма скидки без НДС] / [Сумма количество на цену без скидки] * 100</dcsset:detailExpressionPresentation>
+					<dcsset:totalExpression>СуммаСкидкиБезНДС / СуммаКоличествоНаЦенуБезСкидки * 100</dcsset:totalExpression>
+					<dcsset:totalExpressionPresentation>[Сумма скидки без НДС] / [Сумма количество на цену без скидки] * 100</dcsset:totalExpressionPresentation>
+				</dcsset:item>
+			</dcsset:userFields>
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Артикул</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НаименованиеПолное</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтавкаНДС</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПродажиВсегоРублей</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПродажиВсегоШтук</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПродажиПоЦенеПрайсЛистаКлиентаРублей</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПродажиПоЦенеПрайсЛистаКлиентаШтук</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПродажиСоСкидкойОтПрайсЛистаКлиентаРублей</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПродажиСоСкидкойОтПрайсЛистаКлиентаШтук</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаСкидкиБезНДС</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПользовательскиеПоля.Поле1</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПользовательскиеПоля.Поле2</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Контрагент</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>b97d7f4d-1608-46f7-97e6-55d708d4ba41</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">БизнесРегион</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>fc64966e-f779-422b-aef8-9104af4006f3</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаС</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>9b6aa449-a724-4597-8e62-129406e9c8b0</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаПо</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>cd593b27-3911-4c15-a4a6-238727263717</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Дельта</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:userSettingID>bec3b14d-d62f-4a18-b367-1b44849a591e</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Отдел</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>438547a1-73ac-4496-8cfe-094f133ac6c5</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Артикул</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПользовательскиеПоля.Поле1</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПользовательскиеПоля.Поле2</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=2</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>БизнесРегион</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Контрагент</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Номенклатура</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Документ</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item xsi:type="dcsset:StructureItemGroup">
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

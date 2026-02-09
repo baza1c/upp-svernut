@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ee75afd-1026-415d-b469-63866c13106b">
+  <producedTypes>
+    <objectType typeId="1446db5b-88de-456d-8694-4e0857f6d1d9" valueTypeId="f11bf528-b589-4113-b22d-0c56e1bfb626"/>
+    <managerType typeId="27e63360-c995-47b2-b863-76b8c28fa027" valueTypeId="c997a455-9109-4631-9d52-d0d0179cf7b5"/>
+  </producedTypes>
+  <name>Лео_ПредоставленныеРучныеСкидки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Предоставленные ручные скидки</value>
+  </synonym>
+  <defaultForm>Report.Лео_ПредоставленныеРучныеСкидки.Form.ФормаОтчета1</defaultForm>
+  <mainDataCompositionSchema>Report.Лео_ПредоставленныеРучныеСкидки.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="dbeda321-9e6c-4676-a84d-c0de50dd19cd">
+    <name>НастройкаПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка периода</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3a667469-a44e-40b0-bbbc-27920b573ebd">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5ea4bc10-375e-45b0-9213-95ef58058a04">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="7ab1ffd5-7d95-46e6-8f36-be5913c3b9fc">
+    <name>ФормаОтчета1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета1</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="f2dec1de-1c44-494a-aa2a-36503c2218db">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

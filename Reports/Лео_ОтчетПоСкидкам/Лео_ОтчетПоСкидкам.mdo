@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1aabbb8b-f1fd-4330-a596-cd2e0a207685">
+  <producedTypes>
+    <objectType typeId="55000edc-487b-4138-a7d0-9154e437454e" valueTypeId="90361bb1-48f9-4d5f-b23d-782e2b264971"/>
+    <managerType typeId="62d09458-6ed3-4cc8-bc90-13e3f6fb82bc" valueTypeId="07425164-c8bd-4747-80f2-c949c97379c5"/>
+  </producedTypes>
+  <name>Лео_ОтчетПоСкидкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по скидкам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.Лео_ОтчетПоСкидкам.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.Лео_ОтчетПоСкидкам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="b44d1e46-7668-4318-9bba-430287b372ca">
+    <name>ПутьФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f65d1e37-f7a3-4014-aabc-c608e1b90ffd">
+    <name>Нетто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нетто</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8767185f-0301-495d-a0ad-c00ede88b1a0">
+    <name>КУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>КУ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e7abf716-0ddf-4e15-9014-ff61e5a44813">
+    <name>РПЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>РПЛ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="44d02c54-23dd-444a-a433-0af8a384f0b8">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="26eb1e17-1742-40d0-944d-d82c756191a0">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a19ee62c-41a3-40d2-a809-479d219bebc0">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="56b6ca06-9e1d-4689-be5f-2be261869690">
+    <name>ОсновнаяСхемаКомпоновкиДанныхДляВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных для выгрузки</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

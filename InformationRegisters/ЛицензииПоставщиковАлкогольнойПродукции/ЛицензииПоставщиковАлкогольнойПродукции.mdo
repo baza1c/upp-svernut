@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c5f60ef-a125-427e-921e-20add0ce1ab2">
+  <producedTypes>
+    <selectionType typeId="57ed06e9-b8d5-49fb-9568-e5bdcdcd3bd6" valueTypeId="630e31ab-0ab5-4398-8fe4-8aa1ce80d2cc"/>
+    <listType typeId="c39bbae6-a57e-4e6f-860c-4c3b5d9a3b9f" valueTypeId="d3f09702-790a-4326-ab62-879071a4ce71"/>
+    <managerType typeId="26a59315-8d45-41ea-86d3-4a0d1885161e" valueTypeId="8d994fb6-dba0-4a3b-b459-a755424c4fcc"/>
+    <recordSetType typeId="40253679-2dcd-489f-95f8-3bbc46b2a7b8" valueTypeId="e68b5ca4-c0f6-491b-ab32-aa40e3c0e268"/>
+    <recordKeyType typeId="998c0b74-624a-4791-90e9-4759926dd4f2" valueTypeId="36252ee0-7f0c-4dc0-9fe4-bf5ecb10e1df"/>
+    <recordType typeId="54950578-dc9a-43dd-ba59-2c57d628e8ff" valueTypeId="d6a67377-7e90-45b6-b2b7-830081f7c723"/>
+    <recordManagerType typeId="aa250d18-398f-4f75-9670-68e7b8ddf689" valueTypeId="86faea7a-be23-4817-b054-7487d8734186"/>
+  </producedTypes>
+  <name>ЛицензииПоставщиковАлкогольнойПродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лицензии поставщиков алкогольной продукции</value>
+  </synonym>
+  <defaultListForm>InformationRegister.ЛицензииПоставщиковАлкогольнойПродукции.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="09e2a939-cf44-4580-a6bf-ce51c4798247">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dfaab41f-dae6-4006-898a-b209e480a416">
+    <name>СерияНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серия, номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="82ecb350-c69b-44fc-9db8-2ab9b1cbf0c0">
+    <name>КемВыдана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кем выдана</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <dimensions uuid="77ddb3fc-79cb-409a-855d-41bbfe7b4eda">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="11ca9440-0564-4b9a-8370-533d6f5ef9ab">
+    <name>ВидЛицензии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид лицензии</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыЛицензийНаПродажуАлкоголя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="67dcd94d-de79-46c3-bae3-27e4c41d8b1c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

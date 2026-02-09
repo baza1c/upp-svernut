@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="063a2097-5817-4f21-8e6c-e36ff9941b1f">
+  <producedTypes>
+    <selectionType typeId="5afc97d4-8476-4fee-b401-7980ff2e4259" valueTypeId="89fcfef9-bf40-41db-9f63-cca5818612ef"/>
+    <listType typeId="41722e4e-d03c-43a0-b43d-f15f3054eb9a" valueTypeId="e9de728d-374a-4c91-b742-125f1f02a56f"/>
+    <managerType typeId="f8c2eccf-ab87-4e91-ba7b-c91bf204b9f1" valueTypeId="9c83f0ba-1118-4019-849f-8996b8ee4933"/>
+    <recordSetType typeId="c38174fb-0a34-4603-97bd-ff2dafeff0de" valueTypeId="72e44ffd-0d63-40a2-8e78-03b8f40ee342"/>
+    <recordKeyType typeId="1edfa308-9cf3-4ec6-b369-a37a3d23d28e" valueTypeId="86d0918d-12f2-4538-8360-edf8c359947e"/>
+    <recordType typeId="c8b2d618-ef7b-4a4e-8e2c-892d43859a23" valueTypeId="6266d0e2-7b49-4295-9223-f92133b75787"/>
+    <recordManagerType typeId="aafa5dd8-6c1c-4875-aab2-e50d1e96a334" valueTypeId="cb46b2c6-da02-4e16-8dca-63c83c3d2df4"/>
+  </producedTypes>
+  <name>Лео_ОстаткиМПКТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки МПКТ (Лео)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7352ce06-1394-47c6-b17a-07517e3e2c10">
+    <name>stock</name>
+    <synonym>
+      <key>ru</key>
+      <value>Stock</value>
+    </synonym>
+    <comment>//кол-во товаров на складах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="740078ec-a0d3-4dc1-858a-588ae88e146a">
+    <name>reserve</name>
+    <synonym>
+      <key>ru</key>
+      <value>Reserve</value>
+    </synonym>
+    <comment>//кол-во товаров в резерве</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="60792bfb-78ca-44ec-837f-1790b48539f7">
+    <name>defective</name>
+    <synonym>
+      <key>ru</key>
+      <value>Defective</value>
+    </synonym>
+    <comment>//кол-во товаров в браке</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="fc704294-ea9e-4bcf-b783-9a0c28e09639">
+    <name>cabinet_id</name>
+    <synonym>
+      <key>ru</key>
+      <value>Cabinet ID</value>
+    </synonym>
+    <comment>//ID кабинета маркетплейса в Yunu</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <attributes uuid="c73ecbfb-f6b0-4187-9978-413817454fb6">
+    <name>marketplace</name>
+    <synonym>
+      <key>ru</key>
+      <value>Marketplace</value>
+    </synonym>
+    <comment>//маркетплейс</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <attributes uuid="88420f8c-c00d-4223-afc0-d0835245ddeb">
+    <name>delivery_type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Delivery type</value>
+    </synonym>
+    <comment>//способ доставки (см. ниже возможные значения)</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="0a5d1edc-a937-4045-8a5f-3c21c7f4bc32">
+    <name>product_id</name>
+    <synonym>
+      <key>ru</key>
+      <value>Product ID</value>
+    </synonym>
+    <comment>//ID товара Yunu</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7592f9a1-0ed6-4055-b627-e6a6a925f64f">
+    <name>article</name>
+    <synonym>
+      <key>ru</key>
+      <value>Article</value>
+    </synonym>
+    <comment>//основной артикул товара Yunu</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="40a37037-9938-471d-8305-10ce1d471db0">
+  <producedTypes>
+    <selectionType typeId="00da4d81-22d2-4345-aeb6-bd50b152362c" valueTypeId="1a4567c1-1f5c-46da-b253-d497b45c6ae5"/>
+    <listType typeId="db881d33-8cc7-4071-92e9-bf48b5c8e0c6" valueTypeId="32c58d03-28bf-4c1c-a2d9-98dc184b9555"/>
+    <managerType typeId="2038be3f-f6c4-41a5-ba6b-b9fb79e1dd32" valueTypeId="2455f970-54ad-4065-b8fc-39196030896a"/>
+    <recordSetType typeId="86e8c841-4176-47e4-967a-a2f059d9783c" valueTypeId="b8e6c72a-4f2a-4855-b17c-51e9016cb385"/>
+    <recordKeyType typeId="6dc0f56e-403a-4fb6-b61b-2d83927ad0d2" valueTypeId="adccb76a-1bc1-4295-be8a-b56ae6ec7df0"/>
+    <recordType typeId="a3d7f692-f118-47d5-9518-2fbd0e067db4" valueTypeId="f526494d-e4a9-4711-bcc7-843d5c2c507e"/>
+    <recordManagerType typeId="7b2a51bf-78ee-4f19-bc06-56d43a91a783" valueTypeId="4c437c31-a11b-4d93-bbff-7e842db921ee"/>
+  </producedTypes>
+  <name>абс_СоответствиеСтатейЗатратСтатьямОборотовПоБюджетам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие статей затрат и статей оборотов по бюджетам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.абс_СоответствиеСтатейЗатратСтатьямОборотовПоБюджетам.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.абс_СоответствиеСтатейЗатратСтатьямОборотовПоБюджетам.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c4bb87a3-d7d0-42f8-915a-4b24de9e57b9">
+    <name>СтатьяОборотовПоБюджетам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья оборотов по бюджетам</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиОборотовПоБюджетам</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c9898db8-b988-4e9f-a587-8ee63e1b1de3">
+    <name>СтатьяЗатратБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья затрат БУ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиЗатрат</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="6dcce5e9-1b0e-4f40-985a-ce12226391e7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3706ede9-ff1b-4f38-826a-67c0924cae09">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

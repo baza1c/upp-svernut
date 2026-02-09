@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСклада</dataPath>
+			<field>ВидСклада</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сертификаты.ДекларацияСоответствия</dataPath>
+			<field>ДекларацияСоответствия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сертификаты.ДекларацияТаможенногоСоюза</dataPath>
+			<field>ДекларацияТаможенногоСоюза</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Качество</dataPath>
+			<field>Качество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОСГ</dataPath>
+			<field>ОСГ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Остаток</dataPath>
+			<field>Остаток</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сертификаты.СвидетельствоОГосрегистрации</dataPath>
+			<field>СвидетельствоОГосрегистрации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СерияНоменклатуры</dataPath>
+			<field>СерияНоменклатуры</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сертификаты.СертификатСоответствия</dataPath>
+			<field>СертификатСоответствия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЦен</dataPath>
+			<field>ТипЦен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТоварТара</dataPath>
+			<field>ТоварТара</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сертификаты.УдостоверениеКачества</dataPath>
+			<field>УдостоверениеКачества</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаНоменклатуры</dataPath>
+			<field>ХарактеристикаНоменклатуры</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаБезНДС</dataPath>
+			<field>ЦенаБезНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаВРознице</dataPath>
+			<field>ЦенаВРознице</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаСНДС</dataPath>
+			<field>ЦенаСНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦеноваяГруппа</dataPath>
+			<field>ЦеноваяГруппа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ШтрихКод</dataPath>
+			<field>ШтрихКод</field>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>Сертификаты</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сертификаты</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПолноеНаименование</dataPath>
+			<field>ПолноеНаименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументРезерва</dataPath>
+			<field>ДокументРезерва</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Резерв</dataPath>
+			<field>Резерв</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Изображение</dataPath>
+			<field>Изображение</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЗапросПрайс.Номенклатура КАК Номенклатура,
+	Остатки.Остаток КАК Остаток,
+	Остатки.СерияНоменклатуры КАК СерияНоменклатуры,
+	Остатки.Склад КАК Склад,
+	ШтрихКоды.ШтрихКод КАК ШтрихКод,
+	ВЫБОР
+		КОГДА ЗапросПрайс.Цена &lt;&gt; 0
+			ТОГДА ЗапросПрайс.ЕдиницаИзмерения
+		ИНАЧЕ ЗапросПрайс.Номенклатура.ЕдиницаХраненияОстатков
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	ВЫБОР
+		КОГДА ЗапросПрайс.ТипЦен.ПорядокОкругления = ЗНАЧЕНИЕ(перечисление.ПорядкиОкругления.Окр0_01)
+			ТОГДА ВЫРАЗИТЬ(ЗапросПрайс.Цена КАК ЧИСЛО(10, 2))
+		КОГДА ЗапросПрайс.ТипЦен.ПорядокОкругления = ЗНАЧЕНИЕ(перечисление.ПорядкиОкругления.Окр0_1)
+			ТОГДА ВЫРАЗИТЬ(ЗапросПрайс.Цена КАК ЧИСЛО(10, 1))
+		ИНАЧЕ ВЫРАЗИТЬ(ЗапросПрайс.Цена КАК ЧИСЛО(10, 0))
+	КОНЕЦ КАК Цена,
+	ВЫБОР
+		КОГДА Остатки.СерияНоменклатуры.СрокГодности = ДАТАВРЕМЯ(1, 1, 1)
+				ИЛИ Остатки.СерияНоменклатуры.абс_ДатаПроизводства = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА 0
+		ИНАЧЕ ВЫБОР
+				КОГДА РАЗНОСТЬДАТ(Остатки.СерияНоменклатуры.абс_ДатаПроизводства, Остатки.СерияНоменклатуры.СрокГодности, ДЕНЬ) = 0
+					ТОГДА 0
+				ИНАЧЕ ВЫРАЗИТЬ(100 * РАЗНОСТЬДАТ(&amp;Дата, Остатки.СерияНоменклатуры.СрокГодности, ДЕНЬ) / РАЗНОСТЬДАТ(Остатки.СерияНоменклатуры.абс_ДатаПроизводства, Остатки.СерияНоменклатуры.СрокГодности, ДЕНЬ) КАК ЧИСЛО(15, 2))
+			КОНЕЦ
+	КОНЕЦ КАК ОСГ,
+	ЗапросПрайс.ТипЦен.ЦенаВключаетНДС,
+	ВЫБОР
+		КОГДА ЗапросПрайс.Номенклатура.СтавкаНДС = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС18)
+				ИЛИ ЗапросПрайс.Номенклатура.СтавкаНДС = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС18_118)
+			ТОГДА 18
+		КОГДА ЗапросПрайс.Номенклатура.СтавкаНДС = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС10)
+				ИЛИ ЗапросПрайс.Номенклатура.СтавкаНДС = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС10_110)
+			ТОГДА 10
+		КОГДА ЗапросПрайс.Номенклатура.СтавкаНДС = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС20)
+				ИЛИ ЗапросПрайс.Номенклатура.СтавкаНДС = ЗНАЧЕНИЕ(Перечисление.СтавкиНДС.НДС20_120)
+			ТОГДА 20
+		ИНАЧЕ 0
+	КОНЕЦ КАК СтавкаНДС,
+	Остатки.СерияНоменклатуры.абс_ДатаПроизводства КАК ДатаПроизводства,
+	Остатки.Резерв
+ПОМЕСТИТЬ ТЗ_Цены
+ИЗ
+	(ВЫБРАТЬ
+		ЦеныБазовые.ТипЦен КАК ТипЦен,
+		ВЫБОР
+			КОГДА &amp;ВВалютеОтчета = ЛОЖЬ
+				ТОГДА ВЫБОР
+						КОГДА ЦеныБазовые.ТипЦен.Рассчитывается
+							ТОГДА ЦеныБазовые.ТипЦен.ВалютаЦены
+						ИНАЧЕ МИНИМУМ(ВЫБОР
+									КОГДА ЦеныБазовые.ТипЦен.Рассчитывается
+										ТОГДА ВЫБОР
+												КОГДА ЦеныРасчетные.Валюта ЕСТЬ NULL 
+													ТОГДА ЦеныБазовые.Валюта
+												ИНАЧЕ ВЫБОР
+														КОГДА ЦеныБазовые.СпособРасчетаЦены = &amp;СпособНаценка
+															ТОГДА ЦеныРасчетные.Валюта
+														ИНАЧЕ ЦеныБазовые.ВалютаДиапазона
+													КОНЕЦ
+											КОНЕЦ
+									ИНАЧЕ ЦеныБазовые.Валюта
+								КОНЕЦ)
+					КОНЕЦ
+			ИНАЧЕ &amp;ВалютаОтчета
+		КОНЕЦ КАК ВалютаПрайса,
+		ЦеныБазовые.Номенклатура КАК Номенклатура,
+		МИНИМУМ(ВЫБОР
+				КОГДА ЦеныБазовые.ТипЦен.Рассчитывается
+					ТОГДА ЦеныРасчетные.ЕдиницаИзмерения
+				ИНАЧЕ ЦеныБазовые.ЕдиницаИзмерения
+			КОНЕЦ) КАК ЕдиницаИзмерения,
+		МИНИМУМ(ВЫБОР
+				КОГДА ЦеныБазовые.ТипЦен.Рассчитывается
+					ТОГДА ВЫБОР
+							КОГДА ЦеныРасчетные.Валюта ЕСТЬ NULL 
+								ТОГДА ЦеныБазовые.Валюта
+							ИНАЧЕ ВЫБОР
+									КОГДА ЦеныБазовые.СпособРасчетаЦены = &amp;СпособНаценка
+										ТОГДА ЦеныРасчетные.Валюта
+									ИНАЧЕ ЦеныБазовые.ВалютаДиапазона
+								КОНЕЦ
+						КОНЕЦ
+				ИНАЧЕ ЦеныБазовые.Валюта
+			КОНЕЦ) КАК Валюта,
+		МИНИМУМ(ВЫБОР
+				КОГДА ЦеныБазовые.ТипЦен.Рассчитывается
+					ТОГДА ВЫБОР
+							КОГДА ЦеныБазовые.СпособРасчетаЦены = &amp;СпособНаценка
+								ТОГДА ВЫБОР
+										КОГДА ЦеныРасчетные.Цена ЕСТЬ NULL 
+											ТОГДА 0
+										ИНАЧЕ ЦеныРасчетные.Цена * (1 + ЦеныБазовые.ПроцентСкидкиНаценки / 100)
+									КОНЕЦ
+							ИНАЧЕ ЦеныБазовые.ЦенаДиапазона
+						КОНЕЦ
+				ИНАЧЕ ЦеныБазовые.Цена
+			КОНЕЦ) КАК Цена
+	ИЗ
+		(ВЫБРАТЬ
+			СписокНоменклатуры.Номенклатура КАК Номенклатура,
+			СпрТипЦен.ТипЦен КАК ТипЦен,
+			ЦеныНоменклатуры.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+			ЕСТЬNULL(ЦеныНоменклатуры.Цена, 0) КАК Цена,
+			ВЫБОР
+				КОГДА ЦеныНоменклатуры.Номенклатура ЕСТЬ NULL 
+					ТОГДА СпрТипЦен.ПроцентСкидкиНаценки
+				ИНАЧЕ ЕСТЬNULL(ЦеныНоменклатуры.ПроцентСкидкиНаценки, ЦеныНоменклатуры.ТипЦен.ПроцентСкидкиНаценки)
+			КОНЕЦ КАК ПроцентСкидкиНаценки,
+			ВЫБОР
+				КОГДА ЦеныНоменклатуры.Номенклатура ЕСТЬ NULL 
+					ТОГДА СпрТипЦен.СпособРасчетаЦены
+				ИНАЧЕ ЕСТЬNULL(ЦеныНоменклатуры.СпособРасчетаЦены, ЦеныНоменклатуры.ТипЦен.СпособРасчетаЦены)
+			КОНЕЦ КАК СпособРасчетаЦены,
+			ЕСТЬNULL(ШкалыДиапазонов.Цена, 0) КАК ЦенаДиапазона,
+			ЕСТЬNULL(ШкалыДиапазонов.ВерхняяГраница, 0) КАК ВерхняяГраница,
+			ЕСТЬNULL(ЦеныНоменклатуры.Валюта, СпрТипЦен.Валюта) КАК Валюта,
+			ШкалыДиапазонов.Валюта КАК ВалютаДиапазона
+		ИЗ
+			(ВЫБРАТЬ
+				СпрХарактеристики.Владелец КАК Номенклатура,
+				СпрХарактеристики.Ссылка КАК ХарактеристикаНоменклатуры
+			ИЗ
+				Справочник.ХарактеристикиНоменклатуры КАК СпрХарактеристики
+			{ГДЕ
+				СпрХарактеристики.Владелец.* КАК Номенклатура,
+				СпрХарактеристики.Владелец.ЦеноваяГруппа.* КАК ЦеноваяГруппа}
+			
+			ОБЪЕДИНИТЬ ВСЕ
+			
+			ВЫБРАТЬ
+				СпрНоменклатура.Ссылка,
+				ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+			ИЗ
+				Справочник.Номенклатура КАК СпрНоменклатура
+			{ГДЕ
+				СпрНоменклатура.Ссылка.* КАК Номенклатура,
+				СпрНоменклатура.Ссылка.ЦеноваяГруппа.* КАК ЦеноваяГруппа}) КАК СписокНоменклатуры
+				ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					СправочникЦен.Ссылка КАК ТипЦен,
+					СправочникЦен.ВалютаЦены КАК Валюта,
+					СправочникЦен.ПроцентСкидкиНаценки КАК ПроцентСкидкиНаценки,
+					СправочникЦен.СпособРасчетаЦены КАК СпособРасчетаЦены
+				ИЗ
+					Справочник.ТипыЦенНоменклатуры КАК СправочникЦен
+				{ГДЕ
+					СправочникЦен.Ссылка.* КАК ТипЦен}) КАК СпрТипЦен
+				ПО (НЕ СписокНоменклатуры.Номенклатура.ЭтоГруппа)
+					И (НЕ СписокНоменклатуры.Номенклатура.Набор)
+				ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(&amp;Дата, {(Номенклатура).* КАК Номенклатура, (Номенклатура.ЦеноваяГруппа).* КАК ЦеноваяГруппа, (ТипЦен).* КАК ТипЦен}) КАК ЦеныНоменклатуры
+				ПО (ЦеныНоменклатуры.Номенклатура = СписокНоменклатуры.Номенклатура)
+					И (ЦеныНоменклатуры.ТипЦен = СпрТипЦен.ТипЦен)
+					И (ЦеныНоменклатуры.ХарактеристикаНоменклатуры = СписокНоменклатуры.ХарактеристикаНоменклатуры)
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ДиапазоныЦен.ТипЦен КАК ТипЦен,
+					ДиапазоныЦен.ВерхняяГраница КАК ВерхняяГраница,
+					ДиапазоныЦен.Цена КАК Цена,
+					ДиапазоныЦен.Валюта КАК Валюта,
+					ДиапазоныЦен.Период КАК Период
+				ИЗ
+					РегистрСведений.ДиапазоныЦенДляНаценки.СрезПоследних(&amp;Дата, {(ТипЦен).* КАК ТипЦен}) КАК ДиапазоныЦен
+						ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+							ДиапазоныЦенДляНаценкиСрезПоследних.ТипЦен КАК ТипЦен,
+							МАКСИМУМ(ДиапазоныЦенДляНаценкиСрезПоследних.Период) КАК Период
+						ИЗ
+							РегистрСведений.ДиапазоныЦенДляНаценки.СрезПоследних(&amp;Дата, {(ТипЦен).* КАК ТипЦен}) КАК ДиапазоныЦенДляНаценкиСрезПоследних
+						
+						СГРУППИРОВАТЬ ПО
+							ДиапазоныЦенДляНаценкиСрезПоследних.ТипЦен) КАК МаксДиапазоныЦен
+						ПО ДиапазоныЦен.ТипЦен = МаксДиапазоныЦен.ТипЦен
+							И ДиапазоныЦен.Период = МаксДиапазоныЦен.Период) КАК ШкалыДиапазонов
+				ПО (ШкалыДиапазонов.ТипЦен = СпрТипЦен.ТипЦен)
+					И (СпрТипЦен.ТипЦен.Рассчитывается)) КАК ЦеныБазовые
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(&amp;Дата, {(Номенклатура).* КАК Номенклатура, (Номенклатура.ЦеноваяГруппа).* КАК ЦеноваяГруппа}) КАК ЦеныРасчетные
+			ПО ЦеныБазовые.Номенклатура = ЦеныРасчетные.Номенклатура
+				И ЦеныБазовые.ТипЦен.БазовыйТипЦен = ЦеныРасчетные.ТипЦен
+	ГДЕ
+		(НЕ ЦеныБазовые.ТипЦен.Рассчитывается
+				ИЛИ ЦеныБазовые.СпособРасчетаЦены &lt;&gt; &amp;СпособДиапазон
+				ИЛИ ЦеныБазовые.СпособРасчетаЦены = &amp;СпособДиапазон
+					И (ЦеныРасчетные.Цена МЕЖДУ 0.000001 И ЦеныБазовые.ВерхняяГраница - 0.000001))
+	
+	СГРУППИРОВАТЬ ПО
+		ЦеныБазовые.ТипЦен,
+		ЦеныБазовые.Номенклатура,
+		ЦеныБазовые.ТипЦен.Рассчитывается,
+		ЦеныБазовые.ТипЦен.ВалютаЦены) КАК ЗапросПрайс
+		{ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			Штрихкоды.Штрихкод КАК ШтрихКод,
+			Штрихкоды.Владелец КАК Владелец,
+			Штрихкоды.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатурыШтрихКода,
+			Штрихкоды.ЕдиницаИзмерения КАК ЕдиницаИзмерения
+		ИЗ
+			РегистрСведений.Штрихкоды КАК Штрихкоды) КАК ШтрихКоды
+		ПО ЗапросПрайс.Номенклатура = ШтрихКоды.Владелец
+			И ЗапросПрайс.ЕдиницаИзмерения = ШтрихКоды.ЕдиницаИзмерения}
+		{ПОЛНОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			НесвернутыеОстатки.Номенклатура КАК НоменклатураОст,
+			НесвернутыеОстатки.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатурыОст,
+			СУММА(НесвернутыеОстатки.Остаток) КАК Остаток,
+			НесвернутыеОстатки.СерияНоменклатуры КАК СерияНоменклатуры,
+			НесвернутыеОстатки.Склад КАК Склад,
+			СУММА(НесвернутыеОстатки.Резерв) КАК Резерв
+		ИЗ
+			(ВЫБРАТЬ
+				Ост.Номенклатура.Ссылка КАК Номенклатура,
+				Ост.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
+				Ост.КоличествоОстаток КАК Остаток,
+				Ост.СерияНоменклатуры КАК СерияНоменклатуры,
+				Ост.Склад КАК Склад,
+				0 КАК Резерв
+			ИЗ
+				РегистрНакопления.ТоварыНаСкладах.Остатки(&amp;Дата, {(Склад).* КАК Склад, (Склад.ВидСклада).* КАК ВидСклада, (Номенклатура).* КАК Номенклатура, (Номенклатура.ЦеноваяГруппа).* КАК ЦеноваяГруппа}) КАК Ост
+			
+			ОБЪЕДИНИТЬ ВСЕ
+			
+			ВЫБРАТЬ
+				НТТ.Номенклатура.Ссылка,
+				НТТ.ХарактеристикаНоменклатуры,
+				НТТ.КоличествоОстаток,
+				НТТ.СерияНоменклатуры,
+				НТТ.Склад,
+				0
+			ИЗ
+				РегистрНакопления.ТоварыВНТТ.Остатки(&amp;Дата, {(Склад).* КАК Склад, (Склад.ВидСклада).* КАК ВидСклада, (Номенклатура).* КАК Номенклатура, (Номенклатура.ЦеноваяГруппа).* КАК ЦеноваяГруппа}) КАК НТТ
+			
+			ОБЪЕДИНИТЬ ВСЕ
+			
+			ВЫБРАТЬ
+				Розница.Номенклатура.Ссылка,
+				Розница.ХарактеристикаНоменклатуры,
+				Розница.КоличествоОстаток,
+				Розница.СерияНоменклатуры,
+				Розница.Склад,
+				0
+			ИЗ
+				РегистрНакопления.ТоварыВРознице.Остатки(&amp;Дата, {(Склад).* КАК Склад, (Склад.ВидСклада).* КАК ВидСклада, (Номенклатура).* КАК Номенклатура, (Номенклатура.ЦеноваяГруппа).* КАК ЦеноваяГруппа}) КАК Розница
+			
+			ОБЪЕДИНИТЬ ВСЕ
+			
+			ВЫБРАТЬ
+				ТоварыВРезервеНаСкладахОстатки.Номенклатура,
+				ТоварыВРезервеНаСкладахОстатки.ХарактеристикаНоменклатуры,
+				0,
+				ТоварыВРезервеНаСкладахОстатки.СерияНоменклатуры,
+				ТоварыВРезервеНаСкладахОстатки.Склад,
+				ТоварыВРезервеНаСкладахОстатки.КоличествоОстаток
+			ИЗ
+				РегистрНакопления.ТоварыВРезервеНаСкладах.Остатки(&amp;Дата, ) КАК ТоварыВРезервеНаСкладахОстатки) КАК НесвернутыеОстатки
+		
+		СГРУППИРОВАТЬ ПО
+			НесвернутыеОстатки.Номенклатура,
+			НесвернутыеОстатки.ХарактеристикаНоменклатуры,
+			НесвернутыеОстатки.СерияНоменклатуры,
+			НесвернутыеОстатки.Склад) КАК Остатки
+		ПО ЗапросПрайс.Номенклатура = Остатки.НоменклатураОст}
+ГДЕ
+	Остатки.Склад = &amp;Склад
+	И ЗапросПрайс.ТипЦен = &amp;ТипЦен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТЗ_Цены.Номенклатура КАК Номенклатура,
+	ТЗ_Цены.Остаток КАК Остаток,
+	ТЗ_Цены.СерияНоменклатуры КАК СерияНоменклатуры,
+	ТЗ_Цены.Склад,
+	ТЗ_Цены.ШтрихКод КАК ШтрихКод,
+	ТЗ_Цены.ОСГ КАК ОСГ,
+	ТЗ_Цены.ЕдиницаИзмерения,
+	ВЫБОР
+		КОГДА ТЗ_Цены.ТипЦенЦенаВключаетНДС
+			ТОГДА ТЗ_Цены.Цена
+		ИНАЧЕ ТЗ_Цены.Цена * (100 + ТЗ_Цены.СтавкаНДС) / 100
+	КОНЕЦ КАК ЦенаСНДС,
+	ВЫБОР
+		КОГДА ТЗ_Цены.ТипЦенЦенаВключаетНДС
+			ТОГДА ТЗ_Цены.Цена / (1 + ТЗ_Цены.СтавкаНДС / 100)
+		ИНАЧЕ ТЗ_Цены.Цена
+	КОНЕЦ КАК ЦенаБезНДС,
+	МИНИМУМ(Серт_ДекларацияСоответствия.Регистратор) КАК ДекларацияСоответствия,
+	МИНИМУМ(Серт_СвРегистрации.Регистратор) КАК СвидетельствоОГосрегистрации,
+	МИНИМУМ(Серт_ТаможенногоСоюза.Регистратор) КАК ДекларацияТаможенногоСоюза,
+	МИНИМУМ(Серт_ДекларацияСоответствия.Регистратор) КАК СертификатСоответствия,
+	МИНИМУМ(Серт_УдКачества.Регистратор) КАК УдостоверениеКачества,
+	ВЫРАЗИТЬ(ТЗ_Цены.Номенклатура.НаименованиеПолное КАК СТРОКА(200)) КАК ПолноеНаименование,
+	ТЗ_Цены.Резерв,
+	ТЗ_Цены.Номенклатура.ОсновноеИзображение КАК Изображение
+ИЗ
+	ТЗ_Цены КАК ТЗ_Цены
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			абс_ТоварыСертификатов.Регистратор КАК Регистратор,
+			абс_ТоварыСертификатов.Номенклатура КАК Номенклатура,
+			абс_ТоварыСертификатов.ДатаНачалаДействияСертификата КАК ДатаНачалаДействияСертификата,
+			абс_ТоварыСертификатов.ДатаОкончанияДействияСертификата КАК ДатаОкончанияДействияСертификата
+		ИЗ
+			РегистрСведений.абс_ТоварыСертификатов КАК абс_ТоварыСертификатов
+		ГДЕ
+			абс_ТоварыСертификатов.ВидСертификата = ЗНАЧЕНИЕ(Перечисление.абс_ВидыСертификатовНаТовары.ДекларацияСоответствия)) КАК Серт_ДекларацияСоответствия
+		ПО ТЗ_Цены.Номенклатура = Серт_ДекларацияСоответствия.Номенклатура
+			И ТЗ_Цены.ДатаПроизводства &gt;= Серт_ДекларацияСоответствия.ДатаНачалаДействияСертификата
+			И ТЗ_Цены.ДатаПроизводства &lt;= Серт_ДекларацияСоответствия.ДатаОкончанияДействияСертификата
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			абс_ТоварыСертификатов.Регистратор КАК Регистратор,
+			абс_ТоварыСертификатов.Номенклатура КАК Номенклатура,
+			абс_ТоварыСертификатов.ДатаНачалаДействияСертификата КАК ДатаНачалаДействияСертификата,
+			абс_ТоварыСертификатов.ДатаОкончанияДействияСертификата КАК ДатаОкончанияДействияСертификата
+		ИЗ
+			РегистрСведений.абс_ТоварыСертификатов КАК абс_ТоварыСертификатов
+		ГДЕ
+			абс_ТоварыСертификатов.ВидСертификата = ЗНАЧЕНИЕ(Перечисление.абс_ВидыСертификатовНаТовары.СвидетельствоОГосрегистрации)) КАК Серт_СвРегистрации
+		ПО ТЗ_Цены.Номенклатура = Серт_СвРегистрации.Номенклатура
+			И ТЗ_Цены.ДатаПроизводства &gt;= Серт_СвРегистрации.ДатаНачалаДействияСертификата
+			И ТЗ_Цены.ДатаПроизводства &lt;= Серт_СвРегистрации.ДатаОкончанияДействияСертификата
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			абс_ТоварыСертификатов.Регистратор КАК Регистратор,
+			абс_ТоварыСертификатов.Номенклатура КАК Номенклатура,
+			абс_ТоварыСертификатов.ДатаНачалаДействияСертификата КАК ДатаНачалаДействияСертификата,
+			абс_ТоварыСертификатов.ДатаОкончанияДействияСертификата КАК ДатаОкончанияДействияСертификата
+		ИЗ
+			РегистрСведений.абс_ТоварыСертификатов КАК абс_ТоварыСертификатов
+		ГДЕ
+			абс_ТоварыСертификатов.ВидСертификата = ЗНАЧЕНИЕ(Перечисление.абс_ВидыСертификатовНаТовары.СертификатСоответствия)) КАК Серт_Соответствие
+		ПО ТЗ_Цены.Номенклатура = Серт_Соответствие.Номенклатура
+			И ТЗ_Цены.ДатаПроизводства &gt;= Серт_Соответствие.ДатаНачалаДействияСертификата
+			И ТЗ_Цены.ДатаПроизводства &lt;= Серт_Соответствие.ДатаОкончанияДействияСертификата
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			абс_ТоварыСертификатов.Регистратор КАК Регистратор,
+			абс_ТоварыСертификатов.Номенклатура КАК Номенклатура,
+			абс_ТоварыСертификатов.ДатаНачалаДействияСертификата КАК ДатаНачалаДействияСертификата,
+			абс_ТоварыСертификатов.ДатаОкончанияДействияСертификата КАК ДатаОкончанияДействияСертификата
+		ИЗ
+			РегистрСведений.абс_ТоварыСертификатов КАК абс_ТоварыСертификатов
+		ГДЕ
+			абс_ТоварыСертификатов.ВидСертификата = ЗНАЧЕНИЕ(Перечисление.абс_ВидыСертификатовНаТовары.ДекларацияТаможенногоСоюза)) КАК Серт_ТаможенногоСоюза
+		ПО ТЗ_Цены.Номенклатура = Серт_ТаможенногоСоюза.Номенклатура
+			И ТЗ_Цены.ДатаПроизводства &gt;= Серт_ТаможенногоСоюза.ДатаНачалаДействияСертификата
+			И ТЗ_Цены.ДатаПроизводства &lt;= Серт_ТаможенногоСоюза.ДатаОкончанияДействияСертификата
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			абс_ТоварыСертификатов.Регистратор КАК Регистратор,
+			абс_ТоварыСертификатов.Номенклатура КАК Номенклатура,
+			абс_ТоварыСертификатов.ДатаНачалаДействияСертификата КАК ДатаНачалаДействияСертификата,
+			абс_ТоварыСертификатов.ДатаОкончанияДействияСертификата КАК ДатаОкончанияДействияСертификата
+		ИЗ
+			РегистрСведений.абс_ТоварыСертификатов КАК абс_ТоварыСертификатов
+		ГДЕ
+			абс_ТоварыСертификатов.ВидСертификата = ЗНАЧЕНИЕ(Перечисление.абс_ВидыСертификатовНаТовары.УдостоверениеКачества)) КАК Серт_УдКачества
+		ПО ТЗ_Цены.Номенклатура = Серт_УдКачества.Номенклатура
+			И ТЗ_Цены.ДатаПроизводства &gt;= Серт_УдКачества.ДатаНачалаДействияСертификата
+			И ТЗ_Цены.ДатаПроизводства &lt;= Серт_УдКачества.ДатаОкончанияДействияСертификата
+ГДЕ
+	ТЗ_Цены.Цена &lt;&gt; 0
+	И ТЗ_Цены.ОСГ &gt;= &amp;ОСГ
+
+СГРУППИРОВАТЬ ПО
+	ТЗ_Цены.Номенклатура,
+	ТЗ_Цены.Остаток,
+	ТЗ_Цены.СерияНоменклатуры,
+	ТЗ_Цены.Склад,
+	ТЗ_Цены.ШтрихКод,
+	ТЗ_Цены.ОСГ,
+	ТЗ_Цены.ЕдиницаИзмерения,
+	ВЫБОР
+		КОГДА ТЗ_Цены.ТипЦенЦенаВключаетНДС
+			ТОГДА ТЗ_Цены.Цена
+		ИНАЧЕ ТЗ_Цены.Цена * (100 + ТЗ_Цены.СтавкаНДС) / 100
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ТЗ_Цены.ТипЦенЦенаВключаетНДС
+			ТОГДА ТЗ_Цены.Цена / (1 + ТЗ_Цены.СтавкаНДС / 100)
+		ИНАЧЕ ТЗ_Цены.Цена
+	КОНЕЦ,
+	ВЫРАЗИТЬ(ТЗ_Цены.Номенклатура.НаименованиеПолное КАК СТРОКА(200)),
+	ТЗ_Цены.Резерв,
+	ТЗ_Цены.Номенклатура.ОсновноеИзображение
+
+УПОРЯДОЧИТЬ ПО
+	ТЗ_Цены.Номенклатура.Наименование
+{ХАРАКТЕРИСТИКИ
+	ТИП(Справочник.Номенклатура)
+	ВИДЫХАРАКТЕРИСТИК (ВЫБРАТЬ
+			СвойстваОбъектов.Ссылка,
+			СвойстваОбъектов.Наименование,
+			СвойстваОбъектов.ТипЗначения
+		ИЗ
+			ПланВидовХарактеристик.СвойстваОбъектов КАК СвойстваОбъектов
+		ГДЕ
+			СвойстваОбъектов.НазначениеСвойства = ЗНАЧЕНИЕ(ПланВидовХарактеристик.НазначенияСвойствКатегорийОбъектов.Справочник_Номенклатура))
+	ПОЛЕКЛЮЧА Ссылка
+	ПОЛЕИМЕНИ Наименование
+	ПОЛЕТИПАЗНАЧЕНИЯ ТипЗначения
+	ЗНАЧЕНИЯХАРАКТЕРИСТИК РегистрСведений.ЗначенияСвойствОбъектов
+	ПОЛЕОБЪЕКТА Объект
+	ПОЛЕВИДА Свойство
+	ПОЛЕЗНАЧЕНИЯ Значение }</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>СвободныйОстаток</dataPath>
+		<expression>Остаток -Резерв</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Свободный остаток</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВалютаОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Валюта отчета</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВВалютеОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>В валюте отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">true</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Дата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ОСГ</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ОСГ</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Склад</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Склад</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Склады</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>СпособДиапазон</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Способ диапазон</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СпособыРасчетаЦены</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.СпособыРасчетаЦены.ПоВхождениюБазовойЦеныВДиапазон</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>СпособНаценка</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Способ наценка</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СпособыРасчетаЦены</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.СпособыРасчетаЦены.ПоПроцентнойНаценкеНаБазовыйТип</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ТипЦен</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Тип цен</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ТипыЦенНоменклатуры</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Контрагент</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Контрагент</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Контрагенты</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>РазмерИзображения</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Размер изображения</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">100</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>Изображение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура.Артикул</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Артикул</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПолноеНаименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ШтрихКод</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦенаБезНДС</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена без НДС,руб.</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура.СтавкаНДС</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НДС</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦенаСНДС</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена с НДС,руб.</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СерияНоменклатуры</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СерияНоменклатуры.СрокГодности</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срок годности до:</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОСГ</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОСГ,%</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Остаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Резерв</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СвободныйОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура.ЕдиницаИзмеренияМест.Коэффициент</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во шт. в упаковке</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура.Лео_ОКК_УсловияХранения</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Условия хранения</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕдиницаИзмерения.ВесНетто</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Масса нетто, кг</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕдиницаИзмерения.Вес</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Масса, кг</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕдиницаИзмерения.абс_Ширина</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ширина, м</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕдиницаИзмерения.абс_Высота</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Высота, м</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕдиницаИзмерения.абс_Глубина</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Глубина, м</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура.КодТНВЭД</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код ТН ВЭД</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура.ОКП</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код ОКПД2</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВВалютеОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Дата</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ОСГ</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Склад</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ТипЦен</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

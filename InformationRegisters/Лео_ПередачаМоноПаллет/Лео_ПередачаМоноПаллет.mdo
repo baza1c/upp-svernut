@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="52f0a371-332d-472f-8f62-ac75ce125bce">
+  <producedTypes>
+    <selectionType typeId="5190a947-c2dd-4cec-b998-66528b993b40" valueTypeId="ed008c91-3f82-4e6d-88be-28771ea4ea22"/>
+    <listType typeId="16c13e59-5a6d-4e82-b20a-a1e954b7084b" valueTypeId="3629230c-f606-4f87-9643-ab82feaaca29"/>
+    <managerType typeId="4e8da743-b49d-49b1-a582-c40faa193b6f" valueTypeId="fabe0628-720c-4abb-981b-4f91b838acd6"/>
+    <recordSetType typeId="ec8869db-12e6-4ada-913f-d3dcdad7f567" valueTypeId="d15be9ef-e197-4486-a979-8366c8ade4c5"/>
+    <recordKeyType typeId="a028f48c-79b3-4d2a-8038-8b64e22b2691" valueTypeId="c60f9690-4fdf-4a27-b5f8-b3248eef58b9"/>
+    <recordType typeId="f01c3d92-d74b-4a3c-a4b4-5dbe0deec695" valueTypeId="baf6c490-256f-468d-9316-6615f5704c47"/>
+    <recordManagerType typeId="2a5681eb-b283-4d56-91a9-16db4904ae5f" valueTypeId="4dcbdf4f-0298-4723-95e0-fe8ed60377c6"/>
+  </producedTypes>
+  <name>Лео_ПередачаМоноПаллет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лео передача моно паллет с агрегатами коробок ЧЗ</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="de7ab273-a134-4329-b412-8a67bb2c4e45">
+    <name>СкладХранния</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад хранния</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="495bc4d2-858d-44b6-a85a-20a65a7afb31">
+    <name>ДокументПердачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ пердачи</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПеремещениеТоваров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="947194be-f703-4b47-a408-2770680cafaf">
+    <name>SSCC_Паллеты</name>
+    <synonym>
+      <key>ru</key>
+      <value>SSCC паллеты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_SSCC_КодыПаллеты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="622e9866-bb33-4523-a022-864426d764c1">
+    <name>SSCC_Короба</name>
+    <synonym>
+      <key>ru</key>
+      <value>SSCC короба</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_СправочникШтрихКодовКоробок</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

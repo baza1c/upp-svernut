@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5386b174-bd0d-407a-b8ba-f1b60750733f">
+  <producedTypes>
+    <selectionType typeId="5ecbbd6a-53dc-47cc-93a7-a30d76d8436b" valueTypeId="d0e7a9cf-6cff-44f2-881f-6f6a5d201b40"/>
+    <listType typeId="2419abe5-c3e4-431b-b8bc-dab15713a381" valueTypeId="51037420-9344-47e2-9d9c-a1ca0c8b18e7"/>
+    <managerType typeId="755fedf4-b09e-4018-a04b-00d0b50259c0" valueTypeId="be71caa7-05b7-4244-958d-773ec66c0d8e"/>
+    <recordSetType typeId="5549868b-e900-4e01-af56-c2308a527429" valueTypeId="9a57ad9a-7f34-4449-b5bd-abfa3e749bd8"/>
+    <recordKeyType typeId="0b628151-932f-4787-b32d-fdb4cb15e71b" valueTypeId="f55b24ea-940c-4863-9593-2b27bf7c51ae"/>
+    <recordType typeId="2e638d11-1b97-4a22-83e9-8e11a2de70f8" valueTypeId="02cc026d-db20-4a52-8021-0533dd87abae"/>
+    <recordManagerType typeId="f76f4e26-2ff8-4269-aee6-0d0bfaa5229a" valueTypeId="047d2ba8-ec02-4214-86ae-0edf0ae7f0a1"/>
+  </producedTypes>
+  <name>Лео_БюджетныйПлан</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бюджетный план</value>
+  </synonym>
+  <comment>регистр для формирования сводки</comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="0873f3df-99fa-45ac-a3c5-972497682ced">
+    <name>СуммаБюджет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма бюджет</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="822bc331-015e-4585-8349-b43f5e9dbce2">
+    <name>СуммаПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма план</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="95ea9185-4566-46f8-ab05-6ec318ea50ab">
+    <name>СтатьяСводки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья сводки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_СтатьиСводки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

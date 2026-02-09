@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1bcc452-273b-4252-8c26-265cb570f17a">
+  <producedTypes>
+    <selectionType typeId="15857c4b-a93f-4ecd-893d-1720516c4b7c" valueTypeId="3ed1213d-29e6-4b3d-bcc3-bdef61946038"/>
+    <listType typeId="ca2862e6-6776-4aa4-91e7-f1a78559d345" valueTypeId="6d996fff-0e88-4169-8a86-0418e11a3e7d"/>
+    <managerType typeId="4b7a4c5b-0a39-46cc-8fd7-07e175aeb1ff" valueTypeId="8745f0b0-2f28-4665-bfb5-7a30b485a0b0"/>
+    <recordSetType typeId="4371e25a-ed7e-4099-8ec2-e59fe96d5b7a" valueTypeId="9a3540cf-feaf-45b8-8483-f44c5430aa03"/>
+    <recordKeyType typeId="8bb87eeb-7486-4c5b-aa13-93b737f35bc5" valueTypeId="49e7a202-7079-4437-878e-13b606740da3"/>
+    <recordType typeId="236b6a85-ca59-4966-a5ef-1fc3de9a7888" valueTypeId="17291c17-3d59-4788-bef5-887a3ec4a787"/>
+    <recordManagerType typeId="0fcdf717-e10b-42f8-b1ad-defecb697c84" valueTypeId="9e153255-5c14-46bd-bbec-a7155b72cec9"/>
+  </producedTypes>
+  <name>Лео_КоличествоТорговыхТочекПоКатегориям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество торговых точек по категориям</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e09c0984-a83d-487e-9025-c22a1af7e8a6">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="0b592f65-578b-4b8e-a11a-d72019c87174">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e2cbfad0-bb38-4235-8c9e-510330bbcd48">
+    <name>КатегорияТорговыхТочек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория торговых точек</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Лео_КатегорияТорговыхТочек</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

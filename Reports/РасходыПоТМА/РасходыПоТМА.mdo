@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17c52bc8-f1cd-476a-bb6d-d3c96733a555">
+  <producedTypes>
+    <objectType typeId="b06d12ee-d8cf-42f7-b9c7-19f34be9b3ef" valueTypeId="3e181b55-5783-4ed0-961d-fde135728cd7"/>
+    <managerType typeId="8c3dcf39-2010-4956-9910-6eaff52cd68f" valueTypeId="e8baaba1-a7e0-4a53-a53a-9c5a74e6fb76"/>
+  </producedTypes>
+  <name>РасходыПоТМА</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расходы по ТМА</value>
+  </synonym>
+  <defaultForm>Report.РасходыПоТМА.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.РасходыПоТМА.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="1383a568-10e3-4cdf-91b2-8552199da441">
+    <name>НастройкаПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка периода</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d290f1b2-321f-4032-b4e3-61dfdc12b7fc">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="217c2d70-1f7b-4d38-9f41-0bec0db28a01">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="270f96f4-0359-48ef-bb34-8bb0c6a84cf5">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="46942a2f-5ef8-481b-b00a-a70afeab8edb">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

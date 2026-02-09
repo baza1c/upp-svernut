@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a7793095-b115-469b-a98a-02f0528f849f">
+  <producedTypes>
+    <selectionType typeId="8e4e61d6-c652-4a1c-beb7-724aaf5918b0" valueTypeId="ce77440f-8d00-4f9f-a3c8-f6657377fee1"/>
+    <listType typeId="6fbfeae3-b03a-468a-9435-bf7148fb5194" valueTypeId="97534064-b7de-4feb-889f-9f040fc85cf9"/>
+    <managerType typeId="f6c9c3ef-a657-44ad-a8b1-73c094c631d3" valueTypeId="2978fc8e-f6b5-4a55-a332-827bf1f6411e"/>
+    <recordSetType typeId="ba119691-31e8-4d89-86f4-56c3d47bb9cf" valueTypeId="568bd1b7-7c5b-4c09-99ee-260e1789ccbf"/>
+    <recordKeyType typeId="2b2b27e9-256b-484e-995c-804a3a6156cc" valueTypeId="f11a3597-c67a-45d3-b31f-a41ddedc9148"/>
+    <recordType typeId="3c4c719a-607f-4f5c-b476-5a0d7e053eed" valueTypeId="bd7e5d05-984d-4230-80ad-050e2164c896"/>
+    <recordManagerType typeId="58ed7b76-0a4c-474a-894d-e8f31b475b1f" valueTypeId="12881c91-a500-4ba3-a555-2d299c00152a"/>
+  </producedTypes>
+  <name>Лео_СоответствиеСкладОрганизацияГрузотправитель</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие склад организация грузотправитель</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="3a91c3f7-341f-4ae6-9b24-6b5007588bd2">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="b2403faf-52e2-493f-a2bf-dcdef397efa7">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3944808b-25a7-4ed7-8f51-9e7bf2acd294">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

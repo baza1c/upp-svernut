@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76d14396-f424-4066-aef8-b7c3aa62a788">
+  <producedTypes>
+    <selectionType typeId="aa3a66a6-71db-4d97-86a1-b6246f86760e" valueTypeId="a10e2940-9a78-48f2-bf2f-0920cbe9e2b2"/>
+    <listType typeId="510c06c8-31a6-4733-9bc4-aefc14012056" valueTypeId="e77470f7-c0c9-4a6b-b7f3-ac45ab402886"/>
+    <managerType typeId="3601c8cf-3139-4643-b4c3-ec2e2d1cfcc4" valueTypeId="059baeec-0d4d-47ec-87b0-e81a95a495f2"/>
+  </producedTypes>
+  <name>абс_ЖурналДокументовОбменаПУБ77</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал документов обмена ПУБ 7.7</value>
+  </synonym>
+  <registeredDocuments>Document.ВыпускПродукции</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеТоваровИзПереработки</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеТоваровУслуг</registeredDocuments>
+  <registeredDocuments>Document.ВозвратТоваровОтПокупателя</registeredDocuments>
+  <registeredDocuments>Document.КорректировкаДолга</registeredDocuments>
+  <registeredDocuments>Document.ОприходованиеТоваров</registeredDocuments>
+  <registeredDocuments>Document.СписаниеТоваров</registeredDocuments>
+  <registeredDocuments>Document.РасходныйКассовыйОрдер</registeredDocuments>
+  <registeredDocuments>Document.ПриходныйКассовыйОрдер</registeredDocuments>
+  <registeredDocuments>Document.ПлатежноеПоручениеВходящее</registeredDocuments>
+  <registeredDocuments>Document.ПлатежноеПоручениеИсходящее</registeredDocuments>
+  <registeredDocuments>Document.ПеремещениеТоваров</registeredDocuments>
+  <registeredDocuments>Document.ИнвентаризацияТоваровНаСкладе</registeredDocuments>
+  <registeredDocuments>Document.РеализацияТоваровУслуг</registeredDocuments>
+  <registeredDocuments>Document.Пересортица</registeredDocuments>
+  <columns uuid="db9fce5e-77f4-4e21-a927-75fe58caa9b6">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хозяйственная операция</value>
+    </synonym>
+    <references>Document.ВозвратТоваровОтПокупателя.Attribute.абс_ХозяйственнаяОперация</references>
+    <references>Document.ВыпускПродукции.Attribute.абс_ХозяйственнаяОперация</references>
+    <references>Document.КорректировкаДолга.Attribute.абс_ХозяйственнаяОперация</references>
+    <references>Document.ОприходованиеТоваров.Attribute.абс_ХозяйственнаяОперация</references>
+    <references>Document.ПеремещениеТоваров.Attribute.абс_ХозяйственнаяОперация</references>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.абс_ХозяйственнаяОперация</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.абс_ХозяйственнаяОперация</references>
+    <references>Document.ПоступлениеТоваровИзПереработки.Attribute.абс_ХозяйственнаяОперация</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.абс_ХозяйственнаяОперация</references>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.абс_ХозяйственнаяОперация</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.абс_ХозяйственнаяОперация</references>
+    <references>Document.СписаниеТоваров.Attribute.абс_ХозяйственнаяОперация</references>
+    <references>Document.ИнвентаризацияТоваровНаСкладе.Attribute.абс_ХозяйственнаяОперация</references>
+    <references>Document.РеализацияТоваровУслуг.Attribute.абс_ХозяйственнаяОперация</references>
+  </columns>
+  <columns uuid="911c43bd-d3af-46a0-ba07-54ce3111d45b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ВозвратТоваровОтПокупателя.Attribute.Организация</references>
+    <references>Document.ВыпускПродукции.Attribute.Организация</references>
+    <references>Document.КорректировкаДолга.Attribute.Организация</references>
+    <references>Document.ОприходованиеТоваров.Attribute.Организация</references>
+    <references>Document.ПеремещениеТоваров.Attribute.Организация</references>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.Организация</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.Организация</references>
+    <references>Document.ПоступлениеТоваровИзПереработки.Attribute.Организация</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.Организация</references>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.Организация</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Организация</references>
+    <references>Document.СписаниеТоваров.Attribute.Организация</references>
+    <references>Document.ИнвентаризацияТоваровНаСкладе.Attribute.Организация</references>
+    <references>Document.РеализацияТоваровУслуг.Attribute.Организация</references>
+  </columns>
+</mdclass:DocumentJournal>

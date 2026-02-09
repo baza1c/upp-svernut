@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aggregates="http://g5.1c.ru/v8/dt/aggregates" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8bed1c9-e70c-4fe8-8299-c6199a2215da">
+  <producedTypes>
+    <selectionType typeId="7830496c-5d94-45df-b3cb-e73de079ed07" valueTypeId="a4965b33-9a2e-4b4c-8e8a-212584e32e5f"/>
+    <listType typeId="4b0ec2ef-944e-4962-bd5c-7bf5da2de404" valueTypeId="f2124a00-ad43-4ed5-bd22-eea5739e252c"/>
+    <managerType typeId="59aaf491-554a-44f5-8945-9d431f51769d" valueTypeId="d02f9c2a-f308-4550-8d49-1e877353f004"/>
+    <recordSetType typeId="c5decef8-16b3-41ae-8e4e-b60e14646374" valueTypeId="5a8894be-8181-4967-8dbe-6bcd64341241"/>
+    <recordKeyType typeId="46069a16-25e4-423f-be96-8c320dc7d126" valueTypeId="ece3ef75-1b2c-42e1-875c-abf8bc8ebd0a"/>
+    <recordType typeId="8f2a77ec-4223-4476-9df5-d52546068a4e" valueTypeId="1fa88613-1ed1-4f93-9b88-d092b4d147fd"/>
+  </producedTypes>
+  <name>Лео_ПланыПроизводства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планы производства (Лео)</value>
+  </synonym>
+  <comment>(Лео) Укрупненные / уточненные планы производства</comment>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <aggregates xsi:type="aggregates:AccumulationRegisterAggregates">
+    <aggregates id="725dd1b3-a469-4246-ab12-868b92348e0c">
+      <use>Always</use>
+      <periodicity>Auto</periodicity>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Сценарий</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Подразделение</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Номенклатура</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.ХарактеристикаНоменклатуры</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.ДокументПланирования</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Проект</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Заказ</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Контрагент</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Договор</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.ВариантРаспределения</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Спецификация</dimensions>
+    </aggregates>
+    <aggregates id="7976bfe0-2b3e-472c-a596-29a0d3bc70b1">
+      <periodicity>Auto</periodicity>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Сценарий</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Номенклатура</dimensions>
+    </aggregates>
+    <aggregates id="9119c3e3-ec5d-4e69-8f9d-ec2088285812">
+      <periodicity>Auto</periodicity>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Сценарий</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Номенклатура</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Контрагент</dimensions>
+    </aggregates>
+    <aggregates id="bfdc1c9e-a214-43a1-88db-e2b34833549e">
+      <periodicity>Auto</periodicity>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Сценарий</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Подразделение</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Номенклатура</dimensions>
+    </aggregates>
+    <aggregates id="89b8cb58-f9b2-4691-9431-1099df52b35e">
+      <periodicity>Auto</periodicity>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Сценарий</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Номенклатура</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Проект</dimensions>
+    </aggregates>
+    <aggregates id="e2f2c3d4-e76e-499e-b134-86bb28eb6a7e">
+      <periodicity>Auto</periodicity>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Сценарий</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Подразделение</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Номенклатура</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Контрагент</dimensions>
+    </aggregates>
+    <aggregates id="65ddd5dc-911f-4c95-b9b6-bd0370e600ff">
+      <periodicity>Auto</periodicity>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Сценарий</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Номенклатура</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Проект</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Контрагент</dimensions>
+    </aggregates>
+    <aggregates id="29e59bef-3cd0-4730-abaa-d6ecb97d5aad">
+      <periodicity>Auto</periodicity>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Сценарий</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Подразделение</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Номенклатура</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Проект</dimensions>
+    </aggregates>
+    <aggregates id="1261a960-3b44-44b4-9501-cd9e2e1092e5">
+      <periodicity>Auto</periodicity>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Сценарий</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Подразделение</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Номенклатура</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Проект</dimensions>
+      <dimensions>AccumulationRegister.Лео_ПланыПроизводства.Dimension.Контрагент</dimensions>
+    </aggregates>
+  </aggregates>
+  <resources uuid="cfbba5c7-4ba7-45cc-80fc-10459ee0566e">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="0147afa6-f12e-40ce-bbd7-245914d10585">
+    <name>Стоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="c22100c2-f6c2-4994-b5b3-a07300045a2e">
+    <name>НДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>НДС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="22aa8f42-e462-4167-a252-2c109040589b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment>Любая дополнительная информация</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="7865672c-0499-43c6-a6e7-b894689006bc">
+    <name>Лео_РаспоряжениеНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>№ Распоряжения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="efc2fda7-78e9-4474-9fb5-2db277674393">
+    <name>Сценарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сценарий</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СценарииПланирования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d98d2f75-8458-457e-97d8-fac6282bb034">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="43c4fe20-4e2f-4fad-ad3f-f819a745bcbc">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатурныеГруппы</types>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="73691d0e-f4bf-42ff-b922-a85263d723f0">
+    <name>ХарактеристикаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b0c94969-6db7-423b-84cb-842398864e57">
+    <name>ДокументПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ планирования</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПланПродаж</types>
+      <types>DocumentRef.ПланПроизводства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c5df9baf-5226-47c4-bd95-7b5953ce97b5">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b36885b3-53a7-4f7b-90b3-05f1be27e8eb">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаказНаПроизводство</types>
+      <types>DocumentRef.ЗаказПокупателя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="62ac17e9-c1ff-47be-8b87-7ca2a4844f8c">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0b531e59-6484-404b-9007-cd70cd1496b1">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9fcaf7b5-d41b-4f83-a108-fca760ff1cae">
+    <name>ВариантРаспределения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант распределения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВариантыРаспределенияПоПериоду</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a5a13963-460c-4632-9c12-4b5ab8a4f432">
+    <name>Спецификация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спецификация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпецификацииНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0c455b57-85af-44ce-b52a-dbea7f4efa13">
+    <name>абс_Утвержден</name>
+    <synonym>
+      <key>ru</key>
+      <value>Утвержден</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="04fd0604-58d6-4a10-bc4f-e3975a10d2c8">
+    <name>абс_ВидПланаПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид плана производства</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_ВидыПлановПроизводства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f65d2ed3-0e2c-4d72-9ee1-9022eb461405">
+    <name>Лео_оборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лео оборудование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_оборудование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="69f37e6d-9411-4243-89c5-a8001457a547">
+    <name>Лео_ЭтоРаспоряжение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лео это распоряжение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e1e60c89-2595-4fe5-abf3-192162f322cd">
+    <name>Распоряжение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распоряжение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_РаспоряженияНаВыпуск</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

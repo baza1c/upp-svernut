@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d007e57-f144-4825-a7d2-925a1c01d1f9">
+  <producedTypes>
+    <objectType typeId="17a0fb9e-a903-4f59-a74b-751881bdce95" valueTypeId="dc465862-7d02-4c41-967f-d1927b66a249"/>
+    <managerType typeId="31b597cb-06e8-470f-b483-1cb19b0e4f3c" valueTypeId="e3bb60b1-cb1e-42a0-80cb-5f00e2c3f82d"/>
+  </producedTypes>
+  <name>СправкаРасчетРезервыПоСомнительнымДолгам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справка-расчет &quot;Резервы по сомнительным долгам&quot;</value>
+  </synonym>
+  <comment>(регл)</comment>
+  <defaultForm>Report.СправкаРасчетРезервыПоСомнительнымДолгам.Form.Отчет</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="7809f5b3-b772-4e7b-929a-b278223b772d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="49874825-904a-4e0a-a6f9-8d0f1e34d1a4">
+    <name>ПериодРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>С</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="03db79d5-f8b2-4c1b-aef4-8a71582df27c">
+    <name>ПостроительОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Построитель отчета</value>
+    </synonym>
+    <type>
+      <types>ReportBuilder</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="804eb5c3-4c87-4dc6-a532-8dfc3c9d7990">
+    <name>ВариантОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант отчета</value>
+    </synonym>
+    <comment>1 - БУ, 2 - НУ, 3 - БУ, ПР, ВР</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4f1c3128-a4f1-4873-bfd8-a091aac4736f">
+    <name>ВыделятьЦветом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выделять цветом</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ae79c1a7-65e9-4ebc-8218-e4fa7bad98ae">
+    <name>СохраняемыеРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохраняемые реквизиты</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="66782118-5bed-4f20-be85-8505eff22d56">
+    <name>ИспользоватьИнуюНастройку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать иную настройку</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="44dd9da6-5a6c-44ef-b24a-74094100cb34">
+    <name>СохраненныеНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохраненные настройки</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="c90240f3-4d6e-4c7b-9ff2-f46f7dcbed8d">
+    <name>Отчет</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ea408c9c-0235-4c76-96b5-c8868bfb953a">
+    <name>ФормаНастройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="2ee5f260-eb7e-4440-b053-269bdcecdcfd">
+    <name>Отчет</name>
+  </templates>
+</mdclass:Report>

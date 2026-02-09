@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b340036c-2b4e-47e2-8836-d407be5a55a5">
+  <producedTypes>
+    <selectionType typeId="57d191f8-aa9a-4818-9423-2eb312a579ed" valueTypeId="7163ac62-d287-4c9e-bf73-d5d2810b2057"/>
+    <listType typeId="90b44bcb-fcd2-481d-815c-1f7fad834510" valueTypeId="7e9a8482-4052-424b-82d2-e123fd18952d"/>
+    <managerType typeId="b4e88612-ae6e-4165-bdd9-6b4070e59b23" valueTypeId="73454563-d4d4-4891-b595-16796c44e78d"/>
+    <recordSetType typeId="59e193b5-5d9c-4b42-ae4b-790e053ba65c" valueTypeId="cf78cbf1-d6a6-4fb7-8fd8-a6cb6cc7adc2"/>
+    <recordKeyType typeId="88634898-d20b-4620-b23b-ddd9e328728f" valueTypeId="ba333b8b-88b8-4008-8021-c9de0966b447"/>
+    <recordType typeId="719be8e2-e727-4f25-aea0-c664d6be85e8" valueTypeId="4a08e134-e297-4ded-a358-acdc5bab8d20"/>
+    <recordManagerType typeId="5ef98ee7-9eb9-4e20-bae7-fd56474c7f84" valueTypeId="211bea18-0510-4ebb-8169-c782793e4569"/>
+  </producedTypes>
+  <name>абс_СтопЛистПоКонтрагентам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стоп-лист по контрагентам (АБС)</value>
+  </synonym>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4d7cbe24-d490-42b2-841f-1816b5ab6841">
+    <name>СтатусЗадолженности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус задолженности</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_СтатусыЗадолженности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1f814101-c0f1-41e6-ab9f-a6922ec21b1f">
+    <name>СуммаОбщейЗадолженности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма общей задолженности</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="caea5823-a812-43ea-b06a-9dfc8cea14d1">
+    <name>СуммаПросроченнойЗадолженности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма просроченной задолженности</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d0d66981-756d-4f51-843d-f60b7da49b10">
+    <name>КоличествоДнейПросроченнойЗадолженности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество дней просроченной задолженности</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4b2384bd-f4dd-47ea-b008-467ba65ec6b3">
+    <name>ДопустимоеЧислоДнейЗадолженности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимое число дней задолженности</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b4c89ba4-8de6-4961-8350-477a46684d8a">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

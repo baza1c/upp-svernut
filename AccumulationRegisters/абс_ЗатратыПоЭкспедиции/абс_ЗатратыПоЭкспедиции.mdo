@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f230750-2ba5-4a3f-abd7-cada9129f9ed">
+  <producedTypes>
+    <selectionType typeId="5e1c7c16-0166-4d6b-b892-f0ca147354ec" valueTypeId="eff79355-193d-4d37-a5f2-04dde98540e6"/>
+    <listType typeId="32599b7d-0f04-4ac2-862a-fd0052f9a315" valueTypeId="92082236-db4f-4a63-a66d-87926049fb45"/>
+    <managerType typeId="5cc8abfa-b6e8-4a0a-ba26-bd358b383a2a" valueTypeId="1432e5bd-d454-47e5-a0ad-d28413b8e016"/>
+    <recordSetType typeId="3ef15b1c-e4e4-4ac1-b839-e9708bf168fd" valueTypeId="2fd6a172-e44b-4ca5-96e0-744b7f3543eb"/>
+    <recordKeyType typeId="83cef238-1f4f-4e0a-bbc5-b49deb957a99" valueTypeId="49bdfff8-2c4f-4a80-a5e6-df13bbbd9383"/>
+    <recordType typeId="66ae398c-287c-4777-ba85-3691a91df534" valueTypeId="220fef72-f336-48d7-b50c-053159baf8c3"/>
+  </producedTypes>
+  <name>абс_ЗатратыПоЭкспедиции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Затраты по экспедиции</value>
+  </synonym>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="d80ff4c3-0ff3-425e-80cc-1eafdee821ee">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="35fcd5ad-5faf-4a11-8c3a-fd8dd8417eef">
+    <name>Вес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="4a7ce1d5-9d09-41ca-ab10-2ae2f91e4f06">
+    <name>Объем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="947ad92b-be8b-43a0-bc13-3346a272fb02">
+    <name>Доля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доля</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="9c1c9460-4b3e-4dac-9a79-fd52c0f2591b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4d9dc8be-5660-4b33-82f0-b32c737f218e">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="1dace2d9-e3a3-4f53-950a-73bc95469e29">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="16570007-60f3-4234-98a2-248643bc7d00">
+    <name>ТранспортнаяКомпания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная компания</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a1c770c4-00c9-46ce-bea4-dfaeb2a03bc0">
+    <name>ЗаявкаНаТранспорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка на транспорт</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.абс_ЗаявкаНаТранспорт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="5df61e1a-1648-4177-a8ad-58f8a293d125">
+    <name>ТранспортныйМаршрут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортный маршрут</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.абс_ТранспортныйМаршрут</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

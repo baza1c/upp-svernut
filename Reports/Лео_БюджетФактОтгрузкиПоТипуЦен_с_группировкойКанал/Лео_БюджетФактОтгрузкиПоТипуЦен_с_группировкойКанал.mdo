@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10e80a54-8101-4a3f-8337-43b656eed5e1">
+  <producedTypes>
+    <objectType typeId="70ef209b-440f-4e1b-845f-a269977f8029" valueTypeId="db4465a6-eca4-4936-a9b5-6be412e76455"/>
+    <managerType typeId="ff9a24fe-f98a-4479-a553-8e454ee90fc1" valueTypeId="73392707-cd1d-4b15-85d0-506e5415ff7a"/>
+  </producedTypes>
+  <name>Лео_БюджетФактОтгрузкиПоТипуЦен_с_группировкойКанал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ежедневный бюджет - факт отгрузки (по типу цен+ канал)</value>
+  </synonym>
+  <defaultForm>Report.Лео_БюджетФактОтгрузкиПоТипуЦен_с_группировкойКанал.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="58a05dd7-fe6d-4d42-a195-5452de627456">
+    <name>ДатаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата отчета</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3f66d0e8-c650-4922-a1d5-bc9ac12a9b9a">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>SpreadsheetDocument</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5ec6f72c-fc57-4442-8ae9-304b92fb6d68">
+    <name>ВыводитьНоменклатуру</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить номенклатуру</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ad096550-aaba-4737-8a5b-18e5e4787b62">
+    <name>Сценарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сценарий</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СценарииПланирования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f3276097-2833-4d79-93bd-40fe1f566760">
+    <name>ВыводитьКоличество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить количество</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3449cfd2-22fe-4fd3-b1e3-c8f448f4445b">
+    <name>ДинамическиеЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Динамические цены</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e2c05892-f3a2-4bc4-9430-238ad0bcc61f">
+    <name>ТипЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип цен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыЦенНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="72cbbb2a-67bc-406f-b98c-1d78da6941c7">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="bdee4bca-80eb-471c-91b7-5f1e5118d186">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cadcabeb-03d0-4bc9-b152-b2d7db5dac31">
+  <producedTypes>
+    <objectType typeId="09ebfa81-5843-4136-b750-0b118b8ef018" valueTypeId="eb6067be-9189-4b61-b058-b4affcedfddf"/>
+    <refType typeId="ac069804-0066-416a-805f-b8f0d5a2f663" valueTypeId="67d80f92-f3df-48f5-b0e5-212e69e79b49"/>
+    <selectionType typeId="959e4347-993c-4b1e-9c8a-e26ddf737658" valueTypeId="3b4b994b-b0bc-4486-bcc3-cc871740e8aa"/>
+    <listType typeId="8f3d9d2e-325b-4a28-aae8-65925ccb8ff2" valueTypeId="e45390c9-6f15-4f11-8ab1-3e4de8173178"/>
+    <managerType typeId="a8e77e28-baa2-4d03-872f-471355489c6d" valueTypeId="edd0aee5-d0f9-4476-9a16-2bf97dd32692"/>
+  </producedTypes>
+  <name>абс_СводнаяЗаявкаНаТранспорт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сводная заявка на транспорт (АБС)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.абс_СводнаяЗаявкаНаТранспорт.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.абс_СводнаяЗаявкаНаТранспорт.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.абс_СводнаяЗаявкаНаТранспорт.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.абс_СводнаяЗаявкаНаТранспорт.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <attributes uuid="19f857e0-90bd-4007-ad1f-108a39e4f2ca">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5fff8f5a-5d66-4ff2-b2de-41262c86177c">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="95c3636e-c052-4eab-a9a1-d8ddf9e9f3f3">
+    <name>ДатаИсполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата исполнения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="187f134b-adde-4de5-bda4-0ff82e8c60ff">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="353d8795-07d4-4bd8-acf6-ef0a6383fcae">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f3c97361-a9fd-4ae0-94f6-0eefd24e0104">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="66f46060-db92-48bf-88aa-4399be62a2d9">
+    <producedTypes>
+      <objectType typeId="d0157d73-11f9-487b-b16b-b4367eba986c" valueTypeId="5bd4bbeb-e6c5-4fcc-baaa-b09294bc37b7"/>
+      <rowType typeId="5975a9fe-3007-48ee-8f3c-e5d78880004e" valueTypeId="86b27d74-196c-4c54-b4a5-cf99b2972ee7"/>
+    </producedTypes>
+    <name>Маршруты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршруты</value>
+    </synonym>
+    <attributes uuid="c1ccd213-2b80-4c99-8633-156f76342fdc">
+      <name>ТранспортныйМаршрут</name>
+      <synonym>
+        <key>ru</key>
+        <value>Транспортный маршрут</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.абс_ТранспортныйМаршрут</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="15b84253-da47-4325-8f0c-9ee194e5ffd1">
+      <name>ЗаявкаНаТранспорт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заявка на транспорт</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.абс_ЗаявкаНаТранспорт</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6057eb2d-064a-4360-86ed-7b235c5fbb7b">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

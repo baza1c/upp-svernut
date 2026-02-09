@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57c49bd2-c55d-459f-ae4b-d2e42d633743">
+  <producedTypes>
+    <selectionType typeId="5a77dabb-b663-4a44-a43f-2e0146d2ca46" valueTypeId="73e3af4f-5aa9-4cf1-a74c-d3e2e77e0aa7"/>
+    <listType typeId="be08c267-2973-4356-a6f2-cb012b79a4bc" valueTypeId="b054e181-9880-42eb-ab2a-90c70af90641"/>
+    <managerType typeId="6f619c66-16a8-427e-90ab-be516bc98203" valueTypeId="60c8f8d7-12ef-495c-8bce-dc7c1d6ca399"/>
+    <recordSetType typeId="617d9e20-bbbc-40dc-88a5-cd24fc67e989" valueTypeId="24afddb2-4914-4854-8086-4f257549fda1"/>
+    <recordKeyType typeId="84e8c157-48dd-4e6d-8279-10c629ff04e7" valueTypeId="c75aacd6-5240-4ab2-82e0-e58517c9edbb"/>
+    <recordType typeId="f57fe76c-62cb-4d55-9d1f-9cdd1769d4a9" valueTypeId="ce519bb1-19b9-44fe-886a-4aa2161f9a77"/>
+    <recordManagerType typeId="fa0ffc4e-e773-4703-8359-11ac785595ba" valueTypeId="a8030dbe-f818-4b9e-b30d-c1e29aa96eca"/>
+  </producedTypes>
+  <name>ВзаимозависимыеЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаимозависимые лица</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ВзаимозависимыеЛица.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ВзаимозависимыеЛица.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Взаимозависимое лицо</value>
+  </recordPresentation>
+  <resources uuid="9a969a6a-0db3-4b96-81ce-e18870896a3f">
+    <name>ТипВзаимозависимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип взаимозависимости</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыВзаимозависимости</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e1144ffa-56d7-418b-ad53-df37f0ef437f">
+    <name>ЯвляетсяПлательщикомНалогаНаПрибыль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Является плательщиком налога на прибыль</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7dfbe510-9ad9-45b4-9439-a98cc9b53622">
+    <name>ЯвляетсяПлательщикомНДПИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Является плательщиком НДПИ по процентной ставке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="03d223bf-202b-4989-9ce6-c56afe143419">
+    <name>ЯвляетсяПлательщикомЕСХН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Является плательщиком ЕСХН</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bc2f65c0-4058-4af3-bc90-c21805386606">
+    <name>ЯвляетсяПлательщикомЕНВД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Является плательщиком ЕНВД</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="60f873f2-4eb1-453a-9f3a-ae88376a26b4">
+    <name>ЗарегистрированВОЭЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зарегистрирован в особой экономической зоне</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7e571dc5-a825-4242-bac2-473d44352888">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7faf759b-17af-44ba-9b16-78b22c27b557">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="28cdba10-cc23-4e2f-bda6-bc0794930647">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c72a01c9-c534-4415-a6bf-32934aa50a62">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

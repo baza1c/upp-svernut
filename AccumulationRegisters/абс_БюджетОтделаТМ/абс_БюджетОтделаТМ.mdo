@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e2fb990f-cbcc-4705-8528-ada2a536f371">
+  <producedTypes>
+    <selectionType typeId="b3f03709-b964-44f3-bbd9-51dc6b8b3058" valueTypeId="a225084e-90d4-4397-8cf9-13cdd1d05d2c"/>
+    <listType typeId="caac45f1-7baf-44ee-8e9c-8c8182c8a80b" valueTypeId="c07f9b5b-f740-4efd-97cc-f48d55307979"/>
+    <managerType typeId="20cb6579-d4bc-4b07-9da2-37d1169a452a" valueTypeId="7bd7e88e-af21-4288-bf83-4665eb5733cd"/>
+    <recordSetType typeId="3e28981c-9d66-4c80-8764-5961e0386777" valueTypeId="52a6852f-147e-4080-a166-21c59ef87afe"/>
+    <recordKeyType typeId="761f3a2b-0a18-41b3-8a29-681bd51e1408" valueTypeId="878c11a4-91fe-4047-8ac7-bf0869de06a3"/>
+    <recordType typeId="346260b6-019e-4d94-81cb-8651d4c03347" valueTypeId="84fd7be1-a055-48bf-93a1-6ad385ea92c0"/>
+  </producedTypes>
+  <name>абс_БюджетОтделаТМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бюджет отдела ТМ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="c3c36bbd-398a-4aac-bea7-c10714fc2329">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="e5db1225-57f8-4ca2-a19d-3fc57f405785">
+    <name>ЗаявкаНаБюджетОтделаТМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка на бюджет отдела ТМ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.абс_ЗаявкаНаБюджетОтделаТМ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="281f94f2-2e96-46a0-ae5b-27a410372e49">
+  <producedTypes>
+    <objectType typeId="458ca837-5b75-44bb-926a-df25e5a320d9" valueTypeId="90a63b02-a158-4dba-a9dc-c9086ff51019"/>
+    <managerType typeId="a333c024-6ed5-484a-9277-c94f26e53e0f" valueTypeId="81e1dd6a-09f3-45f8-a707-3703cd579bae"/>
+  </producedTypes>
+  <name>Лео_СводныйПоЗаказам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сводный по заказам</value>
+  </synonym>
+  <comment>выводится сводный отчет по всем заказам за интервал времени</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.Лео_СводныйПоЗаказам.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.Лео_СводныйПоЗаказам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="ed0cf606-d532-45f0-9c35-06f8a1e4def4">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6b365e79-8d26-4499-bc2b-2e937988bd5a">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

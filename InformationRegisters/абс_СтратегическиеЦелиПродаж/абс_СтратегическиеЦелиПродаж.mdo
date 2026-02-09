@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="730c684e-43ac-426c-9701-a39bbd1774a2">
+  <producedTypes>
+    <selectionType typeId="850e7ba3-4e6a-4f11-b0eb-bce227d2762c" valueTypeId="8d3c8a7e-6603-48d9-b51c-92cd362af519"/>
+    <listType typeId="f0849b15-12fb-4896-ab88-c5453e19b843" valueTypeId="71ee89d8-da76-46c3-b067-83022e790dcb"/>
+    <managerType typeId="cdb0f5eb-c405-49f8-aa9a-933e417dea7e" valueTypeId="cd52de13-ac10-4783-bf84-bbb76b4fbc13"/>
+    <recordSetType typeId="054b788b-5280-4c72-aa82-7204a8f14f8c" valueTypeId="8c34bfd1-65d7-4498-a2f2-d4d03a72d899"/>
+    <recordKeyType typeId="c380b78a-2ca3-4e64-a24e-558936f089f1" valueTypeId="a56bee5f-b4a1-42de-a541-0e58b8ca0e03"/>
+    <recordType typeId="07d96b26-5ee4-4e61-a08f-f148b9ccac6b" valueTypeId="9eaa32d1-1623-4cb1-8851-ee069529fba7"/>
+    <recordManagerType typeId="86e52a7c-1519-4c83-be6b-3cb4812479e4" valueTypeId="d0fb8f42-7941-43b6-b0b6-e3d48a6f7eef"/>
+  </producedTypes>
+  <name>абс_СтратегическиеЦелиПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стратегические цели продаж</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="9fdf94cc-9fa0-474a-9bf2-ad177c29a84e">
+    <name>Сценарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сценарий</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СценарииПланирования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8d07a6c0-4eaf-477c-8884-53a446967773">
+    <name>Регион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Регионы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a6edad87-430f-46e4-931b-d8b44606b8cc">
+    <name>ПериодПлана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период плана</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e37a57f5-dc81-4bb3-8a9e-fb1d70e5782f">
+    <name>Территория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Территория</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Регионы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="dfb13bcf-bd8e-41f3-aa8e-0cc1bd4c03b0">
+    <name>Город</name>
+    <synonym>
+      <key>ru</key>
+      <value>Город</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Регионы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1ecf8db0-546b-4aac-85a4-e2735c7940cb">
+    <name>Канал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Владелец</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>ChartOfCharacteristicTypes.СвойстваОбъектов.абс_Канал</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

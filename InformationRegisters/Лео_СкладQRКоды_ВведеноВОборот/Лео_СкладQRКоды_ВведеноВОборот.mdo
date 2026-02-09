@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7be04f6-fba1-46ee-a12f-6777eb569faf">
+  <producedTypes>
+    <selectionType typeId="911f77a7-9dde-4ee1-9ad4-b84e6793f900" valueTypeId="a0402c04-106a-4bc9-84fb-88c34c8a76ea"/>
+    <listType typeId="13d051ae-4361-4246-98c8-69d875ce5c21" valueTypeId="eb7df9e3-35a1-45a1-8b62-0a056860e50a"/>
+    <managerType typeId="284f00ef-a312-4cd8-a354-1990f1034590" valueTypeId="0496cbb0-d622-47d4-869b-774fe00a7104"/>
+    <recordSetType typeId="ac3cbe0c-25a4-4d5f-b32d-f21756ab57a9" valueTypeId="431d7236-7104-44aa-abd0-76d5ffd36837"/>
+    <recordKeyType typeId="0daa0afb-bbdc-40c1-9401-b6553b4b8158" valueTypeId="cb583591-0cef-4760-9ee6-da50c09e233b"/>
+    <recordType typeId="62c84aff-755f-463c-a554-8b5211fc9d0f" valueTypeId="677f4acb-fb61-4682-a35e-4c83f7676193"/>
+    <recordManagerType typeId="0d580eb9-b677-4976-ac70-5f3485bf6056" valueTypeId="22edd4d1-f1bb-4713-afe1-daf5d6ab469a"/>
+  </producedTypes>
+  <name>Лео_СкладQRКоды_ВведеноВОборот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лео склад QRКоды введено в оборот</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2f8a8976-6674-44fd-bfdd-7ae67c9ef64b">
+    <name>GTIN</name>
+    <synonym>
+      <key>ru</key>
+      <value>GTIN</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_СправочникGTIN_ПодлежащихМаркировки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7043d565-9c25-47c6-8570-5c30fa48cad2">
+    <name>id_orders</name>
+    <synonym>
+      <key>ru</key>
+      <value>Id orders</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>6</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="ff27ff94-0b44-4a9c-8271-18a794092143">
+    <name>id_korob</name>
+    <synonym>
+      <key>ru</key>
+      <value>Id korob</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_СправочникШтрихКодовКоробок</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f30adfde-6d07-4d09-ad41-568a25d5c213">
+    <name>ДатаПолученияКодов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата получения кодов</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3fd46fcf-316c-42d4-ab1b-9108d0205dba">
+    <name>КодСчитан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код считан</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3560f684-9582-4966-8c78-5ffba5b0a9bd">
+    <name>КодОтгружен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код отгружен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="037592a2-60f8-49f8-93cb-8bd82ef8137e">
+    <name>Код_КМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код КМ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>85</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>                                                                                     </value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

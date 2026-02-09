@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31d33905-4eb2-49e6-aac0-0266a014fb31">
+  <producedTypes>
+    <selectionType typeId="6c8c81e5-d612-49d2-ae48-1d9aed6c6c68" valueTypeId="e76bcb7c-5f8d-4a8f-824f-f50c9cfc2ed2"/>
+    <listType typeId="9a09405f-1230-4beb-8eae-b7b878045588" valueTypeId="c0e979ad-2818-4a59-98c7-c6e162af33c1"/>
+    <managerType typeId="cd5d43a7-5440-46e3-ae8a-f858f1ed1018" valueTypeId="6e0abb2f-0eb8-4ffe-a6f7-2a23efcf6a7e"/>
+    <recordSetType typeId="2e115d68-0fb9-4e07-a814-2bd9e8d52c63" valueTypeId="539b53a0-6610-4996-a5c0-cb7de2943ada"/>
+    <recordKeyType typeId="3288cbe2-9fb6-4724-aeea-6227d19f0a2e" valueTypeId="98542eed-d1a1-4ae2-86dc-5654f5b1e388"/>
+    <recordType typeId="ddc380b3-e17f-4c37-b110-c9f9f35e18b2" valueTypeId="215e3d16-b009-4f07-b3c0-3e9236d16665"/>
+    <recordManagerType typeId="40657997-e10d-4e7f-9c94-18a2c827cab4" valueTypeId="396850a4-c96a-4298-9ece-92426eb75d45"/>
+  </producedTypes>
+  <name>абс_НомераДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номера документов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7c2991a4-a048-4d9c-b4fc-f4b3975f9b81">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7004f70b-5dad-42f0-88ca-118a60b8cc19">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a2611898-502a-49b7-a2ce-df3070114c40">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a13dbeaa-38cd-4fbc-bfe3-ba0a4a9a4871">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.СчетФактураВыданный</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.ВозвратТоваровОтПокупателя</types>
+      <types>DocumentRef.КорректировкаРеализации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00c20494-8a10-4b75-9a20-df8f19eb1326">
+  <producedTypes>
+    <objectType typeId="30c7f92a-3bcf-46fa-a4ff-5daba545c1fc" valueTypeId="81baf186-4aef-491c-8516-4cee9bb90a3f"/>
+    <managerType typeId="74d84295-c745-4835-8081-a93bfe373584" valueTypeId="46da95b6-af10-4274-8865-a45e139f59b4"/>
+  </producedTypes>
+  <name>абс_ПланФактОтгрузки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ежедневный план - факт отгрузки</value>
+  </synonym>
+  <defaultForm>Report.абс_ПланФактОтгрузки.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="d345dc1b-4943-4dfd-be3c-ddd25976e9da">
+    <name>ДатаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата отчета</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="87ddcc2b-056a-4379-816a-ce292b96e6df">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>SpreadsheetDocument</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6636e70d-b191-40f7-8d3c-fd206da9003c">
+    <name>ВыводитьНоменклатуру</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить номенклатуру</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="def38942-f0b1-4d98-b960-0e756c363429">
+    <name>Сценарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сценарий</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СценарииПланирования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="2dfbd293-b31f-457a-a7a0-788266a1aeaa">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b0ae7cbd-0b8e-4ae3-9b06-28a6d21e5051">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

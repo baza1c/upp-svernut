@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1318bfa-8902-4ba2-9cdc-080287cc7a84">
+  <producedTypes>
+    <objectType typeId="9eadd461-3ed6-4130-acfd-7fc719931141" valueTypeId="f72aeae8-6772-423b-ab44-8b304ef2bd29"/>
+    <refType typeId="ce9cc171-c694-442f-9e7b-dd96845039ca" valueTypeId="a346c9a8-9603-4ec5-9f1f-1416d61c1601"/>
+    <selectionType typeId="cc6f126f-a375-45bf-ae2d-371be03efedd" valueTypeId="6141da7c-3654-4ff2-a898-16790ff04190"/>
+    <listType typeId="b70c1382-a33d-41f7-a4e5-c65f9dcf635f" valueTypeId="08b0e174-0d5a-4ec0-9db5-8be850f3813d"/>
+    <managerType typeId="8b0eec42-73f1-4b63-ad6b-e2a307599a13" valueTypeId="49d58f85-cae3-4613-b34a-429266820021"/>
+  </producedTypes>
+  <name>Лео_УстановкаСкидкиОтБазовыеЦены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка скидки от базовые цены</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Лео_УстановкаСкидкиОтБазовыеЦены.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Лео_УстановкаСкидкиОтБазовыеЦены.Form.ФормаДокументаУпр</defaultObjectForm>
+  <auxiliaryObjectForm>Document.Лео_УстановкаСкидкиОтБазовыеЦены.Form.ФормаДокументаУпр</auxiliaryObjectForm>
+  <registerRecords>InformationRegister.Лео_СкидкиОтБазовыеЦены</registerRecords>
+  <attributes uuid="82681123-4eaf-4f22-808a-0db009c0996d">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e8f38d5d-bbd5-4c0d-a8d9-e5a691917121">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fb7d63c3-7c99-4517-b708-ae8c666d933d">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="47b85bed-09dc-42b1-92e3-8c84304c7cc3">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3906a0a4-50d9-4377-850c-7d6367a3112b">
+    <name>ФормаДокументаУпр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа упр</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="35af91a1-1e77-467d-bd37-6fc1ba044635">
+    <producedTypes>
+      <objectType typeId="a89aed06-a4d7-4ca6-a14a-e211e9548f8f" valueTypeId="181c786d-ea72-4cb8-ad40-5711e048723c"/>
+      <rowType typeId="96b6c50c-c11c-48c2-95c5-e64a73cd6a8d" valueTypeId="721542d9-2f87-48f1-a812-da7791ea44bb"/>
+    </producedTypes>
+    <name>Скидки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скидки</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="7d4a970e-7d63-4080-bc81-5ce4e14039ab">
+      <name>ДатаНачалаПериода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала периода</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c67fc153-eebe-49d2-b079-177df9659df9">
+      <name>ОкончаниеПериода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Окончание периода</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="78d13832-9864-4896-8fd4-b587123f2994">
+      <name>БазовыйТипЦен</name>
+      <synonym>
+        <key>ru</key>
+        <value>Базовый тип цен</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТипыЦенНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4ddbb8f9-ad6a-4ba9-abe9-e3a0c37e3a43">
+      <name>СтатуснаяСкидка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статусная скидка</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1ba955cc-6e84-445b-9bc1-7466ae2961e0">
+      <name>ДополнительнаяСкидка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дополнительная скидка (за предоплату)</value>
+      </synonym>
+      <comment>Дополнительная скидка (за предоплату), (применяется последовательно 1.1.)</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a6f0775f-6e27-4dcb-8092-f6b3e9eff0f3">
+      <name>СтатусныйТипЦен</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статусный тип цен</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТипыЦенНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3b0cffec-a873-4db0-99fe-22204b87596f">
+      <name>СкидкаКомпенсирующаяПремию</name>
+      <synonym>
+        <key>ru</key>
+        <value>Скидка, компенсирующая премию</value>
+      </synonym>
+      <comment>Скидка, компенсирующая премию (применяется параллельно 1.2.)</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="936405f4-74d2-436a-8b45-4d8d8824fc59">
+      <name>СкидкаЗаУслугиЛогистики</name>
+      <synonym>
+        <key>ru</key>
+        <value>Скидка за услуги логистики</value>
+      </synonym>
+      <comment>Скидка за услуги логистики (применяется параллельно 1.2.)</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="57440912-e8ed-425f-aaba-65314ccfe3ff">
+      <name>СкидкаЗаУслугиТорговогоМаркетинга</name>
+      <synonym>
+        <key>ru</key>
+        <value>Скидка за услуги торгового маркетинга</value>
+      </synonym>
+      <comment>Скидка за услуги торгового маркетинга (применяется параллельно 1.2.)</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3ce243a3-3fae-45bf-bd7b-8e50b44ec005">
+      <name>СкидкаЗаУслугиМерчендайзинга</name>
+      <synonym>
+        <key>ru</key>
+        <value>Скидка за услуги мерчендайзинга</value>
+      </synonym>
+      <comment>Скидка за услуги мерчендайзинга (применяется параллельно 1.2.)</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b7bef213-739e-4ed5-84f7-742d997a4499">
+      <name>СкидкаЗаПрочиеУслугиПоДоговору</name>
+      <synonym>
+        <key>ru</key>
+        <value>Скидка за прочие услуги по договору</value>
+      </synonym>
+      <comment>Скидка за прочие услуги по договору (применяется параллельно 1.2.)</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8a4f982c-02bc-412b-9b04-eb04babbe16a">
+      <name>ТипЦенСоСкидкой</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип цен со скидкой</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТипыЦенНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e5f30044-1268-4e88-9e8f-a664ff292474">
+      <name>ДокументУстановкаТиповЦенПоГруппам</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ &quot;Установка типов цен по группам&quot;</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.УстановкаТиповЦенПоГруппамНоменклатурыДляПокупателей</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f7a07096-6ba7-4028-9776-6668796fcf29">
+      <name>СоздатьТипыЦен</name>
+      <synonym>
+        <key>ru</key>
+        <value>Создать типы цен</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c9073206-f230-46d1-a931-eb31eaa5b881">
+      <name>СоздатьПривязкуТипаЦенКДоговору</name>
+      <synonym>
+        <key>ru</key>
+        <value>Создать привязку типа цен к договору</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9ec5b694-ddff-489e-9762-9df7dec54ef9">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

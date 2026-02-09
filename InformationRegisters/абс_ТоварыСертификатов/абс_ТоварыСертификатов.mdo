@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a38a79ac-604f-4747-b609-3905d0b5ba9c">
+  <producedTypes>
+    <selectionType typeId="e53c064a-60ca-44b7-b80a-7de32bc77935" valueTypeId="c95141c1-d99f-41bc-8591-28d0a2c9a893"/>
+    <listType typeId="adff2629-f85a-4c27-99e9-fbcc19cbfb0c" valueTypeId="9a01b58d-f684-4116-8b7e-144131a93d97"/>
+    <managerType typeId="afe6e1a3-2552-47c7-a376-a4f2397d5636" valueTypeId="1856eade-f34e-4cf2-a721-8be8636744c9"/>
+    <recordSetType typeId="d252a930-e9c3-4c33-869f-9a953e62cdc7" valueTypeId="9c1fe703-2c62-412c-bffe-4824b6e52c56"/>
+    <recordKeyType typeId="4ac9abe2-d40a-4c31-811e-cdd9f3387ad9" valueTypeId="53d3a40d-32e6-402f-9fdd-6a54a5ac8466"/>
+    <recordType typeId="ba5e8e09-f64e-4094-9b2d-125f0f543283" valueTypeId="57c08e4d-2686-47f9-922c-33d261059ebb"/>
+    <recordManagerType typeId="ec76a895-6e97-4920-8992-7d67d6f5749c" valueTypeId="aec1aa70-5b8a-4d17-a111-d3f12cfbcd1e"/>
+  </producedTypes>
+  <name>абс_ТоварыСертификатов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Товары сертификатов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификат на товары</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d2c70c67-2ee4-4792-b0ca-71e797a28360">
+    <name>ДатаНачалаДействияСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала действия сертификата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a237ce45-30c2-49c7-950a-fe9320c86f36">
+    <name>ДатаОкончанияДействияСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания действия сертификата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="65fdd878-fe93-4b44-b200-1e0158e42641">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="89ee375f-2280-44ca-9b9e-af53c9dcbbb6">
+    <name>ВидСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид сертификата</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_ВидыСертификатовНаТовары</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

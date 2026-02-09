@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce4c48ca-7c2e-4031-a3ac-53550285e7d5">
+  <producedTypes>
+    <objectType typeId="18be5bc3-22d8-4d69-8095-c76fe6149e25" valueTypeId="f74f7d81-7280-468c-9152-f00067ae7ab2"/>
+    <managerType typeId="be40681d-a61f-4b54-be77-6c9a1b9ca9f4" valueTypeId="79c2a8b1-9cf8-4fdf-9410-f89511734f10"/>
+  </producedTypes>
+  <name>СписокКонтролируемыхСделок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контролируемые сделки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СписокКонтролируемыхСделок.Form.ФормаОтчетаКонтролируемыеСделки</defaultForm>
+  <mainDataCompositionSchema>Report.СписокКонтролируемыхСделок.Template.СхемаКомпоновкиДанныхСписокСделок</mainDataCompositionSchema>
+  <attributes uuid="733d4702-9711-4431-b6e9-3a55cba6418b">
+    <name>Уведомление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.УведомлениеОКонтролируемыхСделках</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="43fa2e7b-3ec5-42ab-8083-b8ff9cdeeb2d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="51da09ec-c17a-4515-b5b9-f48290f9d5b2">
+    <name>ОтчетныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчетный год</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="4ba89e34-778d-4c54-9277-100b0b863147">
+    <name>ФормаОтчетаКонтролируемыеСделки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сведения о контролируемых сделках</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d568b8f8-80ff-49e8-a28c-9d4c7908ccab">
+    <name>СхемаКомпоновкиДанныхСписокСделок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных список сделок</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

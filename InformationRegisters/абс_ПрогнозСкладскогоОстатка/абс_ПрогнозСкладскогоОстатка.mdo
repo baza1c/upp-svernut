@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06cf1564-8016-4d88-a30b-cf3d046c38dd">
+  <producedTypes>
+    <selectionType typeId="4c4db633-3fd7-40f9-9127-057a3041e436" valueTypeId="09d51e29-f451-4362-ab98-7a5bdea68a66"/>
+    <listType typeId="f40c5752-b7c9-4fac-8cf6-63f95897022c" valueTypeId="2f6d86d5-e6cb-497e-b712-835800028a64"/>
+    <managerType typeId="73fcfba5-036a-4665-a5cf-71c4838ddc30" valueTypeId="0d38ad30-4600-4889-9719-677124871eb5"/>
+    <recordSetType typeId="2997484d-f403-4219-b94d-3e3bfde0298e" valueTypeId="3e05787b-017d-414e-b988-97896c74be0f"/>
+    <recordKeyType typeId="6784b825-b6d1-4d21-bec4-7253ff92042c" valueTypeId="07fd4c3d-e0e4-4776-bbab-3b17a8e54b4a"/>
+    <recordType typeId="138c5b1b-af3e-4d6a-83b2-5730fc11c842" valueTypeId="587a7cc3-73c6-4e11-9f6d-395a56f3c380"/>
+    <recordManagerType typeId="16dd15e5-9529-49e8-98e3-1d403ea5848c" valueTypeId="ccd4c970-07fd-4102-88c0-2d88f9e4a060"/>
+  </producedTypes>
+  <name>абс_ПрогнозСкладскогоОстатка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прогноз складского остатка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d5dfbb5b-cf93-4af3-b843-ffcac6460e30">
+    <name>ПрогнозСкладскогоОстатка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прогноз складского остатка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="53331765-7a93-43fb-a78d-2d23a64ec552">
+    <name>ПрогнозПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прогноз продаж</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b839bf60-2b6e-4847-81f0-742dfefb4f9d">
+    <name>УровеньНеснижаемогоОстатка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень неснижаемого остатка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7db5d61a-2305-4e89-a4de-95b4900dd0ae">
+    <name>ПланПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>План производства</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c4c78acd-6e58-4088-adb8-e231bbd39491">
+    <name>СтраховойЗапас</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страховой запас</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4d9c68a4-7c30-4419-aaea-b12e1542bafe">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="bfd78bd1-151e-46a2-9643-0ece850f77c2">
+    <name>ДатаОстатка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fd96c526-25f1-4fcd-a54d-7e13ca8a5523">
+    <name>Сценарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сценарий</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СценарииПланирования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

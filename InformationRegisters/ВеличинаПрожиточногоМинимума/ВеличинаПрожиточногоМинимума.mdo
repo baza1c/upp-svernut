@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d85e2d95-8098-4702-a427-f86d786a90ad">
+  <producedTypes>
+    <selectionType typeId="39343999-45f4-4610-a7ba-d0743a41db2a" valueTypeId="8c0c817b-7377-4c68-90da-d7abd61be4db"/>
+    <listType typeId="50692752-6f7f-42ce-a7b0-fc7403d0617d" valueTypeId="9b4d7a72-6854-4bce-8bfb-4bdad100523e"/>
+    <managerType typeId="8420952f-2f37-4803-81bd-94e0829d58a4" valueTypeId="91334731-4b12-4b66-830a-ef670c266832"/>
+    <recordSetType typeId="47a5aa59-0e05-405a-96e4-5a8fe0626441" valueTypeId="cd585b24-4cea-405d-959d-5aab079f93a3"/>
+    <recordKeyType typeId="c0c2ab3e-431b-4c4d-93b8-37fab6e5e8f2" valueTypeId="c9e4a250-c797-44b1-8747-156b6e3abfae"/>
+    <recordType typeId="904b170e-5a2b-4346-93d6-f1819a78c201" valueTypeId="8b99c78b-492c-454d-8774-eb60df9ed99d"/>
+    <recordManagerType typeId="0d146b2f-d2d5-4825-a859-7b003c3be882" valueTypeId="c05c1cdc-991b-40cb-a683-92e68eedeb6b"/>
+  </producedTypes>
+  <name>ВеличинаПрожиточногоМинимума</name>
+  <synonym>
+    <key>ru</key>
+    <value>Величина прожиточного минимума</value>
+  </synonym>
+  <defaultListForm>InformationRegister.ВеличинаПрожиточногоМинимума.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="645c69db-1886-4ea9-8ff7-80de0f0ec282">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2dc1f533-51e7-4e78-99a9-57f0fa6cff0b">
+    <name>ПрожиточныйМинимум</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прожиточный минимум</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПрожиточныеМинимумы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="bc0d49d6-04ab-4f39-9e39-aeae27a3c86c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

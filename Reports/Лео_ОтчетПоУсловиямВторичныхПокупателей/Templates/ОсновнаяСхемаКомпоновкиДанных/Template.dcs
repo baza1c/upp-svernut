@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БизнесРегион</dataPath>
+			<field>БизнесРегион</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГМ</dataPath>
+			<field>ГМ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дистрибьютор</dataPath>
+			<field>Дистрибьютор</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дистрибутор (первичный)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДистрибьюторРегион</dataPath>
+			<field>ДистрибьюторРегион</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регион</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Договор</dataPath>
+			<field>Договор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИтоговоеКоличествоТТ</dataPath>
+			<field>ИтоговоеКоличествоТТ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИтоговыеУсловияПоСети</dataPath>
+			<field>ИтоговыеУсловияПоСети</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итоговые условия по сети %</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ММ</dataPath>
+			<field>ММ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбязательныйМаркетинг</dataPath>
+			<field>ОбязательныйМаркетинг</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скидка за резмещение/ маркетинг (год. Присутсвие)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Отдел</dataPath>
+			<field>Отдел</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтклонениеОтРПЛ</dataPath>
+			<field>ОтклонениеОтРПЛ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРАЙС (Отклонение от РПЛ)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПремияВторичногоПокупателя</dataPath>
+			<field>ПремияВторичногоПокупателя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Премия (ретро 5% макс)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сеть</dataPath>
+			<field>Сеть</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СМ</dataPath>
+			<field>СМ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатуснаяСкидкаЗаОбъем</dataPath>
+			<field>СтатуснаяСкидкаЗаОбъем</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Территория</dataPath>
+			<field>Территория</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЦен</dataPath>
+			<field>ТипЦен</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.Контрагент КАК Сеть,
+	Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ПроцентОтклоненияЦеныОтгрузки КАК ОтклонениеОтРПЛ,
+	Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.СтатуснаяСкидка КАК СтатуснаяСкидкаЗаОбъем,
+	Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ОбязательныйМаркетинг,
+	Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ПремияВторичногоПокупателя,
+	Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ПроцентОтклоненияЦеныОтгрузки * -1 + Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.СтатуснаяСкидка + Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ОбязательныйМаркетинг + Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ПремияВторичногоПокупателя КАК ИтоговыеУсловияПоСети,
+	Дистрибьюторы.Дистрибьютор,
+	КоличествоТТ.ГМ,
+	КоличествоТТ.СМ,
+	КоличествоТТ.ММ
+ПОМЕСТИТЬ ВТ_Условия
+ИЗ
+	РегистрСведений.Лео_КоммерчискиеУсловияВторичныхПокупателей.СрезПоследних(&amp;ДатаОтчета, ) КАК Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			Лео_КоличествоТорговыхТочекПоКатегориямСрезПоследних.Контрагент КАК Контрагент,
+			СУММА(ВЫБОР
+					КОГДА Лео_КоличествоТорговыхТочекПоКатегориямСрезПоследних.КатегорияТорговыхТочек = ЗНАЧЕНИЕ(Перечисление.Лео_КатегорияТорговыхТочек.Гипермаркет)
+						ТОГДА Лео_КоличествоТорговыхТочекПоКатегориямСрезПоследних.Количество
+					ИНАЧЕ 0
+				КОНЕЦ) КАК ГМ,
+			СУММА(ВЫБОР
+					КОГДА Лео_КоличествоТорговыхТочекПоКатегориямСрезПоследних.КатегорияТорговыхТочек = ЗНАЧЕНИЕ(Перечисление.Лео_КатегорияТорговыхТочек.Супермаркет)
+						ТОГДА Лео_КоличествоТорговыхТочекПоКатегориямСрезПоследних.Количество
+					ИНАЧЕ 0
+				КОНЕЦ) КАК СМ,
+			СУММА(ВЫБОР
+					КОГДА Лео_КоличествоТорговыхТочекПоКатегориямСрезПоследних.КатегорияТорговыхТочек = ЗНАЧЕНИЕ(Перечисление.Лео_КатегорияТорговыхТочек.Минимаркет)
+						ТОГДА Лео_КоличествоТорговыхТочекПоКатегориямСрезПоследних.Количество
+					ИНАЧЕ 0
+				КОНЕЦ) КАК ММ
+		ИЗ
+			РегистрСведений.Лео_КоличествоТорговыхТочекПоКатегориям.СрезПоследних(&amp;ДатаОтчета, ) КАК Лео_КоличествоТорговыхТочекПоКатегориямСрезПоследних
+		
+		СГРУППИРОВАТЬ ПО
+			Лео_КоличествоТорговыхТочекПоКатегориямСрезПоследних.Контрагент) КАК КоличествоТТ
+		ПО Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.Контрагент = КоличествоТТ.Контрагент
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			Лео_ДистрибьюторыВторичныхПокупателей.Дистрибьютор КАК Дистрибьютор,
+			Лео_ДистрибьюторыВторичныхПокупателей.Контрагент КАК Контрагент
+		ИЗ
+			РегистрСведений.Лео_ДистрибьюторыВторичныхПокупателей КАК Лео_ДистрибьюторыВторичныхПокупателей
+		ГДЕ
+			Лео_ДистрибьюторыВторичныхПокупателей.Действует = ИСТИНА) КАК Дистрибьюторы
+		ПО Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.Контрагент = Дистрибьюторы.Контрагент
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Условия.Сеть,
+	ВТ_Условия.ОтклонениеОтРПЛ,
+	ВТ_Условия.СтатуснаяСкидкаЗаОбъем,
+	ВТ_Условия.ОбязательныйМаркетинг,
+	ВТ_Условия.ПремияВторичногоПокупателя,
+	ВТ_Условия.ИтоговыеУсловияПоСети,
+	ВТ_Условия.Дистрибьютор,
+	ВТ_Условия.ГМ,
+	ВТ_Условия.СМ,
+	ВТ_Условия.ММ,
+	ВТ_Условия.Дистрибьютор.ОсновнойДоговорКонтрагента КАК Договор,
+	ВТ_Условия.Дистрибьютор.Регион,
+	ВТ_Условия.Дистрибьютор.абс_Отдел КАК Отдел,
+	ВТ_Условия.Дистрибьютор.абс_БизнесРегион КАК БизнесРегион,
+	ТипыЦенПоГруппамНоменклатурыДляПокупателейСрезПоследних.ТипЦен,
+	ВТ_Условия.ГМ + ВТ_Условия.СМ + ВТ_Условия.ММ КАК ИтоговоеКоличествоТТ,
+	ВТ_Условия.Дистрибьютор.абс_Территория КАК Территория
+ИЗ
+	ВТ_Условия КАК ВТ_Условия
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ТипыЦенПоГруппамНоменклатурыДляПокупателей.СрезПоследних КАК ТипыЦенПоГруппамНоменклатурыДляПокупателейСрезПоследних
+		ПО ВТ_Условия.Дистрибьютор.ОсновнойДоговорКонтрагента = ТипыЦенПоГруппамНоменклатурыДляПокупателейСрезПоследних.абс_ДоговорКонтрагента
+			И ВТ_Условия.Дистрибьютор = ТипыЦенПоГруппамНоменклатурыДляПокупателейСрезПоследних.Контрагент</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ММ</dataPath>
+		<expression>Сумма(ММ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СМ</dataPath>
+		<expression>Сумма(СМ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ГМ</dataPath>
+		<expression>Сумма(ГМ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИтоговоеКоличествоТТ</dataPath>
+		<expression>Сумма(ИтоговоеКоличествоТТ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИтоговыеУсловияПоСети</dataPath>
+		<expression>Среднее(ИтоговыеУсловияПоСети)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбязательныйМаркетинг</dataPath>
+		<expression>Среднее(ОбязательныйМаркетинг)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтклонениеОтРПЛ</dataPath>
+		<expression>Среднее(ОтклонениеОтРПЛ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПремияВторичногоПокупателя</dataPath>
+		<expression>Среднее(ПремияВторичногоПокупателя)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СтатуснаяСкидкаЗаОбъем</dataPath>
+		<expression>Среднее(СтатуснаяСкидкаЗаОбъем)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Отдел</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>БизнесРегион</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДистрибьюторРегион</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Территория</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Дистрибьютор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Договор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТипЦен</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сеть</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИтоговоеКоличествоТТ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ГМ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СМ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ММ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтклонениеОтРПЛ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтатуснаяСкидкаЗаОбъем</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбязательныйМаркетинг</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПремияВторичногоПокупателя</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИтоговыеУсловияПоСети</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>a2b4d945-b425-46c9-9bb0-4c1b3c78c73b</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Отдел</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>БизнесРегион</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Дистрибьютор</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Сеть</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

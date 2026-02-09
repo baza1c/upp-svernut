@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c7a3b4c-d0c5-48a1-b380-42215445931c">
+  <producedTypes>
+    <selectionType typeId="42cecdb5-4d8b-40d4-bbd9-948489dd9199" valueTypeId="eb86ca65-0e9a-4352-8dd8-e01c2d2399b7"/>
+    <listType typeId="b9acfc6d-3e39-4b96-99ce-9b40605ad0b6" valueTypeId="6c7193e0-0281-4792-89f5-e5d6c5eeb9e9"/>
+    <managerType typeId="91a90357-8307-472c-acd8-f0c3fb6cef46" valueTypeId="4597b625-5e98-49a8-b890-7e0cfc57fc0b"/>
+    <recordSetType typeId="ae3eace3-822f-401f-90c8-558720b50662" valueTypeId="25ba96c1-4d1d-422e-bae7-cc95c90c5f54"/>
+    <recordKeyType typeId="426c0c1d-bee7-4658-8571-4a035fce246e" valueTypeId="a73c0c3f-ae6d-42f4-80dc-046645817307"/>
+    <recordType typeId="af743d3b-10a4-4d79-9df8-668d9975159e" valueTypeId="203f0c87-8c99-45ca-a731-80b4892ef23a"/>
+    <recordManagerType typeId="a3a7ba5e-b060-4293-b28b-f2e112b688ca" valueTypeId="b36c30da-b636-4464-ab25-da3b50545053"/>
+  </producedTypes>
+  <name>абс_ПодписиОтветственныхПоОрганизациям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подписи ответственных по организациям</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f38a838e-db02-4356-b49a-8a58115746ca">
+    <name>ОсновнаяПодпись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная подпись</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.абс_ПодписиОтветственныхЛиц</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="783e3643-1918-4aea-a581-945ebed645f1">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0d18d00d-ae65-406e-9576-435f43b66e16">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

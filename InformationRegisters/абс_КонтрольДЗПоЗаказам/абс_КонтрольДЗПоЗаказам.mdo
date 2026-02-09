@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="baacb668-d502-440e-9d20-2a33db6d620a">
+  <producedTypes>
+    <selectionType typeId="ba82844d-9882-4b00-a8a6-cb80e04fabca" valueTypeId="08497082-6cc5-4913-87d9-18b7e61661ca"/>
+    <listType typeId="e7f52cd3-65b0-44e7-b773-438f06e2ad28" valueTypeId="f1352a7c-f5a6-435f-a673-ba45455d630b"/>
+    <managerType typeId="2bf3f5b4-c6c0-40a5-b573-fce4d400553f" valueTypeId="5a0b1d59-c9ae-41e9-8af4-19fefa9fd44f"/>
+    <recordSetType typeId="585a6bd5-5ff0-48b9-8f76-f7c4d4810053" valueTypeId="d8ae6d67-138c-40c2-b75a-82929ead5a85"/>
+    <recordKeyType typeId="b39b5c54-56b7-4869-83ff-58dbc118c018" valueTypeId="fc00e836-3f64-4240-bef7-1afad64f838f"/>
+    <recordType typeId="a3e2078f-45fa-43ca-9236-e3ffb80cb14d" valueTypeId="f064c3d3-6b63-4cff-832d-7b08c87a17bb"/>
+    <recordManagerType typeId="058ebeb8-126c-4d13-a2fd-074489143a85" valueTypeId="5c169810-57ac-4bc3-b12a-296518bd16b7"/>
+  </producedTypes>
+  <name>абс_КонтрольДЗПоЗаказам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль дебиторской задолженности по заказам покупателей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.абс_КонтрольДЗПоЗаказам.Form.ФормаЗаписи</defaultRecordForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7dd5a690-87ca-4af9-8a5d-773335bde60d">
+    <name>СтатусДЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус ДЗ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_СтатусыДЗПоЗаказам</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="0fdf8f8e-a92d-462e-a607-db8be2a17ecc">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0ff1de89-7678-493f-9ec1-cd9a2b6b9ebf">
+    <name>ПринудительнаяБлокировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принудительная блокировка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e866df51-4f62-4ebb-8bb1-5b4d529e7365">
+    <name>ПредоплатныйЗаказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предоплатный заказ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="95fe76a3-3939-4844-9f33-af94b3f64ee5">
+    <name>ЗаказПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаказПокупателя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="f668ba22-bd51-4679-ac75-ffc4072e9384">
+    <name>ФормаНабораЗаписей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма набора записей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="103c8e3f-384c-4822-b3c1-1df97abbfd2a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="99c2695e-3620-424f-a030-a1b6539fef49">
+  <producedTypes>
+    <objectType typeId="58c9c02e-63b1-4787-a5d9-16f359f8ab98" valueTypeId="bfd3c995-7cee-41c5-98e6-cdf66ea4a5a4"/>
+    <managerType typeId="b2e83a32-bca4-4962-a3f7-5a707e641aba" valueTypeId="6132a53c-10a2-4546-8daa-e99bd3c60ec0"/>
+  </producedTypes>
+  <name>Лео_РеестрПремииКонтрагентов_Нов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реестр &quot;Премии контрагентов&quot; (Новый)</value>
+  </synonym>
+  <defaultForm>Report.Лео_РеестрПремииКонтрагентов_Нов.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="e4e925ad-9ced-45e3-b59f-9dc282df6783">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e18cc40f-7fd0-46b5-a41a-935f2c41cda0">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b74d444d-7b86-4e6f-bfa8-2c53e9bc71d4">
+    <name>НастройкаПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка периода</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bc002368-e860-47f5-a0f9-eb4a83fd1958">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Регионы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="256432cf-7fc2-4b0c-905a-182b7318a1d2">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9a69592c-b574-4ec3-acb3-1635ba928e3e">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

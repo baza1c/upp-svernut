@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3db18dd9-650b-4d87-a401-4e9d0918e7c2">
+  <producedTypes>
+    <objectType typeId="2ba15427-6f99-45e6-a179-35eece29faa0" valueTypeId="3a25d13a-b00b-4995-80a2-6152a52a2c53"/>
+    <refType typeId="4b56266e-6682-4fbb-9c50-b16ced4056a5" valueTypeId="7c9cc8b0-35d0-4baf-9383-74a47377f9b8"/>
+    <selectionType typeId="1772c809-05c3-49a0-b81f-6a800d61fee3" valueTypeId="5dd4183d-16fb-45fa-b571-6bed828124e4"/>
+    <listType typeId="edef7d31-3fd9-480f-815b-415aeb547cf2" valueTypeId="3ba78408-b55c-4c73-8d72-8ed23be5f811"/>
+    <managerType typeId="d09c9fa0-b6d5-4fe4-9b69-1b19d5bbbd48" valueTypeId="33cfe598-6522-4948-aab2-87ac7a898272"/>
+  </producedTypes>
+  <name>абс_ВводНормыРасходовНаТранспорт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ввод нормы расходов на транспорт (АБС)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.абс_ВводНормыРасходовНаТранспорт.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.абс_ВводНормыРасходовНаТранспорт.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.абс_ВводНормыРасходовНаТранспорт.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.абс_НормыРасходовНаТранспорт</registerRecords>
+  <attributes uuid="31dc7799-87e6-49f5-9cc2-954fc3517266">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6970c13a-b427-4162-a519-3b697179e89c">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2aa3d302-2034-4625-8ee3-db540bd0e3b1">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="51098902-86ca-4c43-b60c-35bff0320fc6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="543b11ac-7106-47eb-bc0b-198567568534">
+    <producedTypes>
+      <objectType typeId="cf1cf815-f4b8-4c79-8727-e67598918130" valueTypeId="397c0a91-ff4c-48d2-8998-edde3d60e545"/>
+      <rowType typeId="a8d5bed1-85ee-42af-b65b-5227fbf84933" valueTypeId="03e6feb8-9793-4d35-8045-0be10e988142"/>
+    </producedTypes>
+    <name>Регионы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регионы</value>
+    </synonym>
+    <attributes uuid="80d70027-22ad-48f3-a891-ba3353d5988d">
+      <name>Регион</name>
+      <synonym>
+        <key>ru</key>
+        <value>Регион</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Регионы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6872cf31-22c7-4005-b9a4-a25a9f30781d">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма (за кг)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

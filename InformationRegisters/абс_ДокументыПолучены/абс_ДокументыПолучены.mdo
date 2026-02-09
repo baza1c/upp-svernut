@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a647072c-d300-4d8a-a3a3-06075603074b">
+  <producedTypes>
+    <selectionType typeId="9f395919-336e-4274-9c0a-3619c81140df" valueTypeId="992d6e6c-68f7-45fd-8b62-892a8df7c8d9"/>
+    <listType typeId="23190000-7b26-4add-823b-8d6d2f8e940b" valueTypeId="0bb4584b-8156-478f-9c1c-50296cebf117"/>
+    <managerType typeId="b6a58789-ee39-4584-bd46-e41223b4a619" valueTypeId="4af5f415-b11f-4022-9ed8-ff03e375e65a"/>
+    <recordSetType typeId="46159f0d-49fd-46c3-9349-4249f81505a0" valueTypeId="529a2648-dfeb-4dee-851d-2b027c63653f"/>
+    <recordKeyType typeId="0d927cc1-0dfc-4b3a-969f-d1619a3206cf" valueTypeId="1523f767-5745-4ef5-aa84-6d46d82d9bae"/>
+    <recordType typeId="17a4bda3-1fa9-458e-b818-5d04a5de916c" valueTypeId="7038e3d0-1f18-479c-9a07-decdf2983ae3"/>
+    <recordManagerType typeId="2431ee02-2efa-442d-89e0-994ad7d66274" valueTypeId="873528e3-c8df-4165-9d54-39f569f29687"/>
+  </producedTypes>
+  <name>абс_ДокументыПолучены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы получены</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="068584ba-f26b-4b16-bc39-b18becac19e4">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8889e8d8-d8da-4827-b30d-e435a9ae37c8">
+    <name>Лео_СтатусПолученныхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус полученных документов</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_СтатусыПолученныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="6629245d-5279-40f4-8501-628de64cee5d">
+    <name>СрокВозврата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок возврата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2c99847e-77b0-43e4-a32f-1ee19562e71a">
+    <name>КомментарииКомОтдела</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарии ком.отдела</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="9d5bc0e3-1de4-4d3d-af47-9443dc4eee03">
+    <name>ДокументОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ отгрузки</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea414852-7f99-4b5e-996f-114fee898952">
+  <producedTypes>
+    <selectionType typeId="afef9091-73ca-42e0-831e-6c18403e559b" valueTypeId="421cf32c-5b2c-43ee-b517-699f0c61fac3"/>
+    <listType typeId="466084c3-da4a-42bf-8225-b994e23a7e1c" valueTypeId="34e28d3b-c6cb-43db-8e8e-ecaa906f24d9"/>
+    <managerType typeId="9bc43bbe-cfc7-4681-8d6e-41f338f523c9" valueTypeId="8dcbdfe8-bb00-45cc-80d5-8dc54163ce84"/>
+    <recordSetType typeId="df1daf4a-492e-41a8-8d29-30b4eeca5774" valueTypeId="5727bf0d-d220-4c77-9d8f-2d6922f3d9dc"/>
+    <recordKeyType typeId="66de9d29-a797-4c8f-a431-c0d3f704e778" valueTypeId="9e49fea8-bd97-46ed-ab18-ebd0a2249212"/>
+    <recordType typeId="12c2e146-260e-4998-8533-20ab8b6d6d4f" valueTypeId="b58a550e-bed0-47ec-9a1c-dbe890052a86"/>
+    <recordManagerType typeId="b55191b7-8f9c-48b1-a472-bec3cb1846da" valueTypeId="8a8dc623-d9dc-4247-94d3-90cbb9ee4df6"/>
+  </producedTypes>
+  <name>абс_НормыРасходовНаТранспорт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы расходов на транспорт (АБС)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9397a5d2-bb90-43a6-b074-b31949e11e8a">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма (за кг)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="026cf194-1862-494f-81e7-58df3618f3d4">
+    <name>Регион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бизнес-регион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Регионы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aedac8c0-b564-4b1f-b554-f2d6ac6e98a5">
+  <producedTypes>
+    <selectionType typeId="c8ca0d12-25ef-4eb1-b3b6-4150efb2aaff" valueTypeId="32257a05-1a18-4854-a3e9-7a540964f608"/>
+    <listType typeId="33d9da5c-1a2b-46ee-9dff-b788ab27dcff" valueTypeId="cc7c6a0b-2efe-44d1-ba04-139734e9a48b"/>
+    <managerType typeId="b2d4d200-19a3-45a6-8ba6-1d20ca882999" valueTypeId="84e0145e-7da7-4e3e-b18c-2669de615f9c"/>
+    <recordSetType typeId="d5c5adfd-dc66-40c0-b2c5-a072fe028308" valueTypeId="abb237dc-30e6-499f-a189-525e35bcc857"/>
+    <recordKeyType typeId="dac29541-00c6-4f4b-a07c-339594e29d31" valueTypeId="0b353a20-7bc1-459e-9aee-6f6784606082"/>
+    <recordType typeId="0bec6d06-03a1-4694-8f71-3cc5499cfb83" valueTypeId="e24539ca-fca1-48db-84c1-9d289dc99b02"/>
+    <recordManagerType typeId="dd0c8071-c3d6-46ca-a695-fef6009e09f3" valueTypeId="5c502a93-936f-469a-94b9-7e1ed43a6043"/>
+  </producedTypes>
+  <name>Диадок_НоменклатураКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диадок номенклатура контрагентов</value>
+  </synonym>
+  <defaultListForm>InformationRegister.Диадок_НоменклатураКонтрагентов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="92d30861-171b-406f-a4f8-23edf72136ae">
+    <name>КодНоменклатурыКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код номенклатуры контрагента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="36db419b-1f53-4ecd-a961-3361ae9982ee">
+    <name>АртикулНоменклатурыКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Артикул номенклатуры контрагента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="92478303-f3dc-459b-8424-f3ad889746c1">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>110</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="c4d4ef35-81db-420c-a934-648e88061b67">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b36a8932-0528-4fbd-9980-ae2e022f0365">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="eac0d585-638f-4550-9860-04062fc89b8d">
+    <name>НаименованиеНоменклатурыКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование номенклатуры контрагента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="3e642810-3048-4ae9-94aa-622819f54267">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7222b57e-2780-4efc-829e-35d21b00a2e9">
+    <name>ФормаКопирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма копирования</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

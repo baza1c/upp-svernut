@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9fe20aba-adc2-4ef4-be77-5ddd9f417071">
+  <producedTypes>
+    <selectionType typeId="3a9f99a6-1263-46de-815e-873ba800ea0d" valueTypeId="955614be-bab5-4525-94ab-ec4fb926509e"/>
+    <listType typeId="90c99880-5d13-4eb9-880b-042328ae0b8b" valueTypeId="b56fe16c-52c8-427a-9d7d-ec18c48d8640"/>
+    <managerType typeId="9829b783-5b80-4c09-8609-822c186e9b1b" valueTypeId="f6298a55-122a-4951-b7bc-ceae2ab67662"/>
+  </producedTypes>
+  <name>ЗапросыВПФРиФСС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запросы в ПФР и ФСС</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ЗапросыВПФРиФСС.Form.ФормаСписка</defaultForm>
+  <registeredDocuments>Document.ЗапросВФССОПроверкеРаботодателя</registeredDocuments>
+  <registeredDocuments>Document.ЗаявлениеОНаправленииЗапросаВПФР</registeredDocuments>
+  <registeredDocuments>Document.ЗапросВПФРОЗаработкеСотрудника</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="bc7cc10b-6fc3-4a43-921c-1772586a4c70">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ЗапросВФССОПроверкеРаботодателя.Attribute.Организация</references>
+    <references>Document.ЗаявлениеОНаправленииЗапросаВПФР.Attribute.Организация</references>
+    <references>Document.ЗапросВПФРОЗаработкеСотрудника.Attribute.Организация</references>
+  </columns>
+  <columns uuid="46d3c61c-c190-409f-97d7-60ed6516e7e3">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <references>Document.ЗапросВФССОПроверкеРаботодателя.Attribute.Сотрудник</references>
+    <references>Document.ЗаявлениеОНаправленииЗапросаВПФР.Attribute.Сотрудник</references>
+    <references>Document.ЗапросВПФРОЗаработкеСотрудника.Attribute.Сотрудник</references>
+  </columns>
+  <columns uuid="de7e68f0-900d-48e8-aa0b-9c2c8ea3aa69">
+    <name>ВидПособия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид пособия</value>
+    </synonym>
+    <references>Document.ЗапросВФССОПроверкеРаботодателя.Attribute.ВидПособия</references>
+    <references>Document.ЗаявлениеОНаправленииЗапросаВПФР.Attribute.ВидПособия</references>
+  </columns>
+  <columns uuid="b24503d0-d8eb-4ed8-a7f6-968c30a41017">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.ЗапросВФССОПроверкеРаботодателя.Attribute.Ответственный</references>
+    <references>Document.ЗаявлениеОНаправленииЗапросаВПФР.Attribute.Ответственный</references>
+    <references>Document.ЗапросВПФРОЗаработкеСотрудника.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="74e23b68-a843-4921-983f-fc50f121012c">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ЗапросВФССОПроверкеРаботодателя.Attribute.Комментарий</references>
+    <references>Document.ЗаявлениеОНаправленииЗапросаВПФР.Attribute.Комментарий</references>
+    <references>Document.ЗапросВПФРОЗаработкеСотрудника.Attribute.Комментарий</references>
+  </columns>
+  <forms uuid="1a7f9228-4a86-47f8-92ac-1da5cd4a55a8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

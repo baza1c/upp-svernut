@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90661ffb-ef04-4577-83a9-6edac27dc7bb">
+  <producedTypes>
+    <selectionType typeId="84544591-c6f3-420b-854a-83fe90c00759" valueTypeId="cc91a929-9114-45ac-b1aa-9a2d28169270"/>
+    <listType typeId="bfd62951-fe23-475f-8d17-5188fda96544" valueTypeId="45fe3596-2e5e-4a6e-b4bc-ab4c9fa18847"/>
+    <managerType typeId="7797927a-b52a-4577-aeba-21f1a5ac8af9" valueTypeId="ba144e2e-5093-46a5-aff0-1c540571c008"/>
+    <recordSetType typeId="c0c9f883-d486-4955-9ff7-3b4bc39b01f3" valueTypeId="0238a2ab-fd71-4117-b7c7-e857df6deea8"/>
+    <recordKeyType typeId="38e46a62-09c2-4a6e-bd7e-4c0628256958" valueTypeId="508cc59e-9a87-479d-898e-5b80a4882834"/>
+    <recordType typeId="8938d326-2513-4333-8c3a-61c14a7f0c17" valueTypeId="14b1b668-7628-4e80-ad23-7768ab28147b"/>
+    <recordManagerType typeId="ef489c4f-7850-4f13-a5ed-093d3cd0cdec" valueTypeId="b1aba780-62cb-4ed3-8a71-0802782bb139"/>
+  </producedTypes>
+  <name>СверткаУзлаРозницы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Свертка узла розницы</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <resources uuid="97a94a45-f10b-495f-b057-5c3bd61d565d">
+    <name>ДатаСвертки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата свертки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b5c1f148-905b-472f-b400-9c7a57cd165c">
+    <name>УзелРозницы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел розницы</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef.ОбменУправлениеПредприятиемРозничнаяТорговля</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

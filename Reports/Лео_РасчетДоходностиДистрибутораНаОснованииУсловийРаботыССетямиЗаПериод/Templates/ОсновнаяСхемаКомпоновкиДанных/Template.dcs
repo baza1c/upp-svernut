@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дистрибутор</dataPath>
+			<field>Дистрибутор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоходВПроцентахОтЦенДистрибьютора</dataPath>
+			<field>ДоходВПроцентахОтЦенДистрибьютора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доход в % от цен Дистрибьютера</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоходДистрибутораОтНаценки</dataPath>
+			<field>ДоходДистрибутораОтНаценки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗатратыНаСетьОтРПЛ</dataPath>
+			<field>ЗатратыНаСетьОтРПЛ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Затраты на сеть от РПЛ в руб</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗатратыНаСетьОтРПЛПроцент</dataPath>
+			<field>ЗатратыНаСетьОтРПЛПроцент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Затраты на сеть от РПЛ в %</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КУДистрибОтРПЛИтоговаяСкидка</dataPath>
+			<field>КУДистрибОтРПЛИтоговаяСкидка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>КУ Дистриб. от РПЛ (Итоговая скидка)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КУСетиОтРПЛ</dataPath>
+			<field>КУСетиОтРПЛ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>КУ Сети. от РПЛ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МаркетингБюджетВнесенныеАктивностиПоСети</dataPath>
+			<field>МаркетингБюджетВнесенныеАктивностиПоСети</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маркетинг. Бюджет в руб.  (внесенные активности по сети)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПродажиВЦенахКУДистрибутора</dataPath>
+			<field>ПродажиВЦенахКУДистрибутора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продажи в ценах КУ Дистрибутора, руб.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПродажиВЦенахКУСети</dataPath>
+			<field>ПродажиВЦенахКУСети</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продажи в ценах КУ Сети, руб.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПродажиВЦенахРПЛ</dataPath>
+			<field>ПродажиВЦенахРПЛ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продажи в ценах РПЛ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сеть</dataPath>
+			<field>Сеть</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сеть</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидАктивности</dataPath>
+			<field>ВидАктивности</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерАктивности</dataPath>
+			<field>НомерАктивности</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВложенныйЗапрос.Контрагент,
+	ВложенныйЗапрос.Сеть,
+	ВложенныйЗапрос.Номенклатура,
+	ВложенныйЗапрос.Количество,
+	ВложенныйЗапрос.СетьПроцентОтклоненияЦеныОтгрузки,
+	ВложенныйЗапрос.СетьСтатуснаяСкидка,
+	ВложенныйЗапрос.СетьОбязательныйМаркетинг,
+	ВложенныйЗапрос.СетьПремияВторичногоПокупателя,
+	ВложенныйЗапрос.ДистБазовыйТипЦен,
+	ВложенныйЗапрос.ДистТипЦенСоСкидкой,
+	ВложенныйЗапрос.ДистТипЦенСоСкидкойПроцентСкидкиНаценки,
+	ВложенныйЗапрос.Количество * ЦеныНоменклатурыСрезПоследних.Цена КАК ПродажиВЦенахРПЛ,
+	(100 - ВложенныйЗапрос.ДистТипЦенСоСкидкойПроцентСкидкиНаценки * -1) / 100 * (ВложенныйЗапрос.Количество * ЦеныНоменклатурыСрезПоследних.Цена) КАК ПродажиВЦенахКУДистрибутора,
+	ВложенныйЗапрос.КУСетиОтРПЛ,
+	(100 - ВложенныйЗапрос.КУСетиОтРПЛ) / 100 * (ВложенныйЗапрос.Количество * ЦеныНоменклатурыСрезПоследних.Цена) КАК ПродажиВЦенахКУСети
+ПОМЕСТИТЬ ВТ_ФактТоварооборотаНепрямыхКлиентов
+ИЗ
+	(ВЫБРАТЬ
+		Лео_ВводФактаТоварооборотаНепрямыхКлиентовФакт.Ссылка.Контрагент КАК Контрагент,
+		Лео_ВводФактаТоварооборотаНепрямыхКлиентовФакт.Ссылка.Сеть КАК Сеть,
+		Лео_ВводФактаТоварооборотаНепрямыхКлиентовФакт.Номенклатура КАК Номенклатура,
+		СУММА(Лео_ВводФактаТоварооборотаНепрямыхКлиентовФакт.Количество) КАК Количество,
+		Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ПроцентОтклоненияЦеныОтгрузки КАК СетьПроцентОтклоненияЦеныОтгрузки,
+		Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.СтатуснаяСкидка КАК СетьСтатуснаяСкидка,
+		Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ОбязательныйМаркетинг КАК СетьОбязательныйМаркетинг,
+		Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ПремияВторичногоПокупателя КАК СетьПремияВторичногоПокупателя,
+		Лео_СкидкиОтБазовыеЦеныСрезПоследних.БазовыйТипЦен КАК ДистБазовыйТипЦен,
+		Лео_СкидкиОтБазовыеЦеныСрезПоследних.ТипЦенСоСкидкой КАК ДистТипЦенСоСкидкой,
+		Лео_СкидкиОтБазовыеЦеныСрезПоследних.ТипЦенСоСкидкой.ПроцентСкидкиНаценки КАК ДистТипЦенСоСкидкойПроцентСкидкиНаценки,
+		Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ПремияВторичногоПокупателя + Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.СтатуснаяСкидка + Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ОбязательныйМаркетинг - Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ПроцентОтклоненияЦеныОтгрузки КАК КУСетиОтРПЛ
+	ИЗ
+		Документ.Лео_ВводФактаТоварооборотаНепрямыхКлиентов.Факт КАК Лео_ВводФактаТоварооборотаНепрямыхКлиентовФакт
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Лео_КоммерчискиеУсловияВторичныхПокупателей.СрезПоследних(&amp;ДатаПо, ) КАК Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних
+			ПО Лео_ВводФактаТоварооборотаНепрямыхКлиентовФакт.Ссылка.Сеть = Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.Контрагент
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Лео_СкидкиОтБазовыеЦены.СрезПоследних(&amp;ДатаПо, ) КАК Лео_СкидкиОтБазовыеЦеныСрезПоследних
+			ПО Лео_ВводФактаТоварооборотаНепрямыхКлиентовФакт.Ссылка.Контрагент.ОсновнойДоговорКонтрагента = Лео_СкидкиОтБазовыеЦеныСрезПоследних.Договор
+	ГДЕ
+		Лео_ВводФактаТоварооборотаНепрямыхКлиентовФакт.Ссылка.Проведен = ИСТИНА
+		И Лео_ВводФактаТоварооборотаНепрямыхКлиентовФакт.Ссылка.Сеть.Лео_ВторичныйПокупатель = ИСТИНА
+		И Лео_ВводФактаТоварооборотаНепрямыхКлиентовФакт.Ссылка.НачалоПериода МЕЖДУ &amp;ДатаС И &amp;ДатаПо
+	
+	СГРУППИРОВАТЬ ПО
+		Лео_ВводФактаТоварооборотаНепрямыхКлиентовФакт.Ссылка.Контрагент,
+		Лео_ВводФактаТоварооборотаНепрямыхКлиентовФакт.Ссылка.Сеть,
+		Лео_ВводФактаТоварооборотаНепрямыхКлиентовФакт.Номенклатура,
+		Лео_СкидкиОтБазовыеЦеныСрезПоследних.БазовыйТипЦен,
+		Лео_СкидкиОтБазовыеЦеныСрезПоследних.ТипЦенСоСкидкой,
+		Лео_СкидкиОтБазовыеЦеныСрезПоследних.ТипЦенСоСкидкой.ПроцентСкидкиНаценки,
+		Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ОбязательныйМаркетинг,
+		Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ПремияВторичногоПокупателя,
+		Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.ПроцентОтклоненияЦеныОтгрузки,
+		Лео_КоммерчискиеУсловияВторичныхПокупателейСрезПоследних.СтатуснаяСкидка) КАК ВложенныйЗапрос
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних КАК ЦеныНоменклатурыСрезПоследних
+		ПО ВложенныйЗапрос.Номенклатура = ЦеныНоменклатурыСрезПоследних.Номенклатура
+			И ВложенныйЗапрос.ДистБазовыйТипЦен = ЦеныНоменклатурыСрезПоследних.ТипЦен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВложенныйЗапрос.Дистрибутор,
+	ВложенныйЗапрос.Сеть,
+	ВложенныйЗапрос.КУДистрибОтРПЛИтоговаяСкидка,
+	ВложенныйЗапрос.КУСетиОтРПЛ,
+	ВложенныйЗапрос.ПродажиВЦенахРПЛ,
+	ВложенныйЗапрос.ПродажиВЦенахКУДистрибутора,
+	ВложенныйЗапрос.ПродажиВЦенахКУСети,
+	ВложенныйЗапрос.ПродажиВЦенахКУСети - ВложенныйЗапрос.ПродажиВЦенахКУДистрибутора КАК ДоходДистрибутораОтНаценки,
+	ВЫБОР
+		КОГДА ВложенныйЗапрос.ПродажиВЦенахКУДистрибутора &gt; 0
+			ТОГДА (ВложенныйЗапрос.ПродажиВЦенахКУСети - ВложенныйЗапрос.ПродажиВЦенахКУДистрибутора) / ВложенныйЗапрос.ПродажиВЦенахКУДистрибутора * 100
+		ИНАЧЕ 0
+	КОНЕЦ КАК ДоходВПроцентахОтЦенДистрибьютора,
+	ЕСТЬNULL(Лно_СкидкиТрейдМаркетингОбороты.СуммаСкидкиБезНДС, 0) КАК МаркетингБюджетВнесенныеАктивностиПоСети,
+	ВложенныйЗапрос.ПродажиВЦенахРПЛ - ВложенныйЗапрос.ПродажиВЦенахКУСети + ЕСТЬNULL(Лно_СкидкиТрейдМаркетингОбороты.СуммаСкидкиБезНДС, 0) КАК ЗатратыНаСетьОтРПЛ,
+	ВЫБОР
+		КОГДА ВложенныйЗапрос.ПродажиВЦенахРПЛ = 0
+			ТОГДА 0
+		ИНАЧЕ (ВложенныйЗапрос.ПродажиВЦенахРПЛ - ВложенныйЗапрос.ПродажиВЦенахКУСети + ЕСТЬNULL(Лно_СкидкиТрейдМаркетингОбороты.СуммаСкидкиБезНДС, 0)) / ВложенныйЗапрос.ПродажиВЦенахРПЛ * 100
+	КОНЕЦ КАК ЗатратыНаСетьОтРПЛПроцент
+ИЗ
+	(ВЫБРАТЬ
+		ВТ_ФактТоварооборотаНепрямыхКлиентов.Контрагент КАК Дистрибутор,
+		ВТ_ФактТоварооборотаНепрямыхКлиентов.Сеть КАК Сеть,
+		ЕСТЬNULL(ВТ_ФактТоварооборотаНепрямыхКлиентов.ДистТипЦенСоСкидкойПроцентСкидкиНаценки, 0) КАК КУДистрибОтРПЛИтоговаяСкидка,
+		ЕСТЬNULL(ВТ_ФактТоварооборотаНепрямыхКлиентов.КУСетиОтРПЛ, 0) КАК КУСетиОтРПЛ,
+		СУММА(ЕСТЬNULL(ВТ_ФактТоварооборотаНепрямыхКлиентов.ПродажиВЦенахРПЛ, 0)) КАК ПродажиВЦенахРПЛ,
+		СУММА(ЕСТЬNULL(ВТ_ФактТоварооборотаНепрямыхКлиентов.ПродажиВЦенахКУДистрибутора, 0)) КАК ПродажиВЦенахКУДистрибутора,
+		СУММА(ЕСТЬNULL(ВТ_ФактТоварооборотаНепрямыхКлиентов.ПродажиВЦенахКУСети, 0)) КАК ПродажиВЦенахКУСети
+	ИЗ
+		ВТ_ФактТоварооборотаНепрямыхКлиентов КАК ВТ_ФактТоварооборотаНепрямыхКлиентов
+	
+	СГРУППИРОВАТЬ ПО
+		ВТ_ФактТоварооборотаНепрямыхКлиентов.Контрагент,
+		ВТ_ФактТоварооборотаНепрямыхКлиентов.Сеть,
+		ВТ_ФактТоварооборотаНепрямыхКлиентов.ДистТипЦенСоСкидкойПроцентСкидкиНаценки,
+		ВТ_ФактТоварооборотаНепрямыхКлиентов.КУСетиОтРПЛ) КАК ВложенныйЗапрос
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			Лно_СкидкиТрейдМаркетингОбороты.Сеть КАК Сеть,
+			СУММА(Лно_СкидкиТрейдМаркетингОбороты.СкидкаПриход) КАК СкидкаПриход,
+			СУММА(СуммаБезНДС.СуммаСкидкиБезНДС) КАК СуммаСкидкиБезНДС
+		ИЗ
+			РегистрНакопления.Лно_СкидкиТрейдМаркетинг.Обороты(, , Регистратор, ) КАК Лно_СкидкиТрейдМаркетингОбороты
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					Лео_ФиксацияСкидокПоТрейдМаркетингуСкидки.Ссылка КАК Ссылка,
+					СУММА(Лео_ФиксацияСкидокПоТрейдМаркетингуСкидки.СуммаСкидкиБезНДС) КАК СуммаСкидкиБезНДС
+				ИЗ
+					Документ.Лео_ФиксацияСкидокПоТрейдМаркетингу.Скидки КАК Лео_ФиксацияСкидокПоТрейдМаркетингуСкидки
+				
+				СГРУППИРОВАТЬ ПО
+					Лео_ФиксацияСкидокПоТрейдМаркетингуСкидки.Ссылка) КАК СуммаБезНДС
+				ПО Лно_СкидкиТрейдМаркетингОбороты.Регистратор = СуммаБезНДС.Ссылка
+		ГДЕ
+			Лно_СкидкиТрейдМаркетингОбороты.Регистратор.ПериодВозникновенияРасхода МЕЖДУ &amp;ДатаС И &amp;ДатаПо
+		
+		СГРУППИРОВАТЬ ПО
+			Лно_СкидкиТрейдМаркетингОбороты.Сеть) КАК Лно_СкидкиТрейдМаркетингОбороты
+		ПО ВложенныйЗапрос.Сеть = Лно_СкидкиТрейдМаркетингОбороты.Сеть</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ДоходДистрибутораОтНаценки</dataPath>
+		<expression>Сумма(ДоходДистрибутораОтНаценки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЗатратыНаСетьОтРПЛ</dataPath>
+		<expression>Сумма(ЗатратыНаСетьОтРПЛ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>МаркетингБюджетВнесенныеАктивностиПоСети</dataPath>
+		<expression>Сумма(МаркетингБюджетВнесенныеАктивностиПоСети)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПродажиВЦенахКУДистрибутора</dataPath>
+		<expression>Сумма(ПродажиВЦенахКУДистрибутора)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПродажиВЦенахКУСети</dataPath>
+		<expression>Сумма(ПродажиВЦенахКУСети)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПродажиВЦенахРПЛ</dataPath>
+		<expression>Сумма(ПродажиВЦенахРПЛ)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаС</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата С</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаПо</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата по</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Дистрибутор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КУДистрибОтРПЛИтоговаяСкидка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сеть</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КУСетиОтРПЛ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПродажиВЦенахРПЛ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПродажиВЦенахКУДистрибутора</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПродажиВЦенахКУСети</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДоходДистрибутораОтНаценки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДоходВПроцентахОтЦенДистрибьютора</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МаркетингБюджетВнесенныеАктивностиПоСети</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗатратыНаСетьОтРПЛ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗатратыНаСетьОтРПЛПроцент</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаС</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>7e25111f-2be3-4926-aa0b-d1d8da1c54d0</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаПо</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>34a57ce4-660b-4739-8bd2-14d628ba23fe</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Дистрибутор</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Сеть</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

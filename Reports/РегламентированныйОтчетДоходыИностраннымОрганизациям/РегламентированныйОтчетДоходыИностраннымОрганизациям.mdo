@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79e236b1-1e09-46c0-8ce4-d82528a25b3d">
+  <producedTypes>
+    <objectType typeId="c5ce5825-b4b7-4791-8b2c-673ff67cae5a" valueTypeId="260b6cf1-4eb4-4a8f-928d-4f15c829f9ac"/>
+    <managerType typeId="26e62c55-1fdc-4d98-b1ba-bfe7698053e7" valueTypeId="7eaaaea0-f40f-47e7-acef-3a80f2d677c0"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетДоходыИностраннымОрганизациям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Налоговый расчет о суммах выплаченных иностранным организациям доходов и удержанных налогов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РегламентированныйОтчетДоходыИностраннымОрганизациям.Form.ОсновнаяФорма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="9deda177-c055-4c76-b57c-c20bc33f32b4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="51aacd05-804b-4ed2-b3ea-22ccaea083d0">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bee45961-8812-45c2-bf46-1c1d68996142">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fc391371-4940-4b2b-8ec9-97117ba3070b">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="e52347b0-26ad-4b3f-9592-126a5bb39e6a">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доходы, выплаченные иностранным организациям</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e1b42a22-f519-4200-be29-e3f125f7e0b2">
+    <name>ФормаОтчета2004Кв2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговый расчет о суммах выплаченных иностранным организациям доходов и удержанных налогов</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9848fd84-4799-4cc2-bd8b-17e25f59e1b8">
+    <name>ФормаОтчета2007Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговый расчет о суммах выплаченных иностранным организациям доходов и удержанных налогов</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="271692fc-7747-43ad-ab99-f1b62756a430">
+    <name>СоставПоказателей2004Кв2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2004 кв2</value>
+    </synonym>
+    <comment>Состав показателей Расчета</comment>
+  </templates>
+  <templates uuid="8433cae0-abb7-4cda-9478-2b95146b7d80">
+    <name>Списки2004Кв2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки2004 кв2</value>
+    </synonym>
+  </templates>
+  <templates uuid="bc275193-8cb1-49f5-a2f1-09387f82fadf">
+    <name>СоставПоказателей2007Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2007 кв1</value>
+    </synonym>
+    <comment>Состав показателей Расчета</comment>
+  </templates>
+  <templates uuid="c8df55d4-39a9-4e36-85f3-f5b75d9f4241">
+    <name>Списки2007Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки2007 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="e94a36b8-b429-4383-a91f-b73831277464">
+    <name>МБ_1151056_3_00004_05_tif</name>
+    <synonym>
+      <key>ru</key>
+      <value>1151056_3.00004_05.tif</value>
+    </synonym>
+    <comment>Шаблон печати машиночитаемой формы</comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="f999090a-435c-4bb6-8eb7-bef9da93aaff">
+    <name>СоотношенияПоказателей2007Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соотношения показателей2007 кв1</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

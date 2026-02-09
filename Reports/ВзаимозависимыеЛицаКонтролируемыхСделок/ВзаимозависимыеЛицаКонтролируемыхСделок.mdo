@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e32b1d00-afca-42e8-bf45-01187658c310">
+  <producedTypes>
+    <objectType typeId="5d09702d-536e-453e-beb6-c3ec47271b79" valueTypeId="4853dd35-e078-47a3-83aa-6ac8ab7bb4fc"/>
+    <managerType typeId="c73b3893-860f-40c9-ba58-af1745ffe7f0" valueTypeId="1d9e4734-24be-4a1a-bf76-9007e5c83328"/>
+  </producedTypes>
+  <name>ВзаимозависимыеЛицаКонтролируемыхСделок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаимозависимые лица контролируемых сделок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ВзаимозависимыеЛицаКонтролируемыхСделок.Form.ВзаимозависимыеЛица</defaultForm>
+  <mainDataCompositionSchema>Report.ВзаимозависимыеЛицаКонтролируемыхСделок.Template.СхемаКомпоновкиДанныхКонтрагенты</mainDataCompositionSchema>
+  <attributes uuid="7b69cdd5-ec1a-45a7-ade7-a8cad61d84c1">
+    <name>Уведомление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.УведомлениеОКонтролируемыхСделках</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ed818dde-455f-4659-be0e-1035daa3d37b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="e1cf2039-1b5e-46bd-8cce-ca008a86ae61">
+    <name>ОтчетныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчетный год</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="958bff88-77d8-4885-ba26-743d2e047e5c">
+    <name>ВзаимозависимыеЛица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сведения о взаимозависимых лицах</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1f08efba-50db-4dd1-9b0d-88b2f3323b44">
+    <name>СхемаКомпоновкиДанныхКонтрагенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных контрагенты</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

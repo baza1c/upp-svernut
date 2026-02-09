@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a169267-3479-44e4-a7e8-99d47ed8d95e">
+  <producedTypes>
+    <selectionType typeId="d14313f4-1596-434c-9e2d-fd7296ef0396" valueTypeId="cd9d89ed-8293-4099-94bc-765abb031327"/>
+    <listType typeId="a3b52f4e-e0dc-42cc-b9fc-4704753bf5b3" valueTypeId="16fc280a-1dc0-4ac2-b856-3e9511257608"/>
+    <managerType typeId="e7b78e0c-dba4-4769-ab41-b12a285912ec" valueTypeId="39e09926-122e-4abc-b791-64a7ce61eb60"/>
+    <recordSetType typeId="69744c40-6de4-4d9d-9b1c-5c0bb2b8b7ee" valueTypeId="a5055697-1fc4-4a80-9826-b89c99e1f21b"/>
+    <recordKeyType typeId="12a9f075-2aa2-49fb-a7f2-c97bb7845bf6" valueTypeId="218056f1-b8cd-42b4-879a-28cd60013e4d"/>
+    <recordType typeId="7e2dcf29-96aa-405d-8f58-58a91e582c46" valueTypeId="e5ab6331-7b86-425c-9461-dd51999cfb7f"/>
+    <recordManagerType typeId="096fa1ae-e9cd-427b-af38-cf2ff7f69a92" valueTypeId="69c33966-4f7d-4628-a57b-88e9e1fa3470"/>
+  </producedTypes>
+  <name>УчастникиКонтролируемыхСделок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Участники контролируемых сделок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.УчастникиКонтролируемыхСделок.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УчастникиКонтролируемыхСделок.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Участник контролируемой сделки</value>
+  </recordPresentation>
+  <resources uuid="6897c90a-77c3-48f3-950f-d6f255d33814">
+    <name>СтранаРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страна регистрации</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторСтранМира</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c35440cc-f229-4c1e-a40c-87d33669c72e">
+    <name>ЗарегистрированВСтранеСЛьготнымНалогообложением</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зарегистрирован в стране с льготным налогообложением</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="853c3b7b-dcbf-45f0-b115-3001bc715f62">
+    <name>РегистрационныйНомерВСтранеРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрационный номер в стране регистрации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="f2265827-0255-49e1-a24a-aac451797beb">
+    <name>КодНалогоплательщикаВСтранеРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код налогоплательщика в стране регистрации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="6441dc93-4aa7-46ba-8276-bc3f957dfaf8">
+    <name>КодВидаДеятельностиФизическогоЛица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код вида деятельности</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="6bd42cbf-8169-4768-b3c0-fc5080041938">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="dc4b87dc-8470-4d59-abf7-47dd3923e934">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b46081b3-b987-4f5a-8859-478ed1e5245f">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cfaab7fe-0fac-4e96-bd9b-48df739fc866">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="28610cc1-66a8-4891-939a-7257e844f856">
+    <name>ФормаПодбораКонтрагентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора контрагентов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6399654f-f379-4f0f-905d-323f11b76012">
+    <name>ПереченьОфшоров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перечень офшоров</value>
+    </synonym>
+  </templates>
+</mdclass:InformationRegister>

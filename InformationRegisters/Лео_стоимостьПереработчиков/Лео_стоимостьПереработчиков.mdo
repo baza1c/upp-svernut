@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="539d6acc-add6-4af5-b49a-7b2c2c759ac8">
+  <producedTypes>
+    <selectionType typeId="54d4edeb-e54f-48b6-8edc-452f27a9ef00" valueTypeId="ae2cb488-aa3d-41e5-8cc3-38edff561dde"/>
+    <listType typeId="0549b964-1d5f-4898-a2d4-f5c917591193" valueTypeId="107b8397-1bc5-4754-95e1-76c00985c5ae"/>
+    <managerType typeId="77a1f528-bc62-4089-aace-c62ce746bf7a" valueTypeId="a84df110-7665-4463-9542-83139cfa3e1e"/>
+    <recordSetType typeId="c1245e3f-c2ac-4f01-ae82-1dc47cbf8d07" valueTypeId="e884780b-25ec-4a99-974f-3ebdc892766c"/>
+    <recordKeyType typeId="dc99363f-7a14-4f27-afb2-50bd3d37d837" valueTypeId="65a46816-cc79-44b8-bd6e-ffda81299de7"/>
+    <recordType typeId="565169e3-0c5a-4705-9363-d7b7efd8312b" valueTypeId="ef304b0c-c32a-4efc-8d61-2d2002ca037b"/>
+    <recordManagerType typeId="ce9b7370-f209-43a8-b09c-2c185aaa59ba" valueTypeId="9bedfbff-bc1b-41fe-9383-e65680e9fea0"/>
+  </producedTypes>
+  <name>Лео_стоимостьПереработчиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лео стоимость переработчиков</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="4ce85f52-e094-4a79-88b1-1b09bb1f7d87">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b3301f1f-6f5f-4f8f-9086-7b4dc6c6f8ba">
+    <name>ЦенаБезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена без НДС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="dd9c4291-8864-4d3b-9883-74d90e21a887">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_ДолжностиПереработчиков</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="676f1382-7304-4f9d-826d-13c7116ad3fc">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_сменыПереработчиков</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="22eed83d-9bcd-41ee-8cd2-8b980bbc67a9">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="518df2b4-7e1a-4386-882e-70ab6b107b2b">
+    <name>ДолжностьПереработчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность переработчика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_ДолжностиПереработчиков</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

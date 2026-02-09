@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="844f29a5-8e6a-4693-8249-7a615f8c35ca">
+  <producedTypes>
+    <objectType typeId="9140fbbd-ef18-4881-adb6-98cb6bfc67a6" valueTypeId="55a2fd3f-3c1a-444f-89dc-6ba99a97370d"/>
+    <managerType typeId="c11f246e-0425-4883-992b-47d2a017a1a0" valueTypeId="8a200468-a101-4f96-9fd7-d3c6a16c1c7e"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетРСВ2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет по страховым взносам в ПФР, ФФОМС, ТФОМС для ИП (форма РСВ-2 ПФР)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РегламентированныйОтчетРСВ2.Form.ОсновнаяФорма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="7cfb2016-2898-400c-9007-f738d0317f8f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1cefd5cc-3588-4472-9dd5-0e1425590fef">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="20b054c1-51bf-4d53-9d99-b52729ec423b">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cffedbb2-fe5e-4dc0-8d1d-222879943a4b">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="12460129-2d97-411c-84e3-7341e729e38c">
+    <name>КатегорияНалогоплательщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория налогоплательщика</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="d2a365df-4038-451a-80ea-fd2165151fb8">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>РСВ-2 ПФР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="57a35b2c-c915-4f35-b128-c3a2bf13f300">
+    <name>ФормаВводаДокументПредставителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ввода документ представителя</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="aac7781f-0409-470d-9436-a35ffa684521">
+    <name>ФормаОтчета2010Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>РСВ-2 ПФР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f613ada6-f4ac-4403-9e0a-4813ce4e60ef">
+    <name>ФормаОтчета2012Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>РСВ-2 ПФР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3f1abcd3-86a6-4b95-8e73-c1c1146c283e">
+    <name>СоставПоказателей2010Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей2010Кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="39a706ea-952f-4cb3-974d-b4aba7e21a63">
+    <name>Списки2010Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки2010 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="f03eb182-414c-456e-a3a4-3dca478ad5ee">
+    <name>СхемаВыгрузки700</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки700</value>
+    </synonym>
+  </templates>
+  <templates uuid="bdbc66c1-43aa-4187-9404-9061c1523303">
+    <name>ФормаОтчета2012Кв4_Титульный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист</value>
+    </synonym>
+  </templates>
+  <templates uuid="16ae0aec-b4a0-47d6-bc2b-f87c18382c04">
+    <name>ФормаОтчета2012Кв4_Раздел1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 1</value>
+    </synonym>
+  </templates>
+  <templates uuid="9b9467fb-49da-4b67-9d10-b6626c9789b8">
+    <name>ФормаОтчета2012Кв4_Раздел2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 2</value>
+    </synonym>
+  </templates>
+  <templates uuid="f98312e5-410d-4bf0-8e9c-01040d973091">
+    <name>ФормаОтчета2012Кв4_Раздел3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3</value>
+    </synonym>
+  </templates>
+  <templates uuid="f9693889-30ad-46b7-99c7-4c5c514cc01f">
+    <name>Списки2012Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки выбора</value>
+    </synonym>
+  </templates>
+  <templates uuid="5d7ae92f-9eb5-402a-9c1f-b22e15f77197">
+    <name>СоставПоказателей2012Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="82455637-739d-46ff-afb1-c2eba060a8b5">
+    <name>СхемаВыгрузки700_2013</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки 7.00 для 2013 года</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

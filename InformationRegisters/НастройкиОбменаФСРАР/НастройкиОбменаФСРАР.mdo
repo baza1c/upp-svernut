@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a80db5f4-fed1-43e3-94b4-1605f3eaa03d">
+  <producedTypes>
+    <selectionType typeId="f0475a78-2e89-4d31-87ec-c0f44308cdc5" valueTypeId="82fd64d6-c61b-40c0-968d-ed56bffa9e86"/>
+    <listType typeId="42233569-f706-42ea-8797-4cc5756730db" valueTypeId="1093d08d-ce92-4624-9d24-32108d790a75"/>
+    <managerType typeId="83e0ac10-836e-42d5-b6b5-b540c0d06573" valueTypeId="062815ef-b062-4346-9ed7-81893026946f"/>
+    <recordSetType typeId="d192f179-be8f-46c9-82d2-b56cdee54bd4" valueTypeId="4cc7a113-b3ca-42c0-baa6-87754e5023a5"/>
+    <recordKeyType typeId="e2095c88-8351-44bb-9bb0-eb3cd03b5685" valueTypeId="df941677-320a-44f1-aae5-da5e06f98661"/>
+    <recordType typeId="fd511d54-690f-4e5c-85f7-5176835d65b5" valueTypeId="d77bfad8-c606-4a07-9958-ee5083089912"/>
+    <recordManagerType typeId="0db926a8-b164-4b3f-9b5c-61b4a070b3a1" valueTypeId="afba2d0e-634c-499e-8135-54525977a0f1"/>
+  </producedTypes>
+  <name>НастройкиОбменаФСРАР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки обмена с ФСРАР</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкиОбменаФСРАР.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НастройкиОбменаФСРАР.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5e344a25-78e4-48d8-b141-57fe2f96e9f6">
+    <name>ИспользоватьОбмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать обмен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="20e08bbe-f02f-4fc8-9228-8ac7149b758c">
+    <name>СертификатАбонентаОтпечаток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификат абонента отпечаток</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7ff3e0ae-d77b-4231-909d-8819797d9d65">
+    <name>СертификатСубъектаРФОтпечаток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификат субъекта РФ отпечаток</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="2ba14ae3-4b52-4ba5-a087-ab8767d0a125">
+    <name>СертификатФСРАРОтпечаток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификат ФСРАР отпечаток</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="c9d8205f-12d0-4e7b-8dbe-b3ed98c1269c">
+    <name>КодРегиона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код региона</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="12c7a145-bc0d-4237-92b0-13c1a5be35ee">
+    <name>ИспользоватьАвтонастройку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать автонастройку</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a5a203ed-3b56-4090-833d-c04496b42df0">
+    <name>ПарольПорталаСубъектаРФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль портала субъекта РФ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <dimensions uuid="51c25ff5-eb41-4981-b3f6-6bf37ce7f426">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="a941a151-789f-4ee3-844f-7ac00ad71faa">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d238aac9-3180-4a7b-805f-28765ae640a0">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

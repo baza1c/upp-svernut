@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee5aefd9-2797-4c7e-92cb-238e7e2b512b">
+  <producedTypes>
+    <objectType typeId="e58770ed-0381-4c86-be58-2ffe76b89af4" valueTypeId="8cfaa121-00ba-4a38-8e49-d0552c18c3dc"/>
+    <managerType typeId="b74e153e-d8e4-47aa-bd22-1d3a703a44a0" valueTypeId="465cc934-5fb3-4b51-96b5-2848cf4de57a"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетРСВ1</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет по страховым взносам в ПФР, ФФОМС, ТФОМС (форма РСВ-1 ПФР)</value>
+  </synonym>
+  <defaultForm>Report.РегламентированныйОтчетРСВ1.Form.ОсновнаяФорма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="ecb9843b-0186-4891-bfcd-680c0f6b082b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a9538460-fe56-49ad-b1b5-e879ab7342db">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c780295a-7c27-4d85-91f7-a1f520a124da">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2576affd-89ff-41e3-99ab-88b13aa7a49a">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e41b4736-9520-4845-b032-7da68f790325">
+    <name>КатегорияНалогоплательщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория налогоплательщика</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="3bf076fe-0922-4453-802b-e3ab0e1647cb">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>РСВ-1 ПФР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8b21b30a-c7d9-43ce-956c-69a6e2917d38">
+    <name>ФормаВводаДокументПредставителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ввода документ представителя</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="805a3703-534c-41b6-9765-23d5b17a46d7">
+    <name>ФормаОтчета2010Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>РСВ-1 ПФР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="02a21c5d-891d-46e9-98f3-92d671a1141e">
+    <name>ФормаОтчета2010Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>РСВ-1 ПФР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d085122e-1898-4437-b1a0-3bc7363bc07d">
+    <name>ФормаОтчета2011Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>РСВ-1 ПФР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="26a635b5-fb3a-42a6-a142-0a30035afeac">
+    <name>ФормаОтчета2012Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>РСВ-1 ПФР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e708438e-8ab6-478e-9706-42f81984bf8e">
+    <name>ФормаОтчета2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>РСВ-1 ПФР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6d3d064f-fb24-4381-8cd1-695a5c492e53">
+    <name>СоставПоказателей2010Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей2010Кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="54362617-432e-4fa1-9a3e-9887dcd3b046">
+    <name>Списки2010Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки2010 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="42ff090d-cabc-4b9e-a132-fcdb3a44908a">
+    <name>Списки2010Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки2010 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="4ee2d9bd-7f4a-4e7f-8a31-b980ec93e2e4">
+    <name>СоставПоказателей2010Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей2010Кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="b360a6b1-c2ca-4a5b-8be1-6ff1b3ad99d8">
+    <name>Списки2011Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки2011 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="63949868-69a7-412c-bfc0-26c1da3aa76f">
+    <name>СоставПоказателей2011Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей2011Кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="616d13a2-d1b7-43eb-a624-836de04adf20">
+    <name>СхемаВыгрузки700</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки700</value>
+    </synonym>
+  </templates>
+  <templates uuid="cbc9b9f7-dcc7-40eb-8c80-11e5dedf5ab6">
+    <name>СхемаВыгрузки700_2011</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки700 2011</value>
+    </synonym>
+  </templates>
+  <templates uuid="476a4779-00df-49d9-9aa6-d6b8e523dadb">
+    <name>СхемаВыгрузки700_2010</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки700 2010</value>
+    </synonym>
+  </templates>
+  <templates uuid="d6fdf67a-78bd-4b8c-9c22-d13ce13aaa20">
+    <name>ФормаОтчета2012Кв1_Титульный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист</value>
+    </synonym>
+  </templates>
+  <templates uuid="d108c1e3-63c3-47de-a4f5-5aa498eb89f1">
+    <name>ФормаОтчета2012Кв1_Раздел1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел1</value>
+    </synonym>
+  </templates>
+  <templates uuid="49806971-2d01-4542-849d-59bb01679165">
+    <name>ФормаОтчета2012Кв1_Раздел2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел2</value>
+    </synonym>
+  </templates>
+  <templates uuid="f505a6c3-47a3-4539-a273-465985f7ba42">
+    <name>ФормаОтчета2012Кв1_Раздел31</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.1</value>
+    </synonym>
+  </templates>
+  <templates uuid="d8d4c94b-0641-40a8-98af-3b19c436ea39">
+    <name>ФормаОтчета2012Кв1_Раздел32</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.2</value>
+    </synonym>
+  </templates>
+  <templates uuid="82028ee8-12f2-4a14-8551-68d23ca4190e">
+    <name>ФормаОтчета2012Кв1_Раздел33</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.3</value>
+    </synonym>
+  </templates>
+  <templates uuid="9ac2e96c-b1ad-4261-8c88-1912287de22d">
+    <name>ФормаОтчета2012Кв1_Раздел34</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.4</value>
+    </synonym>
+  </templates>
+  <templates uuid="f3151fa6-1a2a-43af-932a-5434fa407624">
+    <name>ФормаОтчета2012Кв1_Раздел35</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.5</value>
+    </synonym>
+  </templates>
+  <templates uuid="d4617651-337d-4f55-85cb-ffa8d0ee7aab">
+    <name>ФормаОтчета2012Кв1_Раздел36</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.6</value>
+    </synonym>
+  </templates>
+  <templates uuid="5fcb68ca-9cd3-4c41-ba3d-8e029246775c">
+    <name>ФормаОтчета2012Кв1_Раздел37</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.7</value>
+    </synonym>
+  </templates>
+  <templates uuid="da78f44a-a632-4569-9b80-22240e44826a">
+    <name>ФормаОтчета2012Кв1_Раздел38</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.8</value>
+    </synonym>
+  </templates>
+  <templates uuid="777bf023-fe9b-4d74-9a58-4895baba06b2">
+    <name>ФормаОтчета2012Кв1_Раздел4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 4</value>
+    </synonym>
+  </templates>
+  <templates uuid="f8bd769f-c7ff-44d1-a75e-1b60efbce07c">
+    <name>ФормаОтчета2012Кв1_Раздел5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 5</value>
+    </synonym>
+  </templates>
+  <templates uuid="5bf83c40-aae0-42ee-9f68-0b393e58a237">
+    <name>СоставПоказателей2012Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="19405795-ac24-46f6-a5ea-f499ce8d80be">
+    <name>Списки2012Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки выбора</value>
+    </synonym>
+  </templates>
+  <templates uuid="4353d46a-1932-4513-9cde-8d608824b5e9">
+    <name>СхемаВыгрузки700_2012</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки700 2012</value>
+    </synonym>
+  </templates>
+  <templates uuid="82ba7369-0c35-4cc0-9bec-903f1bf4a235">
+    <name>ФормаОтчета2013Кв1_Титульный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист</value>
+    </synonym>
+  </templates>
+  <templates uuid="0c347025-efe2-44bf-9f5b-336685985358">
+    <name>ФормаОтчета2013Кв1_Раздел1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел1</value>
+    </synonym>
+  </templates>
+  <templates uuid="27f21bb3-4667-4088-be5d-bbe2583196ec">
+    <name>ФормаОтчета2013Кв1_Раздел2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел2</value>
+    </synonym>
+  </templates>
+  <templates uuid="0c46ce5d-024f-4d98-a7d8-4e0c233c7506">
+    <name>ФормаОтчета2013Кв1_Раздел22</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 2.2-2.3</value>
+    </synonym>
+  </templates>
+  <templates uuid="1fca1666-94e8-4d6d-8970-ccdab580e99d">
+    <name>ФормаОтчета2013Кв1_Раздел31</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.1</value>
+    </synonym>
+  </templates>
+  <templates uuid="f2dac1c5-a308-4111-a30d-0796a07526d1">
+    <name>ФормаОтчета2013Кв1_Раздел32</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.2-3.3</value>
+    </synonym>
+  </templates>
+  <templates uuid="63204d07-819a-4e34-8292-be9150b385ab">
+    <name>ФормаОтчета2013Кв1_Раздел34</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.4</value>
+    </synonym>
+  </templates>
+  <templates uuid="95d9ce61-ba4a-45d6-86bd-fa1469fb281c">
+    <name>ФормаОтчета2013Кв1_Раздел35</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.5</value>
+    </synonym>
+  </templates>
+  <templates uuid="48c2dec7-0f5b-4778-8b9b-398622d13dfc">
+    <name>ФормаОтчета2013Кв1_Раздел36</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.6</value>
+    </synonym>
+  </templates>
+  <templates uuid="d8669ea4-b5f0-4e74-be79-a26f54bd9863">
+    <name>ФормаОтчета2013Кв1_Раздел37</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.7</value>
+    </synonym>
+  </templates>
+  <templates uuid="fe84077b-afa2-4a91-8a86-224d3bfec6b9">
+    <name>ФормаОтчета2013Кв1_Раздел38</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3.8</value>
+    </synonym>
+  </templates>
+  <templates uuid="2cba5510-6ac9-47ac-996b-9cc773d51aca">
+    <name>ФормаОтчета2013Кв1_Раздел4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 4</value>
+    </synonym>
+  </templates>
+  <templates uuid="3dbc7442-12ec-4e50-a013-f8cfd00be076">
+    <name>ФормаОтчета2013Кв1_Раздел5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 5</value>
+    </synonym>
+  </templates>
+  <templates uuid="d8325a32-f896-4d1c-aa82-416627dcbc27">
+    <name>СоставПоказателей2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="4d7fdc0a-8789-41d3-a11f-26e822b33c22">
+    <name>Списки2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки выбора</value>
+    </synonym>
+  </templates>
+  <templates uuid="69b1d8d3-ddfe-446d-99c7-6e5a30d688e5">
+    <name>СхемаВыгрузки700_2013</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема выгрузки7.00 для 2013 года</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

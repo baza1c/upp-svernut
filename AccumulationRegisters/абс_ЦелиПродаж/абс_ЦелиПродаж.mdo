@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9cebe043-e75d-4027-bd90-f24d16e57124">
+  <producedTypes>
+    <selectionType typeId="166bd692-3115-4381-b795-451d0e7f31d5" valueTypeId="d1f68328-3d38-489e-ac69-2120343292de"/>
+    <listType typeId="a4a65605-6828-4279-85fb-e545bb4d856c" valueTypeId="51454fe3-d755-4ea6-aedd-85e6d3aa3abc"/>
+    <managerType typeId="5d4c9a0b-de7d-4eac-a0a3-55f9f9653ebf" valueTypeId="02f8e51d-b15d-47fe-9824-d8483b61a0b9"/>
+    <recordSetType typeId="a4943ce2-cebd-435c-9665-af81a34b83b8" valueTypeId="efaf4485-772c-42e2-82ec-73549d013680"/>
+    <recordKeyType typeId="5d95709d-b9ac-4d39-a0ae-5f95a4fa875e" valueTypeId="d9efd463-e447-4965-a6c8-e235a0fdd168"/>
+    <recordType typeId="5c4b010b-529c-4e2d-978d-1a727da8fa0a" valueTypeId="410676b8-8c6f-4b1b-aff3-bab299905a1c"/>
+  </producedTypes>
+  <name>абс_ЦелиПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цели продаж</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="8d3771ed-ecea-4b25-aede-dfba35552da0">
+    <name>КоличествоТочекПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество точек продаж</value>
+    </synonym>
+    <comment>Общее количество точек продаж</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="937b028f-348b-4c1e-abea-087971a3ec5f">
+    <name>АКБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активная клиентская база</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="1e271ba1-9f2d-46f2-8070-7f4e4dbff6a4">
+    <name>КоличествоАртикулов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество артикулов</value>
+    </synonym>
+    <comment>Среднее количество артикулов</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="1a77ba1a-ba82-4875-9102-9fb7cfc87e7d">
+    <name>ЦельПоЧисленнойДистрибуции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цель по численной дистрибуции</value>
+    </synonym>
+    <comment>Общее количество точек в которых есть хотя бы одна позиция марки Леовит</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="3cb6c5e0-d1ae-4f4b-8e44-9f4377c88ba2">
+    <name>ЦельПоДистрибуцииФА1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цель по дистрибуции фокусного ассортимента 1</value>
+    </synonym>
+    <comment>Количество точек содержащих фокусный ассортимент 1 уровня</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="acfc32af-9e07-448e-a10f-5cfccf196d0e">
+    <name>ЦельПоДистрибуцииФА2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цель по дистрибуции фокусного ассортимента 2</value>
+    </synonym>
+    <comment>Количество точек содержащих фокусный ассортимент 2 уровня</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="432ed0f1-6988-447e-8e26-748f33e29565">
+    <name>ЦельПоДистрибуцииФА3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цель по дистрибуции фокусного ассортимента 3</value>
+    </synonym>
+    <comment>Количество точек содержащих фокусный ассортимент 3 уровня</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="3127f460-1b71-4bcb-8a4d-9edecdbed030">
+    <name>ЦельПоДистрибуцииФА4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цель по дистрибуции фокусного ассортимента 4</value>
+    </synonym>
+    <comment>Количество точек содержащих фокусный ассортимент 4 уровня</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="d646fc0e-8d2d-4161-8bd0-63b47b94c281">
+    <name>Регион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Регионы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c4184634-1919-4d20-97d2-49449f2a9829">
+    <name>Сценарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сценарий</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СценарииПланирования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c12d9ac5-a568-469a-bc36-8524d08a2f45">
+    <name>Территория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Территория</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Регионы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="901391e0-f103-40dd-b817-98f0db2c1ce9">
+    <name>Город</name>
+    <synonym>
+      <key>ru</key>
+      <value>Город</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Регионы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="cd324f91-c613-4bf4-9a2f-fc4eb19d1742">
+    <name>Канал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канал</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Владелец</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>ChartOfCharacteristicTypes.СвойстваОбъектов.абс_Канал</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

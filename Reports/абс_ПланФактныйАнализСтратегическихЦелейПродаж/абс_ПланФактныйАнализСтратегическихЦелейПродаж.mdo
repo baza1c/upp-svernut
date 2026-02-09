@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="acb90c24-18c3-4074-88b4-7231f5d46137">
+  <producedTypes>
+    <objectType typeId="a5606982-a6dd-4b8a-8fdc-ec7b8d4846e1" valueTypeId="8fee2e1d-dea1-4a8f-99d6-1a93411f75f3"/>
+    <managerType typeId="66a78b29-e238-4b0f-8b3d-27fa553d7ceb" valueTypeId="cdcc1ebc-599a-4824-9988-c5b41ef56d94"/>
+  </producedTypes>
+  <name>абс_ПланФактныйАнализСтратегическихЦелейПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>План - фактный анализ стратегических целей продаж (АБС)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.абс_ПланФактныйАнализСтратегическихЦелейПродаж.Form.Форма</defaultForm>
+  <attributes uuid="6fb34466-5b98-447b-8efe-23405268ba3c">
+    <name>УниверсальныйОтчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Универсальный отчет</value>
+    </synonym>
+    <type>
+      <types>ReportObject.УниверсальныйОтчет</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="1c3e5cc6-004c-4395-8003-03ff440bb086">
+    <producedTypes>
+      <objectType typeId="19899880-9e29-4749-9cb9-1eb05d276a59" valueTypeId="c4984c9d-69ee-4832-94e2-fce13f5adebb"/>
+      <rowType typeId="5e621f6f-6be6-4a9f-bd6d-54be772395ef" valueTypeId="e29f3d71-5cf5-46e9-9a94-ed78ec5df37a"/>
+    </producedTypes>
+    <name>ДанныеОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные отчета</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="3b3ac71b-e2ff-4a07-8f1c-3f0a6e38e8ff">
+      <name>ТипДанных</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип данных</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8885e705-b34c-48ac-b59e-ec9035add3a9">
+      <name>ДатаНач</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="91bc3fab-7b78-461a-8a3f-a0b17961618e">
+      <name>ДатаКон</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата окончания</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d153da79-fa0c-4919-8bc1-8581356cd45e">
+      <name>Сценарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сценарий</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СценарииПланирования</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="59287e94-e0ec-4f78-95b9-ff7e2cde798c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Report>

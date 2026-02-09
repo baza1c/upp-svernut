@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>абс_БизнесРегион</dataPath>
+			<field>абс_БизнесРегион</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>абс_Город</dataPath>
+			<field>абс_Город</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>абс_Организация</dataPath>
+			<field>абс_Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>абс_Территория</dataPath>
+			<field>абс_Территория</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>абс_Утвержден</dataPath>
+			<field>абс_Утвержден</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БизнесРегион</dataPath>
+			<field>БизнесРегион</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВариантРаспределения</dataPath>
+			<field>ВариантРаспределения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Город</dataPath>
+			<field>Город</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Договор</dataPath>
+			<field>Договор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоговорКонтрагента</dataPath>
+			<field>ДоговорКонтрагента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументПланирования</dataPath>
+			<field>ДокументПланирования</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументПродажи</dataPath>
+			<field>ДокументПродажи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ</dataPath>
+			<field>Заказ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказПокупателя</dataPath>
+			<field>ЗаказПокупателя</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Канал</dataPath>
+			<field>Канал</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтветственныйМенеджер</dataPath>
+			<field>ОтветственныйМенеджер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПорядокКонтрагентов</dataPath>
+			<field>ПорядокКонтрагентов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПорядокНоменклатуры</dataPath>
+			<field>ПорядокНоменклатуры</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РуководительПодразделения</dataPath>
+			<field>РуководительПодразделения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаКварталПрошлогоГода</dataPath>
+			<field>СуммаКварталПрошлогоГода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаМесяцПрошлогоГода</dataPath>
+			<field>СуммаМесяцПрошлогоГода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПланГод</dataPath>
+			<field>СуммаПланГод</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПланКвартал</dataPath>
+			<field>СуммаПланКвартал</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПланМесяц</dataPath>
+			<field>СуммаПланМесяц</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПрошлыйГод</dataPath>
+			<field>СуммаПрошлыйГод</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПрошлыйМесяц</dataPath>
+			<field>СуммаПрошлыйМесяц</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСортировкиКонтрагентов</dataPath>
+			<field>СуммаСортировкиКонтрагентов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСортировкиНоменклтуры</dataPath>
+			<field>СуммаСортировкиНоменклтуры</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаФактГод</dataPath>
+			<field>СуммаФактГод</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаФактКвартал</dataPath>
+			<field>СуммаФактКвартал</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаФактМесяц</dataPath>
+			<field>СуммаФактМесяц</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сценарий</dataPath>
+			<field>Сценарий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТерриториальныйМенеджер</dataPath>
+			<field>ТерриториальныйМенеджер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Территория</dataPath>
+			<field>Территория</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаНоменклатуры</dataPath>
+			<field>ХарактеристикаНоменклатуры</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦентрРегиона</dataPath>
+			<field>ЦентрРегиона</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦентрТерритории</dataPath>
+			<field>ЦентрТерритории</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВложенныйЗапрос.ДатаКалендаря,
+	ВложенныйЗапрос.Номенклатура,
+	МАКСИМУМ(ВложенныйЗапрос.Цена) КАК Цена
+ПОМЕСТИТЬ ЦенаПоДням
+ИЗ
+	(ВЫБРАТЬ
+		ВложенныйЗапрос.ДатаКалендаря КАК ДатаКалендаря,
+		ВложенныйЗапрос.Номенклатура КАК Номенклатура,
+		ЦеныНоменклатуры.Цена КАК Цена
+	ИЗ
+		(ВЫБРАТЬ
+			РегламентированныйПроизводственныйКалендарь.ДатаКалендаря КАК ДатаКалендаря,
+			ЦеныНоменклатуры.Номенклатура КАК Номенклатура,
+			МАКСИМУМ(ЦеныНоменклатуры.Период) КАК Период,
+			ЦеныНоменклатуры.ТипЦен КАК ТипЦен
+		ИЗ
+			РегистрСведений.РегламентированныйПроизводственныйКалендарь КАК РегламентированныйПроизводственныйКалендарь
+				ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры КАК ЦеныНоменклатуры
+				ПО РегламентированныйПроизводственныйКалендарь.ДатаКалендаря &gt;= ЦеныНоменклатуры.Период
+					И (ВЫБОР
+						КОГДА &amp;ТипЦен = ЗНАЧЕНИЕ(Справочник.ТипыЦенНоменклатуры.Пустаяссылка)
+							ТОГДА ЛОЖЬ
+						ИНАЧЕ ЦеныНоменклатуры.ТипЦен = &amp;ТипЦен
+					КОНЕЦ)
+		ГДЕ
+			РегламентированныйПроизводственныйКалендарь.ДатаКалендаря МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаМесяцаПрошлогоГода, ГОД) И КОНЕЦПЕРИОДА(&amp;ДатаОтчета, ГОД)
+			И ВЫБОР
+					КОГДА &amp;ТипЦен = ЗНАЧЕНИЕ(Справочник.ТипыЦенНоменклатуры.Пустаяссылка)
+						ТОГДА ЛОЖЬ
+					ИНАЧЕ ЦеныНоменклатуры.ТипЦен = &amp;ТипЦен
+				КОНЕЦ
+		
+		СГРУППИРОВАТЬ ПО
+			РегламентированныйПроизводственныйКалендарь.ДатаКалендаря,
+			ЦеныНоменклатуры.Номенклатура,
+			ЦеныНоменклатуры.ТипЦен) КАК ВложенныйЗапрос
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры КАК ЦеныНоменклатуры
+			ПО ВложенныйЗапрос.Номенклатура = ЦеныНоменклатуры.Номенклатура
+				И ВложенныйЗапрос.ТипЦен = ЦеныНоменклатуры.ТипЦен
+				И ВложенныйЗапрос.Период = ЦеныНоменклатуры.Период) КАК ВложенныйЗапрос
+
+СГРУППИРОВАТЬ ПО
+	ВложенныйЗапрос.ДатаКалендаря,
+	ВложенныйЗапрос.Номенклатура
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПродажиОбороты.Период КАК Период,
+	ПродажиОбороты.Контрагент.абс_Отдел КАК Подразделение,
+	ПродажиОбороты.Номенклатура КАК Номенклатура,
+	ПродажиОбороты.Контрагент КАК Контрагент,
+	0 КАК СуммаПлан,
+	ВЫБОР
+		КОГДА &amp;ТипЦен = ЗНАЧЕНИЕ(Справочник.ТипыЦенНоменклатуры.ПустаяСсылка)
+			ТОГДА ЕСТЬNULL(ПродажиОбороты.СтоимостьОборот, 0) - ЕСТЬNULL(ПродажиОбороты.НДСОборот, 0)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ДинамическиеЦены
+					ТОГДА ЕСТЬNULL(ПродажиОбороты.КоличествоОборот, 0) * ЕСТЬNULL(ЦенаПоДням.Цена, 0)
+				ИНАЧЕ ЕСТЬNULL(ПродажиОбороты.КоличествоОборот, 0) * ЕСТЬNULL(ЦеныНоменклатурыСрезПоследних.Цена, 0)
+			КОНЕЦ
+	КОНЕЦ КАК СуммаФакт,
+	ПродажиОбороты.Контрагент.абс_БизнесРегион КАК БизнесРегион,
+	ПродажиОбороты.Контрагент.абс_Территория КАК Территория,
+	ПродажиОбороты.Контрагент.абс_Город КАК Город,
+	ПродажиОбороты.КоличествоОборот КАК КоличествоФакт,
+	0 КАК КоличествоПлан
+ПОМЕСТИТЬ ПланФактПолный
+ИЗ
+	РегистрНакопления.Продажи.Обороты(
+			НАЧАЛОПЕРИОДА(&amp;ДатаМесяцаПрошлогоГода, ГОД),
+			&amp;КонецПериодаПрошлогоГода,
+			День,
+			НЕ Контрагент.абс_Отдел = ЗНАЧЕНИЕ(Справочник.Регионы.ПустаяСсылка)
+				И Номенклатура.ВидНоменклатуры в (&amp;ВидНоменклатуры)) КАК ПродажиОбороты
+		ЛЕВОЕ СОЕДИНЕНИЕ ЦенаПоДням КАК ЦенаПоДням
+		ПО (НАЧАЛОПЕРИОДА(ПродажиОбороты.Период, ДЕНЬ) = НАЧАЛОПЕРИОДА(ЦенаПоДням.ДатаКалендаря, ДЕНЬ))
+			И ПродажиОбороты.Номенклатура = ЦенаПоДням.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(
+				,
+				ВЫБОР
+					КОГДА &amp;ТипЦен = ЗНАЧЕНИЕ(Справочник.ТипыЦенНоменклатуры.Пустаяссылка)
+						ТОГДА ЛОЖЬ
+					ИНАЧЕ ТипЦен = &amp;ТипЦен
+				КОНЕЦ) КАК ЦеныНоменклатурыСрезПоследних
+		ПО (НАЧАЛОПЕРИОДА(ПродажиОбороты.Период, ДЕНЬ) = НАЧАЛОПЕРИОДА(ЦеныНоменклатурыСрезПоследних.Период, ДЕНЬ))
+			И ПродажиОбороты.Номенклатура = ЦеныНоменклатурыСрезПоследних.Номенклатура
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ПродажиОбороты.Период,
+	ПродажиОбороты.Контрагент.абс_Отдел,
+	ПродажиОбороты.Номенклатура,
+	ПродажиОбороты.Контрагент,
+	0,
+	ВЫБОР
+		КОГДА &amp;ТипЦен = ЗНАЧЕНИЕ(Справочник.ТипыЦенНоменклатуры.ПустаяСсылка)
+			ТОГДА ЕСТЬNULL(ПродажиОбороты.СтоимостьОборот, 0) - ЕСТЬNULL(ПродажиОбороты.НДСОборот, 0)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ДинамическиеЦены
+					ТОГДА ЕСТЬNULL(ПродажиОбороты.КоличествоОборот, 0) * ЕСТЬNULL(ЦенаПоДням.Цена, 0)
+				ИНАЧЕ ЕСТЬNULL(ПродажиОбороты.КоличествоОборот, 0) * ЕСТЬNULL(ЦеныНоменклатурыСрезПоследних.Цена, 0)
+			КОНЕЦ
+	КОНЕЦ,
+	ПродажиОбороты.Контрагент.абс_БизнесРегион,
+	ПродажиОбороты.Контрагент.абс_Территория,
+	ПродажиОбороты.Контрагент.абс_Город,
+	ПродажиОбороты.КоличествоОборот,
+	0
+ИЗ
+	РегистрНакопления.Продажи.Обороты(
+			&amp;НачалоПериода1,
+			КОНЕЦПЕРИОДА(&amp;ДатаОтчета, ДЕНЬ),
+			День,
+			НЕ Контрагент.абс_Отдел = ЗНАЧЕНИЕ(Справочник.Регионы.ПустаяСсылка)
+				И Номенклатура.ВидНоменклатуры в (&amp;ВидНоменклатуры)) КАК ПродажиОбороты
+		ЛЕВОЕ СОЕДИНЕНИЕ ЦенаПоДням КАК ЦенаПоДням
+		ПО (НАЧАЛОПЕРИОДА(ПродажиОбороты.Период, ДЕНЬ) = НАЧАЛОПЕРИОДА(ЦенаПоДням.ДатаКалендаря, ДЕНЬ))
+			И ПродажиОбороты.Номенклатура = ЦенаПоДням.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(
+				,
+				ВЫБОР
+					КОГДА &amp;ТипЦен = ЗНАЧЕНИЕ(Справочник.ТипыЦенНоменклатуры.Пустаяссылка)
+						ТОГДА ЛОЖЬ
+					ИНАЧЕ ТипЦен = &amp;ТипЦен
+				КОНЕЦ) КАК ЦеныНоменклатурыСрезПоследних
+		ПО (НАЧАЛОПЕРИОДА(ПродажиОбороты.Период, ДЕНЬ) = НАЧАЛОПЕРИОДА(ЦеныНоменклатурыСрезПоследних.Период, ДЕНЬ))
+			И ПродажиОбороты.Номенклатура = ЦеныНоменклатурыСрезПоследних.Номенклатура
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ПланыПродажОбороты.Период,
+	ПланыПродажОбороты.Контрагент.абс_Отдел,
+	ПланыПродажОбороты.Номенклатура,
+	ПланыПродажОбороты.Контрагент,
+	ПланыПродажОбороты.СтоимостьОборот,
+	0,
+	ПланыПродажОбороты.Контрагент.абс_БизнесРегион,
+	ПланыПродажОбороты.Контрагент.абс_Территория,
+	ПланыПродажОбороты.Контрагент.абс_Город,
+	0,
+	ПланыПродажОбороты.КоличествоОборот
+ИЗ
+	РегистрНакопления.ПланыПродаж.Обороты(
+			НАЧАЛОПЕРИОДА(&amp;ДатаОтчета, ГОД),
+			КОНЕЦПЕРИОДА(&amp;ДатаОтчета, ГОД),
+			Месяц,
+			Сценарий = &amp;Сценарий
+				И НЕ Контрагент.абс_Отдел = ЗНАЧЕНИЕ(Справочник.Регионы.ПустаяСсылка)
+				И ВЫБОР
+					КОГДА Номенклатура.ВидНоменклатуры = ЗНАЧЕНИЕ(Справочник.Номенклатура.ПустаяСсылка)
+						ТОГДА ИСТИНА
+					ИНАЧЕ Номенклатура.ВидНоменклатуры в (&amp;ВидНоменклатуры)
+				КОНЕЦ) КАК ПланыПродажОбороты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПланФактПолный.Подразделение КАК Подразделение,
+	ПланФактПолный.Номенклатура КАК Номенклатура,
+	ПланФактПолный.Контрагент КАК Контрагент,
+	ПланФактПолный.БизнесРегион КАК БизнесРегион,
+	ПланФактПолный.Территория КАК Территория,
+	ПланФактПолный.Город КАК Город,
+	СУММА(ВЫБОР
+			КОГДА ПланФактПолный.Период МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаОтчета, МЕСЯЦ) И &amp;ДатаОтчета
+				ТОГДА ВЫБОР
+						КОГДА &amp;ВыводитьКоличество
+							ТОГДА ПланФактПолный.КоличествоФакт
+						ИНАЧЕ ПланФактПолный.СуммаФакт
+					КОНЕЦ
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаФактМесяц,
+	СУММА(ВЫБОР
+			КОГДА ПланФактПолный.Период МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаОтчета, КВАРТАЛ) И &amp;ДатаОтчета
+				ТОГДА ВЫБОР
+						КОГДА &amp;ВыводитьКоличество
+							ТОГДА ПланФактПолный.КоличествоФакт
+						ИНАЧЕ ПланФактПолный.СуммаФакт
+					КОНЕЦ
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаФактКвартал,
+	СУММА(ВЫБОР
+			КОГДА ПланФактПолный.Период МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаОтчета, ГОД) И &amp;ДатаОтчета
+				ТОГДА ВЫБОР
+						КОГДА &amp;ВыводитьКоличество
+							ТОГДА ПланФактПолный.КоличествоФакт
+						ИНАЧЕ ПланФактПолный.СуммаФакт
+					КОНЕЦ
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаФактГод,
+	СУММА(ВЫБОР
+			КОГДА ПланФактПолный.Период МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаМесяцаПрошлогоГода, МЕСЯЦ) И КОНЕЦПЕРИОДА(&amp;ДатаМесяцаПрошлогоГода, МЕСЯЦ)
+				ТОГДА ВЫБОР
+						КОГДА &amp;ВыводитьКоличество
+							ТОГДА ПланФактПолный.КоличествоФакт
+						ИНАЧЕ ПланФактПолный.СуммаФакт
+					КОНЕЦ
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаМесяцПрошлогоГода,
+	СУММА(ВЫБОР
+			КОГДА ПланФактПолный.Период МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаМесяцаПрошлогоГода, КВАРТАЛ) И &amp;ДатаСопоставленияКвартал
+				ТОГДА ВЫБОР
+						КОГДА &amp;ВыводитьКоличество
+							ТОГДА ПланФактПолный.КоличествоФакт
+						ИНАЧЕ ПланФактПолный.СуммаФакт
+					КОНЕЦ
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаКварталПрошлогоГода,
+	СУММА(ВЫБОР
+			КОГДА ПланФактПолный.Период МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаМесяцаПрошлогоГода, ГОД) И &amp;ДатаСопоставленияГод
+				ТОГДА ВЫБОР
+						КОГДА &amp;ВыводитьКоличество
+							ТОГДА ПланФактПолный.КоличествоФакт
+						ИНАЧЕ ПланФактПолный.СуммаФакт
+					КОНЕЦ
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаПрошлыйГод,
+	СУММА(ВЫБОР
+			КОГДА ПланФактПолный.Период МЕЖДУ НАЧАЛОПЕРИОДА(ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(&amp;ДатаОтчета, МЕСЯЦ), МЕСЯЦ, -1), МЕСЯЦ) И КОНЕЦПЕРИОДА(ДОБАВИТЬКДАТЕ(КОНЕЦПЕРИОДА(&amp;ДатаОтчета, МЕСЯЦ), МЕСЯЦ, -1), МЕСЯЦ)
+				ТОГДА ВЫБОР
+						КОГДА &amp;ВыводитьКоличество
+							ТОГДА ПланФактПолный.КоличествоФакт
+						ИНАЧЕ ПланФактПолный.СуммаФакт
+					КОНЕЦ
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаПрошлыйМесяц,
+	СУММА(ВЫБОР
+			КОГДА ПланФактПолный.Период = НАЧАЛОПЕРИОДА(&amp;ДатаОтчета, МЕСЯЦ)
+				ТОГДА ВЫБОР
+						КОГДА &amp;ВыводитьКоличество
+							ТОГДА ПланФактПолный.КоличествоПлан
+						ИНАЧЕ ПланФактПолный.СуммаПлан
+					КОНЕЦ
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаПланМесяц,
+	СУММА(ВЫБОР
+			КОГДА ПланФактПолный.Период МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДАтаОтчета, КВАРТАЛ) И КОНЕЦПЕРИОДА(&amp;ДатаОтчета, КВАРТАЛ)
+				ТОГДА ВЫБОР
+						КОГДА &amp;ВыводитьКоличество
+							ТОГДА ПланФактПолный.КоличествоПлан
+						ИНАЧЕ ПланФактПолный.СуммаПлан
+					КОНЕЦ
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаПланКвартал,
+	СУММА(ВЫБОР
+			КОГДА ПланФактПолный.Период МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДАтаОтчета, ГОД) И КОНЕЦПЕРИОДА(&amp;ДатаОтчета, ГОД)
+				ТОГДА ВЫБОР
+						КОГДА &amp;ВыводитьКоличество
+							ТОГДА ПланФактПолный.КоличествоПлан
+						ИНАЧЕ ПланФактПолный.СуммаПлан
+					КОНЕЦ
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаПланГод,
+	ПланФактПолный.БизнесРегион.абс_ЦентрРегиона КАК ЦентрРегиона,
+	ПланФактПолный.БизнесРегион.абс_Менеджер КАК ОтветственныйМенеджер,
+	ПланФактПолный.Территория.абс_ЦентрРегиона КАК ЦентрТерритории,
+	ПланФактПолный.Территория.абс_Менеджер КАК ТерриториальныйМенеджер,
+	ЕСТЬNULL(ЗначенияСвойствОбъектов.Значение, "") КАК Канал,
+	ПланФактПолный.Подразделение.абс_Менеджер КАК РуководительПодразделения
+ПОМЕСТИТЬ ПланФакт
+ИЗ
+	ПланФактПолный КАК ПланФактПолный
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗначенияСвойствОбъектов КАК ЗначенияСвойствОбъектов
+		ПО ПланФактПолный.Контрагент = ЗначенияСвойствОбъектов.Объект
+			И (ЗначенияСвойствОбъектов.Свойство = ЗНАЧЕНИЕ(ПланВидовХарактеристик.СвойстваОбъектов.абс_Канал))
+
+СГРУППИРОВАТЬ ПО
+	ПланФактПолный.Территория,
+	ПланФактПолный.БизнесРегион,
+	ЕСТЬNULL(ЗначенияСвойствОбъектов.Значение, ""),
+	ПланФактПолный.Подразделение,
+	ПланФактПолный.Город,
+	ПланФактПолный.Контрагент,
+	ПланФактПолный.Номенклатура,
+	ПланФактПолный.БизнесРегион.абс_ЦентрРегиона,
+	ПланФактПолный.БизнесРегион.абс_Менеджер,
+	ПланФактПолный.Территория.абс_ЦентрРегиона,
+	ПланФактПолный.Территория.абс_Менеджер,
+	ПланФактПолный.Подразделение.абс_Менеджер
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПланФакт.Контрагент,
+	СУММА(ПланФакт.СуммаФактГод) КАК СуммаФактГод,
+	СУММА(ПланФакт.СуммаПрошлыйГод) КАК СуммаПрошлыйГод
+ПОМЕСТИТЬ Контрагенты
+ИЗ
+	ПланФакт КАК ПланФакт
+
+СГРУППИРОВАТЬ ПО
+	ПланФакт.Контрагент
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Контрагенты.Контрагент,
+	ВЫБОР
+		КОГДА Контрагенты.СуммаФактГод = 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Порядок,
+	ВЫБОР
+		КОГДА Контрагенты.СуммаФактГод = 0
+			ТОГДА Контрагенты.СуммаПрошлыйГод
+		ИНАЧЕ Контрагенты.СуммаФактГод
+	КОНЕЦ КАК Сумма
+ПОМЕСТИТЬ ПорядокКонтрагентов
+ИЗ
+	Контрагенты КАК Контрагенты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПланФакт.Номенклатура,
+	ПланФакт.Контрагент,
+	СУММА(ПланФакт.СуммаФактГод) КАК СуммаФактГод,
+	СУММА(ПланФакт.СуммаПрошлыйГод) КАК СуммаПрошлыйГод
+ПОМЕСТИТЬ КонтрагентНоменклатура
+ИЗ
+	ПланФакт КАК ПланФакт
+
+СГРУППИРОВАТЬ ПО
+	ПланФакт.Номенклатура,
+	ПланФакт.Контрагент
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	КонтрагентНоменклатура.Контрагент,
+	ВЫБОР
+		КОГДА КонтрагентНоменклатура.СуммаФактГод = 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Порядок,
+	КонтрагентНоменклатура.Номенклатура,
+	ВЫБОР
+		КОГДА КонтрагентНоменклатура.СуммаФактГод = 0
+			ТОГДА КонтрагентНоменклатура.СуммаПрошлыйГод
+		ИНАЧЕ КонтрагентНоменклатура.СуммаФактГод
+	КОНЕЦ КАК Сумма
+ПОМЕСТИТЬ ПорядокНоменклатуры
+ИЗ
+	КонтрагентНоменклатура КАК КонтрагентНоменклатура
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПланФакт.Подразделение КАК Подразделение,
+	ПланФакт.Номенклатура КАК Номенклатура,
+	ПланФакт.Контрагент КАК Контрагент,
+	ПланФакт.БизнесРегион КАК БизнесРегион,
+	ПланФакт.Территория КАК Территория,
+	ПланФакт.Город КАК Город,
+	СУММА(ПланФакт.СуммаФактМесяц) КАК СуммаФактМесяц,
+	СУММА(ПланФакт.СуммаФактКвартал) КАК СуммаФактКвартал,
+	СУММА(ПланФакт.СуммаФактГод) КАК СуммаФактГод,
+	СУММА(ПланФакт.СуммаМесяцПрошлогоГода) КАК СуммаМесяцПрошлогоГода,
+	СУММА(ПланФакт.СуммаКварталПрошлогоГода) КАК СуммаКварталПрошлогоГода,
+	СУММА(ПланФакт.СуммаПрошлыйГод) КАК СуммаПрошлыйГод,
+	СУММА(ПланФакт.СуммаПрошлыйМесяц) КАК СуммаПрошлыйМесяц,
+	СУММА(ПланФакт.СуммаПланМесяц) КАК СуммаПланМесяц,
+	СУММА(ПланФакт.СуммаПланКвартал) КАК СуммаПланКвартал,
+	СУММА(ПланФакт.СуммаПланГод) КАК СуммаПланГод,
+	МАКСИМУМ(ПланФакт.ЦентрРегиона) КАК ЦентрРегиона,
+	МАКСИМУМ(ПланФакт.ОтветственныйМенеджер) КАК ОтветственныйМенеджер,
+	МАКСИМУМ(ПланФакт.ЦентрТерритории) КАК ЦентрТерритории,
+	МАКСИМУМ(ПланФакт.ТерриториальныйМенеджер) КАК ТерриториальныйМенеджер,
+	МАКСИМУМ(ПланФакт.Канал) КАК Канал,
+	МАКСИМУМ(ПланФакт.РуководительПодразделения) КАК РуководительПодразделения,
+	ПорядокКонтрагентов.Порядок КАК ПорядокКонтрагентов,
+	ПорядокНоменклатуры.Порядок КАК ПорядокНоменклатуры,
+	МАКСИМУМ(ПорядокНоменклатуры.Сумма) КАК СуммаСортировкиНоменклтуры,
+	МАКСИМУМ(ПорядокКонтрагентов.Сумма) КАК СуммаСортировкиКонтрагентов
+ИЗ
+	ПланФакт КАК ПланФакт
+		ЛЕВОЕ СОЕДИНЕНИЕ ПорядокКонтрагентов КАК ПорядокКонтрагентов
+		ПО ПланФакт.Контрагент = ПорядокКонтрагентов.Контрагент
+		ЛЕВОЕ СОЕДИНЕНИЕ ПорядокНоменклатуры КАК ПорядокНоменклатуры
+		ПО ПланФакт.Контрагент = ПорядокНоменклатуры.Контрагент
+			И ПланФакт.Номенклатура = ПорядокНоменклатуры.Номенклатура
+ГДЕ
+	НЕ ПланФакт.Подразделение В (&amp;ПодразделениеКУдалению)
+
+СГРУППИРОВАТЬ ПО
+	ПланФакт.Подразделение,
+	ПланФакт.БизнесРегион,
+	ПланФакт.Территория,
+	ПланФакт.Город,
+	ПланФакт.Номенклатура,
+	ПланФакт.Контрагент,
+	ПорядокКонтрагентов.Порядок,
+	ПорядокНоменклатуры.Порядок
+
+УПОРЯДОЧИТЬ ПО
+	ПланФакт.Подразделение.Порядок,
+	ПланФакт.БизнесРегион.Порядок,
+	ПланФакт.Территория.Порядок,
+	ПланФакт.Город.Порядок,
+	ПорядокКонтрагентов,
+	СуммаСортировкиКонтрагентов УБЫВ,
+	ПорядокНоменклатуры,
+	СуммаСортировкиНоменклтуры УБЫВ</query>
+	</dataSet>
+	<totalField>
+		<dataPath>СуммаКварталПрошлогоГода</dataPath>
+		<expression>Сумма(СуммаКварталПрошлогоГода)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаМесяцПрошлогоГода</dataPath>
+		<expression>Сумма(СуммаМесяцПрошлогоГода)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаПланГод</dataPath>
+		<expression>Сумма(СуммаПланГод)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаПланКвартал</dataPath>
+		<expression>Сумма(СуммаПланКвартал)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаПланМесяц</dataPath>
+		<expression>Сумма(СуммаПланМесяц)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаПрошлыйГод</dataPath>
+		<expression>Сумма(СуммаПрошлыйГод)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаПрошлыйМесяц</dataPath>
+		<expression>Сумма(СуммаПрошлыйМесяц)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаФактГод</dataPath>
+		<expression>Сумма(СуммаФактГод)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаФактКвартал</dataPath>
+		<expression>Сумма(СуммаФактКвартал)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаФактМесяц</dataPath>
+		<expression>Сумма(СуммаФактМесяц)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВидНоменклатуры</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид номенклатуры</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыНоменклатуры</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВыводитьКоличество</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Выводить количество</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаМесяцаПрошлогоГода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата месяца прошлого года</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаСопоставленияГод</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата сопоставления год</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаСопоставленияКвартал</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата сопоставления квартал</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДинамическиеЦены</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Динамические цены</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериодаПрошлогоГода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода прошлого года</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПодразделениеКУдалению</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Подразделение к удалению</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Регионы</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Сценарий</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сценарий</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СценарииПланирования</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ТипЦен</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Тип цен</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ТипыЦенНоменклатуры</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода1</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода1</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>БизнесРегион</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Город</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Канал</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтветственныйМенеджер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Подразделение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПорядокКонтрагентов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПорядокНоменклатуры</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РуководительПодразделения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТерриториальныйМенеджер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Территория</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦентрРегиона</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦентрТерритории</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаКварталПрошлогоГода</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаМесяцПрошлогоГода</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаПланГод</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаПланКвартал</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаПланМесяц</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаПрошлыйГод</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаПрошлыйМесяц</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаСортировкиКонтрагентов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаСортировкиНоменклтуры</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаФактГод</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаФактКвартал</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаФактМесяц</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВидНоменклатуры</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьКоличество</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>df9fd72c-d3b9-4b85-add2-112f161e1ca4</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаМесяцаПрошлогоГода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>9ef32fb6-b778-43bd-8189-22c0a0e2f34e</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаСопоставленияГод</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаСопоставленияКвартал</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДинамическиеЦены</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>c6670669-3434-4501-a5fd-34150e4c4305</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>КонецПериодаПрошлогоГода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПодразделениеКУдалению</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Сценарий</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>e7cf2665-1409-4581-afba-6764838c5c10</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ТипЦен</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>e0a2b5fb-5a30-4b03-b1ef-9be6db93268f</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НачалоПериода1</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

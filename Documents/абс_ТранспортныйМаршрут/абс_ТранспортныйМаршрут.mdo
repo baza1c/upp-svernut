@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="19937cb9-f3df-4e09-bb2b-f7d3730b149f">
+  <producedTypes>
+    <objectType typeId="1ee18c60-9485-4e8d-8a82-fc3ff1253b60" valueTypeId="1f133c17-0e4f-425d-9ea0-e55439bd893b"/>
+    <refType typeId="810b27ba-19d6-4648-ba37-00d15ba41c4b" valueTypeId="e2f3fb74-5058-443f-9f5f-d90cda0c9b4d"/>
+    <selectionType typeId="3a7ce8ad-3e77-4417-933e-a509d60a41c7" valueTypeId="9991cddf-af22-4483-99c0-c5d20f08fb90"/>
+    <listType typeId="566a62eb-8de0-4bfc-bfc1-cc2271644c1a" valueTypeId="fdaac3db-de0a-4b65-8051-9630b01c3bc2"/>
+    <managerType typeId="5aaf41c8-45a0-47a0-a61e-500e9c6c8f8d" valueTypeId="275436a6-ca16-432f-b115-2c1f73fc64fa"/>
+  </producedTypes>
+  <name>абс_ТранспортныйМаршрут</name>
+  <synonym>
+    <key>ru</key>
+    <value>Транспортный маршрут (АБС)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.абс_ТранспортныйМаршрут.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Транспортные маршруты (АБС)</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>13</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.абс_ТранспортныйМаршрут.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.абс_ТранспортныйМаршрут.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.абс_ТранспортныйМаршрут.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <attributes uuid="4e8d3d67-d347-4054-9caa-6c6d9e25fd3d">
+    <name>СводнаяЗаявкаНаТранспорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сводная заявка на транспорт</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.абс_СводнаяЗаявкаНаТранспорт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="533a80e5-6ef3-45e9-bfe5-64163a6f781f">
+    <name>ТранспортноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.абс_ТранспортныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="091d9719-c446-468a-bcb1-18ac5a54b9d5">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ece67bc2-101f-4f44-b6eb-c6ec7d048b4a">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b1182c02-b06b-405e-b404-0acd0416aa8e">
+    <name>ТКПеревозчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная компания</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c40c26dd-d2c1-49d5-80c8-9b09c2e53921">
+    <name>ВодительЭкспедитор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель-экспедитор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dffd2c39-b54b-4e84-b719-053837d768ae">
+    <name>НомерПломбы</name>
+    <synonym>
+      <key>ru</key>
+      <value>№ пломбы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7d31985f-e708-47dd-9887-98f3a37b4eb1">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_СтатусыЗаявокНаТранспорт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.абс_СтатусыЗаявокНаТранспорт.EnumValue.КИсполнению</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="36d934e6-b60e-4ae7-8eaa-351276e81317">
+    <name>ПоручениеЭкспедитору</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поручение экспедитору</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bba0a6f2-e539-4fdd-a0e3-c2bd1a837ffc">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="83275175-8851-42f6-ad14-5c8d2179acc7">
+    <name>СерияПутевогоЛиста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серия путевого листа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="da109fdb-0c68-4bb7-b377-f9cd4e0e6feb">
+    <name>НомерПутевогоЛиста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер путевого листа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0dc84122-e444-47cc-8735-9c23ff59951d">
+    <name>ДатаЗакрытияТранспортногоМаршрута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата закрытия транспортного маршрута</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="22a305a7-0d94-418b-8252-55faee3b24b9">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7cf8cd6b-1025-4d88-8e0c-54aaf69edd92">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e9fa84eb-a6f1-4f3c-959f-fa81aa60594d">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="f242578d-24d0-4441-8c76-a9890801ae0c">
+    <producedTypes>
+      <objectType typeId="d652a0ee-a95d-4907-98ea-22f788eb4246" valueTypeId="427f3a46-b864-4241-92bd-5152ced83bae"/>
+      <rowType typeId="14ed0746-aa13-4078-a4d6-9671bd1e7f05" valueTypeId="258711f5-ebf1-4d0c-9bc6-d7409e52419c"/>
+    </producedTypes>
+    <name>Задания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задания</value>
+    </synonym>
+    <attributes uuid="878c3930-2906-457d-a45b-89911073aac3">
+      <name>ЗаявкаНаТранспорт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заявка на транспорт</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.абс_ЗаявкаНаТранспорт</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ce446e46-e2d8-4246-8c9a-4d2c1c7fa8d9">
+      <name>ФормироватьДоверенность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Формировать доверенность</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d65117bf-0e44-460e-9cbb-b0a310c4cd26">
+      <name>Доверенность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Доверенность</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.Доверенность</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="60ea8ce9-4520-4f98-9879-3ebe86e1d756">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="64db3949-1806-442d-bb70-5e70ec142277">
+      <name>ФактДатаОкончания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Факт. дата окончания</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d336403a-521c-4c05-9663-3974b7385894">
+      <name>ДатаДоставки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата доставки</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="7b9b8841-1ba8-453a-bbc5-3430fa4bc6e3">
+    <name>ТранспортныйМаршрут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортный маршрут</value>
+    </synonym>
+  </templates>
+  <templates uuid="aa943c28-395a-4db4-ae95-685436c864f7">
+    <name>ПутевойЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путевой лист</value>
+    </synonym>
+  </templates>
+  <templates uuid="1a516ab1-a925-4d8c-a347-f6bba9ea8831">
+    <name>ТранспортнаяНакладная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная накладная</value>
+    </synonym>
+  </templates>
+  <templates uuid="3ea8e8d7-90ac-4766-897d-0ba252316929">
+    <name>ЭкспедиторскаяРасписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экспедиторская расписка</value>
+    </synonym>
+  </templates>
+  <templates uuid="5c256dd6-5db3-4a81-ad56-23ffb596012b">
+    <name>ПФ_MXL_ТранспортнаяНакладная2200</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная накладная по Постановлению № 2200</value>
+    </synonym>
+  </templates>
+  <templates uuid="82b5cac3-8315-45db-abb0-c8f7dc3673e0">
+    <name>ПФ_MXL_ТранспортнаяНакладная2201</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная накладная по Постановлению № 2200</value>
+    </synonym>
+  </templates>
+  <templates uuid="f0e5e901-7214-4b4a-99b3-671d16353d7e">
+    <name>ПФ_MXL_ТранспортнаяНакладная2202</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная накладная по Постановлению № 2200</value>
+    </synonym>
+  </templates>
+  <templates uuid="e7826024-fd15-4000-a8e7-a8ddd95aeeee">
+    <name>ПФ_MXL_ТранспортнаяНакладная2203</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная накладная по Постановлению № 2200</value>
+    </synonym>
+  </templates>
+  <commands uuid="326415ca-4e4a-4ca7-ade6-c86923cbf022">
+    <name>ПечатьМаршрута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать маршрута</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.абс_ТранспортныйМаршрут</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Print</picture>
+    </picture>
+  </commands>
+  <commands uuid="ec0a921e-616a-4fae-8ce6-fe4f03136c7e">
+    <name>ПечатьПутевогоЛиста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать путевого листа</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.абс_ТранспортныйМаршрут</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Print</picture>
+    </picture>
+  </commands>
+</mdclass:Document>

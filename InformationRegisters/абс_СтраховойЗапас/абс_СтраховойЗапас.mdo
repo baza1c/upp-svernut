@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f319156-3f78-4e01-b28f-70e59807048f">
+  <producedTypes>
+    <selectionType typeId="55731a90-8d03-4157-b365-7ecac51016b9" valueTypeId="0a701e3a-33d6-45a9-bcf8-2cf942857606"/>
+    <listType typeId="efed9ba2-ce12-4943-a745-068e8089ce39" valueTypeId="18d067be-d1ba-4ecf-a567-71124f35ec00"/>
+    <managerType typeId="44aa303b-0f5a-453a-9b02-967c0fc6ba7a" valueTypeId="f1482a8d-4300-455d-8610-d7150db7cfba"/>
+    <recordSetType typeId="3d5aada2-3bae-4417-82a4-2ec2aec345bf" valueTypeId="4d74c49b-e548-4f31-9782-7905813a3952"/>
+    <recordKeyType typeId="f1360437-91ab-453c-953b-41b3d6e91696" valueTypeId="74e26f34-e38f-4265-8c47-4363f9e94e83"/>
+    <recordType typeId="64d42675-e875-4b32-9be7-22c311406166" valueTypeId="e0e6b376-fde0-418e-9ca9-d4b56e297850"/>
+    <recordManagerType typeId="a680ea2f-4103-4ef3-a8b9-b876b489633f" valueTypeId="8454a60a-4e1b-4019-a7cb-ee8d307c9263"/>
+  </producedTypes>
+  <name>абс_СтраховойЗапас</name>
+  <synonym>
+    <key>ru</key>
+    <value>Страховой запас</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="46092d03-dd1b-4ded-b77a-214e496dcfb7">
+    <name>Дней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочих дней</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6204f522-8f14-48bf-93fb-e4c03d8d4999">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

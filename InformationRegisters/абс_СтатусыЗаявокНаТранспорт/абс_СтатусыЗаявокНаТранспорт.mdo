@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4119085-adc8-4165-b1ee-5605a5d3e18d">
+  <producedTypes>
+    <selectionType typeId="2a48b46b-aba7-4024-a493-d4036a39012f" valueTypeId="00c86bcc-3275-4bf2-bef9-94615bbd3675"/>
+    <listType typeId="577716f2-3432-43a6-8995-2a4ceb0dfd2c" valueTypeId="4d932694-bdc6-4dee-ad89-f1e0a3adaba3"/>
+    <managerType typeId="ea00b2bb-8e6e-42eb-8041-8fe0b801e74f" valueTypeId="a2aba034-2b69-4500-888f-1810dae200ca"/>
+    <recordSetType typeId="f229882a-2fa1-4321-bfbc-9a4ba8ff726e" valueTypeId="a9746c5e-d2f3-46bd-8cc0-119721524b93"/>
+    <recordKeyType typeId="126fbd00-7653-496e-9869-cc10771073f7" valueTypeId="ba8892cc-7f18-451c-b8f3-121c0dfd80e1"/>
+    <recordType typeId="1031d182-ffce-49ec-ad14-7f5c43c8a2c7" valueTypeId="e57b86e8-246d-446b-b719-92f5f14805f2"/>
+    <recordManagerType typeId="0f37e720-1052-4880-9582-18ce391253b2" valueTypeId="e498d968-2e44-4b72-bfce-26211f71c59a"/>
+  </producedTypes>
+  <name>абс_СтатусыЗаявокНаТранспорт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы заявок на транспорт (АБС)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.абс_СтатусыЗаявокНаТранспорт.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.абс_СтатусыЗаявокНаТранспорт.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="0bace27b-7835-4dbf-8d49-775aa04e729e">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_СтатусыЗаявокНаТранспорт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="0b209fba-ae17-4434-bfc5-05bfcdbb334e">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="9e5a1931-bbb5-4fca-aaee-86e9ade37233">
+    <name>ЗаявкаНаТранспорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка на транспорт</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.абс_ЗаявкаНаТранспорт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="262d7bba-a42c-4aae-a7d2-cdbfcfc0ae3c">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="54ee0f23-cbbf-41c1-8834-2d710003aed2">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

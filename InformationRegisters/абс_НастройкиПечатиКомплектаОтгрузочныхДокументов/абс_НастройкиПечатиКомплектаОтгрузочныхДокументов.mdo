@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c1ec152-1283-4baa-af77-87b057b80636">
+  <producedTypes>
+    <selectionType typeId="eca94539-707f-43a9-b22b-90dad1c0ff88" valueTypeId="30ade2ac-0864-4493-a880-a600ca186c77"/>
+    <listType typeId="5db31173-0750-4f37-889f-a78c2d89398e" valueTypeId="3fb37b51-c480-4aa4-ac40-41ba2e0cdc26"/>
+    <managerType typeId="f71d552f-a317-4776-8e46-b18eb75c18c2" valueTypeId="45f9964e-8e43-4e90-a3ee-7b7a8cd5e042"/>
+    <recordSetType typeId="4a108690-b5e5-46af-9563-a372bb75bb19" valueTypeId="973ae98d-41d7-4110-b8c4-b39cb696dfd4"/>
+    <recordKeyType typeId="b4e54270-a607-4c8a-98d8-0d6cb560be2c" valueTypeId="0761b0d4-df88-404d-be42-e71eca61e7db"/>
+    <recordType typeId="b3940164-2127-4248-8cbd-814fc7aacdfc" valueTypeId="53bb065d-95ef-4fd5-a31e-dbf934890766"/>
+    <recordManagerType typeId="7f6fc18c-fed0-4c0d-85de-0824ab65159b" valueTypeId="bce37687-35a3-4504-b107-d0271fa86f38"/>
+  </producedTypes>
+  <name>абс_НастройкиПечатиКомплектаОтгрузочныхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки печати комплекта отгрузочных документов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.абс_НастройкиПечатиКомплектаОтгрузочныхДокументов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.абс_НастройкиПечатиКомплектаОтгрузочныхДокументов.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="368ec297-ffe9-476b-b471-392f9bdd8069">
+    <name>Использовать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="602f207e-2c4e-4e9c-9b3c-f16b67daecf0">
+    <name>ПечатнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатная форма</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВнешниеОбработки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5d41311c-7ee5-42f2-b5ba-dd2f59bfc1cf">
+    <name>КоличествоЭкземпляровПечати</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кол-во экземпляров печати</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="49206915-02dc-438a-b36d-df3ca051b187">
+    <name>КлючПараметровПечати</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ параметров печати</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="243d5889-013c-405c-a23b-7c72cf221a5f">
+    <name>ВыводитьГрузополучателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить грузополучателя</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="211c5af0-3ec0-42ae-bd6b-d2f4c6fe5bb8">
+    <name>ВидАдресаГрузополучателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид адреса грузополучателя</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Тип</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ТипыКонтактнойИнформации.EnumValue.Адрес</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0f85377b-6829-4f70-a7d9-bdba3030a942">
+    <name>ВидАдресаДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид адреса доставки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Тип</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ТипыКонтактнойИнформации.EnumValue.Адрес</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="22fd6bc9-d84a-4e43-90d4-a4677304ac02">
+    <name>ВыводитьАдресДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить адрес доставки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="c29f93c2-6fa4-4295-a2a6-d2dc7ada6629">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="2dc5b2a2-2027-49ea-b3b7-bc7824daac31">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f767894b-70fd-452e-9092-ad4d2fe4bf85">
+    <name>ТипПечатнойФормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип печатной формы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.абс_ТипыПечатныхФормКомплектаОтгрузочныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="9c7b1bd3-b0ae-414e-aaaf-31b4c87f4238">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="efbd0070-a78a-40c7-9fdf-381002b5ce02">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

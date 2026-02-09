@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54e46a51-0bb9-4ba5-8197-d8a74209797f">
+  <producedTypes>
+    <objectType typeId="5fae7af3-95b0-488b-a314-01be8961fa32" valueTypeId="90f01426-6dde-4f04-add2-e4ef2b06f9f8"/>
+    <managerType typeId="145b49cc-bf4c-43c8-a73e-dd59aeb01287" valueTypeId="a97379c1-e789-4452-9809-90a8f552c6d5"/>
+  </producedTypes>
+  <name>УнифицированнаяФормаМХ19СТипомЦен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Унифицированная форма МХ-19 (по типу цен)</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <defaultForm>Report.УнифицированнаяФормаМХ19СТипомЦен.Form.Форма</defaultForm>
+  <attributes uuid="77adb83f-dd57-4df8-aff2-b543f28a8146">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="7440d171-2e9d-4ab6-b17f-3d3447cc16d2">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="441f0130-1be2-46c0-9534-a6b16274af9f">
+    <name>ТипЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип цен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыЦенНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="7824db9f-8bd7-48a7-9940-5d438f6ab61c">
+    <name>ВыводитьДанныеВКолонку1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить данные в перую колонку</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4d8460c2-aed3-4f32-a21f-b2dbe533922d">
+    <name>ВыводитьДанныеВКолонку2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить данные во вторую колонку</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1b51e7af-8744-4e31-a7cb-0cd2f1c9f56b">
+    <name>ВыводитьДанныеВКолонку3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить данные в третью колонку</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="975d65c1-caa1-497b-8b93-cb2d01b083d2">
+    <name>Дата1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата для заполнения первой колонки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="8e9e97a4-a0db-44db-9852-c6310f0c7174">
+    <name>Дата2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата для заполнения второй колонки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="0cef9131-2814-4464-b23b-26b891bd2301">
+    <name>Дата3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата для заполнения третьей колонки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="a5572874-9d15-4465-ba5d-794f4f4b6f0f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Report>

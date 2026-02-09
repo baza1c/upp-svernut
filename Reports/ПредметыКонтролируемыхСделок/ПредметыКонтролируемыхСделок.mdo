@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cbf437ed-2216-407d-9d01-549130407473">
+  <producedTypes>
+    <objectType typeId="08321098-508c-445e-9fc3-2fb1f2f81fdc" valueTypeId="cd320a76-223f-4a14-aed9-e6695f4cee16"/>
+    <managerType typeId="a80b9dfb-db09-45a6-b93d-5f920ca813ef" valueTypeId="a65571cc-47a8-438f-a6a9-111bdd0b3119"/>
+  </producedTypes>
+  <name>ПредметыКонтролируемыхСделок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Предметы контролируемых сделок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПредметыКонтролируемыхСделок.Form.ФормаОтчетаПредметы</defaultForm>
+  <mainDataCompositionSchema>Report.ПредметыКонтролируемыхСделок.Template.СхемаКомпоновкиДанныхПредметы</mainDataCompositionSchema>
+  <attributes uuid="bc70f6fb-c365-4042-8fb5-573f92a0977b">
+    <name>Уведомление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.УведомлениеОКонтролируемыхСделках</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="6f14c83c-8db2-4683-b4fe-39461d5160a0">
+    <name>ОтчетныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчетный год</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2c3bb9f0-2a85-41d2-9795-0653ef8e4a20">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="79133870-ce44-4f52-82d8-c5b82ae34efc">
+    <name>ФормаОтчетаПредметы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сведения о предметах контролируемых сделок</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="c59d2c6d-acdb-48a7-8ce7-bcbc48cc515f">
+    <name>СхемаКомпоновкиДанныхПредметы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных предметы</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

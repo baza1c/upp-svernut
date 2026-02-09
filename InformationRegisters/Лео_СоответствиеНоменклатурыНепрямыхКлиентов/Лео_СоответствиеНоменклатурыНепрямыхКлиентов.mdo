@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad06b4c9-2092-47e6-be9d-ad0223ebfab2">
+  <producedTypes>
+    <selectionType typeId="bf9cd87e-be1a-4c76-8e00-09354757a4a3" valueTypeId="4c2e65cb-d0c8-409c-b0f5-cfbea496840f"/>
+    <listType typeId="cb972ac2-8b0b-4452-8b3c-36aebd33f5ac" valueTypeId="8b6d038e-27b0-4d95-a667-0d7f640e296f"/>
+    <managerType typeId="726d7525-07d1-4a30-897b-4577e7847730" valueTypeId="be00de8e-7d44-49b7-9b21-a3ed47045d02"/>
+    <recordSetType typeId="dc593f22-7f8b-43aa-bb37-39ec02ae40b4" valueTypeId="cd4d3691-d367-4cbf-88e0-9ece428f483a"/>
+    <recordKeyType typeId="10ae44d4-4940-4c00-b700-86986ba08da6" valueTypeId="7e4f6530-3b29-4146-be55-aed850286ed0"/>
+    <recordType typeId="f382758c-7405-4a4c-b88e-5ca461c61674" valueTypeId="03ece9ef-0c6f-465b-99df-6860bc7c6e7c"/>
+    <recordManagerType typeId="76b1464d-f7fc-4ece-9261-f417de7870a2" valueTypeId="b08b19bb-a4d1-4813-9c12-67790216c61f"/>
+  </producedTypes>
+  <name>Лео_СоответствиеНоменклатурыНепрямыхКлиентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствиен номенклатуры непрямых клиентов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="276ee331-9e53-4791-8f58-996d9e662fc5">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f3550674-8173-4c64-965c-46b108eddd9f">
+    <name>СетьТорговаТочка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сеть\торгова точка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_ТорговыеТочки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1b3e2f4f-d3be-46f1-b26e-5bcc5153969e">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="718aa8fd-70e5-45c0-a181-550cd2b9e86c">
+    <name>АртикулВСистемеКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Артикул в системе клиента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cdd5aca0-dc6e-4cd7-ade4-1dc01143239b">
+    <name>НаименованиеВСистемеКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование в системе клиента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

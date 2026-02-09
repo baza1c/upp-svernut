@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8a6cd43-fbb1-4c88-a000-943b3fef9d56">
+  <producedTypes>
+    <selectionType typeId="4f991430-f7a2-41a9-8a86-a6a9e1c585a2" valueTypeId="b353184a-48ab-424c-a56b-5f75db039ac0"/>
+    <listType typeId="8a767545-000c-4f38-8e4a-712a08bfbea6" valueTypeId="8e5dc38b-3806-4bbd-a29f-60571c47bc45"/>
+    <managerType typeId="9bb37439-6f77-4b25-b567-6d2085ee1139" valueTypeId="fc718147-ab34-4450-9377-7a7214abd295"/>
+    <recordSetType typeId="a7c05e3d-d1b0-4663-9f65-58c4a4977c38" valueTypeId="3b273b54-e468-45c4-afee-3b9369720797"/>
+    <recordKeyType typeId="f7ac5010-f96a-456d-ba5a-f86284ccb7cb" valueTypeId="b8cd33ca-0f1e-4a9a-8b8a-8acb9503cb01"/>
+    <recordType typeId="bc2e6d8a-e082-4ae9-bf41-cc255592d046" valueTypeId="e7df3a81-4d6b-474d-90cb-1fd582493904"/>
+    <recordManagerType typeId="09d6c10d-eadd-4aa6-9e1c-fdadf1beef6f" valueTypeId="d718911e-27b4-4f05-838b-bba99c04e725"/>
+  </producedTypes>
+  <name>ПериодыВыгрузкиСебестоимостиВРозницу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Периоды выгрузки себестоимости в розницу</value>
+  </synonym>
+  <defaultListForm>InformationRegister.ПериодыВыгрузкиСебестоимостиВРозницу.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dimensions uuid="bd662d56-0da2-4056-a200-b337d824cfab">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="908eb489-5178-44e3-8621-2a29b20ec8df">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

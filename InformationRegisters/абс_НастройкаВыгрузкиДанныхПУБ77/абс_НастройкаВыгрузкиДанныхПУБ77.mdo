@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="235b3244-1660-464f-87c0-a60d93d19d85">
+  <producedTypes>
+    <selectionType typeId="2e1ac9b7-002b-497b-ba31-c69d7b2695fe" valueTypeId="e9fb667c-da4d-479b-a2ae-1bf9cac2b95f"/>
+    <listType typeId="ef83bbce-e6dc-4eae-bf77-d971a3cc159e" valueTypeId="b21777c7-b09c-4cef-b242-dbfe9b9f6021"/>
+    <managerType typeId="7fb50715-0512-4b5a-90e2-29444aaece69" valueTypeId="dc60c625-72bd-4c45-8a27-430029e1e91f"/>
+    <recordSetType typeId="b1d06b3b-f8f5-453a-a54a-fa60797253fb" valueTypeId="680d811d-d713-41e7-a33c-90b0ca90d100"/>
+    <recordKeyType typeId="fa2de526-6e7b-4740-a301-1f2753affc92" valueTypeId="563165ce-a9cc-47b3-984d-e39f6fadb607"/>
+    <recordType typeId="50254f72-3e26-4d3f-8415-e9c2b378dba5" valueTypeId="3f729b52-3315-4ae2-93ca-90660b6d9aa6"/>
+    <recordManagerType typeId="f4022db2-5dc4-4b5b-82d5-b43baad3ff44" valueTypeId="b34d4107-c688-4007-9899-ab0161dbb690"/>
+  </producedTypes>
+  <name>абс_НастройкаВыгрузкиДанныхПУБ77</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка выгрузки данных ПУБ77</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.абс_НастройкаВыгрузкиДанныхПУБ77.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.абс_НастройкаВыгрузкиДанныхПУБ77.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="dc819177-07bd-4720-b6c7-e4700aae0816">
+    <name>Использование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="25ae1621-1c08-488a-90ce-f338a5bcf64f">
+    <name>КаталогВыгрузкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог выгрузки данных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="693624d2-f04a-49a3-9a37-67fd8e7943db">
+    <name>НастройкаОтбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка отбора</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5e749f89-7151-4cc3-862d-dfe2d4fe9b6c">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хозяйственная операция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.абс_ХозяйственныеОперацииПУБ77</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="dacc4e73-5696-49b9-8787-23ef2253ade8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e7cd9b34-ee27-4411-984a-a57e688fc560">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>
