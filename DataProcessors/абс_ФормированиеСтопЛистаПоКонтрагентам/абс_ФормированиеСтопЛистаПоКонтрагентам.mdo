@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b2f3b99d-9cc0-4071-842f-4f2bc6494cfd">
+  <producedTypes>
+    <objectType typeId="248fa690-523e-483e-9e59-0e8b37a75e0a" valueTypeId="7c86fa64-2af1-4286-87d6-580e14a11d44"/>
+    <managerType typeId="4385d880-7832-4acd-bd01-9034fbf6a8d5" valueTypeId="1e62f667-2ee8-4528-bf7f-30c0da4a82d0"/>
+  </producedTypes>
+  <name>абс_ФормированиеСтопЛистаПоКонтрагентам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование стоп листа по контрагентам (АБС)</value>
+  </synonym>
+  <defaultForm>DataProcessor.абс_ФормированиеСтопЛистаПоКонтрагентам.Form.Форма</defaultForm>
+  <tabularSections uuid="cb5823cb-0b9a-4352-8681-c3d80603d72c">
+    <producedTypes>
+      <objectType typeId="7f2d2ec9-ffa2-4fab-9d09-c4a55b178098" valueTypeId="b20732a3-868d-4067-b540-d37156d4c399"/>
+      <rowType typeId="8d12025e-22b9-4a13-9438-e4be7518031a" valueTypeId="077ecd75-d0be-481d-b37d-439312fa4c77"/>
+    </producedTypes>
+    <name>Контрагенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагенты</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="fe3dfb20-989c-40f4-964c-e0b9fabacc8b">
+      <name>Пометка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="60fa2cde-63e7-41d6-8900-070e741b97fa">
+      <name>Контрагент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контрагент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a9ed5159-3ebc-45d4-b0ae-41ec9dd8f4b6">
+      <name>ДопустимаяСуммаЗадолженности</name>
+      <synonym>
+        <key>ru</key>
+        <value>Допустимая сумма задолженности</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4d6c4399-1d14-48a3-bc6e-50add2fbbd63">
+      <name>ДопустимоеЧислоДнейЗадолженности</name>
+      <synonym>
+        <key>ru</key>
+        <value>Допустимое число дней задолженности</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1dcc2879-e5df-42e9-86d9-fd18e08c98f4">
+      <name>СуммаОбщейЗадолженности</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма общей задолженности</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="eb314ea4-c47c-4baf-9e67-a86f97cb3138">
+      <name>СуммаПросроченнойЗадолженности</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма просроченной задолженности</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="95b1c1d8-b47b-412f-b88f-e01b8e99d6cd">
+      <name>КоличествоДнейПросроченнойЗадолженности</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество дней просроченной задолженности</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0a1907a0-37fe-4001-95e2-23fd613a1bb6">
+      <name>ТекущийРазделСтопЛиста</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текущий раздел стоп-листа</value>
+      </synonym>
+      <type>
+        <types>EnumRef.абс_СтатусыЗадолженности</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5e97d773-c3ea-4089-9f28-10912ccbc83a">
+      <name>РазделСтопЛиста</name>
+      <synonym>
+        <key>ru</key>
+        <value>Раздел стоп-листа</value>
+      </synonym>
+      <type>
+        <types>EnumRef.абс_СтатусыЗадолженности</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1f35cf87-1d2d-4d56-8563-580c22b1b1b7">
+      <name>ПроцентПДЗ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Процент ПДЗ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="20379823-c73c-437b-9407-d2298c78649b">
+      <name>ДопустимаяСуммаПросроченнойЗадолженности</name>
+      <synonym>
+        <key>ru</key>
+        <value>Допустимая сумма просроченной задолженности</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="23ca2017-d728-4207-b0fc-0de55c6c12b8">
+      <name>ДатаАктуальности</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата актуальности</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="9b470cb3-6794-419d-8b13-6d7f9eac3400">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

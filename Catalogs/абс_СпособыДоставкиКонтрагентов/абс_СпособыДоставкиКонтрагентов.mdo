@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="363ad862-e5d3-48a8-9242-b5664ff3e3f4">
+  <producedTypes>
+    <objectType typeId="18661c5a-9e83-4ad3-ab6a-0b41b0c7c0fd" valueTypeId="a296bb57-5bef-437f-bab7-e327c53593d3"/>
+    <refType typeId="35e2d7d3-e3f5-42f1-afa7-cd6d407db7bc" valueTypeId="51edb390-68ef-49d1-a555-880b9803aacd"/>
+    <selectionType typeId="e022a3e6-6d24-4337-a994-01e7e65a3f31" valueTypeId="f51c3921-9721-4945-96f6-5f90780eae6e"/>
+    <listType typeId="d35cc9e1-d7e1-4781-94bc-81b05603afd7" valueTypeId="0e187335-b68d-45fe-ae82-b2525e71e9a6"/>
+    <managerType typeId="7bb12080-92b9-491a-b38f-2a513e1271d8" valueTypeId="ff5abcf8-0417-4b79-a10f-e3d378fa545f"/>
+  </producedTypes>
+  <name>абс_СпособыДоставкиКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способ доставки контрагентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.абс_СпособыДоставкиКонтрагентов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.абс_СпособыДоставкиКонтрагентов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Контрагенты</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>130</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.абс_СпособыДоставкиКонтрагентов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.абс_СпособыДоставкиКонтрагентов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.абс_СпособыДоставкиКонтрагентов.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="af041bde-f561-41e7-9757-c2c90fe31d3d">
+    <name>СпособДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ доставки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_ВидыСпособовДоставки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b373b2e5-a8c8-4f65-83fa-6356520fd865">
+    <name>УсловиеДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условие доставки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_УсловияДоставки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9825217f-6763-4f4f-9718-d5da7781c3aa">
+    <name>АдресДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес доставки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4d4a4f5a-b7d8-40b6-b2cc-8227d8f7c109">
+    <name>ТК1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная компания по Москве и МО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортная компания по Москве и МО (Транспортная компания 1)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fac928dd-4efa-450e-99f0-6cdfd9095ccf">
+    <name>ТК2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная компания между городами</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортная компания между городами (Транспортная компания 2)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="edf80c32-1516-430c-a75d-86e1600f4390">
+    <name>ТК3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная компания по городу в регионе</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортная компания по городу в регионе (Транспортная компания 3)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="770e78d8-37c7-40a5-a9b7-873e799efba4">
+    <name>ТК1_Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Лео_СтатусДоверенностиНаТК</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статус Доверенности на ТК</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="293034b9-25c6-4a4d-9222-1966f862e5a7">
+    <name>ТК2_Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Лео_СтатусДоверенностиНаТК</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статус Доверенности на ТК</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0f0e251b-1062-42cb-9a7f-a8c882288e30">
+    <name>ТК3_Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Лео_СтатусДоверенностиНаТК</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статус Доверенности на ТК</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a6729ff3-397d-4a01-ab46-94401da35ed6">
+    <name>ТК1_ДатаДействияДоверенности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата действия доверенности</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="22e02799-f25d-4c6d-b24b-9ee83c25a03e">
+    <name>ТК2_ДатаДействияДоверенности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата действия доверенности</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4933c4ca-0693-4b82-8c45-d770594270a9">
+    <name>ТК3_ДатаДействияДоверенности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата действия доверенности</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="7c4facc7-539c-4fce-b140-878d8c1f723f">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="83b7b1d6-990c-4899-b304-7d1cd2aa7e54">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a83348c8-d3b6-44e0-809a-7a4c087c86e9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

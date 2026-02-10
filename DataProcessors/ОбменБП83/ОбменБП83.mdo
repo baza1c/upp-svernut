@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3610399a-a722-4df0-bd04-af88a6f34303">
+  <producedTypes>
+    <objectType typeId="e7c35e1e-cbba-46d2-bd40-bfb73523a5cf" valueTypeId="9a34d1d7-79ff-4a0a-98c5-031282f8cc56"/>
+    <managerType typeId="0c27729b-47f4-4d27-94fa-ac7a2f003648" valueTypeId="0af48cdc-7fdb-4fbd-b476-cbc741b43971"/>
+  </producedTypes>
+  <name>ОбменБП83</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен УПП -> БП8.3</value>
+  </synonym>
+  <defaultForm>DataProcessor.ОбменБП83.Form.Форма</defaultForm>
+  <attributes uuid="6d67be64-16e9-43f5-9c00-feae7755727a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1837899d-5883-4255-94d4-7e48edff5794">
+    <name>ИмяФайлаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла обмена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="b66fd577-5b7f-4cfa-9d23-49352b32e3b9">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

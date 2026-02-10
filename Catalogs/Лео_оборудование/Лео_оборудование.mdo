@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bbdcbaaa-361c-40f8-a37d-cffbd493569c">
+  <producedTypes>
+    <objectType typeId="04a19c57-6f98-4270-a923-a72d2d10dd56" valueTypeId="e1513bb1-f092-432a-998c-2ef0c5de0dd2"/>
+    <refType typeId="c993cee4-69c3-4dff-a16f-403f45b44e4f" valueTypeId="fd655978-b630-4f25-ba0c-e09de8aefc97"/>
+    <selectionType typeId="731b1f74-8f7c-4383-9f97-d0eee9a65272" valueTypeId="df411fd7-434e-491f-a480-6abe31503d81"/>
+    <listType typeId="1c0c2426-71cc-4c76-aa87-e0f4ffe605b9" valueTypeId="7a1cd621-809d-4578-81d5-ea3d0c39fa18"/>
+    <managerType typeId="6c84e916-8ccc-4e05-891f-7b9525c2ae46" valueTypeId="b3b66367-f902-4b8a-9acd-92d169c4c86c"/>
+  </producedTypes>
+  <name>Лео_оборудование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оборудование</value>
+  </synonym>
+  <inputByString>Catalog.Лео_оборудование.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Лео_оборудование.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>60</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Лео_оборудование.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="3f58bf87-96b5-460e-b080-20d9d2181dff">
+    <name>Производительность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производительность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="de6c619f-a19d-4257-bb17-a21036e65dd9">
+    <name>МинимальнаяПартия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальная партия</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="400ac113-f363-47de-9545-53e11f097ba7">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

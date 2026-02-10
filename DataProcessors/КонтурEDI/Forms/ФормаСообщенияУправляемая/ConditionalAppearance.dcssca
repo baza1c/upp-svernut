@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыНаименование</field>
+			</item>
+			<item>
+				<field>ТоварыНоменклатура</field>
+			</item>
+			<item>
+				<field>ТоварыНоменклатураКод</field>
+			</item>
+			<item>
+				<field>ТоварыАртикул</field>
+			</item>
+			<item>
+				<field>ТоварыНомерСтроки</field>
+			</item>
+			<item>
+				<field>ТоварыНаименованиеНоменклатурыПолное</field>
+			</item>
+			<item>
+				<field>ТоварыХарактеристикаНоменклатуры</field>
+			</item>
+			<item>
+				<field>ТоварыКоличество</field>
+			</item>
+			<item>
+				<field>ТоварыGTIN</field>
+			</item>
+			<item>
+				<field>ТоварыКодТовараПокупателя</field>
+			</item>
+			<item>
+				<field>ТоварыКодТовараПоставщика</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.НеЗагружать</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="false" underline="false" strikeout="true" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыНоменклатура</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.НеЗагружать</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.Номенклатура</left>
+				<comparisonType>NotFilled</comparisonType>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТипСообщения</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="xs:string">ORDERS</right>
+				<right xsi:type="xs:string">RECADV</right>
+				<right xsi:type="xs:string">RETANN</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">РежимРаботы</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Поставщик</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="false" underline="false" strikeout="true" kind="WindowsFont"/>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыАртикул</field>
+			</item>
+			<item>
+				<field>ТаблицаПрикрепленныхСообщенийЕстьОшибки</field>
+			</item>
+			<item>
+				<field>ТаблицаПрикрепленныхСообщенийДокумент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.Артикул</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:Field">Товары.Артикул</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТаблицаПрикрепленныхСообщенийСообщениеПредставление</field>
+			</item>
+			<item>
+				<field>ТаблицаПрикрепленныхСообщенийДокумент</field>
+			</item>
+			<item>
+				<field>ТаблицаПрикрепленныхСообщенийПримечание</field>
+			</item>
+			<item>
+				<field>ТаблицаПрикрепленныхСообщенийЕстьОшибки</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТаблицаПрикрепленныхСообщений.ЕстьОшибки</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыНоменклатура</field>
+			</item>
+			<item>
+				<field>ТоварыНаименованиеНоменклатурыПолное</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.Номенклатура</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.Номенклатура.ПустаяСсылка</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТипСообщения</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="xs:string">ORDRSP</right>
+				<right xsi:type="xs:string">DESADV</right>
+				<right xsi:type="xs:string">INVOIC</right>
+				<right xsi:type="xs:string">COINVOIC</right>
+				<right xsi:type="xs:string">IINVOIC</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">РежимРаботы</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Поставщик</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">&lt;несколько позиций или не указано&gt;</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыНоменклатура</field>
+			</item>
+			<item>
+				<field>ТоварыНаименованиеНоменклатурыПолное</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.Номенклатура</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.Номенклатура.ПустаяСсылка</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТипСообщения</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="xs:string">ORDERS</right>
+				<right xsi:type="xs:string">RECADV</right>
+				<right xsi:type="xs:string">RETANN</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">РежимРаботы</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Поставщик</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">&lt;выберите соответствие двойным щелчком&gt;</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТранспортныеУпаковкиСоставУпаковки</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиКоличество</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиДопИдентификатор</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиВесНетто</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиКодЕдиницыИзмеренияВесаНетто</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиВесБрутто</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиКодЕдиницыИзмеренияВесаБрутто</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиДлина</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиКодЕдиницыИзмеренияДлины</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиШирина</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиКодЕдиницыИзмеренияШирины</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиВысота</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиКодЕдиницыИзмеренияВысоты</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиТребуетсяТемпературныйРежим</field>
+			</item>
+			<item>
+				<field>ТранспортныеУпаковкиТемпературныйРежим</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТранспортныеУпаковки.ТипУпаковки</left>
+				<comparisonType>Filled</comparisonType>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:WhiteSmoke</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТранспортныеУпаковкиТребуетсяТемпературныйРежим</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТранспортныеУпаковки.ТипУпаковки</left>
+				<comparisonType>NotFilled</comparisonType>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Отображать</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТранспортныеУпаковкиТемпературныйРежим</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТранспортныеУпаковки.ТребуетсяТемпературныйРежим</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТранспортныеУпаковки.ТемпературныйРежим</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">0</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">0,000</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыЗапрашиваемоеДействие</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТипСообщения</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">RETANN</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">РежимРаботы</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Поставщик</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.ЗапрашиваемоеДействие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Return</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">Возврат</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыЗапрашиваемоеДействие</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТипСообщения</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">RETANN</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">РежимРаботы</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Поставщик</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.ЗапрашиваемоеДействие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">ReturnRefused</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">В возврате отказано</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыЗапрашиваемоеДействие</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТипСообщения</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">RETANN</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">РежимРаботы</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Поставщик</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.ЗапрашиваемоеДействие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">PartialReturn</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">Частичный возврат</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыЗапрашиваемоеДействие</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТипСообщения</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">RETANN</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">РежимРаботы</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Поставщик</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.ЗапрашиваемоеДействие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Damaged</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">Поврежден</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыЗапрашиваемоеДействие</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТипСообщения</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">RETANN</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">РежимРаботы</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Поставщик</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.ЗапрашиваемоеДействие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Obsolete</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">Устарел</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыЗапрашиваемоеДействие</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТипСообщения</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">RETANN</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">РежимРаботы</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Поставщик</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.ЗапрашиваемоеДействие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Destroy</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">Уничтожить</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыЗапрашиваемоеДействие</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТипСообщения</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">RETANN</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">РежимРаботы</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Поставщик</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.ЗапрашиваемоеДействие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Repair</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">Восстановить</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыЗапрашиваемоеДействие</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТипСообщения</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">RETANN</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">РежимРаботы</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Поставщик</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.ЗапрашиваемоеДействие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Disposal</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">Утилизировать</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТоварыЗапрашиваемоеДействие</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТипСообщения</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">RETANN</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">РежимРаботы</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Поставщик</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Товары.ЗапрашиваемоеДействие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:string">Expertise</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">Удержать на экспертизу</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ОсобенностиЗначение</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Особенности.Значение</left>
+				<comparisonType>Contains</comparisonType>
+				<right xsi:type="xs:string">01.01.0001</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ДЛФ=В</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ОсобенностиЗначение</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Особенности.Значение</left>
+				<comparisonType>Contains</comparisonType>
+				<right xsi:type="xs:string"> 0:00:00</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ДЛФ=Д</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ОсобенностиЗначение</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Особенности.ТипЗначения</left>
+				<comparisonType>Filled</comparisonType>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#4682B4</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">Подробнее</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+</ConditionalAppearance>

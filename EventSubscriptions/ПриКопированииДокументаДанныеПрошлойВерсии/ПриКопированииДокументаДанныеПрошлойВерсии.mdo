@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="791eec8d-7db0-4f27-85fe-5e90487f52bb">
+  <name>ПриКопированииДокументаДанныеПрошлойВерсии</name>
+  <synonym>
+    <key>ru</key>
+    <value>При копировании документа данные прошлой версии</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.КадровоеПеремещениеОрганизаций</types>
+    <types>DocumentObject.ОтпускаОрганизаций</types>
+    <types>DocumentObject.КомандировкиОрганизаций</types>
+    <types>DocumentObject.ИсполнительныйЛист</types>
+    <types>DocumentObject.ВозвратНаРаботуОрганизаций</types>
+    <types>DocumentObject.ОтпускПоУходуЗаРебенком</types>
+    <types>DocumentObject.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком</types>
+    <types>DocumentObject.УвольнениеИзОрганизаций</types>
+    <types>DocumentObject.ЗарплатаКВыплатеОрганизаций</types>
+    <types>DocumentObject.НеявкиИБолезниОрганизаций</types>
+    <types>DocumentObject.ПриемНаРаботуВОрганизацию</types>
+  </source>
+  <event>OnCopy</event>
+  <handler>CommonModule.ПроцедурыУправленияПерсоналом.ПриКопированииДокументаДанныеПрошлойВерсии</handler>
+</mdclass:EventSubscription>

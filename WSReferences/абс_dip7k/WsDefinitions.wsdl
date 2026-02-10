@@ -1,0 +1,3162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://tempuri.org/"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="http://tempuri.org/"
+		targetNamespace="http://tempuri.org/">
+	<types>
+		<s:schema xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+				xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+				xmlns:s="http://www.w3.org/2001/XMLSchema"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+				xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+				xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				elementFormDefault="qualified"
+				targetNamespace="http://tempuri.org/">
+			<s:element name="Test">
+				<s:complexType/>
+			</s:element>
+			<s:element name="TestResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="TestResult"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetDIP7KVersion">
+				<s:complexType/>
+			</s:element>
+			<s:element name="GetDIP7KVersionResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="GetDIP7KVersionResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetFilials">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetFilialsResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetFilialsResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetFilialsByParameters">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="Password"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetFilialsByParametersResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="GetFilialsByParametersResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplRests">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Shop_Id"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DataFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DataTo"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplRestsResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetSupplRestsResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplRests2">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Shop_Id"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DataFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DataTo"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplRests2Response">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetSupplRests2Result"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplRestsAsFile">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Shop_Id"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DataFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DataTo"
+								type="s:dateTime"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="FileFormat"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplRestsAsFileResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetSupplRestsAsFileResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplSales">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Shop_Id"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DataFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DataTo"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplSalesResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetSupplSalesResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplSales2">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Shop_Id"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DataFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DataTo"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplSales2Response">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetSupplSales2Result"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplSalesAsFile">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Shop_Id"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DataFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DataTo"
+								type="s:dateTime"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="FileFormat"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplSalesAsFileResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetSupplSalesAsFileResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="SendEInvoices">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="SendEInvoicesResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="SendEInvoicesResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ChangePassword">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ChangePasswordResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="ChangePasswordResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="UpdateSupplOrders">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="UpdateSupplOrdersResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="UpdateSupplOrdersResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="UpdateSupplOrdersTest">
+				<s:complexType/>
+			</s:element>
+			<s:element name="UpdateSupplOrdersTestResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="UpdateSupplOrdersTestResult"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplOrders">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Shop_Id"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Status_IdFrom"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Status_IdTo"
+								type="s:int"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplOrdersResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetSupplOrdersResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplOrdersByPeriod">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Shop_Id"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Status_IdFrom"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Status_IdTo"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateTo"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplOrdersByPeriodResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetSupplOrdersByPeriodResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ExportReportToFile">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="OrderId"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="ShopId"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="FileFormat"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ExportReportToFileResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="ExportReportToFileResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ExportReportToFileBinary">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="OrderId"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="ShopId"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="FileFormat"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="SortColumnIndex"
+								type="s:int"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ExportReportToFileBinaryResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="ExportReportToFileBinaryResult"
+								type="s:base64Binary"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ExportReportToFileSorted">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="OrderId"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="ShopId"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="FileFormat"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="SortColumnIndex"
+								type="s:int"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ExportReportToFileSortedResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="ExportReportToFileSortedResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="SendBarcodes">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="SendBarcodesResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="SendBarcodesResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetSF">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="numberSF"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateTo"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetSFResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="wmV6GetSFResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetPayment">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateTo"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="shopId"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="documentNameN"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="amountFrom"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="amountTo"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="documentNameSF"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="paymentNumber"
+								type="s:int"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetPaymentResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="wmV6GetPaymentResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetPlateg">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateTo"
+								type="s:dateTime"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="amountFrom"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="amountTo"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="paymentNumber"
+								type="s:int"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetPlategResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="wmV6GetPlategResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetSupply">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateTo"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="shopId"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="documentNameN"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="amountFrom"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="amountTo"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="documentNameSF"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetSupplyResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="wmV6GetSupplyResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetDebt">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateTo"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="shopId"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="documentNameN"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="amountFrom"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="amountTo"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="documentNameSF"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetDebtResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="wmV6GetDebtResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetBranch">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetBranchResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="wmV6GetBranchResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="Auth">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="Login"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="AuthResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="AuthResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ChangePersonPassword">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ChangePersonPasswordResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="ChangePersonPasswordResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmGetCountries">
+				<s:complexType/>
+			</s:element>
+			<s:element name="wmGetCountriesResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="wmGetCountriesResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmInsertSupplSalesUploaded">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmInsertSupplSalesUploadedResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="wmInsertSupplSalesUploadedResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetDistributionCenterPartners">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetDistributionCenterPartnersResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetDistributionCenterPartnersResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetDistributionCenterItems">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetDistributionCenterItemsResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetDistributionCenterItemsResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="PutDistributionCenterStock">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="PutDistributionCenterStockResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="PutDistributionCenterStockResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="PutDistributionCenterKart">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="PutDistributionCenterKartResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="PutDistributionCenterKartResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmGetBuyerTypes">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmGetBuyerTypesResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="wmGetBuyerTypesResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplOrdersByPeriodForRC">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Shop_Id"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Status_IdFrom"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Status_IdTo"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateTo"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplOrdersByPeriodForRCResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetSupplOrdersByPeriodForRCResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetDistributionCenterPriceLists">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateTo"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetDistributionCenterPriceListsResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetDistributionCenterPriceListsResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="PutDistributionCenterSales">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="PutDistributionCenterSalesResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="PutDistributionCenterSalesResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetCategories">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetCategoriesResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetCategoriesResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplOrdersByPeriodCrossDocking">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Shop_Id"
+								type="s:int"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Status_IdFrom"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Status_IdTo"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateTo"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="ForSupp"
+								type="s:int"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetSupplOrdersByPeriodCrossDockingResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="GetSupplOrdersByPeriodCrossDockingResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="Login">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="user"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="LoginResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="LoginResult"
+								type="xsd1:ArrayOfAnyType"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:complexType name="ArrayOfAnyType">
+				<s:sequence>
+					<s:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="anyType"
+							nillable="true"/>
+				</s:sequence>
+			</s:complexType>
+			<s:element name="GetWorkVersionNumber">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="applicationId"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="userId"
+								type="s:int"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetWorkVersionNumberResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="GetWorkVersionNumberResult"
+								type="xsd1:ArrayOfAnyType"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetVersionUpdate">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="applicationId"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="versionNumber"
+								type="s:int"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetVersionUpdateResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="GetVersionUpdateResult"
+								type="s:base64Binary"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="PutDistributionCenterStore">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="PutDistributionCenterStoreResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="PutDistributionCenterStoreResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetShopsTest">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="Password"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="GetShopsTestResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="GetShopsTestResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="Data_Get_Zip">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="request"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="Data_Get_ZipResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="Data_Get_ZipResult"
+								type="s:base64Binary"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="Data_Set_Zip">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="request"
+								type="s:base64Binary"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="Data_Set_ZipResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="Data_Set_ZipResult"
+								type="s:base64Binary"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="Data_Multi_Get_Zip">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="requests"
+								type="xsd1:ArrayOfString"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:complexType name="ArrayOfString">
+				<s:sequence>
+					<s:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="string"
+							nillable="true"
+							type="s:string"/>
+				</s:sequence>
+			</s:complexType>
+			<s:element name="Data_Multi_Get_ZipResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="Data_Multi_Get_ZipResult"
+								type="xsd1:ArrayOfAnyType"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="Data_Get">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="request"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="Data_GetResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="Data_GetResult"
+								type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetSupplyVTB">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="COD_SUPP"
+								type="s:string"/>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="INN"
+								type="s:string"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateFrom"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="DateTo"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="wmV6GetSupplyVTBResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="wmV6GetSupplyVTBResult"
+								type="s:boolean"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+		</s:schema>
+	</types>
+	<message name="TestSoapIn">
+		<part name="parameters"
+				element="tns:Test"/>
+	</message>
+	<message name="TestSoapOut">
+		<part name="parameters"
+				element="tns:TestResponse"/>
+	</message>
+	<message name="GetDIP7KVersionSoapIn">
+		<part name="parameters"
+				element="tns:GetDIP7KVersion"/>
+	</message>
+	<message name="GetDIP7KVersionSoapOut">
+		<part name="parameters"
+				element="tns:GetDIP7KVersionResponse"/>
+	</message>
+	<message name="GetFilialsSoapIn">
+		<part name="parameters"
+				element="tns:GetFilials"/>
+	</message>
+	<message name="GetFilialsSoapOut">
+		<part name="parameters"
+				element="tns:GetFilialsResponse"/>
+	</message>
+	<message name="GetFilialsByParametersSoapIn">
+		<part name="parameters"
+				element="tns:GetFilialsByParameters"/>
+	</message>
+	<message name="GetFilialsByParametersSoapOut">
+		<part name="parameters"
+				element="tns:GetFilialsByParametersResponse"/>
+	</message>
+	<message name="GetSupplRestsSoapIn">
+		<part name="parameters"
+				element="tns:GetSupplRests"/>
+	</message>
+	<message name="GetSupplRestsSoapOut">
+		<part name="parameters"
+				element="tns:GetSupplRestsResponse"/>
+	</message>
+	<message name="GetSupplRests2SoapIn">
+		<part name="parameters"
+				element="tns:GetSupplRests2"/>
+	</message>
+	<message name="GetSupplRests2SoapOut">
+		<part name="parameters"
+				element="tns:GetSupplRests2Response"/>
+	</message>
+	<message name="GetSupplRestsAsFileSoapIn">
+		<part name="parameters"
+				element="tns:GetSupplRestsAsFile"/>
+	</message>
+	<message name="GetSupplRestsAsFileSoapOut">
+		<part name="parameters"
+				element="tns:GetSupplRestsAsFileResponse"/>
+	</message>
+	<message name="GetSupplSalesSoapIn">
+		<part name="parameters"
+				element="tns:GetSupplSales"/>
+	</message>
+	<message name="GetSupplSalesSoapOut">
+		<part name="parameters"
+				element="tns:GetSupplSalesResponse"/>
+	</message>
+	<message name="GetSupplSales2SoapIn">
+		<part name="parameters"
+				element="tns:GetSupplSales2"/>
+	</message>
+	<message name="GetSupplSales2SoapOut">
+		<part name="parameters"
+				element="tns:GetSupplSales2Response"/>
+	</message>
+	<message name="GetSupplSalesAsFileSoapIn">
+		<part name="parameters"
+				element="tns:GetSupplSalesAsFile"/>
+	</message>
+	<message name="GetSupplSalesAsFileSoapOut">
+		<part name="parameters"
+				element="tns:GetSupplSalesAsFileResponse"/>
+	</message>
+	<message name="SendEInvoicesSoapIn">
+		<part name="parameters"
+				element="tns:SendEInvoices"/>
+	</message>
+	<message name="SendEInvoicesSoapOut">
+		<part name="parameters"
+				element="tns:SendEInvoicesResponse"/>
+	</message>
+	<message name="ChangePasswordSoapIn">
+		<part name="parameters"
+				element="tns:ChangePassword"/>
+	</message>
+	<message name="ChangePasswordSoapOut">
+		<part name="parameters"
+				element="tns:ChangePasswordResponse"/>
+	</message>
+	<message name="UpdateSupplOrdersSoapIn">
+		<part name="parameters"
+				element="tns:UpdateSupplOrders"/>
+	</message>
+	<message name="UpdateSupplOrdersSoapOut">
+		<part name="parameters"
+				element="tns:UpdateSupplOrdersResponse"/>
+	</message>
+	<message name="UpdateSupplOrdersTestSoapIn">
+		<part name="parameters"
+				element="tns:UpdateSupplOrdersTest"/>
+	</message>
+	<message name="UpdateSupplOrdersTestSoapOut">
+		<part name="parameters"
+				element="tns:UpdateSupplOrdersTestResponse"/>
+	</message>
+	<message name="GetSupplOrdersSoapIn">
+		<part name="parameters"
+				element="tns:GetSupplOrders"/>
+	</message>
+	<message name="GetSupplOrdersSoapOut">
+		<part name="parameters"
+				element="tns:GetSupplOrdersResponse"/>
+	</message>
+	<message name="GetSupplOrdersByPeriodSoapIn">
+		<part name="parameters"
+				element="tns:GetSupplOrdersByPeriod"/>
+	</message>
+	<message name="GetSupplOrdersByPeriodSoapOut">
+		<part name="parameters"
+				element="tns:GetSupplOrdersByPeriodResponse"/>
+	</message>
+	<message name="ExportReportToFileSoapIn">
+		<part name="parameters"
+				element="tns:ExportReportToFile"/>
+	</message>
+	<message name="ExportReportToFileSoapOut">
+		<part name="parameters"
+				element="tns:ExportReportToFileResponse"/>
+	</message>
+	<message name="ExportReportToFileBinarySoapIn">
+		<part name="parameters"
+				element="tns:ExportReportToFileBinary"/>
+	</message>
+	<message name="ExportReportToFileBinarySoapOut">
+		<part name="parameters"
+				element="tns:ExportReportToFileBinaryResponse"/>
+	</message>
+	<message name="ExportReportToFileSortedSoapIn">
+		<part name="parameters"
+				element="tns:ExportReportToFileSorted"/>
+	</message>
+	<message name="ExportReportToFileSortedSoapOut">
+		<part name="parameters"
+				element="tns:ExportReportToFileSortedResponse"/>
+	</message>
+	<message name="SendBarcodesSoapIn">
+		<part name="parameters"
+				element="tns:SendBarcodes"/>
+	</message>
+	<message name="SendBarcodesSoapOut">
+		<part name="parameters"
+				element="tns:SendBarcodesResponse"/>
+	</message>
+	<message name="wmV6GetSFSoapIn">
+		<part name="parameters"
+				element="tns:wmV6GetSF"/>
+	</message>
+	<message name="wmV6GetSFSoapOut">
+		<part name="parameters"
+				element="tns:wmV6GetSFResponse"/>
+	</message>
+	<message name="wmV6GetPaymentSoapIn">
+		<part name="parameters"
+				element="tns:wmV6GetPayment"/>
+	</message>
+	<message name="wmV6GetPaymentSoapOut">
+		<part name="parameters"
+				element="tns:wmV6GetPaymentResponse"/>
+	</message>
+	<message name="wmV6GetPlategSoapIn">
+		<part name="parameters"
+				element="tns:wmV6GetPlateg"/>
+	</message>
+	<message name="wmV6GetPlategSoapOut">
+		<part name="parameters"
+				element="tns:wmV6GetPlategResponse"/>
+	</message>
+	<message name="wmV6GetSupplySoapIn">
+		<part name="parameters"
+				element="tns:wmV6GetSupply"/>
+	</message>
+	<message name="wmV6GetSupplySoapOut">
+		<part name="parameters"
+				element="tns:wmV6GetSupplyResponse"/>
+	</message>
+	<message name="wmV6GetDebtSoapIn">
+		<part name="parameters"
+				element="tns:wmV6GetDebt"/>
+	</message>
+	<message name="wmV6GetDebtSoapOut">
+		<part name="parameters"
+				element="tns:wmV6GetDebtResponse"/>
+	</message>
+	<message name="wmV6GetBranchSoapIn">
+		<part name="parameters"
+				element="tns:wmV6GetBranch"/>
+	</message>
+	<message name="wmV6GetBranchSoapOut">
+		<part name="parameters"
+				element="tns:wmV6GetBranchResponse"/>
+	</message>
+	<message name="AuthSoapIn">
+		<part name="parameters"
+				element="tns:Auth"/>
+	</message>
+	<message name="AuthSoapOut">
+		<part name="parameters"
+				element="tns:AuthResponse"/>
+	</message>
+	<message name="ChangePersonPasswordSoapIn">
+		<part name="parameters"
+				element="tns:ChangePersonPassword"/>
+	</message>
+	<message name="ChangePersonPasswordSoapOut">
+		<part name="parameters"
+				element="tns:ChangePersonPasswordResponse"/>
+	</message>
+	<message name="wmGetCountriesSoapIn">
+		<part name="parameters"
+				element="tns:wmGetCountries"/>
+	</message>
+	<message name="wmGetCountriesSoapOut">
+		<part name="parameters"
+				element="tns:wmGetCountriesResponse"/>
+	</message>
+	<message name="wmInsertSupplSalesUploadedSoapIn">
+		<part name="parameters"
+				element="tns:wmInsertSupplSalesUploaded"/>
+	</message>
+	<message name="wmInsertSupplSalesUploadedSoapOut">
+		<part name="parameters"
+				element="tns:wmInsertSupplSalesUploadedResponse"/>
+	</message>
+	<message name="GetDistributionCenterPartnersSoapIn">
+		<part name="parameters"
+				element="tns:GetDistributionCenterPartners"/>
+	</message>
+	<message name="GetDistributionCenterPartnersSoapOut">
+		<part name="parameters"
+				element="tns:GetDistributionCenterPartnersResponse"/>
+	</message>
+	<message name="GetDistributionCenterItemsSoapIn">
+		<part name="parameters"
+				element="tns:GetDistributionCenterItems"/>
+	</message>
+	<message name="GetDistributionCenterItemsSoapOut">
+		<part name="parameters"
+				element="tns:GetDistributionCenterItemsResponse"/>
+	</message>
+	<message name="PutDistributionCenterStockSoapIn">
+		<part name="parameters"
+				element="tns:PutDistributionCenterStock"/>
+	</message>
+	<message name="PutDistributionCenterStockSoapOut">
+		<part name="parameters"
+				element="tns:PutDistributionCenterStockResponse"/>
+	</message>
+	<message name="PutDistributionCenterKartSoapIn">
+		<part name="parameters"
+				element="tns:PutDistributionCenterKart"/>
+	</message>
+	<message name="PutDistributionCenterKartSoapOut">
+		<part name="parameters"
+				element="tns:PutDistributionCenterKartResponse"/>
+	</message>
+	<message name="wmGetBuyerTypesSoapIn">
+		<part name="parameters"
+				element="tns:wmGetBuyerTypes"/>
+	</message>
+	<message name="wmGetBuyerTypesSoapOut">
+		<part name="parameters"
+				element="tns:wmGetBuyerTypesResponse"/>
+	</message>
+	<message name="GetSupplOrdersByPeriodForRCSoapIn">
+		<part name="parameters"
+				element="tns:GetSupplOrdersByPeriodForRC"/>
+	</message>
+	<message name="GetSupplOrdersByPeriodForRCSoapOut">
+		<part name="parameters"
+				element="tns:GetSupplOrdersByPeriodForRCResponse"/>
+	</message>
+	<message name="GetDistributionCenterPriceListsSoapIn">
+		<part name="parameters"
+				element="tns:GetDistributionCenterPriceLists"/>
+	</message>
+	<message name="GetDistributionCenterPriceListsSoapOut">
+		<part name="parameters"
+				element="tns:GetDistributionCenterPriceListsResponse"/>
+	</message>
+	<message name="PutDistributionCenterSalesSoapIn">
+		<part name="parameters"
+				element="tns:PutDistributionCenterSales"/>
+	</message>
+	<message name="PutDistributionCenterSalesSoapOut">
+		<part name="parameters"
+				element="tns:PutDistributionCenterSalesResponse"/>
+	</message>
+	<message name="GetCategoriesSoapIn">
+		<part name="parameters"
+				element="tns:GetCategories"/>
+	</message>
+	<message name="GetCategoriesSoapOut">
+		<part name="parameters"
+				element="tns:GetCategoriesResponse"/>
+	</message>
+	<message name="GetSupplOrdersByPeriodCrossDockingSoapIn">
+		<part name="parameters"
+				element="tns:GetSupplOrdersByPeriodCrossDocking"/>
+	</message>
+	<message name="GetSupplOrdersByPeriodCrossDockingSoapOut">
+		<part name="parameters"
+				element="tns:GetSupplOrdersByPeriodCrossDockingResponse"/>
+	</message>
+	<message name="LoginSoapIn">
+		<part name="parameters"
+				element="tns:Login"/>
+	</message>
+	<message name="LoginSoapOut">
+		<part name="parameters"
+				element="tns:LoginResponse"/>
+	</message>
+	<message name="GetWorkVersionNumberSoapIn">
+		<part name="parameters"
+				element="tns:GetWorkVersionNumber"/>
+	</message>
+	<message name="GetWorkVersionNumberSoapOut">
+		<part name="parameters"
+				element="tns:GetWorkVersionNumberResponse"/>
+	</message>
+	<message name="GetVersionUpdateSoapIn">
+		<part name="parameters"
+				element="tns:GetVersionUpdate"/>
+	</message>
+	<message name="GetVersionUpdateSoapOut">
+		<part name="parameters"
+				element="tns:GetVersionUpdateResponse"/>
+	</message>
+	<message name="PutDistributionCenterStoreSoapIn">
+		<part name="parameters"
+				element="tns:PutDistributionCenterStore"/>
+	</message>
+	<message name="PutDistributionCenterStoreSoapOut">
+		<part name="parameters"
+				element="tns:PutDistributionCenterStoreResponse"/>
+	</message>
+	<message name="GetShopsTestSoapIn">
+		<part name="parameters"
+				element="tns:GetShopsTest"/>
+	</message>
+	<message name="GetShopsTestSoapOut">
+		<part name="parameters"
+				element="tns:GetShopsTestResponse"/>
+	</message>
+	<message name="Data_Get_ZipSoapIn">
+		<part name="parameters"
+				element="tns:Data_Get_Zip"/>
+	</message>
+	<message name="Data_Get_ZipSoapOut">
+		<part name="parameters"
+				element="tns:Data_Get_ZipResponse"/>
+	</message>
+	<message name="Data_Set_ZipSoapIn">
+		<part name="parameters"
+				element="tns:Data_Set_Zip"/>
+	</message>
+	<message name="Data_Set_ZipSoapOut">
+		<part name="parameters"
+				element="tns:Data_Set_ZipResponse"/>
+	</message>
+	<message name="Data_Multi_Get_ZipSoapIn">
+		<part name="parameters"
+				element="tns:Data_Multi_Get_Zip"/>
+	</message>
+	<message name="Data_Multi_Get_ZipSoapOut">
+		<part name="parameters"
+				element="tns:Data_Multi_Get_ZipResponse"/>
+	</message>
+	<message name="Data_GetSoapIn">
+		<part name="parameters"
+				element="tns:Data_Get"/>
+	</message>
+	<message name="Data_GetSoapOut">
+		<part name="parameters"
+				element="tns:Data_GetResponse"/>
+	</message>
+	<message name="wmV6GetSupplyVTBSoapIn">
+		<part name="parameters"
+				element="tns:wmV6GetSupplyVTB"/>
+	</message>
+	<message name="wmV6GetSupplyVTBSoapOut">
+		<part name="parameters"
+				element="tns:wmV6GetSupplyVTBResponse"/>
+	</message>
+	<portType name="DataExchangeServiceSoap">
+		<operation name="Test">
+			<documentation>Тестовый метод (Входные параметры: Нет Выходные параметры: Текстовая строка)</documentation>
+			<input name="TestRequest"
+					message="tns:TestSoapIn"/>
+			<output name="TestResponse"
+					message="tns:TestSoapOut"/>
+		</operation>
+		<operation name="GetDIP7KVersion">
+			<documentation>Получение последней версии DIP7K (Входные параметры: Нет Выходные параметры: DataSet таблица [Versions])</documentation>
+			<input name="GetDIP7KVersionRequest"
+					message="tns:GetDIP7KVersionSoapIn"/>
+			<output name="GetDIP7KVersionResponse"
+					message="tns:GetDIP7KVersionSoapOut"/>
+		</operation>
+		<operation name="GetFilials">
+			<documentation>Получение списка филиалов ОАО «Седьмой континент» (Входные параметры: COD_SUPP - Код поставщика;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetFilialsRequest"
+					message="tns:GetFilialsSoapIn"/>
+			<output name="GetFilialsResponse"
+					message="tns:GetFilialsSoapOut"/>
+		</operation>
+		<operation name="GetFilialsByParameters">
+			<documentation>Получение списка филиалов ОАО «Седьмой континент» (Входные параметры: COD_SUPP - Код поставщика;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetFilialsByParametersRequest"
+					message="tns:GetFilialsByParametersSoapIn"/>
+			<output name="GetFilialsByParametersResponse"
+					message="tns:GetFilialsByParametersSoapOut"/>
+		</operation>
+		<operation name="GetSupplRests">
+			<documentation>Получение остатков товарного ассортимента поставщика по филиалам ОАО «Седьмой континент» (Входные параметры: Shop_Id - Код филиала, COD_SUPP - Код поставщика, DataFrom - Дата с, DataTo - Дата по;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetSupplRestsRequest"
+					message="tns:GetSupplRestsSoapIn"/>
+			<output name="GetSupplRestsResponse"
+					message="tns:GetSupplRestsSoapOut"/>
+		</operation>
+		<operation name="GetSupplRests2">
+			<documentation>Получение остатков товарного ассортимента поставщика по филиалам ОАО «Седьмой континент» (Входные параметры: Shop_Id - Код филиала, COD_SUPP - Код поставщика, DataFrom - Дата с, DataTo - Дата по;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetSupplRests2Request"
+					message="tns:GetSupplRests2SoapIn"/>
+			<output name="GetSupplRests2Response"
+					message="tns:GetSupplRests2SoapOut"/>
+		</operation>
+		<operation name="GetSupplRestsAsFile">
+			<documentation>Получение остатков товарного ассортимента поставщика по филиалам ОАО «Седьмой континент»  в типизированном файле (Входные параметры: Shop_Id - Код филиала, COD_SUPP - Код поставщика, DataFrom - Дата с, DataTo - Дата по, FileFormat - формат файла(XML[по умолчанию], DBF, MDB);  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetSupplRestsAsFileRequest"
+					message="tns:GetSupplRestsAsFileSoapIn"/>
+			<output name="GetSupplRestsAsFileResponse"
+					message="tns:GetSupplRestsAsFileSoapOut"/>
+		</operation>
+		<operation name="GetSupplSales">
+			<documentation>Получение списка продаж товарного ассортимента поставщика по филиалам ОАО «Седьмой континент» (Входные параметры: Shop_Id - Код филиала, COD_SUPP - Код поставщика, DataFrom - Дата с, DataTo - Дата по;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetSupplSalesRequest"
+					message="tns:GetSupplSalesSoapIn"/>
+			<output name="GetSupplSalesResponse"
+					message="tns:GetSupplSalesSoapOut"/>
+		</operation>
+		<operation name="GetSupplSales2">
+			<documentation>Получение списка продаж товарного ассортимента поставщика по филиалам ОАО «Седьмой континент» (Входные параметры: Shop_Id - Код филиала, COD_SUPP - Код поставщика, DataFrom - Дата с, DataTo - Дата по;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetSupplSales2Request"
+					message="tns:GetSupplSales2SoapIn"/>
+			<output name="GetSupplSales2Response"
+					message="tns:GetSupplSales2SoapOut"/>
+		</operation>
+		<operation name="GetSupplSalesAsFile">
+			<documentation>Получение списка продаж товарного ассортимента поставщика по филиалам ОАО «Седьмой континент» в типизированном файле (Входные параметры: Shop_Id - Код филиала, COD_SUPP - Код поставщика, DataFrom - Дата с, DataTo - Дата по, FileFormat - формат файла(XML[по умолчанию], DBF, MDB);  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetSupplSalesAsFileRequest"
+					message="tns:GetSupplSalesAsFileSoapIn"/>
+			<output name="GetSupplSalesAsFileResponse"
+					message="tns:GetSupplSalesAsFileSoapOut"/>
+		</operation>
+		<operation name="SendEInvoices">
+			<documentation>Отправка эл. накладных поставщика на филиалы ОАО «Седьмой континент» (Входные параметры: COD_SUPP - Код поставщика;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="SendEInvoicesRequest"
+					message="tns:SendEInvoicesSoapIn"/>
+			<output name="SendEInvoicesResponse"
+					message="tns:SendEInvoicesSoapOut"/>
+		</operation>
+		<operation name="ChangePassword">
+			<documentation>Смена пароля доступа поставщика (Входные параметры: COD_SUPP - Код поставщика;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="ChangePasswordRequest"
+					message="tns:ChangePasswordSoapIn"/>
+			<output name="ChangePasswordResponse"
+					message="tns:ChangePasswordSoapOut"/>
+		</operation>
+		<operation name="UpdateSupplOrders">
+			<documentation>Сохранение изменений в заказе товара (Входные параметры: COD_SUPP - Код поставщика Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="UpdateSupplOrdersRequest"
+					message="tns:UpdateSupplOrdersSoapIn"/>
+			<output name="UpdateSupplOrdersResponse"
+					message="tns:UpdateSupplOrdersSoapOut"/>
+		</operation>
+		<operation name="UpdateSupplOrdersTest">
+			<documentation>Сохранение изменений в заказе товара (Входные параметры: COD_SUPP - Код поставщика Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="UpdateSupplOrdersTestRequest"
+					message="tns:UpdateSupplOrdersTestSoapIn"/>
+			<output name="UpdateSupplOrdersTestResponse"
+					message="tns:UpdateSupplOrdersTestSoapOut"/>
+		</operation>
+		<operation name="GetSupplOrders">
+			<documentation>Получение заказов поставщику от филиалов ОАО «Седьмой континент» (Входные параметры: Shop_Id - Код филиала, COD_SUPP - Код поставщика, Status_IdFrom, Status_IdTo - Статусы заказа(0-новый, ...) Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetSupplOrdersRequest"
+					message="tns:GetSupplOrdersSoapIn"/>
+			<output name="GetSupplOrdersResponse"
+					message="tns:GetSupplOrdersSoapOut"/>
+		</operation>
+		<operation name="GetSupplOrdersByPeriod">
+			<documentation>Получение заказов поставщику от филиалов ОАО «Седьмой континент» (Входные параметры: Shop_Id - Код филиала, COD_SUPP - Код поставщика, Status_IdFrom, Status_IdTo - Статусы заказа(0-новый, ...), DateFrom - дата с, DateTo - дата по  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetSupplOrdersByPeriodRequest"
+					message="tns:GetSupplOrdersByPeriodSoapIn"/>
+			<output name="GetSupplOrdersByPeriodResponse"
+					message="tns:GetSupplOrdersByPeriodSoapOut"/>
+		</operation>
+		<operation name="ExportReportToFile">
+			<documentation>Сохранение отчета по заказу товара в типизированном файле (Входные параметры: COD_SUPP - Код поставщика, OrderId - Код заказа, FileFormat - Формат файла(CrystalReport[по умолчанию], TXT, HTML32, HTML40, WORD, EXCEL, PDF);  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="ExportReportToFileRequest"
+					message="tns:ExportReportToFileSoapIn"/>
+			<output name="ExportReportToFileResponse"
+					message="tns:ExportReportToFileSoapOut"/>
+		</operation>
+		<operation name="ExportReportToFileBinary">
+			<documentation>Получение отчета по заказу товара в бинарном виде (Входные параметры: COD_SUPP - Код поставщика, OrderId - Код заказа, FileFormat - Формат файла(CrystalReport[по умолчанию], TXT, HTML32, HTML40, WORD, EXCEL, PDF);  Выходные параметры: Результат выполнения метода файл в бинарном виде)</documentation>
+			<input name="ExportReportToFileBinaryRequest"
+					message="tns:ExportReportToFileBinarySoapIn"/>
+			<output name="ExportReportToFileBinaryResponse"
+					message="tns:ExportReportToFileBinarySoapOut"/>
+		</operation>
+		<operation name="ExportReportToFileSorted">
+			<documentation>Сохранение отчета по заказу товара в типизированном файле (Входные параметры: COD_SUPP - Код поставщика, OrderId - Код заказа, FileFormat - Формат файла(CrystalReport[по умолчанию], TXT, HTML32, HTML40, WORD, EXCEL, PDF), SortColumnIndex - индекс колонки для сортировки;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="ExportReportToFileSortedRequest"
+					message="tns:ExportReportToFileSortedSoapIn"/>
+			<output name="ExportReportToFileSortedResponse"
+					message="tns:ExportReportToFileSortedSoapOut"/>
+		</operation>
+		<operation name="SendBarcodes">
+			<documentation>Отправка обновлений штрихкодов товарного ассортимента поставщика на филиалы ОАО «Седьмой континент» (Входные параметры: COD_SUPP - Код поставщика;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="SendBarcodesRequest"
+					message="tns:SendBarcodesSoapIn"/>
+			<output name="SendBarcodesResponse"
+					message="tns:SendBarcodesSoapOut"/>
+		</operation>
+		<operation name="wmV6GetSF">
+			<documentation>Получение счетов-фактур (карточка поставщика бухгалтерии) (Входные параметры: COD_SUPP - Код поставщика;  numberSF - значение счет-фактуры;  DateFrom - дата периода начальная;  DateTo - дата периода конечная. Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="wmV6GetSFRequest"
+					message="tns:wmV6GetSFSoapIn"/>
+			<output name="wmV6GetSFResponse"
+					message="tns:wmV6GetSFSoapOut"/>
+		</operation>
+		<operation name="wmV6GetPayment">
+			<documentation>Получение оплат (карточка поставщика бухгалтерии) (Входные параметры: COD_SUPP - Код поставщика;  DateFrom - дата периода начальная;  DateTo - дата периода конечная; shopId - код филиала; documentNameN - значение накладной;  amountFrom - сумма начальная;  amountTo - сумма конечная;  documentNameSF - значение счет-фактуры;  paymentNumber - номер платежного поручения.  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="wmV6GetPaymentRequest"
+					message="tns:wmV6GetPaymentSoapIn"/>
+			<output name="wmV6GetPaymentResponse"
+					message="tns:wmV6GetPaymentSoapOut"/>
+		</operation>
+		<operation name="wmV6GetPlateg">
+			<documentation>Получение платежных поручений (карточка поставщика бухгалтерии) (Входные параметры: COD_SUPP - Код поставщика;  DateFrom - дата периода начальная;  DateTo - дата периода конечная; amountFrom - сумма начальная;  amountTo - сумма конечная;  paymentNumber - номер платежного поручения.  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="wmV6GetPlategRequest"
+					message="tns:wmV6GetPlategSoapIn"/>
+			<output name="wmV6GetPlategResponse"
+					message="tns:wmV6GetPlategSoapOut"/>
+		</operation>
+		<operation name="wmV6GetSupply">
+			<documentation>Получение поставок (карточка поставщика бухгалтерии) (Входные параметры: COD_SUPP - Код поставщика;  DateFrom - дата периода начальная;  DateTo - дата периода конечная; shopId - код филиала; documentNameN - значение накладной;  amountFrom - сумма начальная;  amountTo - сумма конечная;  documentNameSF - значение счет-фактуры.  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="wmV6GetSupplyRequest"
+					message="tns:wmV6GetSupplySoapIn"/>
+			<output name="wmV6GetSupplyResponse"
+					message="tns:wmV6GetSupplySoapOut"/>
+		</operation>
+		<operation name="wmV6GetDebt">
+			<documentation>Получение задолженности (карточка поставщика бухгалтерии) (Входные параметры: COD_SUPP - Код поставщика;  DateFrom - дата периода начальная;  DateTo - дата периода конечная; shopId - код филиала; documentNameN - значение накладной;  amountFrom - сумма начальная;  amountTo - сумма конечная;  documentNameSF - значение счет-фактуры.  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="wmV6GetDebtRequest"
+					message="tns:wmV6GetDebtSoapIn"/>
+			<output name="wmV6GetDebtResponse"
+					message="tns:wmV6GetDebtSoapOut"/>
+		</operation>
+		<operation name="wmV6GetBranch">
+			<documentation>Получение списка филиалов (карточка поставщика бухгалтерии) (Входные параметры: COD_SUPP - Код поставщика.  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="wmV6GetBranchRequest"
+					message="tns:wmV6GetBranchSoapIn"/>
+			<output name="wmV6GetBranchResponse"
+					message="tns:wmV6GetBranchSoapOut"/>
+		</operation>
+		<operation name="Auth">
+			<documentation>Авторизация (Входные параметры: UserName - Логин; Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="AuthRequest"
+					message="tns:AuthSoapIn"/>
+			<output name="AuthResponse"
+					message="tns:AuthSoapOut"/>
+		</operation>
+		<operation name="ChangePersonPassword">
+			<documentation>Смена пароля (Входные параметры: COD_SUPP - Код поставщика;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="ChangePersonPasswordRequest"
+					message="tns:ChangePersonPasswordSoapIn"/>
+			<output name="ChangePersonPasswordResponse"
+					message="tns:ChangePersonPasswordSoapOut"/>
+		</operation>
+		<operation name="wmGetCountries">
+			<documentation>Возвращает список стран для создания ценового листа Возвращаемое значение - DataSet с таблицей Countries</documentation>
+			<input name="wmGetCountriesRequest"
+					message="tns:wmGetCountriesSoapIn"/>
+			<output name="wmGetCountriesResponse"
+					message="tns:wmGetCountriesSoapOut"/>
+		</operation>
+		<operation name="wmInsertSupplSalesUploaded">
+			<documentation>Изменяет (добавляет, удаляет) записи о прогрузке в базу РТМГ19 Входные параметры: со всеми изменениями, его можно получить вызовом GetChanges(). Выходной параметр: </documentation>
+			<input name="wmInsertSupplSalesUploadedRequest"
+					message="tns:wmInsertSupplSalesUploadedSoapIn"/>
+			<output name="wmInsertSupplSalesUploadedResponse"
+					message="tns:wmInsertSupplSalesUploadedSoapOut"/>
+		</operation>
+		<operation name="GetDistributionCenterPartners">
+			<documentation>Получение списка поставщиков, поставляющих товары на распределительный центр ОАО «Седьмой континент» (Входные параметры: COD_SUPP - Код поставщика;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetDistributionCenterPartnersRequest"
+					message="tns:GetDistributionCenterPartnersSoapIn"/>
+			<output name="GetDistributionCenterPartnersResponse"
+					message="tns:GetDistributionCenterPartnersSoapOut"/>
+		</operation>
+		<operation name="GetDistributionCenterItems">
+			<documentation>Получение списка товаров, поставляемых в распределительный центр ОАО «Седьмой континент» (Входные параметры: COD_SUPP - Код поставщика;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetDistributionCenterItemsRequest"
+					message="tns:GetDistributionCenterItemsSoapIn"/>
+			<output name="GetDistributionCenterItemsResponse"
+					message="tns:GetDistributionCenterItemsSoapOut"/>
+		</operation>
+		<operation name="PutDistributionCenterStock">
+			<documentation>Сохранение товарных остатков в распределительном центре ОАО &lt;Седьмой континент&gt; (Входные параметры: COD_SUPP - Код поставщика; Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="PutDistributionCenterStockRequest"
+					message="tns:PutDistributionCenterStockSoapIn"/>
+			<output name="PutDistributionCenterStockResponse"
+					message="tns:PutDistributionCenterStockSoapOut"/>
+		</operation>
+		<operation name="PutDistributionCenterKart">
+			<documentation>Сохранение бухгалтерской выписки из распределительного центра ОАО &lt;Седьмой континент&gt; (Входные параметры: COD_SUPP - Код поставщика; Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="PutDistributionCenterKartRequest"
+					message="tns:PutDistributionCenterKartSoapIn"/>
+			<output name="PutDistributionCenterKartResponse"
+					message="tns:PutDistributionCenterKartSoapOut"/>
+		</operation>
+		<operation name="wmGetBuyerTypes">
+			<documentation>ПОЛУЧЕНИЕ списка регионов в зависимости от типа поставщика Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="wmGetBuyerTypesRequest"
+					message="tns:wmGetBuyerTypesSoapIn"/>
+			<output name="wmGetBuyerTypesResponse"
+					message="tns:wmGetBuyerTypesSoapOut"/>
+		</operation>
+		<operation name="GetSupplOrdersByPeriodForRC">
+			<documentation>Получение заказов поставщику от филиалов ОАО &lt;Седьмой континент&gt; (Входные параметры: Shop_Id - Код филиала, COD_SUPP - Код поставщика, Status_IdFrom, Status_IdTo - Статусы заказа(0-новый, ...), DateFrom - дата с, DateTo - дата по  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetSupplOrdersByPeriodForRCRequest"
+					message="tns:GetSupplOrdersByPeriodForRCSoapIn"/>
+			<output name="GetSupplOrdersByPeriodForRCResponse"
+					message="tns:GetSupplOrdersByPeriodForRCSoapOut"/>
+		</operation>
+		<operation name="GetDistributionCenterPriceLists">
+			<documentation>Получение списка прайс-листов поставщиков, поставляющих товары на распределительный центр ОАО &lt;Седьмой континент&gt; (Входные параметры: COD_SUPP - Код поставщика; DateFrom - Дата начала поиска даты начала действия прайс-листа; DateTo - Дата окончания поиска даты начала действия прайс-листа Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetDistributionCenterPriceListsRequest"
+					message="tns:GetDistributionCenterPriceListsSoapIn"/>
+			<output name="GetDistributionCenterPriceListsResponse"
+					message="tns:GetDistributionCenterPriceListsSoapOut"/>
+		</operation>
+		<operation name="PutDistributionCenterSales">
+			<documentation>Сохранение продаж товаров в распределительном центре ОАО &lt;Седьмой континент&gt; (Входные параметры: COD_SUPP - Код поставщика; Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="PutDistributionCenterSalesRequest"
+					message="tns:PutDistributionCenterSalesSoapIn"/>
+			<output name="PutDistributionCenterSalesResponse"
+					message="tns:PutDistributionCenterSalesSoapOut"/>
+		</operation>
+		<operation name="GetCategories">
+			<documentation>Получение классификатора товаров ОАО &lt;Седьмой континент&gt; (Входные параметры: COD_SUPP - Код поставщика;  Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetCategoriesRequest"
+					message="tns:GetCategoriesSoapIn"/>
+			<output name="GetCategoriesResponse"
+					message="tns:GetCategoriesSoapOut"/>
+		</operation>
+		<operation name="GetSupplOrdersByPeriodCrossDocking">
+			<documentation>Получение заказов поставщику от филиалов ОАО &lt;Седьмой континент&gt; (Входные параметры: Shop_Id - Код филиала, COD_SUPP - Код поставщика, Status_IdFrom, Status_IdTo - Статусы заказа(0-новый, ...), DateFrom - дата с, DateTo - дата по , ForSupp - тип передачи(0-заказы от филиалов для РЦ по кросс-докингу, 1-заказы для поставщиков по кросс-докингу) Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetSupplOrdersByPeriodCrossDockingRequest"
+					message="tns:GetSupplOrdersByPeriodCrossDockingSoapIn"/>
+			<output name="GetSupplOrdersByPeriodCrossDockingResponse"
+					message="tns:GetSupplOrdersByPeriodCrossDockingSoapOut"/>
+		</operation>
+		<operation name="Login">
+			<input name="LoginRequest"
+					message="tns:LoginSoapIn"/>
+			<output name="LoginResponse"
+					message="tns:LoginSoapOut"/>
+		</operation>
+		<operation name="GetWorkVersionNumber">
+			<input name="GetWorkVersionNumberRequest"
+					message="tns:GetWorkVersionNumberSoapIn"/>
+			<output name="GetWorkVersionNumberResponse"
+					message="tns:GetWorkVersionNumberSoapOut"/>
+		</operation>
+		<operation name="GetVersionUpdate">
+			<input name="GetVersionUpdateRequest"
+					message="tns:GetVersionUpdateSoapIn"/>
+			<output name="GetVersionUpdateResponse"
+					message="tns:GetVersionUpdateSoapOut"/>
+		</operation>
+		<operation name="PutDistributionCenterStore">
+			<documentation>Сохранение данных для хранилища из распределительного центра ОАО &lt;Седьмой континент&gt; (Входные параметры: COD_SUPP - Код поставщика; Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="PutDistributionCenterStoreRequest"
+					message="tns:PutDistributionCenterStoreSoapIn"/>
+			<output name="PutDistributionCenterStoreResponse"
+					message="tns:PutDistributionCenterStoreSoapOut"/>
+		</operation>
+		<operation name="GetShopsTest">
+			<documentation>Получение филиалов ОАО &lt;Седьмой континент&gt; (Входные параметры: COD_SUPP - Код поставщика) Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="GetShopsTestRequest"
+					message="tns:GetShopsTestSoapIn"/>
+			<output name="GetShopsTestResponse"
+					message="tns:GetShopsTestSoapOut"/>
+		</operation>
+		<operation name="Data_Get_Zip">
+			<documentation>Получение данных через портал ОАО &lt;Седьмой континент&gt; Входные параметры: массив байт в архиве zip  Выходные параметры: XML согласно документации)</documentation>
+			<input name="Data_Get_ZipRequest"
+					message="tns:Data_Get_ZipSoapIn"/>
+			<output name="Data_Get_ZipResponse"
+					message="tns:Data_Get_ZipSoapOut"/>
+		</operation>
+		<operation name="Data_Set_Zip">
+			<documentation>Получение данных через портал ОАО &lt;Седьмой континент&gt; Входные параметры: массив байт в архиве zip  Выходные параметры: XML согласно документации)</documentation>
+			<input name="Data_Set_ZipRequest"
+					message="tns:Data_Set_ZipSoapIn"/>
+			<output name="Data_Set_ZipResponse"
+					message="tns:Data_Set_ZipSoapOut"/>
+		</operation>
+		<operation name="Data_Multi_Get_Zip">
+			<documentation>Получение данных через портал ОАО &lt;Седьмой континент&gt; Входные параметры: массив байт в архиве zip  Выходные параметры: XML согласно документации)</documentation>
+			<input name="Data_Multi_Get_ZipRequest"
+					message="tns:Data_Multi_Get_ZipSoapIn"/>
+			<output name="Data_Multi_Get_ZipResponse"
+					message="tns:Data_Multi_Get_ZipSoapOut"/>
+		</operation>
+		<operation name="Data_Get">
+			<documentation>Получение данных через портал ОАО &lt;Седьмой континент&gt; Входные параметры: XML согласно документации;  Выходные параметры: XML согласно документации)</documentation>
+			<input name="Data_GetRequest"
+					message="tns:Data_GetSoapIn"/>
+			<output name="Data_GetResponse"
+					message="tns:Data_GetSoapOut"/>
+		</operation>
+		<operation name="wmV6GetSupplyVTB">
+			<documentation>Получение поставок (ВТБ Факторинг) (Входные параметры: COD_SUPP - Код поставщика;  INN - ИНН поставщика;  DateFrom - дата периода начальная;  DateTo - дата периода конечная. Выходные параметры: Результат выполнения метода)</documentation>
+			<input name="wmV6GetSupplyVTBRequest"
+					message="tns:wmV6GetSupplyVTBSoapIn"/>
+			<output name="wmV6GetSupplyVTBResponse"
+					message="tns:wmV6GetSupplyVTBSoapOut"/>
+		</operation>
+	</portType>
+	<binding name="DataExchangeServiceSoap"
+			type="tns:DataExchangeServiceSoap">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="Test">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/Test"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDIP7KVersion">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetDIP7KVersion"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetFilials">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetFilials"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetFilialsByParameters">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetFilialsByParameters"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplRests">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplRests"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplRests2">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplRests2"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplRestsAsFile">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplRestsAsFile"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplSales">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplSales"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplSales2">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplSales2"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplSalesAsFile">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplSalesAsFile"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="SendEInvoices">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/SendEInvoices"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ChangePassword">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/ChangePassword"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="UpdateSupplOrders">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/UpdateSupplOrders"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="UpdateSupplOrdersTest">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/UpdateSupplOrdersTest"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplOrders">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplOrders"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplOrdersByPeriod">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplOrdersByPeriod"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExportReportToFile">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/ExportReportToFile"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExportReportToFileBinary">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/ExportReportToFileBinary"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExportReportToFileSorted">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/ExportReportToFileSorted"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="SendBarcodes">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/SendBarcodes"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetSF">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetSF"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetPayment">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetPayment"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetPlateg">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetPlateg"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetSupply">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetSupply"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetDebt">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetDebt"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetBranch">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetBranch"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Auth">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/Auth"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ChangePersonPassword">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/ChangePersonPassword"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmGetCountries">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/wmGetCountries"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmInsertSupplSalesUploaded">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/wmInsertSupplSalesUploaded"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDistributionCenterPartners">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetDistributionCenterPartners"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDistributionCenterItems">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetDistributionCenterItems"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PutDistributionCenterStock">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/PutDistributionCenterStock"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PutDistributionCenterKart">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/PutDistributionCenterKart"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmGetBuyerTypes">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/wmGetBuyerTypes"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplOrdersByPeriodForRC">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplOrdersByPeriodForRC"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDistributionCenterPriceLists">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetDistributionCenterPriceLists"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PutDistributionCenterSales">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/PutDistributionCenterSales"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetCategories">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetCategories"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplOrdersByPeriodCrossDocking">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplOrdersByPeriodCrossDocking"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Login">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/Login"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetWorkVersionNumber">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetWorkVersionNumber"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetVersionUpdate">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetVersionUpdate"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PutDistributionCenterStore">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/PutDistributionCenterStore"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetShopsTest">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/GetShopsTest"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Data_Get_Zip">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/Data_Get_Zip"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Data_Set_Zip">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/Data_Set_Zip"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Data_Multi_Get_Zip">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/Data_Multi_Get_Zip"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Data_Get">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/Data_Get"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetSupplyVTB">
+			<soapbind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetSupplyVTB"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<binding name="DataExchangeServiceSoap12"
+			type="tns:DataExchangeServiceSoap">
+		<soap12bind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="Test">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/Test"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDIP7KVersion">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetDIP7KVersion"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetFilials">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetFilials"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetFilialsByParameters">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetFilialsByParameters"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplRests">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplRests"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplRests2">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplRests2"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplRestsAsFile">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplRestsAsFile"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplSales">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplSales"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplSales2">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplSales2"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplSalesAsFile">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplSalesAsFile"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="SendEInvoices">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/SendEInvoices"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ChangePassword">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/ChangePassword"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="UpdateSupplOrders">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/UpdateSupplOrders"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="UpdateSupplOrdersTest">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/UpdateSupplOrdersTest"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplOrders">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplOrders"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplOrdersByPeriod">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplOrdersByPeriod"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExportReportToFile">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/ExportReportToFile"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExportReportToFileBinary">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/ExportReportToFileBinary"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExportReportToFileSorted">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/ExportReportToFileSorted"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="SendBarcodes">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/SendBarcodes"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetSF">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetSF"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetPayment">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetPayment"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetPlateg">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetPlateg"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetSupply">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetSupply"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetDebt">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetDebt"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetBranch">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetBranch"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Auth">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/Auth"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ChangePersonPassword">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/ChangePersonPassword"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmGetCountries">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/wmGetCountries"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmInsertSupplSalesUploaded">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/wmInsertSupplSalesUploaded"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDistributionCenterPartners">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetDistributionCenterPartners"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDistributionCenterItems">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetDistributionCenterItems"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PutDistributionCenterStock">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/PutDistributionCenterStock"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PutDistributionCenterKart">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/PutDistributionCenterKart"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmGetBuyerTypes">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/wmGetBuyerTypes"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplOrdersByPeriodForRC">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplOrdersByPeriodForRC"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDistributionCenterPriceLists">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetDistributionCenterPriceLists"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PutDistributionCenterSales">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/PutDistributionCenterSales"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetCategories">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetCategories"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSupplOrdersByPeriodCrossDocking">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetSupplOrdersByPeriodCrossDocking"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Login">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/Login"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetWorkVersionNumber">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetWorkVersionNumber"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetVersionUpdate">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetVersionUpdate"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PutDistributionCenterStore">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/PutDistributionCenterStore"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetShopsTest">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/GetShopsTest"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Data_Get_Zip">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/Data_Get_Zip"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Data_Set_Zip">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/Data_Set_Zip"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Data_Multi_Get_Zip">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/Data_Multi_Get_Zip"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Data_Get">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/Data_Get"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="wmV6GetSupplyVTB">
+			<soap12bind:operation style="document"
+					soapAction="http://tempuri.org/wmV6GetSupplyVTB"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="DataExchangeService">
+		<port name="DataExchangeServiceSoap"
+				binding="tns:DataExchangeServiceSoap">
+			<soapbind:address location="https://dip.7cont.ru/DataExch/DataExchangeService.asmx"/>
+		</port>
+		<port name="DataExchangeServiceSoap12"
+				binding="tns:DataExchangeServiceSoap12">
+			<soap12bind:address location="https://dip.7cont.ru/DataExch/DataExchangeService.asmx"/>
+		</port>
+	</service>
+</definitions>

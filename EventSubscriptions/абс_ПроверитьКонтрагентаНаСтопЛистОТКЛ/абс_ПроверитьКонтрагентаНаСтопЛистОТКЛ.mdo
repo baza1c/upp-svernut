@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="967ded33-63dd-4940-9285-a6ec8958829c">
+  <name>абс_ПроверитьКонтрагентаНаСтопЛистОТКЛ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить контрагента на стоп-лист (АБС)</value>
+  </synonym>
+  <comment>абс_УправлениеДебиторскойЗадолженностью.абс_ПроверитьКонтрагентаНаСтопЛистОбработкаПроведения</comment>
+  <source>
+    <types>DocumentObject.ЗаказПокупателя</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.абс_Дистрибуция.абс_ПроверитьКонтрагентаНаСтопЛистОТКЛОбработкаПроведения</handler>
+</mdclass:EventSubscription>

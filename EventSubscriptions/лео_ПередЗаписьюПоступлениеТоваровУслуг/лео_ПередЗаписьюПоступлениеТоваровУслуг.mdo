@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf118f9c-a74f-4e82-9a7e-bf6ac22506cb">
+  <name>лео_ПередЗаписьюПоступлениеТоваровУслуг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перед записью поступление товаров услуг</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПоступлениеТоваровУслуг</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.абс_Дистрибуция.Лео_ПередЗаписьюПоступлениеТоваровУслугПередЗаписью</handler>
+</mdclass:EventSubscription>

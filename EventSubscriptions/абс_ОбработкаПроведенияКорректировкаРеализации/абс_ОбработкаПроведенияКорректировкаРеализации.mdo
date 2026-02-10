@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b97ce09c-8fd7-4f35-a631-f3c32ac52bae">
+  <name>абс_ОбработкаПроведенияКорректировкаРеализации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Абс обработка проведения корректировка реализации</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.КорректировкаРеализации</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.абс_Дистрибуция.абс_ОбработкаПроведенияКорректировкаРеализацииОбработкаПроведения</handler>
+</mdclass:EventSubscription>

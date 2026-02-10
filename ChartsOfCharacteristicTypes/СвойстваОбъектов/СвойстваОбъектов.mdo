@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="626f7976-686a-4aaf-bafc-b2365e067899">
+  <producedTypes>
+    <objectType typeId="86253402-da97-4a17-a839-283e4b69a0ad" valueTypeId="76907720-0d9f-45ae-ac8b-ea428a402bad"/>
+    <refType typeId="f9f246a3-f63e-4357-aff6-2e1a5f66026c" valueTypeId="84f49490-e10d-4dd9-b625-95fed37cb3ee"/>
+    <selectionType typeId="1329993a-2f73-4c43-bfad-700d8db73a2f" valueTypeId="3cfd064b-cbcc-4abb-87ce-d6c73c97cf19"/>
+    <listType typeId="77f47c56-056a-48b5-ae94-24d6e5589f11" valueTypeId="f977a2b9-34c5-43d7-8a61-e2ef2af371b9"/>
+    <managerType typeId="16a9cfee-2dcc-4c73-a40a-4fb96f081ced" valueTypeId="e3ec6988-8b0b-49be-be26-ef45c97626f7"/>
+    <containerType typeId="f04256af-e4b4-4d0a-8a65-baa878d4c6de" valueTypeId="17e72b92-8700-406c-916d-72ac4063fbfb"/>
+  </producedTypes>
+  <name>СвойстваОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Свойства объектов</value>
+  </synonym>
+  <comment>(Общ)</comment>
+  <inputByString>ChartOfCharacteristicTypes.СвойстваОбъектов.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.СвойстваОбъектов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <characteristicExtValues>Catalog.ЗначенияСвойствОбъектов</characteristicExtValues>
+  <type>
+    <types>CatalogRef.НоменклатурныеГруппы</types>
+    <types>CatalogRef.ЕдиницыИзмерения</types>
+    <types>CatalogRef.Валюты</types>
+    <types>CatalogRef.Проекты</types>
+    <types>CatalogRef.КонтактныеЛица</types>
+    <types>CatalogRef.ФизическиеЛица</types>
+    <types>CatalogRef.Лео_ПодгруппаСиМ</types>
+    <types>CatalogRef.Пользователи</types>
+    <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+    <types>Boolean</types>
+    <types>CatalogRef.Лео_ГруппаСиМ</types>
+    <types>CatalogRef.Лео_КлассификаторОКПД2</types>
+    <types>CatalogRef.КлассификаторСтранМира</types>
+    <types>CatalogRef.Подразделения</types>
+    <types>CatalogRef.Контрагенты</types>
+    <types>String</types>
+    <types>CatalogRef.Организации</types>
+    <types>Date</types>
+    <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+    <types>Number</types>
+    <types>CatalogRef.Номенклатура</types>
+    <types>EnumRef.ДниНедели</types>
+    <types>CatalogRef.Склады</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>3</scale>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>500</length>
+    </stringQualifiers>
+    <dateQualifiers/>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>11</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="2c9aa779-7d83-4acc-9844-8c556d679db4">
+      <name>абс_ПроцентСвежестиТовара</name>
+      <description>% свежести товара</description>
+      <code>00000000002</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="54b54f8e-6e5d-4b06-8a0f-2e28491ca22a">
+      <name>Лео_ПроцентСвежестиТовара12</name>
+      <description>% свежести товара – 12 мес.</description>
+      <code>00000000212</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="d9b10ded-3487-4986-b361-d1d030fe4911">
+      <name>Лео_ПроцентСвежестиТовара18</name>
+      <description>% свежести товара – 18 мес.</description>
+      <code>00000000218</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="a90b2dc6-7a59-489d-bf57-38fb0a48a9f5">
+      <name>Лео_ПроцентСвежестиТовара24</name>
+      <description>% свежести товара – 24 мес.</description>
+      <code>00000000224</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="332ed01a-8131-4e19-8403-2e9e25a77db1">
+      <name>Лео_ПроцентСвежестиТовара6</name>
+      <description>% свежести товара – 6 мес.</description>
+      <code>00000000206</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="2b92e33a-9e0c-4a90-9050-2b19a5184cdd">
+      <name>Лео_ПроцентСвежестиТовара9</name>
+      <description>% свежести товара – 9 мес.</description>
+      <code>00000000209</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="0b72222c-2ec6-466e-be61-308ddce79c6f">
+      <name>абс_ConsumerProduct</name>
+      <description>Consumer_product</description>
+      <code>00000000029</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="a21c61cf-add0-4f0a-95c6-b891b7d25c6b">
+      <name>абс_GLNПостащика</name>
+      <description>GLN поставщика</description>
+      <code>00000000009</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="7c5cea08-3511-4206-8870-9ecdb7f76646">
+      <name>абс_KODSETI</name>
+      <description>KODSETI</description>
+      <code>00000000041</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="61757da7-5c96-4029-a61d-72ea7f03ea7b">
+      <name>абс_Артикул1ССклад</name>
+      <description>Артикул 1С Склад</description>
+      <code>00000000023</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="09d8db79-4260-45c2-a4b7-332827d0596b">
+      <name>абс_АртикулПокупателя</name>
+      <description>Артикул покупателя</description>
+      <code>00000000008</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="898a1f3d-3aa2-4485-9b74-38933c3c2bae">
+      <name>Лео_АртикулПокупателяMETRO_MGB</name>
+      <description>Артикул покупателя METRO MGB</description>
+      <code>00000000191</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="f9a807d2-d800-4583-9654-ee5820f4a17c">
+      <name>Лео_АртикулПокупателяMETRO_SubSys</name>
+      <description>Артикул покупателя METRO Sub Sys</description>
+      <code>00000000190</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="c6ccbf81-469e-4443-ada3-537f4dbd95c9">
+      <name>Лео_АртикулПокупателяMETRO13</name>
+      <description>Артикул покупателя METRO13</description>
+      <code>00000000192</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="a9b3ec8c-194e-42ee-8908-60a2cefcf9ea">
+      <name>абс_ВесВложения</name>
+      <description>Вес вложения</description>
+      <code>00000000025</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="47e39e12-6619-482d-9089-c4d14f45c3bc">
+      <name>абс_ВиртуальныйСкладДляРасчетаРезерва</name>
+      <description>Виртуальный склад для расчета резерва</description>
+      <code>00000000014</code>
+      <type>
+        <types>CatalogRef.Склады</types>
+      </type>
+    </items>
+    <items id="9b77ff02-dc71-4926-a47e-f4da821d10a3">
+      <name>абс_ВторойМенеджер</name>
+      <description>Второй менеджер</description>
+      <code>00000000038</code>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+    </items>
+    <items id="df7f6be8-493a-4cc2-a9ae-f49032acb48a">
+      <name>абс_ГрузополучательЯвляетсяПлательщиком</name>
+      <description>Грузополучатель является плательщиком (EDI)</description>
+      <code>00000000046</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="49951abd-72fb-4faf-8abb-ae1818e37699">
+      <name>абс_ДеньНеделиДоставки</name>
+      <description>День недели доставки</description>
+      <code>00000000037</code>
+      <type>
+        <types>EnumRef.ДниНедели</types>
+      </type>
+    </items>
+    <items id="1545328c-6674-47e4-96e9-526bf4a97fcd">
+      <name>абс_ДеньНеделиЗаказа</name>
+      <description>День недели заказа</description>
+      <code>00000000035</code>
+      <type>
+        <types>EnumRef.ДниНедели</types>
+      </type>
+    </items>
+    <items id="00f322b4-9091-4867-b69a-0214dfb864da">
+      <name>абс_ДеньНеделиОтгрузки</name>
+      <description>День недели отгрузки</description>
+      <code>00000000036</code>
+      <type>
+        <types>EnumRef.ДниНедели</types>
+      </type>
+    </items>
+    <items id="f84034a8-8be2-4534-9213-d99321bbd39c">
+      <name>абс_ДнейДоставкиДоТЦ</name>
+      <description>Дней доставки (ТЦ,РЦ)</description>
+      <code>00000000043</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="243dfadc-c283-4d78-ba4a-352af5cafad2">
+      <name>абс_ЗагружатьДатуПоставкиEDI</name>
+      <description>Загружать дату поставки в ТЦ из EDI</description>
+      <code>00000000047</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="6ce795a6-c32b-4ee4-9e68-dbdeeaebe706">
+      <name>абс_ЗагрузкаКоличестваПоМестамEDI</name>
+      <description>Загрузка количества по местам (EDI)</description>
+      <code>00000000045</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="3a5ef0dc-9edb-4eeb-9ef3-629b67cdd527">
+      <name>абс_ЗаполнятьНомерУведомленияОбОтгрузкеИзНомераНакладнойEDI</name>
+      <description>Заполнять номер ув. об отгрузке из номера накладно</description>
+      <code>00000000049</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="71fcd471-ecd6-46e5-87c5-2a9185a8617c">
+      <name>абс_Канал</name>
+      <description>Канал</description>
+      <code>00000000034</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="d9a8049c-5a7b-449a-856d-b6bee6b7553a">
+      <name>абс_КатегорияНоменклатуры</name>
+      <description>Категория</description>
+      <code>00000000018</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="9940b904-24c7-4d6a-bfc4-1214988a9e47">
+      <name>абс_КодКонтрагентаДляМетро</name>
+      <description>Код контрагента для METRO MGL</description>
+      <code>00000000012</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="0fc60042-a9d6-4607-988a-2c1df1cd77a1">
+      <name>абс_КодОрганизацииДляМетро</name>
+      <description>Код организации для METRO MGL</description>
+      <code>00000000011</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="71ad2b95-fc37-4387-becf-73d0fdb2190b">
+      <name>абс_КодПокупателя</name>
+      <description>Код покупателя</description>
+      <code>00000000006</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="c0e3ecb2-3d98-48a6-97f6-1e20ca759a74">
+      <name>абс_КодПоставщика</name>
+      <description>Код поставщика</description>
+      <code>00000000007</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="3ca5ec46-1c04-46c3-8a55-d5945a9b7ca5">
+      <name>абс_КодСкладаДляМетро</name>
+      <description>Код склада для METRO MGL</description>
+      <code>00000000013</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="a2b5114e-e977-46cd-a320-576e60236577">
+      <name>Лео_ДопИнфоЗаказ</name>
+      <description>Комментарий к заказу</description>
+      <code>00000000270</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="5bc42e6b-828f-41b0-9122-73229101632a">
+      <name>лео_ПолныйСрокГодностиПолуфабрикатыДни</name>
+      <description>Лео полный срок годности полуфабрикаты дни</description>
+      <code>00000000271</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="e46017db-b5b8-472f-ba61-0042993d1c4c">
+      <name>абс_МораторнаяЗадолженность</name>
+      <description>Мораторная задолженность</description>
+      <code>00000000039</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="73d1fdcc-7911-4da5-a8cb-8eb84732aeb4">
+      <name>абс_НазваниеНоменклатуры</name>
+      <description>Название</description>
+      <code>00000000021</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="8620fee4-4ae5-414f-af27-2582c2f233be">
+      <name>абс_НаименованиеНоменклатурыПокупателя</name>
+      <description>Наименование номенклатуры покупателя</description>
+      <code>00000000048</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="10a57596-cd4a-4929-956d-e0b5de31845b">
+      <name>абс_НомерМагазина</name>
+      <description>Номер магазина</description>
+      <code>00000000010</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>16</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="4b92ba8e-dddf-4040-af98-60a20bd25b27">
+      <name>абс_ДекларацияСоответствия</name>
+      <description>Обязательно ДС</description>
+      <code>00000000033</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="19107036-150e-4081-a750-e9aa07e4c254">
+      <name>абс_ДекларацияТаможенногоСоюза</name>
+      <description>Обязательно ДТС</description>
+      <code>00000000040</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="e4a20d2d-a600-4ce0-b8fe-d531f3c8d972">
+      <name>абс_СвидетельствоОГосрегистрации</name>
+      <description>Обязательно СГР</description>
+      <code>00000000031</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="9613c613-9b3b-4838-ab7d-52bd7e262e4e">
+      <name>абс_СертификатСоответствия</name>
+      <description>Обязательно СС</description>
+      <code>00000000032</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="4a49ad05-258f-4a08-a4de-2d628fa3c769">
+      <name>абс_Одиночные</name>
+      <description>Одиночные</description>
+      <code>00000000026</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="a455fdff-60ce-4f18-a260-7d7f1ed9bb36">
+      <name>абс_ОсновнаяЕдиницаИзмеренияМест</name>
+      <description>Основная единица измерения мест</description>
+      <code>00000000024</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="14c03a85-6fbe-4629-a58c-fbf9f4cee6db">
+      <name>абс_ОсновнаяЕдиницаОтгрузки</name>
+      <description>Основная единица отгрузки</description>
+      <code>00000000005</code>
+      <type>
+        <types>CatalogRef.ЕдиницыИзмерения</types>
+      </type>
+    </items>
+    <items id="d1c8c236-2120-4ca2-8426-c35313fdf7fb">
+      <name>абс_ОстаточныйСрокГодности</name>
+      <description>Остаточный срок годности</description>
+      <code>00000000003</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="3fa6a9da-7ac8-4904-9635-786100ebcc46">
+      <name>абс_ОтгружатьОднуСерию</name>
+      <description>Отгружать одну серию</description>
+      <code>00000000015</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="4f74d1a0-893e-4b9e-ba72-99e1f9a7fff4">
+      <name>абс_Подкатегория1</name>
+      <description>Подкатегория1</description>
+      <code>00000000019</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="e0cbd45b-34c6-4dd5-ad7c-7f35b90f01db">
+      <name>абс_Подкатегория2</name>
+      <description>Подкатегория2</description>
+      <code>00000000020</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="bfd35d69-dd63-4b1b-9003-c2fa4d4b4faf">
+      <name>абс_ПолныйСрокГодностиТовара</name>
+      <description>Полный срок годности товара</description>
+      <code>00000000004</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="50cc16f8-8e65-4b25-97aa-c1b283d06276">
+      <name>абс_Потребление</name>
+      <description>Потребление</description>
+      <code>00000000030</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="3d59e5c0-64ae-4d94-984b-db36be124798">
+      <name>Лео_УСН</name>
+      <description>применяет УСН</description>
+      <code>00000000051</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="2c64fad6-d43b-44e1-95cb-348635b16b0d">
+      <name>абс_СводноеНаименование</name>
+      <description>Сводное наименование</description>
+      <code>00000000028</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="e59bf3b0-209b-4997-8a0d-558d1304b5c4">
+      <name>абс_СложнаяДиспоСхема</name>
+      <description>Сложная диспо схема</description>
+      <code>00000000042</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="6ae1e8cf-4f3a-411c-a08d-9a952048f10e">
+      <name>лео_СтатусДебитора</name>
+      <description>Статус Дебитора</description>
+      <code>00000000050</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="dcad9568-dc61-4a7a-89ae-f1cbbdfe6665">
+      <name>абс_ТипНоменклатуры</name>
+      <description>Тип</description>
+      <code>00000000017</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="f51808b7-6656-4caf-9b0f-bea8ee4feddb">
+      <name>ТорговаяМарка</name>
+      <description>Торговая марка</description>
+      <code>00000000001</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="e0351239-5a4f-45fc-a6aa-31d0557a978c">
+      <name>абс_ФлагМаркировки</name>
+      <description>Флаг маркировки</description>
+      <code>00000000044</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="461abc3a-aab8-47e0-be8e-cd9189373ba1">
+      <name>абс_ФокусныйАссортимент</name>
+      <description>Фокусный ассортимент</description>
+      <code>00000000022</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+    <items id="0d97f8e7-1e61-4476-8625-2970a3e36017">
+      <name>абс_ФорматУпаковки</name>
+      <description>Формат упаковки</description>
+      <code>00000000027</code>
+      <type>
+        <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      </type>
+    </items>
+  </predefined>
+  <editType>BothWays</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfCharacteristicTypes.СвойстваОбъектов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>ChartOfCharacteristicTypes.СвойстваОбъектов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>ChartOfCharacteristicTypes.СвойстваОбъектов.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="f93330e3-b2a5-48f8-bbef-bb659e1c05c3">
+    <name>НазначениеСвойства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение свойства</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.НазначенияСвойствКатегорийОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d74f1480-4451-4ec2-b067-46344628e2d6">
+    <name>ОбязательноКЗаполнению</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обязательно к заполнению</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="054be46b-91bd-450e-89a8-cf5e30b28010">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f42a4a3d-2f22-4529-afcd-93f1acdfe291">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d2195d42-aa31-46a6-bdda-3babfaf4fb42">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCharacteristicTypes>

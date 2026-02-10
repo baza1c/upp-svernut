@@ -1,0 +1,1864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0e480be-8c51-466e-9128-593bfda3e6f2">
+  <producedTypes>
+    <objectType typeId="601f72af-5dca-4b7e-a151-548cc0a180a5" valueTypeId="3c0448f5-73d7-4107-bb11-c7136407dad7"/>
+    <managerType typeId="27bd2d7d-2274-4ee3-b328-fa010666f1ec" valueTypeId="e97b76a9-d858-4c8e-97a6-fa49d0e3f5fd"/>
+  </producedTypes>
+  <name>ДокументооборотСКонтролирующимиОрганами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документооборот с контролирующими органами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ДокументооборотСКонтролирующимиОрганами.Form.ОсновнаяФорма</defaultForm>
+  <forms uuid="e010b2ae-897f-48c2-8722-db4e6cff08aa">
+    <name>ОсновнаяФорма</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b74e733c-61d7-4ca9-9c43-9bd9437babdf">
+    <name>НесуществующееТранспортноеСообщение</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="eff285a8-52d9-4988-b485-cb47d230d9e1">
+    <name>УправлениеОбменом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Управление обменом</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="25bf3b49-e5bb-47b1-8f77-5748d2191e01">
+    <name>Подписание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписание</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="04ddf9e8-5cb8-453f-992f-7c80e0d1c8e4">
+    <name>ПоказВходящихСообщений</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="555bbb13-abf3-494a-85d0-b12f27143086">
+    <name>ШифрованиеРасшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шифрование/расшифровка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="20708b78-6265-441d-a44e-da9ac4f4a559">
+    <name>ВыборОрганизацииОбмена</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="50ef3d3c-0ef4-41e4-b6cf-8ce4fa74b137">
+    <name>НастройкиКриптографии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки криптографии</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1777f867-1126-4274-b159-62d01c75e9ee">
+    <name>ВыборСертификатаИзСистемногоХранилища</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9b9747bc-da67-49ba-b108-b619fb6f44fd">
+    <name>ВыборСертификатаОтветственногоЛица</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="01fa137c-5718-4e79-9efa-c7f658aa33e7">
+    <name>ФормированиеПодтверждений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формирование подтверждений</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a8a970af-4253-4ee5-ac22-8d5d096b3503">
+    <name>ВопросПредупреждение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вопрос предупреждение</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fd6ba042-7a2d-4735-9122-8c2088ed5b1c">
+    <name>НастройкиГрупповойОбработки</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1ce96a80-6731-4a51-bac2-f8ca79b7f4a2">
+    <name>РедактированиеФайлаВыгрузки</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="72b5a849-be52-48d3-b5c8-382042a2849c">
+    <name>НастройкиГрупповойПечати</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки групповой печати</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3fa5f86f-0f6f-4ac8-9f28-df69c878418a">
+    <name>РОКИИдетПолучениеИнформацииССервера</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cc4b1c87-22ab-40e5-809a-9bfde3bed02a">
+    <name>РОКИИзмененияВНастройках</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f0c803ea-de82-467d-b6af-e45719f1a336">
+    <name>РОКИСравнениеНастроек</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c581862f-4046-4771-87bf-79c59c8f9d2c">
+    <name>РОКИПараметрыАвтонастройкиНовойУчетнойЗаписи</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="881aa4f1-9d39-4a59-b15c-611dfefae671">
+    <name>РОКИМастерАвтонастройкиНовойУчетнойЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник автоматической настройки новой учетной записи</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d222db7e-ad2b-4da5-9e06-071bf930b503">
+    <name>ПрогрессВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прогресс выгрузки</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f7517083-aba2-4e4b-943d-4e4027c2c615">
+    <name>РезультатОнлайнПроверки</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="184d5317-43fd-4c6a-862b-d16059d42c9b">
+    <name>ПрогрессОнлайнПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прогресс онлайн-проверки</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3876038c-8539-42f0-9e30-9b3ea4849fd0">
+    <name>ОшибкаДоступаВИнтернет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка доступа в интернет</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1eaa4855-3949-44da-b2d3-bb09fb328367">
+    <name>Справочник_ЦиклыОбмена_ФормаЭлемента</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="deb8f138-583c-4032-9e72-bccd2102eba5">
+    <name>Справочник_ЦиклыОбмена_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="667404b0-37b7-41aa-b07f-f4fad4beb370">
+    <name>Справочник_СерверыДокументооборота_ФормаЭлемента</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4048b06f-9a60-463f-ac77-227c142fbea5">
+    <name>Справочник_СерверыДокументооборота_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="09af2aba-13b2-4e05-87d4-ae5431bd5b25">
+    <name>Справочник_УчетныеЗаписиДокументооборота_ФормаЭлемента</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4b3314b1-4771-429d-a036-6dc527175a12">
+    <name>Справочник_УчетныеЗаписиДокументооборота_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e27b1148-6437-4894-8067-41be3956bdb1">
+    <name>Справочник_ЭлектронныеПредставленияРегламентированныхОтчетов_ФормаЭлемента</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ae2e1607-4258-43cb-a56b-a378546b8a0d">
+    <name>Справочник_ЭлектронныеПредставленияРегламентированныхОтчетов_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9387c276-2efb-4e99-b74e-7adb67809981">
+    <name>Документ_ТранспортноеСообщение_ФормаДокумента</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a3e27689-3420-492b-b31e-7608648e1c51">
+    <name>Документ_ТранспортноеСообщение_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="16f119aa-72b5-4a19-ac7e-d90a253d6d3a">
+    <name>Документ_НеформализованныйДокументНалоговогоОргана_ФормаДокумента</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f31f3644-abe1-41c6-9048-0ca100f2587f">
+    <name>Документ_НеформализованныйДокументНалоговогоОргана_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4e4465bb-0864-4355-a987-fd577a111d14">
+    <name>Документ_НеформализованныйДокументНалогоплательщика_ФормаДокумента</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ee28172a-fc22-4fd3-8121-b2e8408c0475">
+    <name>Документ_НеформализованныйДокументНалогоплательщика_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0e5a3d3d-4830-4465-9072-aa6998f11d3b">
+    <name>Документ_ЗапросНаИнформационноеОбслуживаниеНалогоплательщика_ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ запрос на информационное обслуживание налогоплательщика форма документа</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6901405d-a19b-4182-a739-e761262bbef1">
+    <name>Документ_ЗапросНаИнформационноеОбслуживаниеНалогоплательщика_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="10be264a-538c-4b6b-85d7-bf63278f8334">
+    <name>РегистрСведений_СодержимоеТранспортныхКонтейнеров_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5f57ef1c-3746-47ee-8a88-c6675da6b903">
+    <name>РегистрСведений_ВложенияНеформализованныхДокументов_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0fbef05e-0f29-45c4-aeab-a39758ed9bd4">
+    <name>РегистрСведений_ХранилищеЭлектронныхПредставленийРегламентированныхОтчетов_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="965ed347-063f-4020-9a6f-c5a318ca05b9">
+    <name>РегистрСведений_ТранспортныеКонтейнеры_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="40bbd937-59bd-4ad3-b264-37bb0d61bc10">
+    <name>РегистрСведений_ПользователиУчетныхЗаписейДокументооборота_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистр сведений пользователи учетных записей документооборота форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="41aa1b92-1f10-430b-90fd-94a7ddb3d9de">
+    <name>РегистрСведений_НастройкиПользователейУчетныхЗаписейДокументооборота_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистр сведений настройки пользователей учетных записей документооборота форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c1c51be1-344c-4d8b-b07a-d7a49486748d">
+    <name>РегистрСведений_СчетчикиНеформализованныхДокументовНалогоплательщика_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="aff14f8c-0307-485c-a57e-58f21d42258f">
+    <name>РегистрСведений_СтатусыОтправки_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4cfa39a7-3eda-4aa5-b857-8e5e88705b59">
+    <name>РегистрСведений_ФайлыСведенийРОКИ_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="39a093ee-182a-4777-8486-731676af48ec">
+    <name>ФормаВыбораКБК</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7e01ddb8-33b3-4187-bd3f-7d0e74af4e5e">
+    <name>ДополнительныеСвойстваТранспортногоСообщения</name>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6d8aaf43-5b93-4827-9ba1-5c5994bf9026">
+    <name>ПредварительныйПросмотрПечатныхФорм</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f1448c5d-b516-407b-8858-9783c75f83a9">
+    <name>ИзменениеИнтервалаАвтообменаПоУчетнойЗаписи</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3ea09729-a23d-4fa1-b972-2a42b052c9d5">
+    <name>РасширенныеНастройкиУчетнойЗаписи</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b3a7c001-f2de-421f-9b02-3da711b3bb50">
+    <name>ПодписиПодДокументами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписи под документами</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4dc6163a-3253-4ffd-96f8-3b2fbb205d52">
+    <name>ПросмотрОтказаИОН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр отказа ИОН</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e807ec55-b550-4c1f-b0a1-c37ac95e1caf">
+    <name>Настройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="27edde7c-270a-4cce-bfd9-91af58fcfbaf">
+    <name>ПодождитеПожалуйста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подождите, пожалуйста...</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a8ce8be4-0a78-4d32-a8eb-182e3e88ae97">
+    <name>ПодтверждениеВыходаВИнтернетДляЦелейОбновленияМодуля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение выхода в интернет для целей обновления модуля</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="185b22e0-f5d0-46d1-82d3-4d9cd75abcad">
+    <name>Справочник_ОрганыПФР_ФормаЭлемента</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8615a1d1-7513-43f8-bdcd-a28d920a4e48">
+    <name>Справочник_ОрганыПФР_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="46d601d9-7a99-4a9e-b428-0b805458a59d">
+    <name>ПросмотрПодтвержденияПолученияПФР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр подтверждения получения (ПФР)</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ac5389d5-ea97-4fd1-9761-f7cd53a53960">
+    <name>ПросмотрПротоколаПФР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр протокола ПФР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3d7a0500-5cc0-48dc-8c0f-1bc007622166">
+    <name>ПросмотрПодтвержденияПолученияФСГС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр подтверждения получения (ФСГС)</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4fe50dbd-1f10-4a11-a7c0-69bd27922baa">
+    <name>ПросмотрПротоколаФСГС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр протокола ФСГС</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="278329e5-090d-456b-8c7f-779caa0d2645">
+    <name>ПросмотрHTML</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7c520257-b4c6-485f-a9fb-53733e4671bd">
+    <name>ПросмотрПодтвержденияПолученияПисьмаПФР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр подтверждения получения письма (ПФР)</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fb05a49c-8f55-4c21-8fbb-eb00c0852b7c">
+    <name>Справочник_ПерепискаСКонтролирующимиОрганами_ФормаЭлемента</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="05cbeec4-9bde-48fb-8c65-cdfea6095bd1">
+    <name>Справочник_ПерепискаСКонтролирующимиОрганами_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b016841e-07f3-4573-af50-6f130d3ca3e3">
+    <name>РезультатГрупповойОнлайнПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат групповой онлайн проверки</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="221fd92f-9973-44ff-8326-5370110b3ff2">
+    <name>Ретроконверсия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ретроконверсия</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ecd26c9b-118e-4547-b206-3e1f80c0f138">
+    <name>ПросмотрУведомленияОбУточненииНБО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр уведомления об уточнении НБО</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="03c66dce-b299-47ad-a224-e0d132df905e">
+    <name>АрхивДокументооборота141</name>
+    <synonym>
+      <key>ru</key>
+      <value>Архив документооборота 141</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f40acba6-893a-4280-ad67-ca5ba7cd03d9">
+    <name>ИзвещениеОПолучении</name>
+    <synonym>
+      <key>ru</key>
+      <value>Извещение о получении</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c6bcdc0f-8913-4de3-8c40-e5c9dcfbc6b8">
+    <name>ПодтверждениеДатыОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение даты отправки</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dd518bfb-6b76-4057-88cf-b73dcde5ef00">
+    <name>УведомлениеОбОтказе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление об отказе</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0838318f-2cb9-454c-bab1-8e47124b1948">
+    <name>КвитанцияОПриеме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квитанция о приеме</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="737bdde4-3411-4d99-a948-c5bf69bc26a4">
+    <name>УведомлениеОбУточнении505</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление об уточнении505</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="26707a23-1806-4b17-83e5-84eebad77230">
+    <name>ИзвещениеОВводе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Извещение о вводе</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="07e0075f-d550-4a9a-92b0-2a4a759a07bc">
+    <name>НастройкиГрупповойПечати534</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6c51f2ee-ace2-4af5-97b4-fa6e875eaed6">
+    <name>ПредупреждениеПриПереходеНа534</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предупреждение при переходе на534</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="64221dfc-7169-4d67-b9d0-bed6b324e6f6">
+    <name>ФормаВыбораРСВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора РСВ</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7a27c407-6492-4fdb-9a19-ca0f25be9df0">
+    <name>УведомлениеОбОтказеОбращениеЗапрос</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление об отказе в приеме обращения НП</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d7b1a77e-c71c-4b13-952b-2ff1f1f514f4">
+    <name>ПодтверждениеДатыПолучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение даты получения</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="23953b79-41da-4122-9db5-2f834abf7a76">
+    <name>КвитанцияОПриемеЗаявление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квитанция о приеме заявление</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1ebab53a-34f9-41c1-ba74-aa437d4077a8">
+    <name>Справочник_ОрганыФСГС_ФормаЭлемента</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dfff6549-86c4-4c27-83d1-1c256cbd51fa">
+    <name>Справочник_ОрганыФСГС_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dc33bb82-1cbb-4e16-b188-2847797caa48">
+    <name>СообщениеОПроверке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение о проверке</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9daddb39-ace9-440e-93a7-3dd50db4af51">
+    <name>КвитанцияОПриемеЗапрос</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="372ea6f7-be62-404f-87c5-9594c02ce95b">
+    <name>СообщениеОбОтзывеЗаявления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение об отзыве заявления</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3b7b1bd1-b0ef-47b9-abf0-1e69600f88c1">
+    <name>СообщениеОНесоответствиях</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение о несоответствиях</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1e616238-bf75-47ef-9ddd-b4bdcc8b7966">
+    <name>Справочник_ДокументыРеализацииПолномочийНалоговыхОрганов_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник документы реализации полномочий налоговых органов форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f438e5c6-f6db-47f9-95a3-8e1a7922ab3e">
+    <name>Справочник_ДокументыРеализацииПолномочийНалоговыхОрганов_ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник документы реализации полномочий налоговых органов форма элемента</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d6e345c6-d8b4-4ad1-b68b-f8b48d112aa7">
+    <name>УведомлениеОбОтказеДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление об отказе</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e70e88cc-ea05-4f51-bb62-a44193f439bb">
+    <name>КвитанцияОПриемеДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квитанция о приеме документ</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="68b05a8d-469a-4b0d-b371-f02605cdeb77">
+    <name>Документ_ЗаявлениеАбонентаСпецоператораСвязи_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ заявление абонента спецоператора связи форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3fe3863c-18af-4df7-82aa-a434cd4b1a89">
+    <name>Документ_ЗаявлениеАбонентаСпецоператораСвязи_ФормаМастера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ заявление абонента спецоператора связи форма мастера</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f491da6b-aff4-439e-8f04-2653e4abb23a">
+    <name>Документ_ЗаявлениеАбонентаСпецоператораСвязи_ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ заявление абонента спецоператора связи форма документа</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a6776d7d-b8b1-4b65-a2f4-b0b8e942466e">
+    <name>ФормаУстановкиПравДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма установки прав доступа</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ee9a6dfa-d154-46f8-8668-2bf8bea48a46">
+    <name>ФормаВводаНаправлений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ввода направлений</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1c994211-5452-4429-91e0-a973a43c02f2">
+    <name>ФормаОтображенияИнструкцииHTML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отображения инструкции HTML</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ac4fa5b0-67c8-420a-9f4d-0007c2f077fa">
+    <name>РегистрСведений_ФайлыСведенийСпецоператоры_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистр сведений файлы сведений спецоператоры форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8d962cb2-9165-47c8-b921-34b2fb49d53a">
+    <name>ФормаПечатьПакетаДокументовДляПодключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма печать пакета документов для подключения</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="325f8287-304c-447e-b8f4-5b547a5f34f1">
+    <name>ФормаУниверсальнаяАвтонастройкаУчетнойЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма универсальная автонастройка учетной записи</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="89335d0b-977d-4149-879b-cffb73298465">
+    <name>ФормаИзмененияФИО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма изменения ФИО</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b2233d09-193e-4205-ab82-1d1a1785b38c">
+    <name>Справочник_ВидыОтправляемыхДокументов_ФормаСписка</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="79afddda-025f-4bb9-856f-4219786d6ef3">
+    <name>Справочник_ВидыОтправляемыхДокументов_ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник виды отправляемых документов форма элемента</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5be33e71-c131-476a-b297-50afea72edb7">
+    <name>ОшибкаЗагрузкиКомпоненты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка загрузки компоненты</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="989a3356-7209-4664-ab43-119202c88a48">
+    <name>Справочник_СканированныеДокументыДляПередачиВЭлектронномВиде_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник сканированные документы для передачи в электронном виде форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="39db53da-f926-4b6e-af14-5f891ef89b43">
+    <name>Справочник_СканированныеДокументыДляПередачиВЭлектронномВиде_ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник сканированные документы для передачи в электронном виде форма элемента</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c0ce9636-1031-40ae-826a-5b4898d06f5f">
+    <name>РегистрСведений_ФайлыДокументовРеализацииПолномочийНалоговыхОрганов_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистр сведений файлы документов реализации полномочий налоговых органов форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e50b3e15-96f0-4f84-a6ed-177a8f2eaee7">
+    <name>Справочник_ОписиИсходящихДокументовВНалоговыеОрганы_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник описи исходящих документов в налоговые органы форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ecf089d3-393c-4b01-8e1a-867955dce949">
+    <name>Справочник_ОписиИсходящихДокументовВНалоговыеОрганы_ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник описи исходящих документов в налоговые органы форма элемента</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7f022443-ffad-4297-8972-ed635670b0bc">
+    <name>Справочник_ОписиВходящихДокументовИзНалоговыхОрганов_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник описи входящих документов из налоговых органов форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c0a4b4f6-7f43-4599-b852-94f1636b9e22">
+    <name>Справочник_ОписиВходящихДокументовИзНалоговыхОрганов_ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник описи входящих документов из налоговых органов форма элемента</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8202b06c-98a0-4aee-beeb-f920d81257f4">
+    <name>ФормаУчастникаСделки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма участника сделки</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2ff8cf67-8de4-47e5-a568-8305e91081ad">
+    <name>ФормаГруппыПредставляемыхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы представляемых документов</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="78f73563-9929-4fed-bded-bf873b0de717">
+    <name>ФормаВыбораТребования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор требования</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9be91160-9cc1-47aa-b1f3-96a33102f5ee">
+    <name>Документ_ЗапросНаИнформационноеОбслуживаниеСтрахователя_ФормаДокумента</name>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bfb1070a-f352-4014-bd2b-6d8c97e312ae">
+    <name>Документ_ЗапросНаИнформационноеОбслуживаниеСтрахователя_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ запрос на информационное обслуживание страхователя форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e3a4b288-dd41-44f9-8550-78785581d8ee">
+    <name>СверкаФИОиСНИЛС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сверка ФИО-СНИЛС</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="70b41e57-e3c4-452a-8fe7-31add4998d72">
+    <name>ПросмотрОтветаНаЗапросИОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр ответа на запрос ИОС</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c29a72d1-e126-4611-9ee7-d63901609057">
+    <name>ПросмотрПодтвержденияПолученияЗапросаПФР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр подтверждения получения запроса (ПФР)</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6e8af414-6e51-41bc-97c4-687cdbcd9c1e">
+    <name>СправкаОСостоянииРасчетовИОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о состоянии расчетов (ПФР)</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="96210cb0-561d-49a6-a32d-15e2cb94cb22">
+    <name>Документ_ЗапросНаВыпискуИзЕГРЮЛ_ЕГРИП_ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос на выписку из ЕГРЮЛ ЕГРИП</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0438eabd-5317-44a0-9d76-2fd090e12766">
+    <name>Документ_ЗапросНаВыпискуИзЕГРЮЛ_ЕГРИП_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос на выписку из ЕГРЮЛ ЕГРИП</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2b89e98a-b3bd-4a24-a5ee-bfac4284483b">
+    <name>Справочник_ОтправкиФСРАР_ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник отправки ФСРАР форма элемента</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="243df7f7-b14b-4693-a15a-0a4598ebf81c">
+    <name>Справочник_ОтправкиФСРАР_ФормаАвтозапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник отправки ФСРАР форма автозапроса</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8b9ae027-5fd0-4101-ada4-d213e6b876c4">
+    <name>СообщениеОПроставленииОтметки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение о проставлении отметки</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="95e6a103-ed33-44dc-95d7-64568068f703">
+    <name>УведомлениеОбОтказеОтметки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление об отказе в проставлении отметки</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="94f0625a-3cc8-4cbd-8d9f-1853979d7d33">
+    <name>Справочник_ОтправкиФСРАР_ФормаСпискаПоОтчету</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник отправки ФСРАР форма списка по отчету</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b2772340-db53-4e3f-bc89-91bf4f41e065">
+    <name>Справочник_ОтправкиФСРАР_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник отправки ФСРАР форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2e6fabee-095b-42cf-9be3-6aada9f1aeb5">
+    <name>ОтправкаВручнуюВФСРАР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправка вручную в ФСРАР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0a173efe-96b1-411a-9f6e-79eb91c35c8f">
+    <name>ВыборРегионаФСРАР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор региона ФСРАР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="54ebdc9d-634f-44c1-823e-e18a1b05b203">
+    <name>ВводПароляФСРАР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ввод пароля ФСРАР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9ae7031e-d60c-4c82-8f88-80abafeb5855">
+    <name>РегистрСведений_НастройкиОбменаФСРАР_ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки документооборота с ФСРАР</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="05b6028f-0fff-463b-8a1f-116e6480225f">
+    <name>ВыборСертификатаИзСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор сертификата</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7b493154-140c-4d49-8290-df48d8fe000d">
+    <name>РегистрСведений_НастройкиОбменаФСРАР_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистр сведений настройки обмена ФСРАР форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c111a89d-d5cc-414b-9236-51c1ac3710d2">
+    <name>ПараметрыФормированияПакетаФСРАР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры формирования пакета Росалкогольрегулирования</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="124acf4a-75a1-4d4d-87df-113110aa5773">
+    <name>ПараметрыФормированияПакетаФСС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры формирования пакета ФСС</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9b7046c6-9ec0-4a8a-bd42-c0e844a8a5b5">
+    <name>ДлительнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительная операция</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7c9f6218-9c6d-454e-9523-276496452cf1">
+    <name>ПредупреждениеОбОтправкеПерсональныхДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предупреждение о возможной отправке конфиденциальных данных сотрудников</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8c734b29-cf5d-4a4b-8167-ca2bb0c685b9">
+    <name>Справочник_ОтправкиФСС_ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник отправки ФСС форма элемента</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="aae67347-bf0c-4348-af58-7a6a14844ead">
+    <name>Справочник_ОтправкиФСС_ФормаАвтозапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник отправки ФСС форма автозапроса</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f2397a32-b2af-42f6-a56e-c6cb4a41f3a5">
+    <name>Справочник_ОтправкиФСС_ФормаСпискаПоОтчету</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник отправки ФСС форма списка по отчету</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0c956446-1dfc-4893-aec3-064e950da478">
+    <name>Справочник_ОтправкиФСС_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник отправки ФСС форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d038293b-3284-405f-ab49-da9d3ded187c">
+    <name>РегистрСведений_НастройкиОбменаФСС_ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка документооборота с ФСС</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="91319ba3-d93a-4285-a902-17995c3bf6e2">
+    <name>РегистрСведений_НастройкиОбменаФСС_ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистр сведений настройки обмена ФСС форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="549b9477-bd7a-49c6-9c55-9abd644d43ec">
+    <name>ПредупреждениеОбИстеченииСертификатов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предупреждение об истечении сертификатов</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="51716753-d4d1-43c4-9d3e-a42fe8b1bfcb">
+    <name>ФормаЗагрузкаДокументовИзФайлаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка электронных документов из файла обмена</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5876f8ed-10be-4d6e-8e14-fb3b17ee35f0">
+    <name>ФормаЗагруженногоИз1СТакскомДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загруженный документ из 1С-Такском</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2c1c8892-a228-4cec-ba5a-7dbb5a7695ca">
+    <name>ПредупреждениеОБольшомРазмереФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предупреждение о большом размере файла</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6325b33b-2a9b-4ec4-be59-bf0d4d9e5b9a">
+    <name>РезультатУспешнойОнлайнПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат успешной онлайн проверки</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="23a64ea8-637e-4ccc-ad45-f676f6aefc6b">
+    <name>КомпонентаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>012</value>
+    </synonym>
+    <comment>Компонента обмена</comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="c929ad6a-36e9-47c7-9f1d-ba49dbb2701c">
+    <name>СертификатБезопасностиРОКИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификат безопасности РОКИ</value>
+    </synonym>
+    <comment>Отпечаток: 739183ca056478d52c030f2aacacfce212b533de</comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="f2bbe77c-64f8-44bd-b480-6f999319c186">
+    <name>ПодтверждениеОтправкиОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение отправки файла отчетности</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="4668e86d-1be6-485e-9e17-02fd4ee2958f">
+    <name>ПротоколВходногоКонтроляОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Протокол входного контроля отчетности</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="36418628-1060-48e6-a51b-15b128c7e07a">
+    <name>ПереподписанноеПодтверждениеОтправкиОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переподписанное налогоплательщиком подтверждение отправки отчетности</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="1f21dd2c-bf4d-42b5-9d5e-8a1412fef318">
+    <name>КвитанцияОПриемеФайлаОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квитанция о приеме файла отчетности налоговым органом</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="e0b076b3-5d9d-4b7c-a681-95aaa4f76272">
+    <name>ПереподписанныйПротоколВходногоКонтроляОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переподписанный протокол входного контроля отчетности</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="f4b3645f-398c-46f7-b165-e9e58fdc9918">
+    <name>ПодтверждениеНаНеформализованныйДокументНО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение на неформализованный документ НО</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="7e275432-c851-484a-8706-9178de1306a5">
+    <name>ПодтверждениеОтправкиНеформализованногоДокументаНалогоплательщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение отправки неформализованного документа налогоплательщика</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="224725d6-4f7b-4d17-83df-b9742c7d4d16">
+    <name>ПереподписанноеПодтверждениеОтправкиНеформализованногоДокументаНалогоплательщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переподписанное подтверждение отправки неформализованного документа налогоплательщика</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="02f0dbd6-4bb9-4fdb-9c02-116da924943f">
+    <name>ПодтверждениеДоставкиНеформализованногоДокументаНалогоплательщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение доставки неформализованного документа в НО</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="ef1dc25a-ecf3-4b33-a07e-5bc66b0c3bd0">
+    <name>ПодтверждениеОтправкиЗапросаИОН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение отправки запроса ИОН</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="9c26a1c9-d448-4ce9-87fb-e37d42a9ba28">
+    <name>ПротоколВходногоКонтроляЗапросаИОН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Протокол проверки запроса</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="8a504913-b5af-4871-b5a0-808364f015e0">
+    <name>ПереподписанноеПодтверждениеОтправкиЗапросаИОН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переподписанное подтверждение отправки запроса ИОН</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="58728ced-8c62-4faa-9896-2f63afd557c4">
+    <name>КвитанцияОПриемеЗапросаИОН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квитанция о приеме запроса налоговым органом</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="1e61d182-4209-4160-9c89-c1b5ee65f54f">
+    <name>ПереподписанныйПротоколВходногоКонтроляЗапросаИОН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Протокол входного контроля запроса от налогоплательщика</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="a7ef6fb6-7bfd-4f97-a913-800b52ee1a55">
+    <name>ПереподписанныйОтветНаЗапросИОН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переподписанный ответ на запрос ИОН</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="3a7e07a3-5e99-4560-9a04-b97e24899939">
+    <name>КодыОшибокУведомленияОбУточнении</name>
+  </templates>
+  <templates uuid="1957cf66-1926-4255-8e22-392ed764642d">
+    <name>БланкПечатиДИВ</name>
+  </templates>
+  <templates uuid="9ef4c3c0-1818-403b-ab12-742460312c3d">
+    <name>БланкПечатиОтчетаОСостоянииФНС</name>
+  </templates>
+  <templates uuid="a5fe040a-e397-4495-a0d2-0bf28147fc62">
+    <name>БланкПечатиОтчетаОСостоянииФСГС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бланк печати отчета о состоянии ФСГС</value>
+    </synonym>
+  </templates>
+  <templates uuid="dcbf5d38-9ccb-4dc1-9fe8-b87eaab37c93">
+    <name>ОписаниеФормДляИмпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание форм для импорта</value>
+    </synonym>
+  </templates>
+  <templates uuid="ac912e7e-7e4f-4103-a773-be79463dc57a">
+    <name>КБК</name>
+    <synonym>
+      <key>ru</key>
+      <value>КБК</value>
+    </synonym>
+  </templates>
+  <templates uuid="868ee143-dfd7-412d-bf60-61359c09beb5">
+    <name>Регионы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регионы</value>
+    </synonym>
+  </templates>
+  <templates uuid="31662df5-e9d8-4fcc-a003-a9071f8bef8f">
+    <name>ПодтверждениеВыходаВИнтернетДляЦелейОбновленияМодуля</name>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="aac8226c-5fa8-4287-a5d7-454847be6f47">
+    <name>БланкПечатиОтчетаОСостоянииПФР</name>
+  </templates>
+  <templates uuid="1d298f89-2e60-4e2d-a914-1e2ddb225e62">
+    <name>БланкПечатиОтчетаОСостоянииФНС534</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бланк печати отчета о состоянии ФНС534</value>
+    </synonym>
+  </templates>
+  <templates uuid="8df313ec-f60d-4aae-bab3-89b745029d5e">
+    <name>ПодтверждениеДатыОтправкиОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение даты отправки отчетности</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="31987122-3db8-472c-880a-57f0ec4b8677">
+    <name>ИзвещениеОПолученииПодтвержденияДатыОтправкиОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Извещение о получении подтверждения даты отправки отчетности</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="83cd0081-7767-44c1-bfe9-550017119257">
+    <name>ИзвещениеОПолученииОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Извещение о получении отчетности</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="b8fb97d5-0f54-46f7-8ee2-2e043db4e132">
+    <name>РезультатПриемаОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат приема отчетности</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="08864c01-2ca7-4813-b4a1-5c124426afa8">
+    <name>ИзвещениеОПолученииРезультатаПриемаОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Извещение о получении результата приема отчетности</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="51afa01d-0a52-4b77-a466-34fe47f48a28">
+    <name>РезультатОбработкиОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат обработки отчетности</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="5737c269-c0ba-4949-9d72-f8348ecf9407">
+    <name>ПредупреждениеПриПереходеНа693</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предупреждение при переходе на693</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="cb55b429-c602-41ea-a7ea-46621e9cf8b7">
+    <name>ПодтверждениеДатыОтправки2НДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение даты отправки 2-НДФЛ</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="80db7cd2-1583-4494-8b72-e23557077c27">
+    <name>ИзвещениеОПолучении2НДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Извещение о получении 2-НДФЛ</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="10da95a4-feed-46f9-8c94-68910881245f">
+    <name>РезультатПриема2НДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат приема формы 2-НДФЛ</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="6a078a5c-bc21-4b55-98f3-465e2c9c1e95">
+    <name>ПечатьЗаявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать заявка</value>
+    </synonym>
+  </templates>
+  <templates uuid="d65a7f2a-51c6-403d-8eb0-4fa7286a3e58">
+    <name>ПечатьСоглашение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать соглашение</value>
+    </synonym>
+  </templates>
+  <templates uuid="eeb33420-82f5-4573-bc19-961c657dc190">
+    <name>ПечатьСоглашениеHTML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать соглашение HTML</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="0d088f1a-d1ab-42be-8381-253a928078b4">
+    <name>ПечатьЛицензия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать лицензия</value>
+    </synonym>
+  </templates>
+  <templates uuid="2789b17f-3c79-4d7f-bfc1-fe20644ced91">
+    <name>ПечатьСертификат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать сертификат</value>
+    </synonym>
+  </templates>
+  <templates uuid="e201c525-9912-4db0-abde-ad19cda67154">
+    <name>КодыРегионов353приказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коды регионов353приказ</value>
+    </synonym>
+    <comment>Коды регионов для полей сертификата из  N ММ-7-6/353@ от 2 июля 2009 г</comment>
+  </templates>
+  <templates uuid="01620800-5c0b-4474-a617-2940ee5701c9">
+    <name>ПараметрыСпецоператоровСвязи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры спецоператоров связи</value>
+    </synonym>
+  </templates>
+  <templates uuid="276aa2da-6860-4bcb-ba9a-67056259528d">
+    <name>ИнструкцияVipNetCSPСозданиеКонтейнера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструкция создания контейнера VipNet CSP</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="955789e7-03dd-462d-8b84-4664074eed8a">
+    <name>ИнструкцияКриптоПроСозданиеКонтейнера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструкция создания контейнера КриптоПро CSP</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="2b74456e-2795-4c85-b3cf-94564e692cde">
+    <name>ВидыИКодыДокументовФизическихЛиц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виды и коды документов физических лиц</value>
+    </synonym>
+  </templates>
+  <templates uuid="58c8c16c-7f22-4988-be91-177c33069f4b">
+    <name>ПустыеДвоичныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пустые двоичные данные</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="91b469a1-f51c-4bf3-828d-9466c78815b0">
+    <name>ОписаниеФормДляИмпортаФСГС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание форм для импорта отчетов статистики</value>
+    </synonym>
+  </templates>
+  <templates uuid="14e42eb3-7f0b-428b-9432-a33a84654b25">
+    <name>ПредупреждениеПриОшибкеВыгрузкиФайлаКомпоненты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предупреждение при ошибке выгрузки файла компоненты</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="ff602b8f-d97c-4365-aba2-ea0a3e82b72f">
+    <name>ПредупреждениеПриОшибкеЗагрузкиКомпоненты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предупреждение при ошибке загрузки компоненты</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="b425003f-920a-4d35-bbb2-224f79728a51">
+    <name>ПодтверждениеДатыОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение даты отправки</value>
+    </synonym>
+  </templates>
+  <templates uuid="c16f2af3-516d-49a8-b42d-7f3ea1e81574">
+    <name>КвитанцияОПриемеДекларации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квитанция о приеме декларации</value>
+    </synonym>
+  </templates>
+  <templates uuid="28bb478e-3ccc-4c77-b5ae-f22273498d38">
+    <name>УведомлениеОбОтказе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление об отказе</value>
+    </synonym>
+  </templates>
+  <templates uuid="8c139bec-dcf3-4cce-873f-14016e160c34">
+    <name>ИзвещениеОВводе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Извещение о вводе</value>
+    </synonym>
+  </templates>
+  <templates uuid="87186e11-a50d-45d5-9223-12df85815a77">
+    <name>УведомлениеОбУточнении</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление об уточнении</value>
+    </synonym>
+  </templates>
+  <templates uuid="ad501ba9-7166-4345-9094-175bddbd89fa">
+    <name>КодыНалоговыхПериодов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коды налоговых периодов</value>
+    </synonym>
+  </templates>
+  <templates uuid="3fe8bd5c-402d-4f81-9c9a-9b9d91bbc236">
+    <name>ПФРПодтверждениеОПолучении</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФР Подтверждение о получении</value>
+    </synonym>
+  </templates>
+  <templates uuid="0a9321c0-8a7d-407a-be1b-2e62caf91098">
+    <name>ПФРКвитанция</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФР Подтверждение о получении</value>
+    </synonym>
+  </templates>
+  <templates uuid="23fed940-6021-438b-bfbb-b12ed4409831">
+    <name>ПФРПротокол</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФР Протокол</value>
+    </synonym>
+  </templates>
+  <templates uuid="221b6a16-9956-4438-b2c2-35fc6bddb4b1">
+    <name>ФСГСПодтверждениеДатыОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФСГСПодтверждение даты отправки</value>
+    </synonym>
+  </templates>
+  <templates uuid="019ef627-1544-453c-86f9-504250614273">
+    <name>ФСГСПротокол</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФСГСПротокол</value>
+    </synonym>
+  </templates>
+  <templates uuid="ceda2c56-cec2-49dc-82a7-c559cc4d47ea">
+    <name>ФСРАРШаблонДляHTML</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФСРАР шаблон для HTML</value>
+    </synonym>
+  </templates>
+  <templates uuid="927adba6-ef0a-4788-8d61-842126466610">
+    <name>ФСРАРПорталыРегионов</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФСРАР порталы регионов</value>
+    </synonym>
+  </templates>
+  <templates uuid="e7b7a1af-6cf4-4436-a019-81e9701444d7">
+    <name>ФСРАРОтправкаВручную</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФСРАР отправка вручную</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="d4c040af-36e6-4e92-90b1-e2d549ed4fa0">
+    <name>ФССШаблонДляHTML</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФСС шаблон для HTML</value>
+    </synonym>
+  </templates>
+  <templates uuid="52bc7e39-259b-44c3-8df3-a47ec26542fc">
+    <name>ПредупреждениеОбИстеченииСпискаСертификатов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предупреждение об истечении списка сертификатов</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="f43ccb6f-33af-46b8-897b-107244537110">
+    <name>СправкаОСостоянииРасчетовИОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о состоянии расчетов</value>
+    </synonym>
+  </templates>
+  <templates uuid="6d0e13e3-3a6a-4bb3-b349-417709b3cde8">
+    <name>СверкаФИОиСНИЛС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сверка ФИО и СНИЛС</value>
+    </synonym>
+  </templates>
+  <templates uuid="12a38296-f211-4594-ac2d-15a2a4e66f67">
+    <name>БланкПечатиТекста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бланк печати текста</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb4b4438-cb7a-43f4-b503-ceafbd609a83">
+  <name>Лео_ПланПроизводстваОборудование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лео план производства оборудование</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ОтчетПроизводстваЗаСмену</types>
+    <types>DocumentObject.ПланПроизводства</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.абс_Дистрибуция.Лео_ПланПроизводстваОборудованиеОбработкаПроведения</handler>
+</mdclass:EventSubscription>

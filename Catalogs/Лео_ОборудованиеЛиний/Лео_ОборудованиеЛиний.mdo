@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a55c46e4-4fe7-42c7-8b96-a778a2029022">
+  <producedTypes>
+    <objectType typeId="91216dea-8ab2-4b46-a256-f37b0962916c" valueTypeId="80c3b352-72b3-453c-b425-45577c2f975c"/>
+    <refType typeId="6d2b97b9-c64d-471a-b28a-3c69ff449279" valueTypeId="c7876511-ebe2-45d2-bffc-58024342b87d"/>
+    <selectionType typeId="717c6169-2f31-44a2-b4df-cc33ecb87239" valueTypeId="f7425203-1230-44db-b618-c75f298e2bd6"/>
+    <listType typeId="ed164f19-9b6d-4ebd-962c-4b8c0bf29045" valueTypeId="8f338a13-00ea-41c8-82cd-29d0c74f564d"/>
+    <managerType typeId="e2135062-00ce-4b83-9ced-75b2c99cd482" valueTypeId="99b1d795-f850-407c-b1de-3f08789974d5"/>
+  </producedTypes>
+  <name>Лео_ОборудованиеЛиний</name>
+  <synonym>
+    <key>ru</key>
+    <value>оборудование линий</value>
+  </synonym>
+  <inputByString>Catalog.Лео_ОборудованиеЛиний.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Лео_ОборудованиеЛиний.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Лео_оборудование</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="b210b7e1-0f70-4adc-8f9f-69b9908d0f62">
+    <name>ИнвНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инв номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9107df74-5651-421c-ae21-8a0231290d8f">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

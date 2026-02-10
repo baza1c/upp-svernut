@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed32e8b5-e1c1-4fee-afa9-0143536408fb">
+  <name>абс_ПередЗаписьюДокументаСогласования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Абс перед записью документа согласования</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПланПродаж</types>
+    <types>DocumentObject.ЗаявкаНаРасходованиеСредств</types>
+    <types>DocumentObject.абс_ВводБюджета</types>
+    <types>DocumentObject.абс_СтратегическиеЦелиПродаж</types>
+    <types>DocumentObject.абс_ЗаявкаНаБюджетОтделаТМ</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.абс_СогласованиеДокументов.абс_ПередЗаписьюДокументаСогласованияПередЗаписью</handler>
+</mdclass:EventSubscription>

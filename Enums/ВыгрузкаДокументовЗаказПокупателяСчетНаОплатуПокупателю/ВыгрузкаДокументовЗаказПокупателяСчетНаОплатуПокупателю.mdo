@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de6be0a8-47c1-4caf-a526-3d5f095f6f8d">
+  <producedTypes>
+    <refType typeId="4c7668f7-7dc7-431e-b24a-62b3a5a1c74a" valueTypeId="bf64960e-2bd4-4331-a18a-67a7434e8977"/>
+    <listType typeId="f9c90dad-7226-413f-bfc0-a2324dea6f0a" valueTypeId="94c5282d-d1f5-4b18-9249-0e14ef7a7f78"/>
+    <managerType typeId="9acd41cf-eabb-4519-a991-4a51a78df19d" valueTypeId="be464add-0cf6-436a-bef6-09a694135a8d"/>
+  </producedTypes>
+  <name>ВыгрузкаДокументовЗаказПокупателяСчетНаОплатуПокупателю</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка документов заказ покупателя счет на оплату покупателю</value>
+  </synonym>
+  <comment>Выгрузка документов заказ покупателя счет на оплату покупателю</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e3d8bb4f-2f54-41bf-b194-b7e5fa0ac5fe">
+    <name>НеВыгружать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не выгружать</value>
+    </synonym>
+    <comment>Документы &quot;Заказ покупателя&quot;, &quot;Счет на оплату покупателю&quot; не выгружаются</comment>
+  </enumValues>
+  <enumValues uuid="c4e227b6-4cc3-46cb-8dc8-f632380eb106">
+    <name>ЗаказПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </synonym>
+    <comment>Выгружается документ &quot;Заказ покупателя&quot;</comment>
+  </enumValues>
+  <enumValues uuid="32236446-e524-4a11-ba4d-980b87f9ea21">
+    <name>СчетНаОплатуПокупателю</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет на оплату покупателю</value>
+    </synonym>
+    <comment>Выгружается документ &quot;Счет на оплату покупателю&quot;</comment>
+  </enumValues>
+</mdclass:Enum>

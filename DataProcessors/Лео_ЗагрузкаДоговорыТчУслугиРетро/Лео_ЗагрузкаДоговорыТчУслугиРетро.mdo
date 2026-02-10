@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="09ab9082-cef3-40bd-ae5b-3a7e984b4ebc">
+  <producedTypes>
+    <objectType typeId="ef0563ed-1864-4d1f-ad98-decb63375e1e" valueTypeId="7b7808b5-9145-4ba6-9a59-97d5601d1582"/>
+    <managerType typeId="39de3229-a33b-4f21-ac2a-36c462c325f2" valueTypeId="477642ab-cb6a-438a-98ac-1b1ea88cc7d7"/>
+  </producedTypes>
+  <name>Лео_ЗагрузкаДоговорыТчУслугиРетро</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка условий Ретро бонусов в договоры контрагентов</value>
+  </synonym>
+  <defaultForm>DataProcessor.Лео_ЗагрузкаДоговорыТчУслугиРетро.Form.Форма</defaultForm>
+  <attributes uuid="9b9ce325-b243-4ed8-8c37-22a55c9813a7">
+    <name>ИмяФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2f3741ba-20c3-47b5-9f35-6f9250eaf779">
+    <name>ФильтрРасширенияФайлов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтр расширения файлов</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5af63b9e-d7de-4a9f-93b3-ebe3535c632d">
+    <name>РасширениеФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширение файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1c134469-2d70-4192-86c7-e5bf2fbdcc84">
+    <name>ID</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="7b063d38-97fb-4085-bb29-94390d3cdfe0">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>ТочкиДоставкиОбновить</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">КодСети</left>
+				<comparisonType>Filled</comparisonType>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="xs:string">Центрируем "Обновить"</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТочкиДоставкиGLN</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТочкиДоставки.ЭтоРегион</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:HorizontalAlign">Justify</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="xs:string">Выравниваем GLN по правому краю</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТочкиДоставкиАдресТочкиДоставкиНовый</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТочкиДоставки.ЭтоРегион</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:HorizontalAlign">Right</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="xs:string">Выравниваем прогноз действий по правому краю</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТочкиДоставкиРегион</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиGLN</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиДанныеТС</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиНаименованиеТС</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиАдресТочкиДоставкиТС</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиОбновить</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиНовыеДанные</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиНаименованиеНовое</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиАдресТочкиДоставкиНовый</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТочкиДоставки.ЭтоРегион</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:AliceBlue</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="xs:string">Окрашиваем строки регионов синим цветом</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТочкиДоставкиРегион</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТочкиДоставки.ЭтоРегион</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="xs:string">Не показываем регион для точек доставки</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТочкиДоставкиРегион</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиGLN</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиДанныеТС</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиНаименованиеТС</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиАдресТочкиДоставкиТС</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиНовыеДанные</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиНаименованиеНовое</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиАдресТочкиДоставкиНовый</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">КодСети</left>
+				<comparisonType>Filled</comparisonType>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="xs:string">Только просмотр для всех полей, кроме "Обновить"</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТочкиДоставкиНаименованиеНовое</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиАдресТочкиДоставкиНовый</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ТочкиДоставки.ЭтоРегион</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="xs:string">Отменяем только просмотр для новых Наименования и Адреса точек доставки</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТочкиДоставкиНаименованиеНовое</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.ЭтоРегион</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.Обновить</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.НаименованиеНовое</left>
+					<comparisonType>NotEqual</comparisonType>
+					<right xsi:type="dcscor:Field">ТочкиДоставки.НаименованиеТС</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="xs:string">Выделяем жирным новое наименование т.д. если обновить и данные обновления не совпадают с данными сети</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТочкиДоставкиАдресТочкиДоставкиНовый</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.ЭтоРегион</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.Обновить</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.АдресТочкиДоставкиНовый</left>
+					<comparisonType>NotEqual</comparisonType>
+					<right xsi:type="dcscor:Field">ТочкиДоставки.АдресТочкиДоставкиТС</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="xs:string">Выделяем жирным новый адрес т.д. если обновить и данные обновления не совпадают с данными сети</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТочкиДоставкиНаименованиеНовое</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.ЭтоРегион</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.Обновить</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.НаименованиеТекущее</left>
+					<comparisonType>NotEqual</comparisonType>
+					<right xsi:type="dcscor:Field">ТочкиДоставки.НаименованиеНовое</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="xs:string">Выделяем жирным новое наименование т.д. если не обновлять и текущие данные не совпадают с новыми данными</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТочкиДоставкиАдресТочкиДоставкиНовый</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.ЭтоРегион</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.Обновить</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.АдресТочкиДоставкиТекущий</left>
+					<comparisonType>NotEqual</comparisonType>
+					<right xsi:type="dcscor:Field">ТочкиДоставки.АдресТочкиДоставкиНовый</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="xs:string">Выделяем жирным новый адрес т.д. если не обновлять и текущие данные не совпадают с новыми данными</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТочкиДоставкиАдресТочкиДоставкиНовый</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиНаименованиеНовое</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.ЭтоРегион</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.НоваяТД</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:MediumGreen</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="xs:string">Выделяем зеленым т.д., если она новая</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТочкиДоставкиАдресТочкиДоставкиНовый</field>
+			</item>
+			<item>
+				<field>ТочкиДоставкиНаименованиеНовое</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.ЭтоРегион</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ТочкиДоставки.ИзмениласьТД</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LemonChiffon</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="xs:string">Выделяем желтым т.д., если она изменившаяся</presentation>
+	</item>
+</ConditionalAppearance>

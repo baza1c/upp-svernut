@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="48066328-75b5-45b4-b03d-7d9d864bcc16">
+  <producedTypes>
+    <objectType typeId="0b2358c1-62d4-42da-b2e8-f5150c094717" valueTypeId="1871906b-9c97-4b2b-a1a4-f572e0003e9d"/>
+    <managerType typeId="9b4d394d-9773-47d5-b23b-cfd12d39962b" valueTypeId="593ece6a-47dd-4417-9e07-150638fb5234"/>
+  </producedTypes>
+  <name>ВыгрузкаДокументовВБюджетирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка документов в бюджетирование</value>
+  </synonym>
+  <defaultForm>DataProcessor.ВыгрузкаДокументовВБюджетирование.Form.ФормаУпр</defaultForm>
+  <attributes uuid="296425a7-3444-4386-b0f3-7bbbf54b2427">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="aed79f26-97f6-40d8-b84a-813107d5bcfd">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cd2f99a8-0289-411f-9331-d89c24fd46ec">
+    <name>ПутьКФайлу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к файлу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3de1b2d4-da12-495d-a3d3-3242487cd410">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="940fc54f-747f-4e51-8ab1-b659f6e9e313">
+    <name>ФормаУпр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма упр</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="46426fb0-6b9b-4f7d-a116-c84bd40bfea3">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="832a1ea2-a432-4522-b6b4-d0b33cce8671">
+  <name>Лео_ПередЗаписьюДокументыОплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лео перед записью документы оплаты</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПлатежноеПоручениеВходящее</types>
+    <types>DocumentObject.ПриходныйКассовыйОрдер</types>
+    <types>DocumentObject.ОплатаОтПокупателяПлатежнойКартой</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.абс_Дистрибуция.Лео_ПередЗаписьюДокументыОплаты</handler>
+</mdclass:EventSubscription>

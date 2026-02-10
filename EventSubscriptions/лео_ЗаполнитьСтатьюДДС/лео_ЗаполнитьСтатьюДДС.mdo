@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ccd1384b-9b53-485a-9f4f-6b57d7cfac14">
+  <name>лео_ЗаполнитьСтатьюДДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лео заполнить статью ДДС</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПлатежноеПоручениеИсходящее</types>
+  </source>
+  <event>Filling</event>
+  <handler>CommonModule.лео_ЗаполнениеРеквизитовДокументов.ЗаполнитьСтатьюДДСОбработкаЗаполнения</handler>
+</mdclass:EventSubscription>

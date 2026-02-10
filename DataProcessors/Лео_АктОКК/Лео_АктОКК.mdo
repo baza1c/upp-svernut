@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1d6a35f-b909-46c9-a788-05b5fbeb294c">
+  <producedTypes>
+    <objectType typeId="035e8707-d0be-48a0-ae8d-8b3f5039ab73" valueTypeId="554984ea-50e1-4d87-b400-fdf3866176a3"/>
+    <managerType typeId="c401d3b1-789a-4f49-9ff3-9ef2f5d2e3bd" valueTypeId="88babdf6-3289-409b-8077-4647c02bed0e"/>
+  </producedTypes>
+  <name>Лео_АктОКК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акт ОКК</value>
+  </synonym>
+  <defaultForm>DataProcessor.Лео_АктОКК.Form.Форма</defaultForm>
+  <attributes uuid="e2fc1afc-4827-451b-a94d-592f55d122f6">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="545ba3c7-1530-4e8f-944d-8e9aa8d945b9">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2a767637-255d-40bd-9e5c-9ee38b648df0">
+    <name>ОтвественныйОКК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отвественный ОКК</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="b35242ca-4464-4e2b-9233-3d5f29bae929">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="06fc5768-619d-444f-b215-6e27a9730cec">
+    <name>АктОКК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт ОКК</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

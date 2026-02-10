@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5695066b-cf67-4a96-ac49-4d2d2db506a1">
+  <name>Лео_ПоступлениеОтменаПроведения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лео поступление отмена проведения</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПоступлениеТоваровУслуг</types>
+  </source>
+  <event>UndoPosting</event>
+  <handler>CommonModule.абс_Дистрибуция.Лео_ПоступлениеОтменаПроведенияОбработкаУдаленияПроведения</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="40c914c3-497a-4291-bd6b-9a4079b201e7">
+  <producedTypes>
+    <objectType typeId="cccc4b24-9376-4a35-a871-e048ad941aa5" valueTypeId="415ce671-bd46-427c-b6bb-6a9b96f1cbbd"/>
+    <managerType typeId="bd74798c-c017-4dbb-bf28-67d6d9e91a08" valueTypeId="3d8ff797-d9d3-44a0-a31d-cf4e1835b915"/>
+  </producedTypes>
+  <name>лео_СводноеТребование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сводное требование (Лео)</value>
+  </synonym>
+  <comment>1</comment>
+  <defaultForm>DataProcessor.лео_СводноеТребование.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="ffe7886e-a152-4c0b-90b0-403afb59b1ce">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7f945fa5-2142-4f17-afa0-c12fdcec6444">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3c3a56c8-3166-45a0-96b1-85143ba74fb3">
+    <name>НастройкаПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка периода</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8312fbed-5f72-445b-8b8d-a349e0787b75">
+    <name>СкладОтправитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад отправитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7549055f-475c-47ec-a98e-82af87b59238">
+    <name>СкладПолучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад получатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="6d5295fb-e0a4-4640-940e-1ca750c96df1">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="aa01c035-601c-4673-8dd5-b945e9a76d3d">
+    <name>Макет</name>
+  </templates>
+  <templates uuid="7d0708e6-f03c-47eb-a22b-b4709f8c61f7">
+    <name>Этикетка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этикетка</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

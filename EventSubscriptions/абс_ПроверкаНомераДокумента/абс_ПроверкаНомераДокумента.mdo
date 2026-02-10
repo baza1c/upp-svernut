@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92c9ce82-97af-49c2-9366-431307a5026d">
+  <name>абс_ПроверкаНомераДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка номера документа при записи</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ВозвратТоваровОтПокупателя</types>
+    <types>DocumentObject.СчетФактураВыданный</types>
+    <types>DocumentObject.РеализацияТоваровУслуг</types>
+    <types>DocumentObject.КорректировкаРеализации</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.абс_Дистрибуция.абс_ПроверкаНомераДокументаПриЗаписи</handler>
+</mdclass:EventSubscription>

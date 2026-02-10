@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f9f547b-c222-4124-a843-71e0a33e0011">
+  <name>абс_ПриУстановкеНовогоНомераТранспортногоМаршрута</name>
+  <synonym>
+    <key>ru</key>
+    <value>Абс при установке нового номера транспортного маршрута</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.абс_ТранспортныйМаршрут</types>
+  </source>
+  <event>OnSetNewNumber</event>
+  <handler>CommonModule.абс_ТранспортнаяЛогистика.абс_ПриУстановкеНовогоНомераТранспортногоМаршрута</handler>
+</mdclass:EventSubscription>

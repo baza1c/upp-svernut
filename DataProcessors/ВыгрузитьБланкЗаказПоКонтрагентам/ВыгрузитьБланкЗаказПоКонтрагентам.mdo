@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ffaa167-5026-4515-a19a-56d6c35c13d9">
+  <producedTypes>
+    <objectType typeId="2eaf95b6-e056-4e94-bb20-b1a7965e92cb" valueTypeId="81f0e4db-43a3-401b-8ae1-f85593ac32db"/>
+    <managerType typeId="e39cdfe3-c4c0-4a40-bbc3-87351105a62d" valueTypeId="0883ade3-4675-4976-877c-77caa273d1da"/>
+  </producedTypes>
+  <name>ВыгрузитьБланкЗаказПоКонтрагентам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузить бланк заказ по контрагентам</value>
+  </synonym>
+  <defaultForm>DataProcessor.ВыгрузитьБланкЗаказПоКонтрагентам.Form.Форма</defaultForm>
+  <attributes uuid="8fccd5b6-a5c9-4dfe-8efa-d8d3c4f35d4c">
+    <name>ДатаБланкЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата бланк заказа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7f555f20-187e-4f38-8c2b-ed9619d20724">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="24af25db-118b-46c3-9175-020317838deb">
+    <name>КонтрагентСписок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент список</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="540d8c0c-8eae-4d3e-be05-2ed25b4c2ecf">
+    <name>ДоговорыКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договоры контрагента</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="716ac940-2223-4d74-bc99-ced2341fea27">
+    <name>ТипыЦенНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типы цен номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыЦенНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="66b8fd87-e6a2-47d0-a65c-6951d8180466">
+    <name>ПутьККаталогуЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к каталогу записи</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>120</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="93bfe479-f48a-4481-9310-a51f3738523b">
+    <name>ОтправитьЭлСообщение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправить эл сообщение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7323d294-da39-443c-acc5-19c450b98f48">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1d61b3d1-dad8-49cd-965e-18aa1e31cf77">
+    <name>СтавимЗащиту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставим защиту</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="f188e2c8-36ca-4ce1-a2ec-f068b4440450">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

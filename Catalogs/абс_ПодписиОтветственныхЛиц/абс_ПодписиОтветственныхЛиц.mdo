@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c32e6eab-6dbb-4933-a09b-b346ac34d669">
+  <producedTypes>
+    <objectType typeId="4e5120fa-c6bc-4dce-8354-3ec143f649a2" valueTypeId="3c6c8487-17af-4b6e-a9fe-ab35c6f6db49"/>
+    <refType typeId="ec4d6fa4-11ea-4f0a-a14d-4f59f00fb21c" valueTypeId="0566aeb0-e21a-453e-b7c5-8c4a699ce3f2"/>
+    <selectionType typeId="eba12f29-c421-4170-a0c9-a06cb0041a90" valueTypeId="7c6166c6-d0a6-4485-9ee1-bbf5867ade90"/>
+    <listType typeId="dd493cc8-ff3f-4b92-abdf-b411e754c2da" valueTypeId="2cfa9fb9-ee58-4d81-9490-f0504bce4032"/>
+    <managerType typeId="7a0eda64-cd89-4425-aabf-f17ebd9bfd90" valueTypeId="c2e680cf-3466-4ac4-9562-e64882f453dc"/>
+  </producedTypes>
+  <name>абс_ПодписиОтветственныхЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подписи ответственных лиц (АБС)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.абс_ПодписиОтветственныхЛиц.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.абс_ПодписиОтветственныхЛиц.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="e162aaed-f687-4808-91ac-9a2e74aa689b">
+    <name>ФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физ. лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d7d0c1d4-6a98-4ab2-aaff-d1ba965cf9cd">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="20a2e4db-4af8-47af-8bf4-954980db55e4">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="0e17837b-231e-44b0-af5f-12ae20923453">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

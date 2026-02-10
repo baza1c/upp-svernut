@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd757b81-c9a8-474f-aa2c-7a8906ed8153">
+  <producedTypes>
+    <objectType typeId="0d903ccb-56d6-44f0-a266-d0f82b91d937" valueTypeId="50b35a6e-435e-40e0-8a03-cc591b62f703"/>
+    <refType typeId="72d2dfcf-3e0d-46a2-9b52-7d176839b3e8" valueTypeId="29e1ec01-0183-4088-929a-8d82add30603"/>
+    <selectionType typeId="86371a0d-b797-4686-90d7-9f3ee8239b4a" valueTypeId="34975539-6e85-4b9e-8441-ff811673dba2"/>
+    <listType typeId="44d60be5-627b-4f7b-bbd4-809aacc71a30" valueTypeId="622acb43-6e24-4017-ad2e-ed1ffede6711"/>
+    <managerType typeId="c1455a2b-4089-488d-9759-fa7b9a9abf01" valueTypeId="4c9d080b-b5cd-4cc1-9915-097d6708216c"/>
+  </producedTypes>
+  <name>Лео_видыСерий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лео виды серий</value>
+  </synonym>
+  <inputByString>Catalog.Лео_видыСерий.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Лео_видыСерий.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Лео_видыСерий.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="09b007c4-1269-4207-b316-e08ee2d119ca">
+    <name>Расшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="e7ee96d1-173f-4aea-9cb1-c67449a05894">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

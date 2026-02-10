@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fbcd2829-6b65-47e5-908f-0f5397612e5c">
+  <name>абс_ПриЗаписиЗаказПокупателя</name>
+  <synonym>
+    <key>ru</key>
+    <value>При записи заказ покупателя</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ЗаказПокупателя</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.абс_Дистрибуция.абс_ПриЗаписиЗаказПокупателя</handler>
+</mdclass:EventSubscription>

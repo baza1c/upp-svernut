@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60a6a679-b92d-4fdf-bdd3-c1fa3b8a5fd3">
+  <name>ПередЗаписьюДокументаДляОбменаТорговляБухгалтерия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перед записью документа для обмена торговля бухгалтерия</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПлатежноеПоручениеВходящее</types>
+    <types>DocumentObject.ЗаказПокупателя</types>
+    <types>DocumentObject.СчетФактураПолученный</types>
+    <types>DocumentObject.АккредитивПолученный</types>
+    <types>DocumentObject.ТребованиеНакладная</types>
+    <types>DocumentObject.ПереоценкаТоваровВРознице</types>
+    <types>DocumentObject.ИнкассовоеПоручениеПереданное</types>
+    <types>DocumentObject.ПлатежноеТребованиеВыставленное</types>
+    <types>DocumentObject.ОтчетОРозничныхПродажах</types>
+    <types>DocumentObject.ПриходныйКассовыйОрдер</types>
+    <types>DocumentObject.ВозвратТоваровОтПокупателя</types>
+    <types>DocumentObject.Доверенность</types>
+    <types>DocumentObject.ИнкассовоеПоручениеПолученное</types>
+    <types>DocumentObject.АвансовыйОтчет</types>
+    <types>DocumentObject.КомплектацияНоменклатуры</types>
+    <types>DocumentObject.ПоступлениеДопРасходов</types>
+    <types>DocumentObject.ПоступлениеТоваровУслугВНТТ</types>
+    <types>DocumentObject.ПлатежныйОрдерПоступлениеДенежныхСредств</types>
+    <types>DocumentObject.РасходныйКассовыйОрдер</types>
+    <types>DocumentObject.ОприходованиеТоваров</types>
+    <types>DocumentObject.СписаниеТоваров</types>
+    <types>DocumentObject.СчетФактураВыданный</types>
+    <types>DocumentObject.ОтчетКомитентуОПродажах</types>
+    <types>DocumentObject.ВозвратТоваровПоставщику</types>
+    <types>DocumentObject.РеализацияТоваровУслуг</types>
+    <types>DocumentObject.ГТДИмпорт</types>
+    <types>DocumentObject.ОтчетКомиссионераОПродажах</types>
+    <types>DocumentObject.ПлатежноеПоручениеИсходящее</types>
+    <types>DocumentObject.ПоступлениеТоваровУслуг</types>
+    <types>DocumentObject.КорректировкаДолга</types>
+    <types>DocumentObject.ПеремещениеТоваров</types>
+    <types>DocumentObject.ПлатежноеТребованиеПолученное</types>
+    <types>DocumentObject.ПлатежныйОрдерСписаниеДенежныхСредств</types>
+    <types>DocumentObject.СчетНаОплатуПокупателю</types>
+    <types>DocumentObject.ВозвратТоваровПоставщикуИзНТТ</types>
+    <types>DocumentObject.ИнвентаризацияТоваровНаСкладе</types>
+    <types>DocumentObject.АккредитивПереданный</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПроцедурыОбменаТорговляБухгалтерия.ПередЗаписьюДокументаДляОбменаТорговляБухгалтерияПередЗаписью</handler>
+</mdclass:EventSubscription>

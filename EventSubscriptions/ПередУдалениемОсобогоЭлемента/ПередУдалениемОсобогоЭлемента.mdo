@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="27fa8d8c-11a6-4bd8-a7e2-f4b9b5bc5c55">
+  <name>ПередУдалениемОсобогоЭлемента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перед удалением особого элемента</value>
+  </synonym>
+  <source>
+    <types>ChartOfCalculationTypesObject.СреднийЗаработок</types>
+    <types>ChartOfCalculationTypesObject.ДополнительныеНачисленияОрганизаций</types>
+    <types>CatalogObject.КонвертацииИзИнформационныхБаз1СПредприятия77</types>
+    <types>ChartOfCalculationTypesObject.УдержанияОрганизаций</types>
+    <types>ChartOfCalculationTypesObject.ОсновныеНачисленияОрганизаций</types>
+    <types>CatalogObject.ВидыЕжегодныхОтпусков</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.ОбщегоНазначенияЗК.ПередУдалениемОсобогоЭлементаПроверкаВозможностиВыполнения</handler>
+</mdclass:EventSubscription>

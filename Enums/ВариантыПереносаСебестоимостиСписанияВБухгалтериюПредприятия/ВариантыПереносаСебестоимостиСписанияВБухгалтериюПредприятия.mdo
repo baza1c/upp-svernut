@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8700cec4-e320-404e-b11b-37d58b625c86">
+  <producedTypes>
+    <refType typeId="187f7272-0c6a-4650-9a84-d86dc78cff3c" valueTypeId="76b9091b-95a6-4156-86ec-b83b95e63115"/>
+    <listType typeId="0c5143e9-5d6c-410b-bd28-b26eb8d73a7f" valueTypeId="aea456ec-e551-46bf-8c6e-a32200e5f8c3"/>
+    <managerType typeId="c563a231-99bc-4670-bea5-db411ad4e959" valueTypeId="4a7cba20-495f-4cc1-b3e2-0e90b28d84de"/>
+  </producedTypes>
+  <name>ВариантыПереносаСебестоимостиСписанияВБухгалтериюПредприятия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты переноса себестоимости списания в конфигурацию &quot;Бухгалтерия предприятия&quot;</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4abd27e6-8ec7-4efe-8d1a-0759998ee654">
+    <name>НеПереносить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не переносить</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b4c8ff08-f7e4-46bd-bc2b-592021527d60">
+    <name>ПереноситьТолькоДокументПартии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переносить только документ партии</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="098ccc05-0146-4183-9d10-3d2d385a0e93">
+    <name>ПереноситьДокументПартииИСебестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переносить документ партии и себестоимость</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

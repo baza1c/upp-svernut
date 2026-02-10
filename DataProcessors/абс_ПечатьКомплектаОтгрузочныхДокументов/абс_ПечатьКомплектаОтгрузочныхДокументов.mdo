@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9df0b09a-3865-45d4-a503-270e1d23e156">
+  <producedTypes>
+    <objectType typeId="432b38af-c754-4f7c-b893-054d8729d599" valueTypeId="059d138f-6ed8-4bac-9928-a446c1df6596"/>
+    <managerType typeId="388aa043-2236-4902-9db8-93b4ea184728" valueTypeId="aef0ddc7-14bc-47c4-acca-51c739123767"/>
+  </producedTypes>
+  <name>абс_ПечатьКомплектаОтгрузочныхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать комплекта отгрузочных документов</value>
+  </synonym>
+  <defaultForm>DataProcessor.абс_ПечатьКомплектаОтгрузочныхДокументов.Form.Форма</defaultForm>
+  <attributes uuid="74635950-241a-41e2-80ff-77acd57b113b">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f985a8b2-3bfb-469d-a6ec-95ce9bc7bab6">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="30a6c8b5-daa3-41d4-80bb-d82242ec1847">
+    <name>ОкончаниеПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окончание периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b39b54a2-e488-4972-93f8-cb56f13a1070">
+    <name>СразуНаПринтер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сразу на принтер</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="41c0151e-5a80-4b52-ac5a-3fcba2647319">
+    <producedTypes>
+      <objectType typeId="485f4724-cb73-45c6-b758-566d0cd7baa1" valueTypeId="999fda8a-23ac-44c5-a56f-b7e4276a4725"/>
+      <rowType typeId="10acc3b3-8841-46a8-8737-a7636fbd2667" valueTypeId="7c7ce14e-51e0-4027-8b2d-055460ac228f"/>
+    </producedTypes>
+    <name>ОтгрузочныеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отгрузочные документы</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="bbcdce5b-274b-4df3-ad49-fabe49a111c1">
+      <name>РеализацияТоваровУслуг</name>
+      <synonym>
+        <key>ru</key>
+        <value>Реализация товаров и услуг</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.РеализацияТоваровУслуг</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="652df1da-50ad-439a-88b3-204146917d2b">
+      <name>Ссылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Реализация товаров и услуг</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.РеализацияТоваровУслуг</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="4160203f-3ad5-4293-8930-7ce77d6f1aac">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="19fda6ab-5527-4ab4-838f-8fe48fa816a3">
+    <name>МакетСхемыОтрузочныхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет схемы отрузочных документов</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

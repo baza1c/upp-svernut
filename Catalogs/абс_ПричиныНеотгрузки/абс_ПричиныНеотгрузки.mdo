@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84c2668c-a613-4b03-8680-bfdc02543882">
+  <producedTypes>
+    <objectType typeId="5973e008-17f7-48b2-bae1-c5c8d6d3cb45" valueTypeId="f643f25c-2ce4-47b3-8911-119b1c9292c6"/>
+    <refType typeId="12bdc654-ca2c-446a-a21b-0a7b098322d4" valueTypeId="dd9d39d1-4823-442b-8714-51f13987e3d0"/>
+    <selectionType typeId="b9ea0ead-9bd5-40df-8e09-aa466ab3bce5" valueTypeId="f476b0d0-4c95-4eb6-9aca-7190d9ec013a"/>
+    <listType typeId="4f7be458-07a3-431d-aa58-aa2638905703" valueTypeId="c6ceaafe-400d-4de8-b4ce-b8afca606370"/>
+    <managerType typeId="a0e92b84-0d89-4499-9daa-4b62a43ef1d9" valueTypeId="7fef98b2-52a4-48ee-9b43-81a43f0f7b50"/>
+  </producedTypes>
+  <name>абс_ПричиныНеотгрузки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины неотгрузки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.абс_ПричиныНеотгрузки.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.абс_ПричиныНеотгрузки.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.абс_ПричиныНеотгрузки.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.абс_ПричиныНеотгрузки.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.абс_ПричиныНеотгрузки.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="938ae8fd-3d04-4428-844a-37a6f061ff3e">
+    <name>абс_ВидПричины</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид причины</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_ВидПричиныНеотгрузки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="d53e6add-7570-4c98-a458-9e81c4abd17e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9c018214-1aa2-4acc-bfda-fa7ff6badbd5">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4a993f2a-afcb-4219-b4ed-5cbc7c65eff9">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

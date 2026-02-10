@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2710ee8b-aba7-4037-9f27-074c161b6060">
+  <producedTypes>
+    <objectType typeId="73bcff1f-8c7a-4be9-a03f-da3dc6788e3a" valueTypeId="6c36fb43-f473-46b2-a029-097020b2276e"/>
+    <managerType typeId="2403b242-2347-4fdc-b008-67a1654b1153" valueTypeId="febab375-0fb4-49ad-b123-efd653c22a89"/>
+  </producedTypes>
+  <name>абс_ЗагрузкаЗаказовПокупателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка заказов покупателей (АБС)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.абс_ЗагрузкаЗаказовПокупателей.Form.Форма</defaultForm>
+  <attributes uuid="7e2e1373-a2eb-4c7a-bb40-3806dcdb9acb">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bac7806c-2a40-4c24-aa2d-eae6f44bfa4f">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="319a07c3-cb4d-4f31-b484-03e93417fd20">
+    <producedTypes>
+      <objectType typeId="dfffc570-a2ed-4d07-88d3-8041c2ff2a3d" valueTypeId="441d519f-5a6f-4e70-a0fd-932bc192d4d4"/>
+      <rowType typeId="1b19bcdf-ef1a-433c-95e2-5c38d7e33b1c" valueTypeId="173ab37a-c2bc-4d8a-9165-a91c3617045f"/>
+    </producedTypes>
+    <name>ЗагруженныеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загруженные документы</value>
+    </synonym>
+    <attributes uuid="f6e3634d-935c-4112-8c4f-2a2b0e8278fa">
+      <name>ЗаказПокупателя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ покупателя</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ЗаказПокупателя</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="045a561a-1056-48f9-a21c-d3029add3898">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

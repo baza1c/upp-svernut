@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b393fad7-5a56-4625-9283-643a2bd3ef7b">
+  <producedTypes>
+    <objectType typeId="20d11076-7797-4961-919c-140a364f7593" valueTypeId="58cd0fb1-cf2f-426a-b2f8-f0f0feeae20b"/>
+    <managerType typeId="f2a8c8d1-3f23-40ec-a507-bc653e65c306" valueTypeId="0c0fe183-a17d-4d84-ab03-a3fd8a725aeb"/>
+  </producedTypes>
+  <name>ЗагрузитьДанныеПоМоноПаллете</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузить данные по моно паллете</value>
+  </synonym>
+  <defaultForm>DataProcessor.ЗагрузитьДанныеПоМоноПаллете.Form.Форма</defaultForm>
+  <attributes uuid="b333600b-2e56-431a-ac28-cdfe4865f711">
+    <name>SSCC_КодыПаллеты</name>
+    <synonym>
+      <key>ru</key>
+      <value>SSCC коды паллеты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лео_SSCC_КодыПаллеты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5268c80a-8837-44df-ac7b-2c099430f37a">
+    <name>СкладСборки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад сборки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="621da42f-6a7b-4738-a989-2c093df84fbe">
+    <producedTypes>
+      <objectType typeId="2a8ed34a-5e97-4308-90c1-fa09fc2c39d8" valueTypeId="a83fc11d-ee89-42c8-bce7-3ba94cbbda30"/>
+      <rowType typeId="dfc524cb-97b1-43a0-b045-c22e2d7ddd19" valueTypeId="9f48b558-16fc-4449-9c8a-3aec2ffea7a8"/>
+    </producedTypes>
+    <name>ПроверочнаяТаблицаКодовКоробок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверочная таблица кодов коробок</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="6ed28a8d-ec06-4a9c-96a8-6b2252e4f431">
+      <name>ШтрихКодовКоробок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Штрих кодов коробок</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Лео_СправочникШтрихКодовКоробок</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="85805220-2290-42dc-b009-ab25b3215cec">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82930d89-370d-411e-a613-b660649ba4f5">
+  <name>абс_ПередЗаписьюДокументаПроверкаДлиныНомераДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка длины номера документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.абс_ОбменДанными.абс_ПередЗаписьюПроверкаДлиныНомераДокумента</handler>
+</mdclass:EventSubscription>

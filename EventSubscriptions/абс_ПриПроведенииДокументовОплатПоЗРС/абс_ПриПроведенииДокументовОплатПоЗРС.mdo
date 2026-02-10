@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83cd52b4-fb76-48ec-bdd0-f89c06bf82ea">
+  <name>абс_ПриПроведенииДокументовОплатПоЗРС</name>
+  <synonym>
+    <key>ru</key>
+    <value>При проведении документов оплат по ЗРС</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.РеализацияТоваровУслуг</types>
+    <types>DocumentObject.ПлатежноеПоручениеИсходящее</types>
+    <types>DocumentObject.КорректировкаДолга</types>
+    <types>DocumentObject.ПлатежноеТребованиеПолученное</types>
+    <types>DocumentObject.ПлатежныйОрдерСписаниеДенежныхСредств</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.абс_СогласованиеДокументов.абс_ПриПроведенииДокументовОплатПоЗРСОбработкаПроведения</handler>
+</mdclass:EventSubscription>

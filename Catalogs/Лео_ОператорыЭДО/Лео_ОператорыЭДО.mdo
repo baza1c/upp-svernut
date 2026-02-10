@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="20125f54-1884-4692-869e-193ee49c05e4">
+  <producedTypes>
+    <objectType typeId="a9dfb382-f5dc-4fc0-a149-9159a22e0b51" valueTypeId="fa24568d-f946-483f-ad6d-0e8fd15b777c"/>
+    <refType typeId="ea5bd17b-eb44-460e-bd26-2b08f3633c66" valueTypeId="77ba623d-1c15-4098-889b-0ed7084afc79"/>
+    <selectionType typeId="ee258fbc-6aef-4c49-bdb5-8098c97a16f5" valueTypeId="e124c192-852c-49ae-830b-f90fdf6a6a2f"/>
+    <listType typeId="bf9a6671-3e8b-424d-a1bf-41c87ddf8477" valueTypeId="c194900a-3b41-4bd0-a891-d131b59fb0bf"/>
+    <managerType typeId="e3b0f16c-f5c9-42a5-a3f9-b5097fcefe20" valueTypeId="261e6751-6500-4d93-a461-203b08557e43"/>
+  </producedTypes>
+  <name>Лео_ОператорыЭДО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Операторы ЭДО</value>
+  </synonym>
+  <inputByString>Catalog.Лео_ОператорыЭДО.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Лео_ОператорыЭДО.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Лео_ОператорыЭДО.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="80a064a3-2288-4ec9-8e12-761710681047">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="16af10d6-6060-491f-a42c-893731483559">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="756cda4b-3013-4e85-a246-0767bf44954b">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

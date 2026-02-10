@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e00116d5-7abd-4dbc-a5f7-fed5a95e42d1">
+  <producedTypes>
+    <objectType typeId="ca7518e5-f0bf-4ac8-aad7-9c4c69122039" valueTypeId="675f3512-7b98-41aa-a0cb-20ff2322c7e6"/>
+    <managerType typeId="d9abab20-5a8b-4fe1-8f79-4d135d840f8e" valueTypeId="6f5eeedd-8787-415a-9295-2ad6ad2bd75e"/>
+  </producedTypes>
+  <name>КонтурEDI_ПодключаемыйМодуль</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контур EDI подключаемый модуль</value>
+  </synonym>
+  <defaultForm>DataProcessor.КонтурEDI_ПодключаемыйМодуль.Form.Конструктор</defaultForm>
+  <forms uuid="441b9727-d94c-459e-9c35-3d9392797a22">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cbe91670-3ed7-484b-91ea-8269e89e465e">
+    <name>Конструктор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конструктор</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1ee4dc10-0df7-4e6b-85cb-1e788ef16f62">
+    <name>ФормаРедактированияUltimatecustomer</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма редактирования ultimatecustomer</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a9bac01a-1f62-4e6b-b00d-9defc5809306">
+    <name>V8Unpack</name>
+    <synonym>
+      <key>ru</key>
+      <value>V8 unpack</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="adb0bb60-501c-4feb-b3c8-02c222a2c6cb">
+    <name>zlib1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Zlib1</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="1add6fd3-139e-4d78-9867-5f3d52925a9f">
+    <name>ПаллетныйЛистТСЛента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Паллетный лист (ТС Лента)</value>
+    </synonym>
+  </templates>
+  <templates uuid="ce594cc9-6d28-4376-b173-c9b186421b5e">
+    <name>_АдресацияОбъектовМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адресация объектов метаданных</value>
+    </synonym>
+  </templates>
+  <templates uuid="4daea1e2-2750-448f-ac42-326ea63dc3bd">
+    <name>_ШаблоныЗапросов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблоны запросов</value>
+    </synonym>
+    <comment>Содержит описание связей между документами: ЗаказПокупателя,РеализацияТоваровУслуг и т.д.</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="b5f7680f-616a-4573-82f8-42cf22e4597f">
+    <name>_ТипыОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типы объектов</value>
+    </synonym>
+    <comment>Убрать подчеркивание из названия для задействования</comment>
+  </templates>
+  <templates uuid="43e3634a-b301-430e-b23e-9440d4d3503c">
+    <name>_НастройкиПараметры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки/параметры</value>
+    </synonym>
+  </templates>
+  <templates uuid="da568bef-6c37-41cf-bc33-7db3c51615b2">
+    <name>ПаллетнаяВедомостьРЦПризма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Паллетная ведомость РЦПризма</value>
+    </synonym>
+  </templates>
+  <templates uuid="5b6bb5a0-02e2-4b1c-a25f-fcb527750baf">
+    <name>КонвертацияBase64</name>
+    <synonym>
+      <key>ru</key>
+      <value>XML Структура соответствий для конвертации в Hex, Binary, Base64</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

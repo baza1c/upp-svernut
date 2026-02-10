@@ -1,0 +1,20 @@
+<xs:schema xmlns:tns="http://edi.kontur.ru/1c/ediXml" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://edi.kontur.ru/1c/ediXml" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="userAssistanceList" type="tns:userAssistanceListType"  minOccurs="0"/>
+          <xs:complexType name="userAssistanceDescriptionType" mixed="true">
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:string" name="ref"/>
+              <xs:element type="xs:boolean" name="top" minOccurs="0" default="false"/>
+              <xs:element type="xs:string" name="version"/>
+              <xs:element type="xs:string" name="priority"/>
+              <xs:element type="xs:string" name="description"/>
+              <xs:element type="xs:string" name="Settings"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="optional"/>
+          </xs:complexType>
+          <xs:complexType name="userAssistanceListType">
+    <xs:choice>
+          <xs:element name="userAssistanceDescription" type="tns:userAssistanceDescriptionType" minOccurs="0" maxOccurs="unbounded"/>      
+    </xs:choice>
+     </xs:complexType>
+</xs:schema>

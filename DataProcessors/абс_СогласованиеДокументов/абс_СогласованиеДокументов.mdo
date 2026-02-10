@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00af1647-2ce8-4911-864b-fa3c0382028c">
+  <producedTypes>
+    <objectType typeId="da1a017a-ee0d-4ba9-b5b2-6e3266d6c7a3" valueTypeId="73860599-03b9-4fa3-8ebb-b925044ae1b9"/>
+    <managerType typeId="55f5f9b9-40ff-4390-9e27-f403c921d339" valueTypeId="5c9bc106-8b1a-4376-ab82-2a9212278d49"/>
+  </producedTypes>
+  <name>абс_СогласованиеДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Согласование документов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.абс_СогласованиеДокументов.Form.ФормаУправляемая</defaultForm>
+  <explanation>
+    <key>ru</key>
+    <value>Групповое согласование документов</value>
+  </explanation>
+  <attributes uuid="c6570ee4-f312-4161-b9a7-2ba2051329b0">
+    <name>ТекущийПользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущий пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="97494759-b878-4250-8f13-8d26f3165d3e">
+    <name>ПроизвольныйОтчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произвольный отчет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПроизвольныеОтчеты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8fc2ea72-e186-42c2-89d5-41ec1e28da60">
+    <name>СохраненнаяНастройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант отчета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СохраненныеНастройки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.НастраиваемыйОбъект</name>
+      <field>DataProcessor.абс_СогласованиеДокументов.Attribute.ПроизвольныйОтчет</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ТипНастройки</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ТипыНастроек.EnumValue.НастройкиОтчета</value>
+      </value>
+    </choiceParameters>
+  </attributes>
+  <attributes uuid="0ce0e8d0-4d12-4a45-95d0-cb4b7b3eb335">
+    <name>ТипДокументаДляСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип документа для согласования</value>
+    </synonym>
+    <type>
+      <types>EnumRef.абс_ТипыДокументовДляСогласования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="91e77b82-2dd2-4611-9d08-976ebaafac22">
+    <producedTypes>
+      <objectType typeId="564e9891-f7b8-470f-9665-43c47798ec67" valueTypeId="12e151be-d584-44bb-a433-22131e892d36"/>
+      <rowType typeId="5a5af882-72e6-4fbb-b693-001ca1a9bc62" valueTypeId="363fac4e-7db0-4e09-a671-cdc145143679"/>
+    </producedTypes>
+    <name>ДокументыДляСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы для согласования</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="0bf9ab0e-b420-41cb-beee-6405b363b4e3">
+      <name>ДокументДляСогласования</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.Лео_ЗаявкаНаАкцию</types>
+        <types>DocumentRef.Лео_ЗаявкаНаОбразцы</types>
+        <types>DocumentRef.Лео_ЗаявкаНаЗапчасти</types>
+        <types>DocumentRef.СчетФактураПолученный</types>
+        <types>DocumentRef.абс_ВводБюджета</types>
+        <types>DocumentRef.абс_СтратегическиеЦелиПродаж</types>
+        <types>DocumentRef.ЗаявкаНаРасходованиеСредств</types>
+        <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+        <types>DocumentRef.ПланПродаж</types>
+        <types>DocumentRef.абс_ЗаявкаНаБюджетОтделаТМ</types>
+        <types>DocumentRef.Лео_ФиксацияСкидокПоТрейдМаркетингу</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="edf52872-b66a-425f-bc20-0748e7d1253f">
+      <name>Состояние</name>
+      <synonym>
+        <key>ru</key>
+        <value>Состояние</value>
+      </synonym>
+      <type>
+        <types>EnumRef.СостоянияОбъектов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1d1fafcd-1a70-42e0-b1bf-bf811cf69f2e">
+      <name>СуммаДокумента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="aad88e80-347b-466a-b50f-5954e2b061c2">
+      <name>Ответственный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ответственный</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6b002293-c676-45e7-b242-34766d56ab1b">
+      <name>ЦФО</name>
+      <synonym>
+        <key>ru</key>
+        <value>ЦФО</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Подразделения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2a84d0fe-9f63-4c5d-ac6f-13adbc62326c">
+      <name>Организация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Организация</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Организации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="02e50c26-8bb8-4a16-84b5-f5e98ae35013">
+      <name>ТекущееСостояние</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текущее состояние</value>
+      </synonym>
+      <type>
+        <types>EnumRef.СостоянияОбъектов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="27f168a9-3963-47cb-b24d-6c3f7198f463">
+      <name>ПоследнийСогласующий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Последний согласующий</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0a30fdd2-49be-4f61-addb-d8e2d445b73f">
+      <name>Пометка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f403ff88-7338-44f5-b651-a173bdb86aa3">
+      <name>Этап</name>
+      <synonym>
+        <key>ru</key>
+        <value>Этап</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.абс_МаршрутыСогласованияДокументов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="51ee0139-464c-468f-bd97-9910f7f1d418">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="1ce52184-63c8-42e6-8692-596fb0b9f120">
+    <name>ФормаУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма управляемая</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a5222812-0f52-4d05-9961-72f07091dcf4">
+    <name>ИзменениеСостоянияДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение состояния документов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="358ebc17-173e-49ca-898d-010534ed8e7f">
+    <name>НастройкаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

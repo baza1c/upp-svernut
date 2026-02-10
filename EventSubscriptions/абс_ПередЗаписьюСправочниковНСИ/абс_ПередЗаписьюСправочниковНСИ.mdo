@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f61de9d2-f3b5-41d2-84c2-9488922043c4">
+  <name>абс_ПередЗаписьюСправочниковНСИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Абс перед записью справочников НСИ</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Склады</types>
+    <types>CatalogObject.Пользователи</types>
+    <types>CatalogObject.ДоговорыКонтрагентов</types>
+    <types>CatalogObject.абс_СпособыДоставкиКонтрагентов</types>
+    <types>CatalogObject.ЕдиницыИзмерения</types>
+    <types>CatalogObject.ТипыЦенНоменклатуры</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.Валюты</types>
+    <types>CatalogObject.НоменклатурныеГруппы</types>
+    <types>CatalogObject.абс_ПричиныНеотгрузки</types>
+    <types>CatalogObject.БанковскиеСчета</types>
+    <types>CatalogObject.Лео_СтатьиОборотовРасшифровка</types>
+    <types>CatalogObject.ЗначенияСвойствОбъектов</types>
+    <types>CatalogObject.СерииНоменклатуры</types>
+    <types>CatalogObject.ВидыНоменклатуры</types>
+    <types>CatalogObject.ХранилищеДополнительнойИнформации</types>
+    <types>CatalogObject.ЦеновыеГруппы</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.КлассификаторЕдиницИзмерения</types>
+    <types>CatalogObject.СтатьиОборотовПоБюджетам</types>
+    <types>CatalogObject.Регионы</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.абс_Дистрибуция.абс_ПередЗаписьюСправочниковНСИПередЗаписью</handler>
+</mdclass:EventSubscription>

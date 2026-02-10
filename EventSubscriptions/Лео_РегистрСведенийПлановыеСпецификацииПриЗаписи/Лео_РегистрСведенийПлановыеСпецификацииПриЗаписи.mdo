@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="18882930-49e0-4fa1-a590-1e579d9b5750">
+  <name>Лео_РегистрСведенийПлановыеСпецификацииПриЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Плановые спецификации номенклатуры при записи</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.Лео_ПлановыеСпецификацииНоменклатуры</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.лео_ОбработкаОповещения.ОтправитьОповещениеПоПлановойСпецификации</handler>
+</mdclass:EventSubscription>

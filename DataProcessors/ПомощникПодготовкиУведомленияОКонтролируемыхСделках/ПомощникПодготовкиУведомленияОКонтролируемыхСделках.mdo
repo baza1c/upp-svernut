@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1dab75a0-236f-4597-bbec-8c96a1023ff5">
+  <producedTypes>
+    <objectType typeId="3c2f011d-3b8a-48a4-bf09-4148498958b0" valueTypeId="32ffec99-79c5-420e-9c36-d420fb027029"/>
+    <managerType typeId="39381293-bf4b-4c43-838f-b9303c473365" valueTypeId="e31ffb1b-0100-4ed3-9d85-18ecde850dcf"/>
+  </producedTypes>
+  <name>ПомощникПодготовкиУведомленияОКонтролируемыхСделках</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник подготовки уведомления о контролируемых сделках</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПомощникПодготовкиУведомленияОКонтролируемыхСделках.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="2f4e291c-7561-4ed0-810a-eb72cc2a8968">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="c747a6de-386c-46f3-b868-e24cf9604a9a">
+    <name>ОтчетныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчетный год</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="18237143-b9ce-4c9e-8d6a-693f88b3b883">
+    <name>Уведомление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.УведомлениеОКонтролируемыхСделках</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="d6d9c63a-6ad3-4681-af39-025cf09b83ae">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="38e49469-e600-4a18-998c-3f7b984726ca">
+    <name>ФормаВзаимозависимыеЛица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма взаимозависимые лица</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="eb105ae9-bfef-4e91-a479-d535eaf06560">
+    <name>ФормаКонтрагентыЗарегистрированныеЗаПределамиРФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагенты, зарегистрированные за пределами РФ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="08e72dfa-a7f7-435d-b0f1-7a6543cbe54b">
+    <name>ФормаТоварыМировойТорговли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма товары мировой торговли</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="46feeed4-c3c2-4716-b745-8a1407c3efda">
+    <name>ФормаСведенияОбОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сведения об организации</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a431690d-079b-4253-8385-4a920f216588">
+    <name>ФормаПодбораКонтрагентовОтчетногоГода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора контрагентов отчетного года</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0073e949-2e95-4bde-90b5-140a60e5982a">
+    <name>ФормаГраницыВключенияСделок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Границы включения сделок в уведомление</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

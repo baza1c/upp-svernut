@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b57f121f-52c8-4678-92de-fbae2cc71461">
+  <name>ПриКопированииДокументаИсправление</name>
+  <synonym>
+    <key>ru</key>
+    <value>При копировании документа исправление</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.НачислениеОтпускаРаботникамОрганизаций</types>
+    <types>DocumentObject.НачислениеЗарплатыРаботникамОрганизаций</types>
+    <types>DocumentObject.НевыходыВОрганизациях</types>
+    <types>DocumentObject.КадровоеПеремещениеОрганизаций</types>
+    <types>DocumentObject.ОтпускаОрганизаций</types>
+    <types>DocumentObject.ПремииРаботниковОрганизаций</types>
+    <types>DocumentObject.КомандировкиОрганизаций</types>
+    <types>DocumentObject.ОплатаСверхурочныхЧасов</types>
+    <types>DocumentObject.РегистрацияПростоевРаботниковОрганизаций</types>
+    <types>DocumentObject.ВозвратНаРаботуОрганизаций</types>
+    <types>DocumentObject.НачислениеЕдиновременныхПособийЗаСчетФСС</types>
+    <types>DocumentObject.НачислениеПоБольничномуЛисту</types>
+    <types>DocumentObject.РегистрацияРазовыхУдержанийРаботниковОрганизаций</types>
+    <types>DocumentObject.НачислениеДивидендовОрганизаций</types>
+    <types>DocumentObject.ОплатаПоСреднемуЗаработку</types>
+    <types>DocumentObject.ОтпускПоУходуЗаРебенком</types>
+    <types>DocumentObject.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком</types>
+    <types>DocumentObject.УвольнениеИзОрганизаций</types>
+    <types>DocumentObject.РасчетПриУвольненииРаботникаОрганизаций</types>
+    <types>DocumentObject.ОплатаПраздничныхИВыходныхДнейОрганизаций</types>
+    <types>DocumentObject.РегистрацияРазовыхНачисленийРаботниковОрганизаций</types>
+    <types>DocumentObject.НеявкиИБолезниОрганизаций</types>
+    <types>DocumentObject.ПриемНаРаботуВОрганизацию</types>
+  </source>
+  <event>OnCopy</event>
+  <handler>CommonModule.ПроведениеРасчетов.ПриКопированииДокументаИсправления</handler>
+</mdclass:EventSubscription>

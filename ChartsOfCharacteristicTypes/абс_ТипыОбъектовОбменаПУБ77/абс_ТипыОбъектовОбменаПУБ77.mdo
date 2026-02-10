@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82d73035-5417-4aa5-8e44-9c3f2d96305d">
+  <producedTypes>
+    <objectType typeId="3d9a7819-69b7-4286-ac2f-d9210dc2f38c" valueTypeId="33f8e172-30c1-485e-958b-a7bca438af27"/>
+    <refType typeId="d4699cae-532f-46bd-830e-dca50a794a30" valueTypeId="f0f257bd-9393-44a6-a36e-0cdbbde96fd4"/>
+    <selectionType typeId="8ab1d102-0ad1-46ae-b273-f594d508d911" valueTypeId="ad3e48ed-62e8-42ba-9b84-61bd9fd5d6e4"/>
+    <listType typeId="5d8070cc-fdb7-47ab-8cc7-23974eea56ce" valueTypeId="6657cf75-b6c2-4670-bfde-49a3e2a30157"/>
+    <managerType typeId="b91dbef4-5241-40ef-ad91-33b42383aa77" valueTypeId="b00fb8c4-a9f0-46c7-8967-bca48736163d"/>
+    <containerType typeId="d18aa43a-2123-4bf8-89d5-662afcffc46c" valueTypeId="3324a8fd-7ca8-45f3-b583-fa50cec54712"/>
+  </producedTypes>
+  <name>абс_ТипыОбъектовОбменаПУБ77</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы объектов обмена ПУБ77</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.абс_ТипыОбъектовОбменаПУБ77.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.абс_ТипыОбъектовОбменаПУБ77.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>DocumentRef.ОприходованиеТоваров</types>
+    <types>DocumentRef.ТребованиеНакладная</types>
+    <types>DocumentRef.ПлатежноеПоручениеВходящее</types>
+    <types>DocumentRef.ПередачаТоваров</types>
+    <types>DocumentRef.ИнвентаризацияТоваровНаСкладе</types>
+    <types>DocumentRef.КорректировкаДолга</types>
+    <types>DocumentRef.РасходныйКассовыйОрдер</types>
+    <types>DocumentRef.РеализацияТоваровУслуг</types>
+    <types>DocumentRef.ЗаказПокупателя</types>
+    <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+    <types>CatalogRef.Контрагенты</types>
+    <types>DocumentRef.ПриходныйКассовыйОрдер</types>
+    <types>CatalogRef.БанковскиеСчета</types>
+    <types>DocumentRef.ВозвратТоваровОтПокупателя</types>
+    <types>DocumentRef.ПеремещениеТоваров</types>
+    <types>DocumentRef.ВыпускПродукции</types>
+    <types>DocumentRef.ПоступлениеТоваровИзПереработки</types>
+    <types>DocumentRef.ПлатежноеПоручениеИсходящее</types>
+    <types>CatalogRef.Номенклатура</types>
+    <types>DocumentRef.СписаниеТоваров</types>
+    <types>CatalogRef.ДоговорыКонтрагентов</types>
+    <types>CatalogRef.Склады</types>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>100</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfCharacteristicTypes.абс_ТипыОбъектовОбменаПУБ77.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>ChartOfCharacteristicTypes.абс_ТипыОбъектовОбменаПУБ77.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>ChartOfCharacteristicTypes.абс_ТипыОбъектовОбменаПУБ77.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="04f53ad7-be98-4483-b684-fec3f2f4ee6c">
+    <name>ТипМетаданныхСсылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип метаданных ссылка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="121117a7-a310-4c6a-a091-71c0cb76d6f0">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e7231d4a-32a0-482e-8829-f22aaf7bce12">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b079e1e7-5751-4a18-add1-6eb2d35ec9c1">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCharacteristicTypes>

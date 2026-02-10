@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f69b4d13-7f2b-446c-b1b5-443aa941318e">
+  <name>абс_ПередЗаписьюУстановитьХозОперациюДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установить хоз операцию документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.абс_ОбменДанными.абс_ПередЗаписьюУстановитьХозОперациюДокумента</handler>
+</mdclass:EventSubscription>

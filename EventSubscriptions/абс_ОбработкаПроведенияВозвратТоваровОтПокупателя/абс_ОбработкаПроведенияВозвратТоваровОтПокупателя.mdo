@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0bf696e9-2ed7-42a6-844f-88f42e437d21">
+  <name>абс_ОбработкаПроведенияВозвратТоваровОтПокупателя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Абс обработка проведения возврат товаров от покупателя</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ВозвратТоваровОтПокупателя</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.абс_Дистрибуция.абс_ОбработкаПроведенияВозвратТоваровОтПокупателяОбработкаПроведения</handler>
+</mdclass:EventSubscription>

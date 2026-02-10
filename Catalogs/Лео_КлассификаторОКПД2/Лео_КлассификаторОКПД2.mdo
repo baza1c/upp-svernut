@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d0856b63-b444-454c-92ef-a8ca5c6999dc">
+  <producedTypes>
+    <objectType typeId="6ead1708-a259-468c-addd-7dcf126a2026" valueTypeId="1955ffa1-ac57-4668-bf44-407d9144ad09"/>
+    <refType typeId="710d81a5-d2f6-4b9f-91fc-679631bb1af0" valueTypeId="9375c2e1-f8ad-445d-b7c5-984b52d9221d"/>
+    <selectionType typeId="71b7d47f-3d0d-49f3-9b35-540ca48249ff" valueTypeId="647862ab-04b9-4312-95b9-427551adbbbb"/>
+    <listType typeId="77e65f25-3416-45d6-8935-4d2017ae9a4d" valueTypeId="c8b7651d-6530-41a7-853f-f40418ac35e2"/>
+    <managerType typeId="61ba3f76-b05c-4650-9fed-11e6736a8b0e" valueTypeId="3a26adc7-376b-4d5b-bc65-2f0e530c96d9"/>
+  </producedTypes>
+  <name>Лео_КлассификаторОКПД2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Классификатор ОКПД2</value>
+  </synonym>
+  <inputByString>Catalog.Лео_КлассификаторОКПД2.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Лео_КлассификаторОКПД2.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="fd33dd01-90bf-4dfb-a7e2-e76bebea19d0">
+    <name>КодОКПД2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ОКПД2</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4190e4f7-af13-4ba2-95d1-55dc50e25e78">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ad7a2ed2-095d-437f-9324-60be1ddc0767">
+    <name>ЧестныйЗнак</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подлежит маркировки Честный знак</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

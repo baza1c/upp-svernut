@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="013a7285-1c1a-458a-afa7-20d6e47d1563">
+  <producedTypes>
+    <objectType typeId="3a19e74a-25cb-4361-a158-38459f2a4a9e" valueTypeId="fb7f2422-1677-40ad-9999-8118cb56b471"/>
+    <refType typeId="4ca01eb0-049f-4508-8dce-838d931e2725" valueTypeId="b19b4978-9d99-4340-a5db-a918117127b0"/>
+    <selectionType typeId="b2db0016-7ecd-49ee-a815-87d018b3e25a" valueTypeId="27d59e9c-116d-4df7-8aba-35086d128f33"/>
+    <listType typeId="6fe0741c-4a99-4858-a141-fad155e7d3f6" valueTypeId="c981f64a-9188-4019-acce-f64253634d00"/>
+    <managerType typeId="10683bb5-40ed-4164-a474-3d3914202ee4" valueTypeId="3d871c25-245e-4ac5-b7b6-a0d845ef779b"/>
+  </producedTypes>
+  <name>СпособыРаспределенияЗатратНаВыпуск</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы распределения затрат</value>
+  </synonym>
+  <comment>(Общ)</comment>
+  <inputByString>Catalog.СпособыРаспределенияЗатратНаВыпуск.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СпособыРаспределенияЗатратНаВыпуск.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="c0db0176-9259-4f85-8d2f-4c45aacc43ec">
+      <name>ПоВыручкеОтРеализации</name>
+      <description>По выручке</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="92bd4a1a-39f8-46be-aff0-6cf5a7d40a7f">
+      <name>ПоМатериальнымЗатратам</name>
+      <description>По материальным затратам</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="2565bfb8-1399-4b48-ad7d-69aee4150d86">
+      <name>ПоНормативам</name>
+      <description>По нормативам</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="b7882954-bc74-4d34-ab22-8623bb30a42e">
+      <name>ПоОбъемуВыпуска</name>
+      <description>По объему выпуска</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="dcdc013c-0597-432e-b4bb-5004fe6aef28">
+      <name>ПоОплатеТруда</name>
+      <description>По оплате труда</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="81d72a75-509a-46c6-bb9a-9efdf0ce4a37">
+      <name>ПоПлановойСебестоимости</name>
+      <description>По плановой себестоимости</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СпособыРаспределенияЗатратНаВыпуск.Form.ФормаЭлементаУправляемая</defaultObjectForm>
+  <defaultListForm>Catalog.СпособыРаспределенияЗатратНаВыпуск.Form.ФормаСпискаУправляемая</defaultListForm>
+  <defaultChoiceForm>Catalog.СпособыРаспределенияЗатратНаВыпуск.Form.ФормаСпискаУправляемая</defaultChoiceForm>
+  <attributes uuid="a6ae19e0-7a55-4862-80a4-5be55a0891d1">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a9748e89-6a53-4da9-83f5-612ab7e00e5a">
+    <name>СпособРаспределенияЗатратНаВыпуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ распределения затрат на выпуск</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>EnumRef.СпособыРаспределенияЗатратНаВыпуск</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2266685d-f0fc-40d8-9b8c-0033ae558da6">
+    <name>ТипФильтраПриРаспределенииЗатратНаВыпуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип фильтра при распределении затрат на выпуск</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>EnumRef.ТипыФильтровПриРаспределенииЗатратНаВыпуск</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1e6a367d-befe-4bb0-9556-db2de6129910">
+    <name>БазаРаспределенияЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>База распределения затрат</value>
+    </synonym>
+    <type>
+      <types>EnumRef.БазыРаспределенияЗатрат</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="edb455ce-ef73-434e-b9aa-b8e4594e02f4">
+    <name>ПоказательБазыРаспределения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель базы распределения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыПоказателейБазыРаспределения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="95bac17e-b8c2-45c2-a84e-fe8b68362b9e">
+    <name>ТипЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип цен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыЦенНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6aeb4e97-7b6d-431d-9e85-f81abe42a039">
+    <name>ОсновноеСырье</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное сырье</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОсновноеСырье</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="af652c38-7604-4620-8c21-7e52370fcc42">
+    <name>СпособРаспределенияЗатратПоПодразделениям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ распределения затрат по подразделениям</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыРаспределенияЗатратНаВыпуск</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="22d0b03a-cca6-4cd6-8fc4-2bd3e0bcb147">
+    <name>РаспределятьНаСобственнуюПродукцию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распределять на собственную продукцию</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="07e8c2ee-9c99-42b6-ac2f-c278e942cee4">
+    <name>РаспределятьНаПродукциюСтороннегоПереработчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распределять на продукцию стороннего переработчика</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1b69de6c-c03c-40fe-9fc6-f78fd972fe59">
+    <name>РаспределятьНаПродукциюИзДавальческогоСырья</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распределять на продукцию из давальческого сырья</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9a9a6eb9-397d-4b2e-a2fc-168681e4c7b5">
+    <name>РаспределятьНаПодчиненныеПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распределять на подчиненные подразделения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="401b6449-5775-4e3c-9804-1ed7b2117bbc">
+    <name>РаспределятьНаНаработку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распределять на наработку</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0e852d01-fa7f-474b-abce-f46518100183">
+    <name>Процент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="53f25650-7be1-451a-a33a-7a7d33530355">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cc8661a9-4156-406d-9281-837dd6172d2d">
+    <name>ПорядокОкругления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок округления</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="218a7786-100f-4f63-ac72-69bb56e27e5f">
+    <name>НастройкиПостроителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки построителя</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c63336a1-b77e-455b-86cd-d54548e28cb8">
+    <name>ИзменитьНаПроцент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменить на процент</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="32ddc0f6-05c9-4279-927d-da30bf74587e">
+    <name>ИзменитьНаКоэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменить на коэффициент</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b2e496ee-de41-4a18-859a-db90b22efb8a">
+    <name>ОкруглитьДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Округлить до</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="10f8025d-18e2-454f-992a-bdcd4220d7ed">
+    <name>СхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Хранит схему компоновки данных, которая возвращает базу распределения затрат</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1441e153-e55f-4487-ade6-1adc1be184f0">
+    <name>Применимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Для каких расходов применять</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ХарактерЗатрат</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ХарактерЗатрат.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="46a861f4-ca75-43bf-9038-f3802c6bf8b1">
+    <name>ИспользоватьПростоеРаспределение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать упрощенный алгоритм распределения расходов</value>
+    </synonym>
+    <comment>При использовании этой базы распределение будет выполняться алгоритмом, основанным на схемах компоновки данных</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="26a78886-165e-4dd1-9ab3-bcbacc069235">
+    <name>НаправлениеРаспределения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Куда распределять</value>
+    </synonym>
+    <type>
+      <types>EnumRef.НаправленияРаспределенияЗатрат</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.НаправленияРаспределенияЗатрат.EnumValue.Выпуск</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f78ea957-ceb9-4361-b0a3-6c522bf2282f">
+    <name>КогдаПрименять</name>
+    <synonym>
+      <key>ru</key>
+      <value>Область, условия применения</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f2938271-994a-4201-9b18-d85e1db0383e">
+    <name>ТипБазыРаспределения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип базы</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыБазРаспределения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ТипыБазРаспределения.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="7f4c6eee-68c2-45bb-9952-e9a70c673ba6">
+    <producedTypes>
+      <objectType typeId="71ee90b0-d0ad-47de-8a4e-3e841027b130" valueTypeId="07350bf0-352c-4280-bfe0-02556b9fab7f"/>
+      <rowType typeId="b7655b23-db6c-45f3-b90b-7b3044a48a2e" valueTypeId="249cdbd9-e1f1-4b97-a1c6-15c40b9fc949"/>
+    </producedTypes>
+    <name>Фильтры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтры</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <attributes uuid="3ef636f5-0660-4ff8-b00e-a7e51b221e90">
+      <name>НоменклатурнаяГруппа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатурная группа</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>CatalogRef.НоменклатурныеГруппы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="eaa411ab-9ddd-431e-9158-832ad12d8f3a">
+      <name>Продукция</name>
+      <synonym>
+        <key>ru</key>
+        <value>Продукция</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f4f370c5-4c1b-4c02-85bd-247e47ab5d18">
+      <name>Коэффициент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коэффициент</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="fc635b3b-e31c-4196-8992-9f8b172e0b55">
+    <producedTypes>
+      <objectType typeId="3e0f5a98-d33c-49dd-ac03-5530aca5ce2d" valueTypeId="4077d282-84cf-4eab-9e43-41b788a00a97"/>
+      <rowType typeId="393e7606-b4d4-4c02-b371-91ceeb2d0912" valueTypeId="c9fc4b2f-84e7-4be7-82dc-8a7a736ff881"/>
+    </producedTypes>
+    <name>БазаРаспределенияНаВыпуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>База распределения на выпуск</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="7159b53f-59a0-44e0-97c3-6ccf159def7d">
+      <name>СчетУчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет учета</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.Хозрасчетный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+        <value xsi:type="core:BooleanValue"/>
+      </choiceParameters>
+      <choiceForm>ChartOfAccounts.Хозрасчетный.Form.ФормаВыбораУправляемая</choiceForm>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7c665558-9a34-450d-b441-90a2da174818">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Подразделения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c92d6593-84b9-45a7-8747-ca67a187cdc2">
+      <name>НоменклатурнаяГруппа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатурная группа</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НоменклатурныеГруппы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3f43a7fc-86a5-48f5-a675-7f69e2d7a60a">
+      <name>Продукция</name>
+      <synonym>
+        <key>ru</key>
+        <value>Продукция</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4e754538-0e61-46c8-b1cf-7255a3667e48">
+      <name>ХарактеристикаПродукции</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика продукции</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Catalog.СпособыРаспределенияЗатратНаВыпуск.TabularSection.БазаРаспределенияНаВыпуск.Attribute.Продукция</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8ec6b163-fbf4-4f0e-8f51-791e91470b26">
+      <name>СерияПродукции</name>
+      <synonym>
+        <key>ru</key>
+        <value>Серия продукции</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СерииНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Catalog.СпособыРаспределенияЗатратНаВыпуск.TabularSection.БазаРаспределенияНаВыпуск.Attribute.Продукция</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="14105dad-aef6-4b83-b7cb-a0e7e957a150">
+      <name>База</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коэффициент</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="fab2b68b-6f34-4aab-a888-db3fcbfac6e9">
+    <producedTypes>
+      <objectType typeId="0d844015-7df1-4ae6-b59f-4479769a6653" valueTypeId="d68abd10-69dc-495f-befd-849635316cbf"/>
+      <rowType typeId="6e0f440b-bcf6-47ae-983b-00ba7c1a1ddc" valueTypeId="ca435d28-1a1f-46ab-acba-c3494ab5e8bf"/>
+    </producedTypes>
+    <name>БазаРаспределенияНаЗатраты</name>
+    <synonym>
+      <key>ru</key>
+      <value>База распределения на затраты</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="8742576a-b40f-4c85-9732-36cca1b9ad7b">
+      <name>СчетУчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет учета</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.Хозрасчетный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+        <value xsi:type="core:BooleanValue"/>
+      </choiceParameters>
+      <choiceForm>ChartOfAccounts.Хозрасчетный.Form.ФормаВыбораУправляемая</choiceForm>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="adc322e6-1242-4547-ba85-e715964ce019">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Подразделения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c204b9f7-4a40-453a-bf34-a0d4a80504ba">
+      <name>НоменклатурнаяГруппа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатурная группа</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НоменклатурныеГруппы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="cef39513-fbb2-4034-aaf7-22ad4475797e">
+      <name>База</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коэффициент</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="7c32e8c7-2765-46b3-9703-2755685065aa">
+    <producedTypes>
+      <objectType typeId="c093a6ac-1b34-43c6-b88a-6e346d2d5526" valueTypeId="8ace854d-0f5f-4c8e-8544-121332c943dc"/>
+      <rowType typeId="7c15fc26-658f-41e4-b52b-d759ed48ba74" valueTypeId="171fd4f0-9381-4d21-a74c-b7444ca79c33"/>
+    </producedTypes>
+    <name>БазаРаспределенияНаРезультат</name>
+    <synonym>
+      <key>ru</key>
+      <value>База распределения на результат</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="3c4f0f05-e25f-43ce-8108-9a7fe4fbba6b">
+      <name>СчетУчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет учета</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.Хозрасчетный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+        <value xsi:type="core:BooleanValue"/>
+      </choiceParameters>
+      <choiceForm>ChartOfAccounts.Хозрасчетный.Form.ФормаВыбораУправляемая</choiceForm>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="be698fff-11d5-4e73-8f98-064a13b8331d">
+      <name>Субконто1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто 1</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>1</linkItem>
+        <field>Catalog.СпособыРаспределенияЗатратНаВыпуск.TabularSection.БазаРаспределенияНаРезультат.Attribute.СчетУчета</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0ec012fc-aced-4718-9fe3-371841db46af">
+      <name>Субконто2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто 2</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>2</linkItem>
+        <field>Catalog.СпособыРаспределенияЗатратНаВыпуск.TabularSection.БазаРаспределенияНаРезультат.Attribute.СчетУчета</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1346071d-cf98-4a97-af16-afbaa2d2dd79">
+      <name>Субконто3</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто 3</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>3</linkItem>
+        <field>Catalog.СпособыРаспределенияЗатратНаВыпуск.TabularSection.БазаРаспределенияНаРезультат.Attribute.СчетУчета</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d3dd3892-a868-4307-a920-1c92fbefb8e8">
+      <name>СчетУчетаНУ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет учета НУ</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.Налоговый</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+        <value xsi:type="core:BooleanValue"/>
+      </choiceParameters>
+      <choiceForm>ChartOfAccounts.Налоговый.Form.ФормаВыбораУправляемая</choiceForm>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8e95d1af-bdf4-4f8d-9990-c4d94f1c9bcc">
+      <name>СубконтоНУ1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто НУ 1</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>1</linkItem>
+        <field>Catalog.СпособыРаспределенияЗатратНаВыпуск.TabularSection.БазаРаспределенияНаРезультат.Attribute.СчетУчетаНУ</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fb8bd1ca-ddf3-4e95-857b-ae59524411e4">
+      <name>СубконтоНУ2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто НУ 2</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>2</linkItem>
+        <field>Catalog.СпособыРаспределенияЗатратНаВыпуск.TabularSection.БазаРаспределенияНаРезультат.Attribute.СчетУчетаНУ</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9e1450ca-ad80-4244-b53c-a8d593803f49">
+      <name>СубконтоНУ3</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто НУ 3</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>3</linkItem>
+        <field>Catalog.СпособыРаспределенияЗатратНаВыпуск.TabularSection.БазаРаспределенияНаРезультат.Attribute.СчетУчетаНУ</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c956407a-6a7f-46bb-aabe-14f15edcca7e">
+      <name>База</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коэффициент</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="04eec3dd-b0cb-4bd4-a4c3-dfdfe340b912">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e2f84252-002b-43ae-855b-ce879ef7c7cc">
+    <name>ФормаЭлементаУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента управляемая</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ea040853-4cb3-4926-aec8-8ef01cb55d3d">
+    <name>ФормаСпискаУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка управляемая</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e2dfb512-d62d-40ef-b4c2-f32f5372a97a">
+    <name>ВыручкаОтРеализацииУслуг</name>
+    <synonym>
+      <key>ru</key>
+      <value>По выручке от реализации услуг</value>
+    </synonym>
+    <comment>Описание базы распределения &quot;По выручке от реализации услуг&quot;</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="07805d41-8d1c-4a61-b68a-e26e3cc01c5c">
+    <name>РасходыНаПродажу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходы на продажу</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="8dc26255-2c57-4494-a437-3db3be057771">
+    <name>ПереносНаПроизводственныеРасходы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перенос на производственные расходы</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="cc282a8f-ac5c-4633-8ca7-b750c6c7b94c">
+    <name>ДиректКостинг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Директ-костинг</value>
+    </synonym>
+    <comment>Описание базы распределения &quot;Директ-костинг&quot;</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="d7e39721-2ae5-42f2-8aed-79ab217ca5e2">
+    <name>ОплатаТруда</name>
+    <synonym>
+      <key>ru</key>
+      <value>По оплате труда</value>
+    </synonym>
+    <comment>Описание базы распределения &quot;По оплате труда&quot;</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="de9b53a9-2d6f-4ebd-831c-2b63103fd2e2">
+    <name>ПлановаяСебестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>По плановой себестоимости</value>
+    </synonym>
+    <comment>Описание базы распределения &quot;По плановой себестоимости&quot;</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="d3b89771-5ea3-4788-ab68-2ec7cc93ddee">
+    <name>Нормативы</name>
+    <synonym>
+      <key>ru</key>
+      <value>По нормативам</value>
+    </synonym>
+    <comment>Описание базы распределения &quot;По нормативам&quot;</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="c7c80b76-608f-4d16-97de-630772ce13ec">
+    <name>ОбъемВыпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>По объему выпуска</value>
+    </synonym>
+    <comment>Описание базы распределения &quot;По объему выпуска&quot;</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="fc99452e-a038-4524-ba73-d5ce5118fdc3">
+    <name>Выручка</name>
+    <synonym>
+      <key>ru</key>
+      <value>По выручке</value>
+    </synonym>
+    <comment>Описание базы распределения &quot;По выручке&quot;</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="1380a52a-e8c0-47e0-bcef-91dcac24f343">
+    <name>ОбъемПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>По объему продаж</value>
+    </synonym>
+    <comment>Описание базы распределения &quot;По объему продаж&quot;</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="6b921f8a-5ee4-4301-a531-51bfecd17025">
+    <name>ПереносНаОбобщенныеСтатьи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перенос на обобщенные статьи</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="20cc05d7-7b47-4c2f-bb6f-66934fb365ef">
+    <name>ПереносНаОблагаемыеЕНВД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перенос на расходы по деятельности, облагаемой ЕНВД</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="75c0cb6c-7b01-4d88-bef8-fa7ffde900d4">
+    <name>ПереносНаПрямыеРасходы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перенос на прямые расходы</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="3d861921-fec5-4d74-b7cd-a9cc99afb8de">
+    <name>ДиректКостинг_УчитыватьНоменклатурныеГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Директ-костинг (с учетом номенклатурных групп)</value>
+    </synonym>
+    <comment>Описание базы распределения &quot;Директ-костинг&quot;, которая используется неявно, по умолчанию</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="7fd756e0-4592-4f64-b06f-ef7bc6df9ed7">
+    <name>РасходыНаПродажу_УчитыватьНоменклатурныеГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходы на продажу (с учетом номенклатурных групп)</value>
+    </synonym>
+    <comment>Описание базы распределения &quot;Расходы на продажу&quot;, которая используется неявно, по умолчанию</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="20dc889b-f4c8-47f1-8b0c-993daf556305">
+    <name>СписатьРасходыНаПродажу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списать расходы на продажу</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="653a3eb5-c4c9-42ac-a174-7bc9239c3791">
+    <name>ДиректКостинг_СписатьОбщехозяйственныеРасходы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списать общехозяйственные расходы (директ-костинг)</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="8eaa9a7b-fbf7-4789-818b-766feb08565d">
+    <name>ТабличнаяБазаНаВыпуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табличная база на выпуск</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="6162c4eb-fb4b-45cf-b8ab-18f3ae78cb33">
+    <name>ТабличнаяБазаНаЗатраты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табличная база на затраты</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="3cbdd58f-cae6-4839-aed0-18be19ad9d8f">
+    <name>ТабличнаяБазаНаРезультат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табличная база на результат</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="4e48690d-a06a-43c9-9bc4-9797375e5a8c">
+    <name>ШаблонБазыНаВыпуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон базы на выпуск</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="e89f5497-aea0-4120-af7d-127b5edeb75e">
+    <name>ШаблонБазыНаЗатраты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон базы на затраты</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="9f05ed28-13d1-477a-91cb-d50c02008877">
+    <name>ШаблонБазыНаРезультат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон базы на результат</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="eca125bf-0a2d-4cff-94c1-fa3b52785522">
+    <name>МатериальныеЗатраты</name>
+    <synonym>
+      <key>ru</key>
+      <value>По материальным затратам</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Catalog>

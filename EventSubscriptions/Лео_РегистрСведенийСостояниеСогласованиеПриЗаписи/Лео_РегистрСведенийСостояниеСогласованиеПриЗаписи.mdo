@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f55a7053-f158-4cab-81fb-0a107ca65675">
+  <name>Лео_РегистрСведенийСостояниеСогласованиеПриЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лео регистр сведений состояние согласование при записи</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.абс_СостоянияСогласованияДокументов</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.абс_СогласованиеДокументов.Лео_РегистрСведенийСостояниеСогласованиеПриЗаписиПриЗаписи</handler>
+</mdclass:EventSubscription>

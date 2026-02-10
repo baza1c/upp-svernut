@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f73d1a13-e993-4c4b-91e0-5c8c88e21339">
+  <producedTypes>
+    <objectType typeId="23121f65-a374-4a6b-8870-fd0e8cbf3082" valueTypeId="895d216e-5d5f-4bbb-9f17-c27ff5147f18"/>
+    <managerType typeId="364268fa-608d-4218-a377-078f96785e86" valueTypeId="a7f6b4ae-fdee-43da-8b09-e12c579b9a40"/>
+  </producedTypes>
+  <name>БлокировкаСоединенийСИнформационнойБазой</name>
+  <synonym>
+    <key>ru</key>
+    <value>Блокировка соединений с информационной базой</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.БлокировкаСоединенийСИнформационнойБазой.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="e4abafc6-f859-4d96-9818-5b9bf8d66d69">
+    <name>БлокировкаУстановкиСоединенийВключена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блокировка установки соединений включена</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что блокировка установки соединений с ИБ включена</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="108080da-0e35-4a45-bf8e-01242bbc90ad">
+    <name>КодРазрешения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код разрешения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Код разрешения, позволяющий войти в заблокированную базу.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ac4e0868-ba49-46b4-8872-d42483a5591f">
+    <name>НачалоДействияБлокировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало действия блокировки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Момент времени, с которого начинает действовать блокировка установки соединений с ИБ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="45e6c4a6-1d63-4b94-a7d2-fbd3fb68061b">
+    <name>ОкончаниеДействияБлокировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окончание действия блокировки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Момент времени окончания действия блокировки установки соединений с ИБ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d85df063-5b63-4ad6-b432-711f7ace9426">
+    <name>Сообщение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сообщение с причиной блокировки, выводится пользователю при попытке установки соединения с заблокированной ИБ</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="cf19d60e-3c56-4435-a365-7dff1ef6edfd">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блокировка соединений с информационной базой</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

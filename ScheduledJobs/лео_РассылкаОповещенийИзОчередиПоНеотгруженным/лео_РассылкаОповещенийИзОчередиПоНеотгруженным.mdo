@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cfa97264-70aa-48ef-9c92-7048cafc2ba8">
+  <name>лео_РассылкаОповещенийИзОчередиПоНеотгруженным</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассылка оповещений из очереди по неотгруженным товарам</value>
+  </synonym>
+  <methodName>CommonModule.лео_ОбработкаОповещения.ОбработатьОчередьОповещенияПоНеотгруженным</methodName>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

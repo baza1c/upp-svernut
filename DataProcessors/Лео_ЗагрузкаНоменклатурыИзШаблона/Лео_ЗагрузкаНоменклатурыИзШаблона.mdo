@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5882bb35-395d-41da-bda7-2f77c609d158">
+  <producedTypes>
+    <objectType typeId="8013b4d6-03ed-4858-b029-a383547ce924" valueTypeId="da8ce6be-3aa9-48d2-9661-16a97446d6ac"/>
+    <managerType typeId="35d2b371-dbf2-43f9-9f75-cc104f888273" valueTypeId="9f32f860-aff0-4885-89d6-c47f166ec0b4"/>
+  </producedTypes>
+  <name>Лео_ЗагрузкаНоменклатурыИзШаблона</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка номенклатуры из шаблона</value>
+  </synonym>
+  <defaultForm>DataProcessor.Лео_ЗагрузкаНоменклатурыИзШаблона.Form.Форма</defaultForm>
+  <attributes uuid="ff708b30-56e1-461d-ad04-ef3a5a8711b5">
+    <name>ИмяФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="df87718f-b144-49b0-b3e9-9d35a681554c">
+    <name>ФильтрРасширенияФайлов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтр расширения файлов</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c2fbc752-c2c9-4f69-97e7-052adc5bcf6d">
+    <name>РасширениеФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширение файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="33535cf0-1f4d-4726-8944-c77790006077">
+    <name>ID</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="68a9822d-7805-41c9-9510-ccd4cf6ce752">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

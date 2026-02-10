@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31707931-b19a-484b-9483-506f5d3443b9">
+  <producedTypes>
+    <objectType typeId="67308381-2257-4a75-8512-4654ea0dce06" valueTypeId="8dcab5e2-6501-4ad2-8979-ed55289c49be"/>
+    <managerType typeId="9eabaac5-2f81-42cb-96cc-ce946d4b92b5" valueTypeId="597719d6-1056-47e6-8219-305274851979"/>
+  </producedTypes>
+  <name>Лео_РеестрПремииНепрямымКлиентам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реестр премии непрямым клиентам</value>
+  </synonym>
+  <comment>1</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Лео_РеестрПремииНепрямымКлиентам.Form.Форма</defaultForm>
+  <tabularSections uuid="0fade136-be02-4969-8436-652a9a3bb3f3">
+    <producedTypes>
+      <objectType typeId="ea7e2fc2-b159-4aa3-9583-fa70e8882c76" valueTypeId="d6c646c3-84a7-4339-a9d1-9bd3427aabc5"/>
+      <rowType typeId="ab6cbd5b-395e-42d2-aea0-54f6cc4ebe20" valueTypeId="42b97b29-ad58-43b5-95e7-e82653f2d4b5"/>
+    </producedTypes>
+    <name>Реестр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реестр</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="8e98be90-2d17-4a36-af12-37aeb289bc3a">
+      <name>Контрагент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контрагент, которому платим (по маркетинг. Договору)</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1ac6f4fc-2711-4677-a405-5544fb2f7dfe">
+      <name>СетьТорговаяТочка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Конечная точка продаж (Сеть)</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Лео_ТорговыеТочки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="d53f9716-8b12-4045-9d4a-0b407b554873">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>
